@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr" x-data :data-theme="$store.elva.theme">
+<html lang="es-mx" dir="ltr" x-data :data-theme="$store.elva.theme">
     <head>
 
         <!-- charset / viewport -->
@@ -7,19 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Om • elva</title>
-		<meta name="description" content="Ett flerspråkigt, rent, grönt, 11ty starter theme. elva ger en solid grund för ditt nästa webbprojekt och ett inbyggt CMS för att hantera innehåll.">
+        <title>Hem • elva</title>
+		<meta name="description" content="A multilingual clean green 11ty starter theme">
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="http://localhost:8080/es/om/">
-        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/om/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/about/">
+        <link rel="canonical" href="http://localhost:8080/es/">
+        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="elva">
-        <meta property="og:title" content="Om • elva">
-        <meta property="og:description" content="Ett flerspråkigt, rent, grönt, 11ty starter theme. elva ger en solid grund för ditt nästa webbprojekt och ett inbyggt CMS för att hantera innehåll.">
+        <meta property="og:title" content="Hem • elva">
+        <meta property="og:description" content="A multilingual clean green 11ty starter theme">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/es/om/">
+        <meta property="og:url" content="http://localhost:8080/es/">
         <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
         <meta property="og:image:alt" content="A Swedish description of the default opengraph image"/>
 
@@ -29,7 +29,7 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723055999163">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723057111016">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
@@ -48,7 +48,7 @@
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
     </head>
-    <body class="page">
+    <body class="home">
         <!-- header -->
         <header id="header" role="banner" class="header">
 
@@ -72,6 +72,30 @@
     </a>
     <ul class="navigation-menu">
         
+        <li>
+            <a 
+                href="/es/om/"
+                
+            >
+                Om
+            </a>
+        </li>
+        <li>
+            <a 
+                href="/es/"
+                aria-current="page"
+            >
+                Dokumentation
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://github.com/scottsweb/elva"
+                
+            >
+                GitHub
+            </a>
+        </li>
     </ul>
 
     <div class="switch-language">
@@ -82,22 +106,16 @@
 				
 			
 			
-				<a href="/en/about/" lang="en" hreflang="en"  aria-label="EN: English">
+				<a href="/en/" lang="en" hreflang="en"  aria-label="EN: English">
 					EN
 				</a>
 			
 		
 	
 		
-			
-			
-				
-			
-			
-				<span aria-label="ES: Spanish" class="disabled">
-					ES
-				</span>
-			
+			<a href="/es/" lang="es" hreflang="es"  aria-label="ES: Spanish" aria-current="page" class="current">
+				ES
+			</a>
 		
 	
 </div>
@@ -106,50 +124,44 @@
 </header>
 
         <!-- content -->
-        <main id="content"><article class="hentry">
-    <header class="entry-header">
-        <h1 class="entry-title">Om</h1>
-    </header>
-    <div class="entry-content">
-        <p>Ett flerspråkigt, rent, grönt, <a href="https://www.11ty.dev/docs/starter/">11ty starter theme</a>. elva ger en solid grund för ditt nästa webbprojekt och ett inbyggt CMS (<a href="https://frontmatter.codes/">Front Matter CMS</a>) för att hantera innehåll. Du tittar för närvarande på demosidan som också innehåller <a href="/es/">lite dokumentation</a> som hjälper dig att komma igång. Gå över till <a href="https://github.com/scottsweb/elva/issues">GitHub för att göra funktionsförfrågningar, pull requests och rapportera problem</a>.</p>
-<figure><picture><source type="image/avif" srcset="/assets/img/k2AWwGc3Go-300.avif 300w, /assets/img/k2AWwGc3Go-600.avif 600w, /assets/img/k2AWwGc3Go-1200.avif 1200w, /assets/img/k2AWwGc3Go-2400.avif 2400w" sizes="100vw"><source type="image/webp" srcset="/assets/img/k2AWwGc3Go-300.webp 300w, /assets/img/k2AWwGc3Go-600.webp 600w, /assets/img/k2AWwGc3Go-1200.webp 1200w, /assets/img/k2AWwGc3Go-2400.webp 2400w" sizes="100vw"><img class="rounded" alt="Skärmdump av elva i VSCodium och webbläsaren" loading="lazy" fetch="auto" decoding="async" src="/assets/img/k2AWwGc3Go-300.png" width="2400" height="1688" srcset="/assets/img/k2AWwGc3Go-300.png 300w, /assets/img/k2AWwGc3Go-600.png 600w, /assets/img/k2AWwGc3Go-1200.png 1200w, /assets/img/k2AWwGc3Go-2400.png 2400w" sizes="100vw"></picture><figcaption>elva använder Front Matter CMS för enkel innehållshantering</figcaption></figure>
-<p>Funktioner inkluderar:</p>
-<h3>Prestanda saker</h3>
-<ul>
-<li>Optimerad CSS, JS och HTML</li>
-<li>Responsiv bildkortkod som stöder lazy loading och moderna format (avif, webp)</li>
-<li>Stöd för <a href="https://developer.wordpress.com/docs/photon/">Photon CDN</a> (kan slås på via inställningar)</li>
-</ul>
-<h3>Tillgänglighets saker</h3>
-<ul>
-<li><a href="https://www.11ty.dev/docs/plugins/i18n/">Flerspråkig</a></li>
-<li>Mörkt / ljust läge (se växlingen i sidfoten)</li>
-<li>Hoppa över länk och ARIA-tips</li>
-</ul>
-<h3>Standarder saker</h3>
-<ul>
-<li><a href="/es/feed/feed.xml">RSS feed</a> med XSLT styles</li>
-<li><a href="/es/feed/feed.json">JSON feed</a></li>
-<li><a href="/sitemap.xml">Sitemap</a></li>
-<li><a href="/es/site.webmanifest">Web manifest for PWAs</a></li>
-<li><a href="/humans.txt">humans.txt</a></li>
-<li><a href="/robots.txt">robots.txt</a></li>
-<li>Avråda från <a href="https://github.com/ai-robots-txt/ai.robots.txt/">AI bots</a></li>
-</ul>
-<h3>Andra saker</h3>
-<ul>
-<li><a href="https://frontmatter.codes/">Front Matter CMS</a></li>
-<li>Open graph grafbildsgenerering inifrån Front Matter CMS (dev-servern måste vara igång)</li>
-<li>Förslag stöd</li>
-<li><a href="https://www.11ty.dev/docs/plugins/syntaxhighlight/">Syntax highlighting</a></li>
-<li><a href="https://github.com/gfscott/eleventy-plugin-embed-everything">Förenklade inbäddningar för YouTube, Vimeo etc</a></li>
-<li>Användbara filter och funktioner</li>
-<li><a href="https://alpinejs.dev/">Alpine.js</a></li>
-<li><a href="https://www.11ty.dev/docs/plugins/fetch/">Eleventy Fetch</a></li>
-</ul>
+        <main id="content"><div class="posts-list">
+    
+<ol reversed class="postlist" style="counter-reset: start-from 7">
 
-    </div>
-</article></main>
+	<li class="postlist-item">
+		<a href="/es/skrift/komma-igang/" class="postlist-link">Komma igång</a>
+		<time class="postlist-date" datetime="2023-08-06T00:00:00Z">sábado, 5 de agosto de 2023</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/es/skrift/adding-additional-languages/" class="postlist-link">Lägger till ytterligare språk</a>
+		<time class="postlist-date" datetime="2023-08-05T00:00:00Z">viernes, 4 de agosto de 2023</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/es/skrift/frontmatter/" class="postlist-link">Front matter</a>
+		<time class="postlist-date" datetime="2023-08-04T00:00:00Z">jueves, 3 de agosto de 2023</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/es/skrift/bildinbaddnings-exempel/" class="postlist-link">Bildinbäddnings exempel</a>
+		<time class="postlist-date" datetime="2023-08-03T00:00:00Z">miércoles, 2 de agosto de 2023</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/es/skrift/markdown-testa/" class="postlist-link">Markdown testa</a>
+		<time class="postlist-date" datetime="2023-08-02T00:00:00Z">martes, 1 de agosto de 2023</time>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/es/skrift/exempel-pa-videoinbaddning/" class="postlist-link">Exempel på videoinbäddning</a>
+		<time class="postlist-date" datetime="2023-08-01T00:00:00Z">lunes, 31 de julio de 2023</time>
+	</li>
+
+</ol>
+
+    
+</div></main>
 
         <!-- footer -->
         <footer id="footer" class="footer">
@@ -188,6 +200,6 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723055999164" defer></script>
+        <script src="/assets/js/bundle.js?v=1723057111018" defer></script>
     </body>
 </html>

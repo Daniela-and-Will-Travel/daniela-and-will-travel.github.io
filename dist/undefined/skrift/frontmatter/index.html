@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-se" dir="ltr" x-data :data-theme="$store.elva.theme">
+<html lang="en-gb" dir="ltr" x-data :data-theme="$store.elva.theme">
     <head>
 
         <!-- charset / viewport -->
@@ -7,21 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Hem • elva</title>
-		<meta name="description" content="A multilingual clean green 11ty starter theme">
+        <title>Front matter • elva</title>
+		<meta name="description" content="A multilingual, clean, green, 11ty starter theme">
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="http://localhost:8080/es/">
-        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/">
+        <link rel="canonical" href="http://localhost:8080/undefined/skrift/frontmatter/">
+        <link rel="alternate" hreflang="en" href="http://localhost:8080/undefined/skrift/frontmatter/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/frontmatter/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="elva">
-        <meta property="og:title" content="Hem • elva">
-        <meta property="og:description" content="A multilingual clean green 11ty starter theme">
+        <meta property="og:title" content="Front matter • elva">
+        <meta property="og:description" content="A multilingual, clean, green, 11ty starter theme">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/es/">
+        <meta property="og:url" content="http://localhost:8080/undefined/skrift/frontmatter/">
         <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
-        <meta property="og:image:alt" content="A Swedish description of the default opengraph image"/>
+        <meta property="og:image:alt" content="An English description of the default opengraph image"/>
 
         <!-- icons -->
         <link rel="icon" href="http://localhost:8080/favicon.ico" sizes="any">
@@ -29,33 +29,33 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723055255206">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723056783305">
 
         <!-- feeds -->
-        <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
-		<link rel="alternate" href="http://localhost:8080/es/feed/feed.json" type="application/json" title="JSON Feed • elva">
+        <link rel="alternate" href="http://localhost:8080/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
+		<link rel="alternate" href="http://localhost:8080/en/feed/feed.json" type="application/json" title="JSON Feed • elva">
 
         <!-- preload / prefetch -->
         
 
         <!-- everything else -->
-        <link rel="manifest" href="http://localhost:8080/es/site.webmanifest"">
+        <link rel="manifest" href="http://localhost:8080/en/site.webmanifest"">
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceff4">
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2e3440">
         
-        <link href="https://toot.scott.ee/@scott" rel="me">
+        
 
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
     </head>
-    <body class="home">
+    <body class="posts">
         <!-- header -->
         <header id="header" role="banner" class="header">
 
-    <a href="#content" class="skip-link screen-reader-text">Hoppa till innehållet</a>
+    <a href="#content" class="skip-link screen-reader-text">Skip to content</a>
 
     <nav class="navigation">
-    <a class="site-logo" href="/"  aria-label="Hem">
+    <a class="site-logo" href="/"  aria-label="Home">
         <svg fill="none" height="242" viewBox="0 0 541 242" width="541" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logo-title" role="img">
             <title id="logo-title">elva</title>
             <clipPath id="a"><path d="m0 0h541v242h-541z"/></clipPath>
@@ -74,26 +74,50 @@
         
         <li>
             <a 
-                href="/es/om/"
+                href="/countries/"
                 
             >
-                Om
+                Countries
             </a>
         </li>
         <li>
             <a 
-                href="/es/"
-                aria-current="page"
+                href="/tips/"
+                
             >
-                Dokumentation
+                Tips
             </a>
         </li>
         <li>
             <a 
-                href="https://github.com/scottsweb/elva"
+                href="/planning/"
                 
             >
-                GitHub
+                Planning
+            </a>
+        </li>
+        <li>
+            <a 
+                href="/en/about/"
+                
+            >
+                About Us
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://www.instagram.com/danielaandwill"
+                
+            >
+                Instagram
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://youtube.com/@willtheorangeguy"
+                
+            >
+                YouTube
             </a>
         </li>
     </ul>
@@ -101,21 +125,21 @@
     <div class="switch-language">
 	
 		
+			<a href="/undefined/skrift/frontmatter/" lang="en" hreflang="en"  aria-label="EN: English" aria-current="page" class="current">
+				EN
+			</a>
+		
+	
+		
 			
 			
 				
 			
 			
-				<a href="/en/" lang="en" hreflang="en"  aria-label="EN: English">
-					EN
-				</a>
+				<span aria-label="ES: Spanish" class="disabled">
+					ES
+				</span>
 			
-		
-	
-		
-			<a href="/es/" lang="es" hreflang="es"  aria-label="SE: Svenska" aria-current="page" class="current">
-				SE
-			</a>
 		
 	
 </div>
@@ -124,44 +148,58 @@
 </header>
 
         <!-- content -->
-        <main id="content"><div class="posts-list">
-    
-<ol reversed class="postlist" style="counter-reset: start-from 7">
+        <main id="content"><article class="hentry">
+    <header class="entry-header">
+        <h1 class="entry-title">Front matter</h1>
+        <ul class="meta">
+            <li class="meta-date">
+                <time class="entry-date published" datatime="2023-08-04T00:00:00Z">Thursday, 3 August 2023</time>
+            </li>
+            <li class="meta-reading-time">1 minute to read</li>
+        </ul>
+    </header>
+    <div class="entry-content">
+        <pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: post
+title: Huvudsidans titel, rubrik nivå ett
+date: 2023-08-04
+modified: 2023-08-04
+thumbnail: /assets/img/test.jpg
+thumbnailDescription: En alternativ textbeskrivning för miniatyrbilden
+tags: 'page-demo'
+draft: true
+eleventyExcludeFromCollections: true
+seo:
+  title: Anpassad titel (standard till titel)
+  description: SEO beskrivning
+  slug: mmm-slugs
+  changeFrequency: daily
+  sitemapPriority: '1.0'
+  excludeFromSitemap: true
+  noIndex: true</span>
+<span class="token punctuation">---</span></span></code></pre>
+<ul>
+<li><code>layout</code> — <a href="https://www.11ty.dev/docs/layouts/">Sidlayout för sidan</a>. Standard är <code>post</code> för inlägg och <code>page</code> för sidor.</li>
+<li><code>title</code> — Titeln på den aktuella sidan.</li>
+<li><code>date</code> — <a href="https://www.11ty.dev/docs/dates/">Publiceringsdatum</a>. Du kan ställa in speciella värden här som <code>Last Modified</code>.</li>
+<li><code>modifed</code> — Ändrat datum.</li>
+<li><code>thumbnail</code> — Relativ väg till miniatyr/opengraph bild. Storlek <code>1200px x 630px</code>.</li>
+<li><code>thumbnailDescription</code> — Alt text för miniatyrbild.</li>
+<li><code>tags</code> – <a href="https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags">Taggar</a> används för närvarande för anpassade body classes.</li>
+<li><code>draft</code> — Utkastsidor kommer att visas lokalt och på scenen men inte i produktion.</li>
+<li><code>eleventyExcludeFromCollections</code> — <a href="https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections">Göm från 11ty samlingar</a>.</li>
+<li><code>seo.title</code> — Ställ in anpassad sidtitel för sökmotorer och opengraph.</li>
+<li><code>seo.description</code> — Ställ in sidbeskrivningen för sökmotorer och opengraph.</li>
+<li><code>seo.slug</code> — Ställ in en ny slug för sidan som skiljer sig från filnamnet.</li>
+<li><code>seo.changeFrequency</code> — <a href="https://www.sitemaps.org/protocol.html#changefreqdef">Hur ofta ändras den här sidan</a>?</li>
+<li><code>seo.sitemapPriority</code> — <a href="https://www.sitemaps.org/protocol.html#prioritydef">Prioriteten för denna webbadress i förhållande till andra webbadresser på din webbplats</a>.</li>
+<li><code>seo.excludeFromSitemap</code> — Dölj den här sidan från din sitemap.xml.</li>
+<li><code>seo.noIndex</code> — Avråda från sökmotor indexering.</li>
+</ul>
+<p>Nästan allt front matter är valfritt, förutom titlar (och datum för posts).</p>
 
-	<li class="postlist-item">
-		<a href="/es/skrift/komma-igang/" class="postlist-link">Komma igång</a>
-		<time class="postlist-date" datetime="2023-08-06T00:00:00Z">lördag 5 augusti 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/es/skrift/adding-additional-languages/" class="postlist-link">Lägger till ytterligare språk</a>
-		<time class="postlist-date" datetime="2023-08-05T00:00:00Z">fredag 4 augusti 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/es/skrift/frontmatter/" class="postlist-link">Front matter</a>
-		<time class="postlist-date" datetime="2023-08-04T00:00:00Z">torsdag 3 augusti 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/es/skrift/bildinbaddnings-exempel/" class="postlist-link">Bildinbäddnings exempel</a>
-		<time class="postlist-date" datetime="2023-08-03T00:00:00Z">onsdag 2 augusti 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/es/skrift/markdown-testa/" class="postlist-link">Markdown testa</a>
-		<time class="postlist-date" datetime="2023-08-02T00:00:00Z">tisdag 1 augusti 2023</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/es/skrift/exempel-pa-videoinbaddning/" class="postlist-link">Exempel på videoinbäddning</a>
-		<time class="postlist-date" datetime="2023-08-01T00:00:00Z">måndag 31 juli 2023</time>
-	</li>
-
-</ol>
-
-    
-</div></main>
+    </div>
+</article></main>
 
         <!-- footer -->
         <footer id="footer" class="footer">
@@ -170,7 +208,7 @@
 	<input class="switch" id="darkmode" type="checkbox" value="dark" :checked="$store.elva.theme === 'dark'" />
 	<label class="switch-btn" for="darkmode" tabindex="0" aria-label="Toggle dark/light theme" @keydown.prevent.space @click="$store.elva.themeToggle()" @keyup.prevent.space="$store.elva.themeToggle()" :class="$store.elva.theme === 'dark' ? 'switch-button-on' : 'switch-button-off'">
         <svg class="icon icon-sun" width="1em" height="1em" viewBox="0 0 24 24" fill="none" aria-labelledby="icon-sun" xmlns="http://www.w3.org/2000/svg">
-            <title id="icon-sun">Ljus</title>
+            <title id="icon-sun">Light</title>
             <circle cx="11.9998" cy="11.9998" r="5.75375" fill="currentColor" />
             <g>
                 <circle cx="3.08982" cy="6.85502" r="1.71143" transform="rotate(-60 3.08982 6.85502)" fill="currentColor" />
@@ -183,14 +221,14 @@
             </circle>
         </svg>
         <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50" aria-labelledby="icon-moon">
-            <title id="icon-moon">Mörk</title>
+            <title id="icon-moon">Dark</title>
             <path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.679 28.238 42.251 28.198 41.854 28.321 C 36.161 29.886 30.067 28.272 25.894 24.096 C 21.722 19.92 20.113 13.824 21.683 8.133 C 21.848 7.582 21.697 6.985 21.29 6.578 C 20.884 6.172 20.287 6.022 19.736 6.187 C 10.659 8.728 4.691 17.389 5.55 26.776 C 6.408 36.163 13.847 43.598 23.235 44.451 C 32.622 45.304 41.28 39.332 43.816 30.253 C 43.902 29.96 43.9 29.647 43.81 29.354 Z" fill="currentColor" />
         </svg>
 	</label>
 </div>
 
 
-    <a href="/es/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
+    <a href="/en/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="icon-rss" role="img" width="24" height="24">
             <title id="icon-rss">RSS Feed</title>
             <path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z" fill="currentColor" />
@@ -200,6 +238,6 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723055255210" defer></script>
+        <script src="/assets/js/bundle.js?v=1723056783308" defer></script>
     </body>
 </html>
