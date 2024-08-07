@@ -1,0 +1,6 @@
+.DS_Store
+.cache
+.env
+dist
+node_modules
+notes.md
