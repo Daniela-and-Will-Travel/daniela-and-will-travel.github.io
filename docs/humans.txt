@@ -1,0 +1,12 @@
+/* TEAM */
+Designer / Developer: Daniela Sada and William Vandergraaf
+Contact: danielaandwilltravel@gmail.com
+Site: https://daniela-and-will-travel.github.io/
+From: Vancouver, Canada
+
+
+/* SITE */
+Last update: 2024-08-07
+Standards: HTML5, CSS3
+Components: elva, Alpine.js
+Software: 11ty

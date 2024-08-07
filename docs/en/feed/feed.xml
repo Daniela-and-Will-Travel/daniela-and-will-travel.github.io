@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/en/feed/feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:base="http://localhost:8080/">
+    <title>RSS Feed • Daniela and Will Travel</title>
+    <subtitle>Daniela and Will&#39;s travel blog featuring travel guides and tips and tricks for a gap year throughout Europe.</subtitle>
+	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
+    <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
+    <link href="http://localhost:8080/" />	
+	<updated>2023-08-06T00:00:00Z</updated>
+	<id>http://localhost:8080/</id>
+	<author>
+		<name>Daniela Sada and William Vandergraaf</name>
+		<email>danielaandwilltravel@gmail.com</email>
+	</author>
+	<entry>
+		<title>Getting started</title>
+		<link href="http://localhost:8080/en/writing/getting-started/" />
+		<updated>2023-08-06T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/getting-started/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;Make a directory and navigate to it:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; my-site-name
+&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; my-site-name&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Clone the elva repository:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone https://github.com/scottsweb/elva.git &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Install dependencies:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run Eleventy for site development. View the site at &lt;code&gt;http://localhost:8080&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run dev&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Generate a production-ready build to the &lt;code&gt;dist&lt;/code&gt; folder:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To use &lt;a href=&quot;https://frontmatter.codes/&quot;&gt;Front Matter CMS&lt;/a&gt;, install &lt;a href=&quot;https://vscodium.com/&quot;&gt;VSCodium&lt;/a&gt; or &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; and enable the extension (if it doesn’t enable automatically). It will open each time you launch your project.&lt;/p&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Adding additional languages</title>
+		<link href="http://localhost:8080/en/writing/adding-additional-languages/" />
+		<updated>2023-08-05T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/adding-additional-languages/</id>
+		<content xml:lang="en" type="html"></content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Front matter</title>
+		<link href="http://localhost:8080/en/writing/frontmatter/" />
+		<updated>2023-08-04T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/frontmatter/</id>
+		<content xml:lang="en" type="html">&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;layout: page
+title: Main page title, heading level one
+date: 2023-08-04
+modified: 2023-08-04
+thumbnail: /assets/img/test.jpg
+thumbnailDescription: An alt text description for the thumbnail image
+tags: &#39;page-demo&#39;
+draft: true
+eleventyExcludeFromCollections: true
+seo:
+  title: Custom title (defaults to title)
+  description: SEO description
+  slug: mmm-slugs
+  changeFrequency: daily
+  sitemapPriority: &#39;1.0&#39;
+  excludeFromSitemap: true
+  noIndex: true&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;layout&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/layouts/&quot;&gt;Page layout&lt;/a&gt; for the page. Default is &lt;code&gt;post&lt;/code&gt; for posts and &lt;code&gt;page&lt;/code&gt; for pages.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt; — The title of the current page.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/dates/&quot;&gt;Published date&lt;/a&gt;. You can set special values here like &lt;code&gt;Last Modified&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;modifed&lt;/code&gt; — Modified date.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;thumbnail&lt;/code&gt; — Relative path to thumbnail / opengraph image. Size &lt;code&gt;1200px x 630px&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;thumbnailDescription&lt;/code&gt; — Alt text for thumbnail.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tags&lt;/code&gt; – &lt;a href=&quot;https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags&quot;&gt;Tags&lt;/a&gt; are currently used for custom body classes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;draft&lt;/code&gt; — Draft pages will appear locally and on staging but not in production.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eleventyExcludeFromCollections&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections&quot;&gt;Hide from 11ty collections&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.title&lt;/code&gt; — Set custom page title for search engines and opengraph.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.description&lt;/code&gt; — Set the page description for search engines and opengraph.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.slug&lt;/code&gt; — Set a new slug for the page that is different from the filename.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.changeFrequency&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#changefreqdef&quot;&gt;How often does this page change&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.sitemapPriority&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#prioritydef&quot;&gt;The priority of this URL relative to other URLs on your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.excludeFromSitemap&lt;/code&gt; — Hide this page from your sitemap.xml.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.noIndex&lt;/code&gt; — Discourage search engine indexing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nearly all front matter is optional, except for titles (and dates for posts).&lt;/p&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Image embed example</title>
+		<link href="http://localhost:8080/en/writing/image-embed-example/" />
+		<updated>2023-08-03T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/image-embed-example/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;http://localhost:8080/assets/img/N14M7I7bHf-300.avif 300w, http://localhost:8080/assets/img/N14M7I7bHf-600.avif 600w, http://localhost:8080/assets/img/N14M7I7bHf-1200.avif 1200w, http://localhost:8080/assets/img/N14M7I7bHf-2400.avif 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;http://localhost:8080/assets/img/N14M7I7bHf-300.webp 300w, http://localhost:8080/assets/img/N14M7I7bHf-600.webp 600w, http://localhost:8080/assets/img/N14M7I7bHf-1200.webp 1200w, http://localhost:8080/assets/img/N14M7I7bHf-2400.webp 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;Yellow rapeseed flowers bloom against a clear blue sky&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;http://localhost:8080/assets/img/N14M7I7bHf-300.jpeg&quot; width=&quot;2400&quot; height=&quot;1600&quot; srcset=&quot;http://localhost:8080/assets/img/N14M7I7bHf-300.jpeg 300w, http://localhost:8080/assets/img/N14M7I7bHf-600.jpeg 600w, http://localhost:8080/assets/img/N14M7I7bHf-1200.jpeg 1200w, http://localhost:8080/assets/img/N14M7I7bHf-2400.jpeg 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Nulla vehicula condimentum neque quis tincidunt. Phasellus a dignissim urna. In vitae pulvinar orci, et feugiat orci. Morbi sit amet velit sit amet ex tincidunt vestibulum. Ut eros sem, aliquet quis ultrices vestibulum, lobortis eu quam. Aenean nec urna suscipit, iaculis ipsum sit amet, vestibulum orci. Phasellus feugiat eu dolor quis efficitur. Aenean non luctus diam. Aenean egestas lectus est. In sagittis tellus placerat tincidunt semper. Nullam mattis nisi massa, vel venenatis turpis suscipit ac. Maecenas maximus consequat ligula, placerat sodales ipsum commodo a.&lt;/p&gt;
+&lt;p&gt;Aenean ullamcorper egestas libero, non consequat enim mollis et. Aliquam ut lectus ac ligula tempus molestie. Donec cursus, libero cursus efficitur aliquam, eros purus porta purus, et scelerisque est erat et odio. Mauris bibendum ex ipsum, vulputate ultricies lacus tempus ac. Sed quis leo risus. Cras varius porttitor nibh vel accumsan. In efficitur sapien vitae felis porta, eu vestibulum felis pretium. Nulla nibh odio, dignissim vel dapibus a, feugiat in felis. Morbi convallis malesuada dui, quis iaculis nibh consectetur id. Vivamus tempus porttitor fermentum. Phasellus luctus nibh orci, et dignissim libero dapibus sit amet. Duis enim urna, viverra in condimentum sed, finibus eget nisl. Donec at mollis nunc. Duis vel felis metus. Etiam fermentum nec elit id sodales.&lt;/p&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Markdown test</title>
+		<link href="http://localhost:8080/en/writing/markdown-test/" />
+		<updated>2023-08-02T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/markdown-test/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;Lorem ipsum dolor &lt;strong&gt;sit amet&lt;/strong&gt;, consectetur adipiscing elit ©. Sed nec &lt;strong&gt;risus elementum&lt;/strong&gt;, tempor tortor non, bibendum libero. Suspendisse potenti. Vivamus dapibus &lt;em&gt;tortor neque&lt;/em&gt;, sed aliquet lacus &lt;em&gt;elementum nec&lt;/em&gt;. Morbi vel ligula vitae leo placerat sollicitudin quis at eros. Pellentesque tristique mi a tortor auctor, sit amet elementum augue pulvinar. Donec non orci in &lt;s&gt;ipsum mollis&lt;/s&gt; tempor. Integer libero est, H&lt;sub&gt;2&lt;/sub&gt;O pharetra &lt;ins&gt;vitae&lt;/ins&gt; facilisis quis 🇬🇧.&lt;/p&gt;
+&lt;h2&gt;Quotes, code and typography&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aenean ac tincidunt felis ®. Fusce eu &lt;mark&gt;arcu blandit&lt;/mark&gt;, consectetur odio ullamcorper, maximus erat ®. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare — scelerisque in vitae nisl. In non mi leo…&lt;/p&gt;
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;Quote&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;quote&quot;,&quot;value&quot;:&quot;Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam.&quot;},{&quot;name&quot;:&quot;author&quot;,&quot;value&quot;:&quot;Scott Evans&quot;},{&quot;name&quot;:&quot;cite&quot;,&quot;value&quot;:&quot;Website&quot;},{&quot;name&quot;:&quot;url&quot;,&quot;value&quot;:&quot;https://scott.ee&quot;}]} --&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget.&lt;/p&gt;
+  &lt;figcaption&gt;— Scott Evans, &lt;cite&gt;&lt;a href=&quot;https://scott.ee&quot;&gt;Website&lt;/a&gt;&lt;/cite&gt;&lt;/figcaption&gt;
+&lt;/blockquote&gt;
+&lt;!-- FM:Snippet:End --&gt;
+&lt;p&gt;Cras quis sollicitudin eros ©. Fusce eget velit &lt;code&gt;quis nulla pharetra eleifend id vitae nisl&lt;/code&gt;. Aenean vehicula sem vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius±. Duis est nulla – imperdiet dapibus ultricies non 19&lt;sup&gt;th&lt;/sup&gt;, hendrerit non mauris™.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; bar&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Donec tincidunt mauris id metus iaculis tempor. Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget. Fusce augue lacus, vestibulum efficitur tincidunt et, posuere sed sem. Etiam tortor lorem, vestibulum ac lectus vitae, feugiat egestas augue. Proin id suscipit mi.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;h3&gt;Ordered&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Consectetur adipiscing elit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integer molestie lorem at massa&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can use sequential numbers…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;…or keep all the numbers as &lt;code&gt;1.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Start numbering with offset:&lt;/p&gt;
+&lt;ol start=&quot;57&quot;&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unordered&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a list by starting a line with &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, or &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Sub-lists are made by indenting 2 spaces:
+&lt;ul&gt;
+&lt;li&gt;Marker character change forces new list start:
+&lt;ul&gt;
+&lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Very easy!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Notices and links&lt;/h3&gt;
+&lt;div class=&quot;notice notice-notice&quot;&gt;General notice&lt;/div&gt;
+&lt;div class=&quot;notice notice-warning&quot;&gt;Warning notice&lt;/div&gt;
+&lt;div class=&quot;notice notice-error&quot;&gt;Error notice&lt;/div&gt;
+&lt;h3&gt;Heading level 3&lt;/h3&gt;
+&lt;p&gt;Cras quis sollicitudin eros &lt;a href=&quot;https://scott.ee&quot; title=&quot;title text!&quot;&gt;link with title&lt;/a&gt;. Fusce eget velit quis nulla pharetra eleifend id vitae nisl. Aenean &lt;a href=&quot;https://scott.ee&quot;&gt;normal link&lt;/a&gt; vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius. Duis est nulla, imperdiet dapibus ultricies non, hendrerit non mauris.&lt;/p&gt;
+&lt;h4&gt;Heading level 4&lt;/h4&gt;
+&lt;p&gt;Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare scelerisque in vitae nisl. In non mi leo.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/scottsweb/elva&quot;&gt;https://github.com/scottsweb/elva&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Tables&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fuseu&lt;/td&gt;
+&lt;td&gt;Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Maxim&lt;/td&gt;
+&lt;td&gt;Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Odio&lt;/td&gt;
+&lt;td&gt;Praesent quis sodales orci.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Right aligned columns&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Fuseu&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Maxim&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Odio&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;Praesent quis sodales orci.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Video embed example</title>
+		<link href="http://localhost:8080/en/writing/video-embed-example/" />
+		<updated>2023-08-01T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/video-embed-example/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=vbUud4O8Fcc&quot;&gt;https://www.youtube.com/watch?v=vbUud4O8Fcc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nulla vehicula condimentum neque quis tincidunt. Phasellus a dignissim urna. In vitae pulvinar orci, et feugiat orci. Morbi sit amet velit sit amet ex tincidunt vestibulum. Ut eros sem, aliquet quis ultrices vestibulum, lobortis eu quam. Aenean nec urna suscipit, iaculis ipsum sit amet, vestibulum orci. Phasellus feugiat eu dolor quis efficitur. Aenean non luctus diam. Aenean egestas lectus est. In sagittis tellus placerat tincidunt semper. Nullam mattis nisi massa, vel venenatis turpis suscipit ac. Maecenas maximus consequat ligula, placerat sodales ipsum commodo a.&lt;/p&gt;
+&lt;p&gt;Aenean ullamcorper egestas libero, non consequat enim mollis et. Aliquam ut lectus ac ligula tempus molestie. Donec cursus, libero cursus efficitur aliquam, eros purus porta purus, et scelerisque est erat et odio. Mauris bibendum ex ipsum, vulputate ultricies lacus tempus ac. Sed quis leo risus. Cras varius porttitor nibh vel accumsan. In efficitur sapien vitae felis porta, eu vestibulum felis pretium. Nulla nibh odio, dignissim vel dapibus a, feugiat in felis. Morbi convallis malesuada dui, quis iaculis nibh consectetur id. Vivamus tempus porttitor fermentum. Phasellus luctus nibh orci, et dignissim libero dapibus sit amet. Duis enim urna, viverra in condimentum sed, finibus eget nisl. Donec at mollis nunc. Duis vel felis metus. Etiam fermentum nec elit id sodales.&lt;/p&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+</feed>
