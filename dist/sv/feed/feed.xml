@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="/sv/feed/feed.xsl" type="text/xsl"?>
+<?xml-stylesheet href="/es/feed/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:base="http://localhost:8080/">
     <title>RSS Feed • elva</title>
     <subtitle>A multilingual clean green 11ty starter theme</subtitle>
@@ -9,15 +9,15 @@
 	<updated>2023-08-06T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
-		<name>Scott Evans</name>
-		<email>noreply@example.com</email>
+		<name>Daniela Sada and William Vandergraaf</name>
+		<email>danielaandwilltravel@gmail.com</email>
 	</author>
 	<entry>
 		<title>Komma igång</title>
-		<link href="http://localhost:8080/sv/skrift/komma-igang/" />
+		<link href="http://localhost:8080/es/skrift/komma-igang/" />
 		<updated>2023-08-06T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/komma-igang/</id>
-		<content xml:lang="sv" type="html">&lt;p&gt;Skapa en katalog och navigera till den:&lt;/p&gt;
+		<id>http://localhost:8080/es/skrift/komma-igang/</id>
+		<content xml:lang="es" type="html">&lt;p&gt;Skapa en katalog och navigera till den:&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; my-site-name
 &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; my-site-name&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Klona elva förvaret:&lt;/p&gt;
@@ -34,18 +34,18 @@
 	</entry>
 	<entry>
 		<title>Lägger till ytterligare språk</title>
-		<link href="http://localhost:8080/sv/skrift/adding-additional-languages/" />
+		<link href="http://localhost:8080/es/skrift/adding-additional-languages/" />
 		<updated>2023-08-05T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/adding-additional-languages/</id>
-		<content xml:lang="sv" type="html"></content>
+		<id>http://localhost:8080/es/skrift/adding-additional-languages/</id>
+		<content xml:lang="es" type="html"></content>
 		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
 	<entry>
 		<title>Front matter</title>
-		<link href="http://localhost:8080/sv/skrift/frontmatter/" />
+		<link href="http://localhost:8080/es/skrift/frontmatter/" />
 		<updated>2023-08-04T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/frontmatter/</id>
-		<content xml:lang="sv" type="html">&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+		<id>http://localhost:8080/es/skrift/frontmatter/</id>
+		<content xml:lang="es" type="html">&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;layout: post
 title: Huvudsidans titel, rubrik nivå ett
 date: 2023-08-04
@@ -88,10 +88,10 @@ seo:
 	</entry>
 	<entry>
 		<title>Bildinbäddnings exempel</title>
-		<link href="http://localhost:8080/sv/skrift/bildinbaddnings-exempel/" />
+		<link href="http://localhost:8080/es/skrift/bildinbaddnings-exempel/" />
 		<updated>2023-08-03T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/bildinbaddnings-exempel/</id>
-		<content xml:lang="sv" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
+		<id>http://localhost:8080/es/skrift/bildinbaddnings-exempel/</id>
+		<content xml:lang="es" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;http://localhost:8080/assets/img/i5AuMs-cG4-300.avif 300w, http://localhost:8080/assets/img/i5AuMs-cG4-600.avif 600w, http://localhost:8080/assets/img/i5AuMs-cG4-1200.avif 1200w, http://localhost:8080/assets/img/i5AuMs-cG4-2400.avif 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;http://localhost:8080/assets/img/i5AuMs-cG4-300.webp 300w, http://localhost:8080/assets/img/i5AuMs-cG4-600.webp 600w, http://localhost:8080/assets/img/i5AuMs-cG4-1200.webp 1200w, http://localhost:8080/assets/img/i5AuMs-cG4-2400.webp 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;Båten Stockholms Ström 2 glider över vattnet med Stockholm i fjärran.&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;http://localhost:8080/assets/img/i5AuMs-cG4-300.jpeg&quot; width=&quot;2400&quot; height=&quot;1600&quot; srcset=&quot;http://localhost:8080/assets/img/i5AuMs-cG4-300.jpeg 300w, http://localhost:8080/assets/img/i5AuMs-cG4-600.jpeg 600w, http://localhost:8080/assets/img/i5AuMs-cG4-1200.jpeg 1200w, http://localhost:8080/assets/img/i5AuMs-cG4-2400.jpeg 2400w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;Nulla vehicula condimentum neque quis tincidunt. Phasellus a dignissim urna. In vitae pulvinar orci, et feugiat orci. Morbi sit amet velit sit amet ex tincidunt vestibulum. Ut eros sem, aliquet quis ultrices vestibulum, lobortis eu quam. Aenean nec urna suscipit, iaculis ipsum sit amet, vestibulum orci. Phasellus feugiat eu dolor quis efficitur. Aenean non luctus diam. Aenean egestas lectus est. In sagittis tellus placerat tincidunt semper. Nullam mattis nisi massa, vel venenatis turpis suscipit ac. Maecenas maximus consequat ligula, placerat sodales ipsum commodo a.&lt;/p&gt;
 &lt;p&gt;Aenean ullamcorper egestas libero, non consequat enim mollis et. Aliquam ut lectus ac ligula tempus molestie. Donec cursus, libero cursus efficitur aliquam, eros purus porta purus, et scelerisque est erat et odio. Mauris bibendum ex ipsum, vulputate ultricies lacus tempus ac. Sed quis leo risus. Cras varius porttitor nibh vel accumsan. In efficitur sapien vitae felis porta, eu vestibulum felis pretium. Nulla nibh odio, dignissim vel dapibus a, feugiat in felis. Morbi convallis malesuada dui, quis iaculis nibh consectetur id. Vivamus tempus porttitor fermentum. Phasellus luctus nibh orci, et dignissim libero dapibus sit amet. Duis enim urna, viverra in condimentum sed, finibus eget nisl. Donec at mollis nunc. Duis vel felis metus. Etiam fermentum nec elit id sodales.&lt;/p&gt;
@@ -100,10 +100,10 @@ seo:
 	</entry>
 	<entry>
 		<title>Markdown testa</title>
-		<link href="http://localhost:8080/sv/skrift/markdown-testa/" />
+		<link href="http://localhost:8080/es/skrift/markdown-testa/" />
 		<updated>2023-08-02T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/markdown-testa/</id>
-		<content xml:lang="sv" type="html">&lt;p&gt;Lorem ipsum dolor &lt;strong&gt;sit amet&lt;/strong&gt;, consectetur adipiscing elit ©. Sed nec &lt;strong&gt;risus elementum&lt;/strong&gt;, tempor tortor non, bibendum libero. Suspendisse potenti. Vivamus dapibus &lt;em&gt;tortor neque&lt;/em&gt;, sed aliquet lacus &lt;em&gt;elementum nec&lt;/em&gt;. Morbi vel ligula vitae leo placerat sollicitudin quis at eros. Pellentesque tristique mi a tortor auctor, sit amet elementum augue pulvinar. Donec non orci in &lt;s&gt;ipsum mollis&lt;/s&gt; tempor. Integer libero est, H&lt;sub&gt;2&lt;/sub&gt;O pharetra &lt;ins&gt;vitae&lt;/ins&gt; facilisis quis 🇸🇪.&lt;/p&gt;
+		<id>http://localhost:8080/es/skrift/markdown-testa/</id>
+		<content xml:lang="es" type="html">&lt;p&gt;Lorem ipsum dolor &lt;strong&gt;sit amet&lt;/strong&gt;, consectetur adipiscing elit ©. Sed nec &lt;strong&gt;risus elementum&lt;/strong&gt;, tempor tortor non, bibendum libero. Suspendisse potenti. Vivamus dapibus &lt;em&gt;tortor neque&lt;/em&gt;, sed aliquet lacus &lt;em&gt;elementum nec&lt;/em&gt;. Morbi vel ligula vitae leo placerat sollicitudin quis at eros. Pellentesque tristique mi a tortor auctor, sit amet elementum augue pulvinar. Donec non orci in &lt;s&gt;ipsum mollis&lt;/s&gt; tempor. Integer libero est, H&lt;sub&gt;2&lt;/sub&gt;O pharetra &lt;ins&gt;vitae&lt;/ins&gt; facilisis quis 🇸🇪.&lt;/p&gt;
 &lt;h2&gt;Citat, kod och typografi&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam.&lt;/p&gt;
@@ -228,10 +228,10 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 	</entry>
 	<entry>
 		<title>Exempel på videoinbäddning</title>
-		<link href="http://localhost:8080/sv/skrift/exempel-pa-videoinbaddning/" />
+		<link href="http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/" />
 		<updated>2023-08-01T00:00:00Z</updated>
-		<id>http://localhost:8080/sv/skrift/exempel-pa-videoinbaddning/</id>
-		<content xml:lang="sv" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
+		<id>http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/</id>
+		<content xml:lang="es" type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://vimeo.com/149643283&quot;&gt;https://vimeo.com/149643283&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Nulla vehicula condimentum neque quis tincidunt. Phasellus a dignissim urna. In vitae pulvinar orci, et feugiat orci. Morbi sit amet velit sit amet ex tincidunt vestibulum. Ut eros sem, aliquet quis ultrices vestibulum, lobortis eu quam. Aenean nec urna suscipit, iaculis ipsum sit amet, vestibulum orci. Phasellus feugiat eu dolor quis efficitur. Aenean non luctus diam. Aenean egestas lectus est. In sagittis tellus placerat tincidunt semper. Nullam mattis nisi massa, vel venenatis turpis suscipit ac. Maecenas maximus consequat ligula, placerat sodales ipsum commodo a.&lt;/p&gt;
 &lt;p&gt;Aenean ullamcorper egestas libero, non consequat enim mollis et. Aliquam ut lectus ac ligula tempus molestie. Donec cursus, libero cursus efficitur aliquam, eros purus porta purus, et scelerisque est erat et odio. Mauris bibendum ex ipsum, vulputate ultricies lacus tempus ac. Sed quis leo risus. Cras varius porttitor nibh vel accumsan. In efficitur sapien vitae felis porta, eu vestibulum felis pretium. Nulla nibh odio, dignissim vel dapibus a, feugiat in felis. Morbi convallis malesuada dui, quis iaculis nibh consectetur id. Vivamus tempus porttitor fermentum. Phasellus luctus nibh orci, et dignissim libero dapibus sit amet. Duis enim urna, viverra in condimentum sed, finibus eget nisl. Donec at mollis nunc. Duis vel felis metus. Etiam fermentum nec elit id sodales.&lt;/p&gt;

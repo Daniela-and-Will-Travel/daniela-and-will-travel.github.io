@@ -3,11 +3,10 @@
 	"themeColorDark": "#2e3440",
 	"cdn": false,
 	"author": {
-		"name": "Scott Evans",
-		"email": "noreply@example.com",
-		"url": "https://scott.ee",
-		"location": "Stockholm, Sweden",
-		"fediverseProfile": "https://toot.scott.ee/@scott"
+		"name": "Daniela Sada and William Vandergraaf",
+		"email": "danielaandwilltravel@gmail.com",
+		"url": "https://daniela-and-will-travel.github.io/",
+		"location": "Vancouver, Canada"
 	},
 	"meta": {
 		"separator": "•",
