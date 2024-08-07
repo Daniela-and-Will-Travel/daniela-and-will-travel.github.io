@@ -1,16 +1,28 @@
 module.exports = {
     en: [
 		{
-			text: 'About',
+			text: 'Countries',
+			url: '/countries/'
+		},
+		{
+			text: 'Tips',
+			url: '/tips/'
+		},
+		{
+			text: 'Planning',
+			url: '/planning/'
+		},
+		{
+			text: 'About Us',
 			url: '/about/'
 		},
 		{
-			text: 'Documentation',
-			url: '/'
+			text: 'Instagram',
+			url: 'https://www.instagram.com/danielaandwill'
 		},
 		{
-			text: 'GitHub',
-			url: 'https://github.com/scottsweb/elva'
+			text: 'YouTube',
+			url: 'https://youtube.com/@willtheorangeguy'
 		}
     ],
     es: [

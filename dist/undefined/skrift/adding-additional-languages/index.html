@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-se" dir="ltr" x-data :data-theme="$store.elva.theme">
+<html lang="en-gb" dir="ltr" x-data :data-theme="$store.elva.theme">
     <head>
 
         <!-- charset / viewport -->
@@ -7,21 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Exempel på videoinbäddning • elva</title>
-		<meta name="description" content="A multilingual clean green 11ty starter theme">
+        <title>Lägger till ytterligare språk • elva</title>
+		<meta name="description" content="A multilingual, clean, green, 11ty starter theme">
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/">
-        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/video-embed-example/">
+        <link rel="canonical" href="http://localhost:8080/undefined/skrift/adding-additional-languages/">
+        <link rel="alternate" hreflang="en" href="http://localhost:8080/undefined/skrift/adding-additional-languages/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/adding-additional-languages/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="elva">
-        <meta property="og:title" content="Exempel på videoinbäddning • elva">
-        <meta property="og:description" content="A multilingual clean green 11ty starter theme">
+        <meta property="og:title" content="Lägger till ytterligare språk • elva">
+        <meta property="og:description" content="A multilingual, clean, green, 11ty starter theme">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/">
+        <meta property="og:url" content="http://localhost:8080/undefined/skrift/adding-additional-languages/">
         <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
-        <meta property="og:image:alt" content="A Swedish description of the default opengraph image"/>
+        <meta property="og:image:alt" content="An English description of the default opengraph image"/>
 
         <!-- icons -->
         <link rel="icon" href="http://localhost:8080/favicon.ico" sizes="any">
@@ -29,21 +29,21 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723055255200">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723056783308">
 
         <!-- feeds -->
-        <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
-		<link rel="alternate" href="http://localhost:8080/es/feed/feed.json" type="application/json" title="JSON Feed • elva">
+        <link rel="alternate" href="http://localhost:8080/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
+		<link rel="alternate" href="http://localhost:8080/en/feed/feed.json" type="application/json" title="JSON Feed • elva">
 
         <!-- preload / prefetch -->
         
 
         <!-- everything else -->
-        <link rel="manifest" href="http://localhost:8080/es/site.webmanifest"">
+        <link rel="manifest" href="http://localhost:8080/en/site.webmanifest"">
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceff4">
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2e3440">
         
-        <link href="https://toot.scott.ee/@scott" rel="me">
+        
 
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
@@ -52,10 +52,10 @@
         <!-- header -->
         <header id="header" role="banner" class="header">
 
-    <a href="#content" class="skip-link screen-reader-text">Hoppa till innehållet</a>
+    <a href="#content" class="skip-link screen-reader-text">Skip to content</a>
 
     <nav class="navigation">
-    <a class="site-logo" href="/"  aria-label="Hem">
+    <a class="site-logo" href="/"  aria-label="Home">
         <svg fill="none" height="242" viewBox="0 0 541 242" width="541" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logo-title" role="img">
             <title id="logo-title">elva</title>
             <clipPath id="a"><path d="m0 0h541v242h-541z"/></clipPath>
@@ -74,26 +74,50 @@
         
         <li>
             <a 
-                href="/es/om/"
+                href="/countries/"
                 
             >
-                Om
+                Countries
             </a>
         </li>
         <li>
             <a 
-                href="/es/"
+                href="/tips/"
                 
             >
-                Dokumentation
+                Tips
             </a>
         </li>
         <li>
             <a 
-                href="https://github.com/scottsweb/elva"
+                href="/planning/"
                 
             >
-                GitHub
+                Planning
+            </a>
+        </li>
+        <li>
+            <a 
+                href="/en/about/"
+                
+            >
+                About Us
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://www.instagram.com/danielaandwill"
+                
+            >
+                Instagram
+            </a>
+        </li>
+        <li>
+            <a 
+                href="https://youtube.com/@willtheorangeguy"
+                
+            >
+                YouTube
             </a>
         </li>
     </ul>
@@ -101,21 +125,21 @@
     <div class="switch-language">
 	
 		
+			<a href="/undefined/skrift/adding-additional-languages/" lang="en" hreflang="en"  aria-label="EN: English" aria-current="page" class="current">
+				EN
+			</a>
+		
+	
+		
 			
 			
 				
 			
 			
-				<a href="/en/writing/video-embed-example/" lang="en" hreflang="en"  aria-label="EN: English">
-					EN
-				</a>
+				<span aria-label="ES: Spanish" class="disabled">
+					ES
+				</span>
 			
-		
-	
-		
-			<a href="/es/skrift/exempel-pa-videoinbaddning/" lang="es" hreflang="es"  aria-label="SE: Svenska" aria-current="page" class="current">
-				SE
-			</a>
 		
 	
 </div>
@@ -126,20 +150,16 @@
         <!-- content -->
         <main id="content"><article class="hentry">
     <header class="entry-header">
-        <h1 class="entry-title">Exempel på videoinbäddning</h1>
+        <h1 class="entry-title">Lägger till ytterligare språk</h1>
         <ul class="meta">
             <li class="meta-date">
-                <time class="entry-date published" datatime="2023-08-01T00:00:00Z">måndag 31 juli 2023</time>
+                <time class="entry-date published" datatime="2023-08-05T00:00:00Z">Friday, 4 August 2023</time>
             </li>
-            <li class="meta-reading-time">1 minut till läsaren</li>
+            <li class="meta-reading-time">Less than 1 minute to read</li>
         </ul>
     </header>
     <div class="entry-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus consectetur, gravida justo ac, convallis leo. Duis et nisi ullamcorper, auctor quam vel, sollicitudin ligula. Vestibulum faucibus metus nec diam egestas, sed auctor elit rhoncus. Duis a velit vel lacus placerat porta ac vitae urna. Etiam a dictum tortor, id venenatis eros. Donec vehicula ex ut quam porta auctor. Suspendisse at purus enim. Donec sed pharetra nisl.</p>
-<div id="vimeo-149643283" class="oembed oembed-vimeo" style="position:relative;width:100%;padding-top:56.25%;"><iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" frameborder="0" src="https://player.vimeo.com/video/149643283?dnt=1" allowfullscreen></iframe></div>
-<p>Nulla vehicula condimentum neque quis tincidunt. Phasellus a dignissim urna. In vitae pulvinar orci, et feugiat orci. Morbi sit amet velit sit amet ex tincidunt vestibulum. Ut eros sem, aliquet quis ultrices vestibulum, lobortis eu quam. Aenean nec urna suscipit, iaculis ipsum sit amet, vestibulum orci. Phasellus feugiat eu dolor quis efficitur. Aenean non luctus diam. Aenean egestas lectus est. In sagittis tellus placerat tincidunt semper. Nullam mattis nisi massa, vel venenatis turpis suscipit ac. Maecenas maximus consequat ligula, placerat sodales ipsum commodo a.</p>
-<p>Aenean ullamcorper egestas libero, non consequat enim mollis et. Aliquam ut lectus ac ligula tempus molestie. Donec cursus, libero cursus efficitur aliquam, eros purus porta purus, et scelerisque est erat et odio. Mauris bibendum ex ipsum, vulputate ultricies lacus tempus ac. Sed quis leo risus. Cras varius porttitor nibh vel accumsan. In efficitur sapien vitae felis porta, eu vestibulum felis pretium. Nulla nibh odio, dignissim vel dapibus a, feugiat in felis. Morbi convallis malesuada dui, quis iaculis nibh consectetur id. Vivamus tempus porttitor fermentum. Phasellus luctus nibh orci, et dignissim libero dapibus sit amet. Duis enim urna, viverra in condimentum sed, finibus eget nisl. Donec at mollis nunc. Duis vel felis metus. Etiam fermentum nec elit id sodales.</p>
-
+        
     </div>
 </article></main>
 
@@ -150,7 +170,7 @@
 	<input class="switch" id="darkmode" type="checkbox" value="dark" :checked="$store.elva.theme === 'dark'" />
 	<label class="switch-btn" for="darkmode" tabindex="0" aria-label="Toggle dark/light theme" @keydown.prevent.space @click="$store.elva.themeToggle()" @keyup.prevent.space="$store.elva.themeToggle()" :class="$store.elva.theme === 'dark' ? 'switch-button-on' : 'switch-button-off'">
         <svg class="icon icon-sun" width="1em" height="1em" viewBox="0 0 24 24" fill="none" aria-labelledby="icon-sun" xmlns="http://www.w3.org/2000/svg">
-            <title id="icon-sun">Ljus</title>
+            <title id="icon-sun">Light</title>
             <circle cx="11.9998" cy="11.9998" r="5.75375" fill="currentColor" />
             <g>
                 <circle cx="3.08982" cy="6.85502" r="1.71143" transform="rotate(-60 3.08982 6.85502)" fill="currentColor" />
@@ -163,14 +183,14 @@
             </circle>
         </svg>
         <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50" aria-labelledby="icon-moon">
-            <title id="icon-moon">Mörk</title>
+            <title id="icon-moon">Dark</title>
             <path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.679 28.238 42.251 28.198 41.854 28.321 C 36.161 29.886 30.067 28.272 25.894 24.096 C 21.722 19.92 20.113 13.824 21.683 8.133 C 21.848 7.582 21.697 6.985 21.29 6.578 C 20.884 6.172 20.287 6.022 19.736 6.187 C 10.659 8.728 4.691 17.389 5.55 26.776 C 6.408 36.163 13.847 43.598 23.235 44.451 C 32.622 45.304 41.28 39.332 43.816 30.253 C 43.902 29.96 43.9 29.647 43.81 29.354 Z" fill="currentColor" />
         </svg>
 	</label>
 </div>
 
 
-    <a href="/es/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
+    <a href="/en/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="icon-rss" role="img" width="24" height="24">
             <title id="icon-rss">RSS Feed</title>
             <path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z" fill="currentColor" />
@@ -180,6 +200,6 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723055255202" defer></script>
+        <script src="/assets/js/bundle.js?v=1723056783310" defer></script>
     </body>
 </html>

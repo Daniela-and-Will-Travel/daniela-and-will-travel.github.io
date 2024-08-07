@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-se" dir="ltr" x-data :data-theme="$store.elva.theme">
+<html lang="es-mx" dir="ltr" x-data :data-theme="$store.elva.theme">
     <head>
 
         <!-- charset / viewport -->
@@ -7,19 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Markdown testa • elva</title>
+        <title>Front matter • elva</title>
 		<meta name="description" content="A multilingual clean green 11ty starter theme">
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="http://localhost:8080/es/skrift/markdown-testa/">
-        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/skrift/markdown-testa/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/markdown-test/">
+        <link rel="canonical" href="http://localhost:8080/es/skrift/frontmatter/">
+        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/skrift/frontmatter/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/frontmatter/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="elva">
-        <meta property="og:title" content="Markdown testa • elva">
+        <meta property="og:title" content="Front matter • elva">
         <meta property="og:description" content="A multilingual clean green 11ty starter theme">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/es/skrift/markdown-testa/">
+        <meta property="og:url" content="http://localhost:8080/es/skrift/frontmatter/">
         <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
         <meta property="og:image:alt" content="A Swedish description of the default opengraph image"/>
 
@@ -29,7 +29,7 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723055255197">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723057110999">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
@@ -43,7 +43,7 @@
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceff4">
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2e3440">
         
-        <link href="https://toot.scott.ee/@scott" rel="me">
+        
 
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
@@ -106,15 +106,15 @@
 				
 			
 			
-				<a href="/en/writing/markdown-test/" lang="en" hreflang="en"  aria-label="EN: English">
+				<a href="/en/writing/frontmatter/" lang="en" hreflang="en"  aria-label="EN: English">
 					EN
 				</a>
 			
 		
 	
 		
-			<a href="/es/skrift/markdown-testa/" lang="es" hreflang="es"  aria-label="SE: Svenska" aria-current="page" class="current">
-				SE
+			<a href="/es/skrift/frontmatter/" lang="es" hreflang="es"  aria-label="ES: Spanish" aria-current="page" class="current">
+				ES
 			</a>
 		
 	
@@ -126,135 +126,53 @@
         <!-- content -->
         <main id="content"><article class="hentry">
     <header class="entry-header">
-        <h1 class="entry-title">Markdown testa</h1>
+        <h1 class="entry-title">Front matter</h1>
         <ul class="meta">
             <li class="meta-date">
-                <time class="entry-date published" datatime="2023-08-02T00:00:00Z">tisdag 1 augusti 2023</time>
+                <time class="entry-date published" datatime="2023-08-04T00:00:00Z">jueves, 3 de agosto de 2023</time>
             </li>
-            <li class="meta-reading-time">2 minuter att läsa</li>
+            <li class="meta-reading-time">1 minut till läsaren</li>
         </ul>
     </header>
     <div class="entry-content">
-        <p>Lorem ipsum dolor <strong>sit amet</strong>, consectetur adipiscing elit ©. Sed nec <strong>risus elementum</strong>, tempor tortor non, bibendum libero. Suspendisse potenti. Vivamus dapibus <em>tortor neque</em>, sed aliquet lacus <em>elementum nec</em>. Morbi vel ligula vitae leo placerat sollicitudin quis at eros. Pellentesque tristique mi a tortor auctor, sit amet elementum augue pulvinar. Donec non orci in <s>ipsum mollis</s> tempor. Integer libero est, H<sub>2</sub>O pharetra <ins>vitae</ins> facilisis quis 🇸🇪.</p>
-<h2>Citat, kod och typografi</h2>
-<blockquote>
-<p>Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam.</p>
-</blockquote>
-<p>Aenean ac tincidunt felis ®. Fusce eu <mark>arcu blandit</mark>, consectetur odio ullamcorper, maximus erat ®. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare — scelerisque in vitae nisl. In non mi leo…</p>
-<!-- FM:Snippet:Start data:{"id":"Quote","fields":[{"name":"quote","value":"Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam."},{"name":"author","value":"Scott Evans"},{"name":"cite","value":"Hemsida"},{"name":"url","value":"https://scott.ee"}]} -->
-<blockquote>
-  <p>Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget.</p>
-  <figcaption>— Scott Evans, <cite><a href="https://scott.ee">Hemsida</a></cite></figcaption>
-</blockquote>
-<!-- FM:Snippet:End -->
-<p>Cras quis sollicitudin eros ©. Fusce eget velit <code>quis nulla pharetra eleifend id vitae nisl</code>. Aenean vehicula sem vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius±. Duis est nulla – imperdiet dapibus ultricies non 19<sup>th</sup>, hendrerit non mauris™.</p>
-<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> bar<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>Donec tincidunt mauris id metus iaculis tempor. Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget. Fusce augue lacus, vestibulum efficitur tincidunt et, posuere sed sem. Etiam tortor lorem, vestibulum ac lectus vitae, feugiat egestas augue. Proin id suscipit mi.</p>
-<hr>
-<h2>Listor</h2>
-<h3>Ordered</h3>
-<ol>
-<li>
-<p>Lorem ipsum dolor sit amet</p>
-</li>
-<li>
-<p>Consectetur adipiscing elit</p>
-</li>
-<li>
-<p>Integer molestie lorem at massa</p>
-</li>
-<li>
-<p>You can use sequential numbers…</p>
-</li>
-<li>
-<p>…or keep all the numbers as <code>1.</code></p>
-</li>
-</ol>
-<p>Starta numrering med offset:</p>
-<ol start="57">
-<li>foo</li>
-<li>bar</li>
-</ol>
-<h3>Unordered</h3>
+        <pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: post
+title: Huvudsidans titel, rubrik nivå ett
+date: 2023-08-04
+modified: 2023-08-04
+thumbnail: /assets/img/test.jpg
+thumbnailDescription: En alternativ textbeskrivning för miniatyrbilden
+tags: 'page-demo'
+draft: true
+eleventyExcludeFromCollections: true
+seo:
+  title: Anpassad titel (standard till titel)
+  description: SEO beskrivning
+  slug: mmm-slugs
+  changeFrequency: daily
+  sitemapPriority: '1.0'
+  excludeFromSitemap: true
+  noIndex: true</span>
+<span class="token punctuation">---</span></span></code></pre>
 <ul>
-<li>Skapa en lista genom att börja en rad med <code>+</code>, <code>-</code>, eller <code>*</code></li>
-<li>Underlistor skapas genom att dra in 2 mellanslag:
-<ul>
-<li>Byte av markörtecken tvingar ny liststart:
-<ul>
-<li>Ac tristique libero volutpat at</li>
+<li><code>layout</code> — <a href="https://www.11ty.dev/docs/layouts/">Sidlayout för sidan</a>. Standard är <code>post</code> för inlägg och <code>page</code> för sidor.</li>
+<li><code>title</code> — Titeln på den aktuella sidan.</li>
+<li><code>date</code> — <a href="https://www.11ty.dev/docs/dates/">Publiceringsdatum</a>. Du kan ställa in speciella värden här som <code>Last Modified</code>.</li>
+<li><code>modifed</code> — Ändrat datum.</li>
+<li><code>thumbnail</code> — Relativ väg till miniatyr/opengraph bild. Storlek <code>1200px x 630px</code>.</li>
+<li><code>thumbnailDescription</code> — Alt text för miniatyrbild.</li>
+<li><code>tags</code> – <a href="https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags">Taggar</a> används för närvarande för anpassade body classes.</li>
+<li><code>draft</code> — Utkastsidor kommer att visas lokalt och på scenen men inte i produktion.</li>
+<li><code>eleventyExcludeFromCollections</code> — <a href="https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections">Göm från 11ty samlingar</a>.</li>
+<li><code>seo.title</code> — Ställ in anpassad sidtitel för sökmotorer och opengraph.</li>
+<li><code>seo.description</code> — Ställ in sidbeskrivningen för sökmotorer och opengraph.</li>
+<li><code>seo.slug</code> — Ställ in en ny slug för sidan som skiljer sig från filnamnet.</li>
+<li><code>seo.changeFrequency</code> — <a href="https://www.sitemaps.org/protocol.html#changefreqdef">Hur ofta ändras den här sidan</a>?</li>
+<li><code>seo.sitemapPriority</code> — <a href="https://www.sitemaps.org/protocol.html#prioritydef">Prioriteten för denna webbadress i förhållande till andra webbadresser på din webbplats</a>.</li>
+<li><code>seo.excludeFromSitemap</code> — Dölj den här sidan från din sitemap.xml.</li>
+<li><code>seo.noIndex</code> — Avråda från sökmotor indexering.</li>
 </ul>
-<ul>
-<li>Facilisis in pretium nisl aliquet</li>
-</ul>
-<ul>
-<li>Nulla volutpat aliquam velit</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Superlätt!</li>
-</ul>
-<hr>
-<h3>Meddelanden och länkar</h3>
-<div class="notice notice-notice">Allmänt meddelande</div>
-<div class="notice notice-warning">Varnings meddelande</div>
-<div class="notice notice-error">Fel meddelande</div>
-<h3>Rubrik nivå 3</h3>
-<p>Cras quis sollicitudin eros <a href="https://scott.ee" title="title text!">link with title</a>. Fusce eget velit quis nulla pharetra eleifend id vitae nisl. Aenean <a href="https://scott.ee">normal link</a> vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius. Duis est nulla, imperdiet dapibus ultricies non, hendrerit non mauris.</p>
-<h4>Rubrik nivå 4</h4>
-<p>Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare scelerisque in vitae nisl. In non mi leo.</p>
-<p><a href="https://github.com/scottsweb/elva">https://github.com/scottsweb/elva</a></p>
-<h3>Tabeller</h3>
-<table>
-<thead>
-<tr>
-<th>Titel</th>
-<th>Beskrivning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuseu</td>
-<td>Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.</td>
-</tr>
-<tr>
-<td>Maxim</td>
-<td>Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.</td>
-</tr>
-<tr>
-<td>Odio</td>
-<td>Praesent quis sodales orci.</td>
-</tr>
-</tbody>
-</table>
-<p>Högerjusterade kolumner</p>
-<table>
-<thead>
-<tr>
-<th>Titel</th>
-<th style="text-align:right">Beskrivning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuseu</td>
-<td style="text-align:right">Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.</td>
-</tr>
-<tr>
-<td>Maxim</td>
-<td style="text-align:right">Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.</td>
-</tr>
-<tr>
-<td>Odio</td>
-<td style="text-align:right">Praesent quis sodales orci.</td>
-</tr>
-</tbody>
-</table>
+<p>Nästan allt front matter är valfritt, förutom titlar (och datum för posts).</p>
 
     </div>
 </article></main>
@@ -296,6 +214,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723055255199" defer></script>
+        <script src="/assets/js/bundle.js?v=1723057111001" defer></script>
     </body>
 </html>

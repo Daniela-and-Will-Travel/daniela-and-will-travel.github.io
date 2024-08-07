@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-se" dir="ltr" x-data :data-theme="$store.elva.theme">
+<html lang="es-mx" dir="ltr" x-data :data-theme="$store.elva.theme">
     <head>
 
         <!-- charset / viewport -->
@@ -7,19 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Komma igång • elva</title>
+        <title>Lägger till ytterligare språk • elva</title>
 		<meta name="description" content="A multilingual clean green 11ty starter theme">
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="http://localhost:8080/es/skrift/komma-igang/">
-        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/skrift/komma-igang/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/getting-started/">
+        <link rel="canonical" href="http://localhost:8080/es/skrift/adding-additional-languages/">
+        <link rel="alternate" hreflang="es" href="http://localhost:8080/es/skrift/adding-additional-languages/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/writing/adding-additional-languages/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="elva">
-        <meta property="og:title" content="Komma igång • elva">
+        <meta property="og:title" content="Lägger till ytterligare språk • elva">
         <meta property="og:description" content="A multilingual clean green 11ty starter theme">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://localhost:8080/es/skrift/komma-igang/">
+        <meta property="og:url" content="http://localhost:8080/es/skrift/adding-additional-languages/">
         <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
         <meta property="og:image:alt" content="A Swedish description of the default opengraph image"/>
 
@@ -29,7 +29,7 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723055255191">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723057110996">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • elva">
@@ -43,7 +43,7 @@
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceff4">
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2e3440">
         
-        <link href="https://toot.scott.ee/@scott" rel="me">
+        
 
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
@@ -106,15 +106,15 @@
 				
 			
 			
-				<a href="/en/writing/getting-started/" lang="en" hreflang="en"  aria-label="EN: English">
+				<a href="/en/writing/adding-additional-languages/" lang="en" hreflang="en"  aria-label="EN: English">
 					EN
 				</a>
 			
 		
 	
 		
-			<a href="/es/skrift/komma-igang/" lang="es" hreflang="es"  aria-label="SE: Svenska" aria-current="page" class="current">
-				SE
+			<a href="/es/skrift/adding-additional-languages/" lang="es" hreflang="es"  aria-label="ES: Spanish" aria-current="page" class="current">
+				ES
 			</a>
 		
 	
@@ -126,28 +126,16 @@
         <!-- content -->
         <main id="content"><article class="hentry">
     <header class="entry-header">
-        <h1 class="entry-title">Komma igång</h1>
+        <h1 class="entry-title">Lägger till ytterligare språk</h1>
         <ul class="meta">
             <li class="meta-date">
-                <time class="entry-date published" datatime="2023-08-06T00:00:00Z">lördag 5 augusti 2023</time>
+                <time class="entry-date published" datatime="2023-08-05T00:00:00Z">viernes, 4 de agosto de 2023</time>
             </li>
             <li class="meta-reading-time">Mindre än 1 minut att läsa</li>
         </ul>
     </header>
     <div class="entry-content">
-        <p>Skapa en katalog och navigera till den:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> my-site-name
-<span class="token builtin class-name">cd</span> my-site-name</code></pre>
-<p>Klona elva förvaret:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/scottsweb/elva.git <span class="token builtin class-name">.</span></code></pre>
-<p>Installationsberoenden:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span></code></pre>
-<p>Kör Eleventy för webbplatsutveckling. Se webbplatsen på <code>http://localhost:8080</code>:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run dev</code></pre>
-<p>Generera en produktionsklar build till mappen <code>dist</code>:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run build</code></pre>
-<p>För att använda <a href="https://frontmatter.codes/">Front Matter CMS</a>, installera <a href="https://vscodium.com/">VSCodium</a> eller <a href="https://code.visualstudio.com/">Visual Studio Code</a> och aktivera tillägget (om det inte aktiveras automatiskt). Den öppnas varje gång du startar ditt projekt.</p>
-
+        
     </div>
 </article></main>
 
@@ -188,6 +176,6 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723055255194" defer></script>
+        <script src="/assets/js/bundle.js?v=1723057110998" defer></script>
     </body>
 </html>
