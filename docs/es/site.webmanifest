@@ -1,0 +1,34 @@
+{
+	"lang": "es-mx",
+	"dir": "ltr",
+	"short_name": "Daniela y Will Travel",
+	"name": "Daniela y Will Travel",
+	"description": "El blog de viajes de Daniela y Will con guías de viaje y consejos para un año sabático por Europa.",
+	"categories": ["travel","blog"],
+	"orientation": "portrait-primary",
+	"scope": "http://localhost:8080/",
+	"id": "/?v=1723058303526",
+	"start_url": "http://localhost:8080/",
+	"theme_color": "#eceff4",
+	"background_color": "#eceff4",
+	"display": "minimal-ui",
+	"icons": [
+		{
+			"src": "http://localhost:8080/assets/img/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "any",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "http://localhost:8080/assets/img/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "http://localhost:8080/assets/img/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+  	]
+}
