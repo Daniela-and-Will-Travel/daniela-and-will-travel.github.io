@@ -1,9 +1,9 @@
 /* TEAM */
-Designer / Developer: Scott Evans
-Contact: noreply@example.com
-Site: https://scott.ee
-From: Stockholm, Sweden
-Fediverse: https://toot.scott.ee/@scott
+Designer / Developer: Daniela Sada and William Vandergraaf
+Contact: danielaandwilltravel@gmail.com
+Site: https://daniela-and-will-travel.github.io/
+From: Vancouver, Canada
+
 
 /* SITE */
 Last update: 2024-08-07

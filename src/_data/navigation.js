@@ -13,7 +13,7 @@ module.exports = {
 			url: 'https://github.com/scottsweb/elva'
 		}
     ],
-    sv: [
+    es: [
 		{
 			text: 'Om',
 			url: '/om/'

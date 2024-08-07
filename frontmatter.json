@@ -223,9 +223,9 @@
           "locale": "en"
         },
         {
-          "title": "Svensk",
-          "locale": "sv",
-          "path": "../../sv/posts/"
+          "title": "Spanish",
+          "locale": "es",
+          "path": "../../es/posts/"
         }
       ]
     },
@@ -241,9 +241,9 @@
           "locale": "en"
         },
         {
-          "title": "Svensk",
-          "locale": "sv",
-          "path": "../../sv/pages/"
+          "title": "Spanish",
+          "locale": "es",
+          "path": "../../es/pages/"
         }
       ]
     }

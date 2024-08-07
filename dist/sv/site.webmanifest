@@ -1,5 +1,5 @@
 {
-	"lang": "sv",
+	"lang": "es",
 	"dir": "ltr",
 	"short_name": "elva",
 	"name": "elva",
@@ -7,7 +7,7 @@
 	"categories": ["business","photo"],
 	"orientation": "portrait-primary",
 	"scope": "http://localhost:8080/",
-	"id": "/?v=1723055298356",
+	"id": "/?v=1723055999119",
 	"start_url": "http://localhost:8080/",
 	"theme_color": "#eceff4",
 	"background_color": "#eceff4",

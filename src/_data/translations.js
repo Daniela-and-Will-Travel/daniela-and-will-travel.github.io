@@ -23,7 +23,7 @@ module.exports = {
         dark: 'Dark',
         light: 'Light'
     },
-    sv: {
+    es: {
         meta: {
             title: 'elva',
             rssTitle: 'RSS Feed',
