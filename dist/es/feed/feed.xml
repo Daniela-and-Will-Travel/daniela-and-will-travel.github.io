@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/es/feed/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:base="http://localhost:8080/">
-    <title>RSS Feed • elva</title>
-    <subtitle>A multilingual clean green 11ty starter theme</subtitle>
+    <title>RSS Feed • Daniela y Will Travel</title>
+    <subtitle>El blog de viajes de Daniela y Will con guías de viaje y consejos para un año sabático por Europa.</subtitle>
 	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
     <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="http://localhost:8080/" />	

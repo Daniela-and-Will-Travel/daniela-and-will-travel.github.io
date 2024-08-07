@@ -1,7 +1,7 @@
 {
     "version": "https://jsonfeed.org/version/1.1",
-    "title": "JSON Feed • elva",
-    "description": "A multilingual clean green 11ty starter theme",
+    "title": "JSON Feed • Daniela y Will Travel",
+    "description": "El blog de viajes de Daniela y Will con guías de viaje y consejos para un año sabático por Europa.",
     "language": "es",
     "home_page_url": "http://localhost:8080/",
     "feed_url": "http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.json",

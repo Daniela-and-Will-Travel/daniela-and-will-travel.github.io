@@ -26,18 +26,6 @@ module.exports = {
 		}
     ],
     es: [
-		{
-			text: 'Om',
-			url: '/om/'
-		},
-		{
-			text: 'Dokumentation',
-			url: '/'
-		},
-		{
-			text: 'GitHub',
-			url: 'https://github.com/scottsweb/elva'
-		}
     ]
 };
   

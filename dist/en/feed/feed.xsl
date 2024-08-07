@@ -12,7 +12,7 @@
 			<main id="content">
 				<div class="entry-content">
 					<p class="notice">This is an RSS feed. Copy and paste the URL into your feed reader. Visit <a href="https://aboutfeeds.com">About Feeds</a> to learn more about RSS.</p>
-					<h1>Recently published</h1>
+					<h1>Recently Published</h1>
 					<ul class="posts">
 						<xsl:for-each select="/atom:feed/atom:entry">
 							<li>
