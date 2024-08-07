@@ -11,8 +11,8 @@
 		<body class="rss-xslt">
 			<main id="content">
 				<div class="entry-content">
-					<p class="notice">Detta är ett RSS feed. Kopiera och klistra in webbadressen i din flödesläsare. Besök <a href="https://aboutfeeds.com">About Feeds</a> för att lära dig mer om RSS.</p>
-					<h1>Nyligen publicerad</h1>
+					<p class="notice">Este es un feed RSS. Copia y pega la URL en tu lector de feeds. Visita <a href="https://aboutfeeds.com">About Feeds</a> para obtener más información sobre RSS.</p>
+					<h1>Publicado Recientemente</h1>
 					<ul class="posts">
 						<xsl:for-each select="/atom:feed/atom:entry">
 							<li>
