@@ -1,0 +1,12 @@
+/* TEAM */
+Designer / Developer: Scott Evans
+Contact: noreply@example.com
+Site: https://scott.ee
+From: Stockholm, Sweden
+Fediverse: https://toot.scott.ee/@scott
+
+/* SITE */
+Last update: 2024-08-07
+Standards: HTML5, CSS3
+Components: elva, Alpine.js
+Software: 11ty
