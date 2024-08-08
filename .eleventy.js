@@ -32,6 +32,8 @@ module.exports = eleventyConfig => {
     // Watch Targets ----------------------------------
 
     eleventyConfig.addWatchTarget('./src/assets');
+    eleventyConfig.addWatchTarget('./styles/tailwind.config.js');
+    eleventyConfig.addWatchTarget('./styles/tailwind.css');
 
     // Layouts ----------------------------------------
 
@@ -118,6 +120,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy({'./src/assets/files': './assets/files'})
     eleventyConfig.addPassthroughCopy({'./src/assets/img': './assets/img'})
     eleventyConfig.addPassthroughCopy({'./src/assets/fonts': './assets/fonts'})
+    eleventyConfig.addPassthroughCopy({'./_tmp/style.css': './style.css'})
 
     // Markdown ----------------------------------------
 

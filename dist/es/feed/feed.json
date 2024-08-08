@@ -24,6 +24,15 @@
             "language": "es"
         },
         {
+            "id": "http://localhost:8080/es/skrift/adding-additional-languages/",
+            "url": "http://localhost:8080/es/skrift/adding-additional-languages/",
+            "title": "Lägger till ytterligare språk",
+            "image": "http://localhost:8080/assets/img/opengraph-default.png",
+            "content_html": "",
+            "date_published": "2023-08-05T00:00:00Z",
+            "language": "es"
+        },
+        {
             "id": "http://localhost:8080/es/skrift/frontmatter/",
             "url": "http://localhost:8080/es/skrift/frontmatter/",
             "title": "Front matter",

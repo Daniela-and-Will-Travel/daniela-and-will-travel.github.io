@@ -556,6 +556,15 @@ a[aria-current="page"] {
     text-decoration: none;
 }
 
+.social-icon {
+    color: var(--link);
+}
+  
+.social-icon:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
 /* home */
 
 .home #content {
@@ -577,7 +586,7 @@ a[aria-current="page"] {
 }
 
 .home .site-intro p {
-    margin: var(--space-s-2xl) auto 0 auto;
+    margin: 0 0 0 0;
     max-width: 550px;
 }
 
@@ -635,6 +644,10 @@ a[aria-current="page"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.copyright{
+    font-size: var(--step--1);
 }
 
 .rss-icon {
