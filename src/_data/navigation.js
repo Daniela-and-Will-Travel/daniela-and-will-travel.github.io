@@ -16,16 +16,24 @@ module.exports = {
 			text: 'About Us',
 			url: '/about/'
 		},
-		{
-			text: 'Instagram',
-			url: 'https://www.instagram.com/danielaandwill'
-		},
-		{
-			text: 'YouTube',
-			url: 'https://youtube.com/@willtheorangeguy'
-		}
     ],
     es: [
+		{
+			text: 'Países',
+			url: '/paises/'
+		},
+		{
+			text: 'Consejos',
+			url: '/consejos/'
+		},
+		{
+			text: 'Planificación',
+			url: '/planificacion/'
+		},
+		{
+			text: 'Sobre Nosotros',
+			url: '/sobre-nosotros/'
+		}
     ]
 };
   

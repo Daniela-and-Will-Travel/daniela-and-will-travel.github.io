@@ -36,6 +36,7 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="/assets/css/bundle.css?v={% version %}">
+        <link rel="stylesheet" href="/style.css?v={% version %}">
 
         <!-- feeds -->
         <link rel="alternate" href="{{ "/feed/feed.xml" | locale_url | htmlBaseUrl(settings.url) }}" type="application/atom+xml" title="{{ 'meta.rssTitle' | translate }} {{ settings.meta.separator }} {{ 'meta.title' | translate }}">
@@ -66,5 +67,7 @@
 
         <!-- scripts -->
         <script src="/assets/js/bundle.js?v={% version %}" defer></script>
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </body>
 </html>
