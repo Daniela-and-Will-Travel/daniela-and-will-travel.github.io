@@ -880,6 +880,54 @@ pre[class*="language-"] {
     color: var(--foreground-soft);
     cursor: not-allowed;
 }
+/* .social span,
+.social a {
+    padding: var(--space-3xs) var(--space-2xs);
+    text-decoration: none;
+    margin-left: var(--space-2xs);
+    background-color: var(--link);
+    color: var(--background);
+    border-radius: var(--step--1);
+    display: inline-block;
+}
+
+.social a:hover,
+.social a.current {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+.social span.disabled {
+    background-color: var(--background-soft);
+    color: var(--foreground-soft);
+    cursor: not-allowed;
+}
+ */
+
+.social-menu {
+    list-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: var(--space-s-m);
+    text-align: right;
+}
+
+.social-menu li {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.social-menu li a {
+    text-decoration: none;
+    letter-spacing: var(--tracking-s);
+}
+
+.social-menu li a:focus {
+    outline-offset: 0.6ch;
+}
 .switch-wrapper .switch + .switch-btn {
 	background: var(--foreground);
 	border-radius: 2em;
