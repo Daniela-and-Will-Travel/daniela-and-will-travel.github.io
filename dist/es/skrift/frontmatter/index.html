@@ -29,8 +29,8 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723131674017">
-        <link rel="stylesheet" href="/style.css?v=1723131674017">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1735587055202">
+        <link rel="stylesheet" href="/style.css?v=1735587055202">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/es/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Daniela y Will Travel">
@@ -191,7 +191,13 @@ seo:
 </article></main>
 
         <!-- footer -->
-        <footer id="footer" class="footer">
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('current-year').textContent = "© 2022 - " + new Date().getFullYear() + " Daniela and Will";
+    });
+</script>
+
+<footer id="footer" class="footer">
 
     <div class="switch-wrapper" x-data x-cloak>
 	<input class="switch" id="darkmode" type="checkbox" value="dark" :checked="$store.elva.theme === 'dark'" />
@@ -217,8 +223,8 @@ seo:
 </div>
 
 
-    <p class="copyright">&copy; 2022-2024 Daniela and Will - <a href="">Privacy</a> - <a href="">Terms</a> - <a href="">Affiliate Disclaimer</a></p>
-
+    <span class="copyright" id="current-year"></span>
+    
     <a href="/es/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="icon-rss" role="img" width="24" height="24">
             <title id="icon-rss">RSS Feed</title>
@@ -229,7 +235,7 @@ seo:
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723131674019" defer></script>
+        <script src="/assets/js/bundle.js?v=1735587055207" defer></script>
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </body>
