@@ -155,9 +155,12 @@ p:has(> picture) {
 }
 
 h1,
-h2,
 h3 {
   max-width: 20ch;
+}
+
+h2 {
+    max-width: none;
 }
 
 mark {
@@ -192,6 +195,7 @@ figure > figcaption::selection {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding-top: 20px;
 }
 
 .travel-guide {
@@ -205,6 +209,10 @@ figure > figcaption::selection {
     .travel-guide {
         flex: 100%;
     }
+}
+
+.center-text {
+    text-align: center!important;
 }
 
 .about-container {
