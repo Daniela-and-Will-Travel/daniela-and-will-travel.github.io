@@ -29,7 +29,8 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1723058303552">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1736220525066">
+        <link rel="stylesheet" href="/style.css?v=1736220525066">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Daniela and Will Travel">
@@ -70,11 +71,12 @@
             </g>
         </svg>
     </a>
+    
     <ul class="navigation-menu">
         
         <li>
             <a 
-                href="/countries/"
+                href="/en/countries/"
                 
             >
                 Countries
@@ -104,23 +106,15 @@
                 About Us
             </a>
         </li>
-        <li>
-            <a 
-                href="https://www.instagram.com/danielaandwill"
-                
-            >
-                Instagram
-            </a>
-        </li>
-        <li>
-            <a 
-                href="https://youtube.com/@willtheorangeguy"
-                
-            >
-                YouTube
-            </a>
-        </li>
     </ul>
+    
+    
+
+<ul class="social-menu" style="text-align: right;">
+	<li><p><a href="https://www.instagram.com/danielaandwill">Instagram</a></p></li>
+	<li><p><a href="https://unsplash.com/@william_vdg" title="Follow William on Unsplash →">Unsp</a><a href="https://unsplash.com/@danielaasada" title="← Follow Daniela on Unsplash">lash</a></p></li>
+	<li><p><a href="https://youtube.com/@willtheorangeguy">YouTube</a></p></li>
+</ul>
 
     <div class="switch-language">
 	
@@ -153,7 +147,7 @@
         <h1 class="entry-title">Image embed example</h1>
         <ul class="meta">
             <li class="meta-date">
-                <time class="entry-date published" datatime="2023-08-03T00:00:00Z">Wednesday, 2 August 2023</time>
+                <time class="entry-date published" datatime="2023-08-03T00:00:00Z">Wednesday 2 August 2023</time>
             </li>
             <li class="meta-reading-time">1 minute to read</li>
         </ul>
@@ -168,7 +162,13 @@
 </article></main>
 
         <!-- footer -->
-        <footer id="footer" class="footer">
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('current-year').textContent = "© 2022 - " + new Date().getFullYear() + " Daniela and Will";
+    });
+</script>
+
+<footer id="footer" class="footer">
 
     <div class="switch-wrapper" x-data x-cloak>
 	<input class="switch" id="darkmode" type="checkbox" value="dark" :checked="$store.elva.theme === 'dark'" />
@@ -194,6 +194,8 @@
 </div>
 
 
+    <p class="copyright" ><span id="current-year"></span> - built with <a href="https://elva.scott.ee/">Elva</a> and <a href="https://fontawesome.com/">Font Awesome</a> on <a href="https://www.11ty.dev/">Eleventy</a></p>
+    
     <a href="/en/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="icon-rss" role="img" width="24" height="24">
             <title id="icon-rss">RSS Feed</title>
@@ -204,6 +206,8 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1723058303554" defer></script>
+        <script src="/assets/js/bundle.js?v=1736220525069" defer></script>
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </body>
 </html>

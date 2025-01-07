@@ -6,37 +6,65 @@ seo:
   description: Daniela and Will's travel blog featuring travel guides and tips and tricks for a gap year throughout Europe or Asia.
 ---
 
-<div class="site-intro">
-  <div style="
+<div style="
+    display: flex;
+    align-items: center;
     background: url('assets/img/en.jpg') no-repeat center center; 
     background-size: cover; 
-    border-radius: 50%; 
-    width: 500px; 
-    height: 500px; 
-    margin: 0 0 0 0;
-  "></div>
-  <div>
+    width: 100%; 
+    height: 100%;
+    margin: 0px;">
+  <div style="flex: 1;"></div>
+  <div style="
+      flex: 1;
+      padding: 200px 200px 200px 20px; 
+      max-width: 33%;
+      color: white;
+      text-align: left;
+      letter-spacing: 0.5px;
+      background: rgba(0, 0, 0, 0.5);">
     <p>
         Welcome to Will and Daniela's Travel Blog! We will be sharing our nine-month trip across (mostly) all of Europe, posting where we went and what we did. Plus, we'll be sharing all of the things we learn through trial and error, so you don't make the same mistakes we did.
     </p>
   </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 32c12.5 0 24.1 6.4 30.8 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9L55.9 480C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8l49 0z"/></svg>
-    <h1>Iceland</h1>
-    <h2 class="subtle">A One-Week Travel Guide</h2>
-    <img src="assets/img/en.jpg">
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 32c12.5 0 24.1 6.4 30.8 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9L55.9 480C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8l49 0z"/></svg>
-    <h1>Norway</h1>
-    <h2 class="subtle">The Best Things to See and Do Around Oslo & Trondheim</h2>
-    <img src="assets/img/en.jpg">
-    <br>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 32c12.5 0 24.1 6.4 30.8 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9L55.9 480C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8l49 0z"/></svg>
-    <h1>Sweden</h1>
-    <h2 class="subtle">Make Sure you Visit IKEA!</h2>
-    <img src="assets/img/en.jpg">
-    <br>
-    <h1>About Daniela</h1>
-    <p>I've always dreamed of exploring the world, I've been wanting to do this since I was about 12. My family has always been big on travel, whether it was to visit relatives scattered across North America, a road trip to Alberta, or even a camping trip. Once I got a little older, I always jumped on every opportunity my school had to offer to travel, and I joined 3 exchange trips to France, Spain, and Germany. Unfortunately, the last one was cancelled due to COVID. Now that I've completed my high school career, I'm taking this trip to learn about all the distinct European cultures and to grow as a person, hopefully finding what I want to study in university.</p>
-    <h1>About Will</h1>
-    <p>While I've been able to travel certain parts of the word with my family, I had never gotten the chance to see the whole of Europe - or even the whole of England! Now that twelve long years of school are over, I'm taking this trip to gain some independence and really see a large portion of the world, before heading off for another four years of school - and who knows - maybe it will turn into eight or even twelve total years. So far, I've already learned more, and experienced way more than I did in high school, and I can't wait to continue to broaden my horizons, grow as a person, and then bring all of those new skills back to my university career and future tech career.</p>
+</div>
+  <div class="travel-guides-container">
+    <div class="travel-guide">
+      <div>
+          <h1 class="center-text"><a style="text-decoration: none;" href="/iceland/">Iceland</a></h1>
+          <h2 class="subtle" style="text-align: center;">A One-Week Travel Guide</h2>
+      </div>
+      <div>
+          <a style="text-decoration: none;" href="/iceland/"><img src="assets/img/en.jpg"></a>
+      </div>
+    </div>
+    <div class="travel-guide">
+      <div>
+          <h1 class="center-text"><a style="text-decoration: none;" href="/iceland/">Iceland</a></h1>
+          <h2 class="subtle" style="text-align: center;">A One-Week Travel Guide</h2>
+      </div>
+      <div>
+          <a style="text-decoration: none;" href="/iceland/"><img src="assets/img/en.jpg"></a>
+      </div>
+    </div>
+    <div class="travel-guide">
+        <div>
+            <h1 class="center-text"><a style="text-decoration: none;" href="/iceland/">Iceland</a></h1>
+            <h2 class="subtle" style="text-align: center;">A One-Week Travel Guide</h2>
+        </div>
+        <div>
+            <a style="text-decoration: none;" href="/iceland/"><img src="assets/img/en.jpg"></a>
+      </div>
+  </div>
+  <br>
+  <div class="about-container">
+    <div class="about-column">
+        <h1>About Daniela</h1>
+        <p>I've always dreamed of exploring the world, I've been wanting to do this since I was about 12. My family has always been big on travel, whether it was to visit relatives scattered across North America, a road trip to Alberta, or even a camping trip. Once I got a little older, I always jumped on every opportunity my school had to offer to travel, and I joined 3 exchange trips to France, Spain, and Germany. Unfortunately, the last one was cancelled due to COVID. Now that I've completed my high school career, I'm taking this trip to learn about all the distinct European cultures and to grow as a person, hopefully finding what I want to study in university.</p>
+    </div>
+    <div class="about-column">
+        <h1>About Will</h1>
+        <p>While I've been able to travel certain parts of the word with my family, I had never gotten the chance to see the whole of Europe - or even the whole of England! Now that twelve long years of school are over, I'm taking this trip to gain some independence and really see a large portion of the world, before heading off for another four years of school - and who knows - maybe it will turn into eight or even twelve total years. So far, I've already learned more, and experienced way more than I did in high school, and I can't wait to continue to broaden my horizons, grow as a person, and then bring all of those new skills back to my university career and future tech career.</p>
+    </div>
+  </div>
 </div>

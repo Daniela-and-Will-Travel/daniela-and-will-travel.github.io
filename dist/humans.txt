@@ -5,7 +5,7 @@ Site: https://daniela-and-will-travel.github.io/
 From: Vancouver, Canada
 
 /* SITE */
-Last update: 2024-08-08
+Last update: 2025-01-07
 Standards: HTML5, CSS3
 Components: elva, Alpine.js
 Software: 11ty
