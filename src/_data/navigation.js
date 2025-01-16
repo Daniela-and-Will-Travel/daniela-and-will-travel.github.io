@@ -4,14 +4,14 @@ module.exports = {
 			text: 'Countries',
 			url: '/countries/'
 		},
-		{
+/* 		{
 			text: 'Tips',
 			url: '/tips/'
 		},
 		{
 			text: 'Planning',
 			url: '/planning/'
-		},
+		}, */
 		{
 			text: 'About Us',
 			url: '/about/'
@@ -22,14 +22,14 @@ module.exports = {
 			text: 'Países',
 			url: '/paises/'
 		},
-		{
+/* 		{
 			text: 'Consejos',
 			url: '/consejos/'
 		},
 		{
 			text: 'Planificación',
 			url: '/planificacion/'
-		},
+		}, */
 		{
 			text: 'Sobre Nosotros',
 			url: '/sobre-nosotros/'

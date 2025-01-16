@@ -24,6 +24,15 @@
             "language": "en"
         },
         {
+            "id": "http://localhost:8080/en/writing/adding-additional-languages/",
+            "url": "http://localhost:8080/en/writing/adding-additional-languages/",
+            "title": "Adding additional languages",
+            "image": "http://localhost:8080/assets/img/opengraph-default.png",
+            "content_html": "",
+            "date_published": "2023-08-05T00:00:00Z",
+            "language": "en"
+        },
+        {
             "id": "http://localhost:8080/en/writing/frontmatter/",
             "url": "http://localhost:8080/en/writing/frontmatter/",
             "title": "Front matter",
