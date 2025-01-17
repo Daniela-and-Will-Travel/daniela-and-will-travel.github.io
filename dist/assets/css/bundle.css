@@ -739,6 +739,15 @@ a[aria-current="page"] {
     display: block;
 }
 
+
+/* SVG Map */
+svg .svg-map {
+    fill: var(--foreground);
+}
+
+svg .svg-map:hover {
+    fill: var(--link);
+}
 code[class*="language-"],
 pre[class*="language-"] {
     color: var(--code-default);
