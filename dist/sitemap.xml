@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://localhost:8080/en/writing/video-embed-example/</loc>
-		<lastmod>2023-08-01T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/</loc>
 		<lastmod>2023-08-01T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
@@ -37,6 +31,12 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>http://localhost:8080/en/posts/docs/image-embed-example/</loc>
+		<lastmod>2023-08-03T00:00:00Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>http://localhost:8080/en/writing/frontmatter/</loc>
 		<lastmod>2023-08-04T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
@@ -49,8 +49,8 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>http://localhost:8080/en/writing/adding-additional-languages/</loc>
-		<lastmod>2023-08-05T00:00:00Z</lastmod>
+		<loc>http://localhost:8080/en/posts/docs/frontmatter/</loc>
+		<lastmod>2023-08-04T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -85,6 +85,18 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>http://localhost:8080/en/writing/video-embed-example/</loc>
+		<lastmod>2024-08-08T15:48:58Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://localhost:8080/en/posts/docs/video-embed-example/</loc>
+		<lastmod>2024-08-08T15:48:58Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>http://localhost:8080/es/</loc>
 		<lastmod>2024-08-08T15:48:58Z</lastmod>
 		<changefreq>monthly</changefreq>
@@ -93,12 +105,6 @@
 	<url>
 		<loc>http://localhost:8080/es/om/</loc>
 		<lastmod>2024-08-08T15:48:58Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/countries/</loc>
-		<lastmod>2025-01-07T06:32:23Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
