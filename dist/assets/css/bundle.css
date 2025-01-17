@@ -503,7 +503,7 @@ body {
 }
 
 #content {
-    padding: var(--space-m) var(--space-m-3xl) var(--space-m) var(--space-m-3xl);
+    padding: 0px var(--space-m-3xl) var(--space-m) var(--space-m-3xl);
     flex-grow: 1;
 }
 
