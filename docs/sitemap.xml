@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://localhost:8080/en/writing/video-embed-example/</loc>
-		<lastmod>2023-08-01T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>http://localhost:8080/es/skrift/exempel-pa-videoinbaddning/</loc>
 		<lastmod>2023-08-01T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/writing/markdown-test/</loc>
-		<lastmod>2023-08-02T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -25,32 +13,14 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>http://localhost:8080/en/writing/image-embed-example/</loc>
-		<lastmod>2023-08-03T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>http://localhost:8080/es/skrift/bildinbaddnings-exempel/</loc>
 		<lastmod>2023-08-03T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>http://localhost:8080/en/writing/frontmatter/</loc>
-		<lastmod>2023-08-04T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>http://localhost:8080/es/skrift/frontmatter/</loc>
 		<lastmod>2023-08-04T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/writing/getting-started/</loc>
-		<lastmod>2023-08-06T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -62,37 +32,31 @@
 	</url>
 	<url>
 		<loc>http://localhost:8080/en/</loc>
-		<lastmod>2024-12-30T20:31:20Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/about/</loc>
-		<lastmod>2024-12-30T20:31:20Z</lastmod>
+		<lastmod>2024-08-08T15:48:58Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>http://localhost:8080/es/</loc>
-		<lastmod>2024-12-30T20:31:20Z</lastmod>
+		<lastmod>2024-08-08T15:48:58Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>http://localhost:8080/es/om/</loc>
-		<lastmod>2024-12-30T20:31:20Z</lastmod>
+		<lastmod>2024-08-08T15:48:58Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://localhost:8080/en/about/</loc>
+		<lastmod>2025-01-17T02:52:06Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>http://localhost:8080/</loc>
-		<lastmod>2025-01-07T02:35:34Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/countries/</loc>
-		<lastmod>2025-01-07T02:35:34Z</lastmod>
+		<lastmod>2025-01-17T02:52:06Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
