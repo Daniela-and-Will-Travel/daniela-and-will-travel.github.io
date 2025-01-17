@@ -6,7 +6,7 @@
 	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
     <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="http://localhost:8080/" />	
-	<updated>2024-08-08T15:48:58Z</updated>
+	<updated>2023-08-06T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
