@@ -1,0 +1,38 @@
+<pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: page
+title: Main page title, heading level one
+date: 2023-08-04
+modified: 2023-08-04
+thumbnail: /assets/img/test.jpg
+thumbnailDescription: An alt text description for the thumbnail image
+tags: 'page-demo'
+draft: true
+eleventyExcludeFromCollections: true
+seo:
+  title: Custom title (defaults to title)
+  description: SEO description
+  slug: mmm-slugs
+  changeFrequency: daily
+  sitemapPriority: '1.0'
+  excludeFromSitemap: true
+  noIndex: true</span>
+<span class="token punctuation">---</span></span></code></pre>
+<ul>
+<li><code>layout</code> — <a href="https://www.11ty.dev/docs/layouts/">Page layout</a> for the page. Default is <code>post</code> for posts and <code>page</code> for pages.</li>
+<li><code>title</code> — The title of the current page.</li>
+<li><code>date</code> — <a href="https://www.11ty.dev/docs/dates/">Published date</a>. You can set special values here like <code>Last Modified</code>.</li>
+<li><code>modifed</code> — Modified date.</li>
+<li><code>thumbnail</code> — Relative path to thumbnail / opengraph image. Size <code>1200px x 630px</code>.</li>
+<li><code>thumbnailDescription</code> — Alt text for thumbnail.</li>
+<li><code>tags</code> – <a href="https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags">Tags</a> are currently used for custom body classes.</li>
+<li><code>draft</code> — Draft pages will appear locally and on staging but not in production.</li>
+<li><code>eleventyExcludeFromCollections</code> — <a href="https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections">Hide from 11ty collections</a>.</li>
+<li><code>seo.title</code> — Set custom page title for search engines and opengraph.</li>
+<li><code>seo.description</code> — Set the page description for search engines and opengraph.</li>
+<li><code>seo.slug</code> — Set a new slug for the page that is different from the filename.</li>
+<li><code>seo.changeFrequency</code> — <a href="https://www.sitemaps.org/protocol.html#changefreqdef">How often does this page change</a>?</li>
+<li><code>seo.sitemapPriority</code> — <a href="https://www.sitemaps.org/protocol.html#prioritydef">The priority of this URL relative to other URLs on your site</a>.</li>
+<li><code>seo.excludeFromSitemap</code> — Hide this page from your sitemap.xml.</li>
+<li><code>seo.noIndex</code> — Discourage search engine indexing.</li>
+</ul>
+<p>Nearly all front matter is optional, except for titles (and dates for posts).</p>
