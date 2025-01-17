@@ -19,20 +19,8 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>http://localhost:8080/en/writing/frontmatter/</loc>
-		<lastmod>2023-08-04T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>http://localhost:8080/es/skrift/frontmatter/</loc>
 		<lastmod>2023-08-04T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/es/skrift/adding-additional-languages/</loc>
-		<lastmod>2023-08-05T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -44,12 +32,6 @@
 	</url>
 	<url>
 		<loc>http://localhost:8080/en/</loc>
-		<lastmod>2024-08-08T15:48:58Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/about/</loc>
 		<lastmod>2024-08-08T15:48:58Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
@@ -67,8 +49,14 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>http://localhost:8080/en/about/</loc>
+		<lastmod>2025-01-17T02:52:06Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>http://localhost:8080/</loc>
-		<lastmod>2025-01-07T06:32:23Z</lastmod>
+		<lastmod>2025-01-17T02:52:06Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
