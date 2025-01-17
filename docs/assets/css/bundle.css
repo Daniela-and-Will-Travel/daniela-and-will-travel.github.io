@@ -59,6 +59,13 @@ svg {
 	display: block;
 }
 
+/* Fix svg in Firefox */
+svg {
+	overflow: visible;
+	width: 100%;
+	height: 100%
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -739,6 +746,15 @@ a[aria-current="page"] {
     display: block;
 }
 
+
+/* SVG Map */
+svg .svg-map {
+    fill: var(--foreground);
+}
+
+svg .svg-map:hover {
+    fill: var(--link);
+}
 code[class*="language-"],
 pre[class*="language-"] {
     color: var(--code-default);
