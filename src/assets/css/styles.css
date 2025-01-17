@@ -316,7 +316,8 @@ body {
     align-items: center;
     font-family: var(--font-headings);
     flex-direction: column;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: x-large;
 }
 
 @media (min-width: 600px) {
@@ -524,8 +525,18 @@ svg .svg-map {
     fill: var(--foreground);
 }
 
+svg .svg-map-disabled {
+    fill: var(--nord3);
+}
+
 svg .svg-map:hover {
     fill: var(--link);
+}
+
+svg .svg-map-disabled:hover {
+    fill: var(--nord3);
+    cursor: not-allowed;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
