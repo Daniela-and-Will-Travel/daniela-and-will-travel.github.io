@@ -569,3 +569,46 @@ svg .svg-map {
 svg .svg-map:hover {
     fill: var(--link);
 }
+
+/* Home Hero */
+.home-hero {
+    display: flex;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1728763576800-8f197d048758') no-repeat center center; 
+    background-size: cover; 
+    width: 100%; 
+    height: 100%;
+    margin: 0px;
+}
+
+.home-hero-spacer {
+    flex: 1;
+}
+
+.home-hero-content {
+    flex: 1;
+    padding: 200px 200px 200px 20px; 
+    max-width: 33%;
+    color: white;
+    text-align: left;
+    letter-spacing: 0.5px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        background: none;
+    }
+
+    .home-hero-spacer {
+        display: none;
+    }
+
+    .home-hero-content {
+        background: none;
+        padding: 0 0 0 0;
+        max-width: 100%;
+        text-align: center;
+    }
+}
