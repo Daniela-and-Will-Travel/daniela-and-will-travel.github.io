@@ -59,6 +59,13 @@ svg {
 	display: block;
 }
 
+/* Fix svg in Firefox */
+svg {
+	overflow: visible;
+	width: 100%;
+	height: 100%
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,

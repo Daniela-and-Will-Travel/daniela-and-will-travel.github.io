@@ -559,3 +559,13 @@ a[aria-current="page"] {
     font-size: var(--step--1);
     display: block;
 }
+
+
+/* SVG Map */
+svg .svg-map {
+    fill: var(--foreground);
+}
+
+svg .svg-map:hover {
+    fill: var(--link);
+}
