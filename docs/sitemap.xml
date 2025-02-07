@@ -31,32 +31,26 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>http://localhost:8080/es/om/</loc>
+		<lastmod>2024-12-30T20:31:20Z</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>http://localhost:8080/en/</loc>
-		<lastmod>2024-08-08T15:48:58Z</lastmod>
+		<lastmod>2025-02-07T09:58:59Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>http://localhost:8080/es/</loc>
-		<lastmod>2024-08-08T15:48:58Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/es/om/</loc>
-		<lastmod>2024-08-08T15:48:58Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://localhost:8080/en/about/</loc>
-		<lastmod>2025-01-17T02:52:06Z</lastmod>
+		<lastmod>2025-02-07T09:58:59Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>http://localhost:8080/</loc>
-		<lastmod>2025-01-17T03:16:33Z</lastmod>
+		<lastmod>2025-02-07T09:58:59Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
