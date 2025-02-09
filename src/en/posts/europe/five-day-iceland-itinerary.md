@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Five Day Iceland Itinerary
+title: Five Days in Reykjavik
 date: 2025-02-07
 modified: 2025-02-08
 tags:
