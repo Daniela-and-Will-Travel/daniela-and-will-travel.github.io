@@ -2,7 +2,7 @@
 layout: post
 title: Five Day Iceland Itinerary
 date: 2025-02-07
-modified: 2025-02-07
+modified: 2025-02-08
 tags:
  - europe
  - iceland
@@ -25,7 +25,7 @@ Here is what we did in our time in Iceland, along with some tips based on our ex
 
 ## Arriving in Iceland
 
-The only way to arrive in Iceland is by plane… _unless you’re coming from Greenland in the summer._ Reykjavik Keflavik `RKV` is the only international airport in the country, about an hour and a half from Reykjavik. If you don’t have a car (like us), you have two options: bus or taxi. We took an Airport Direct bus to the city center. Airport Direct has a booth in the arrival’s hall of the airport, so you can book your ride there once you have landed and gotten organized.
+The only way to arrive in Iceland is by plane… _unless you're coming from Greenland in the summer._ Reykjavik Keflavik `RKV` is the only international airport in the country, about an hour and a half from Reykjavik. If you don’t have a car (like us), you have two options: bus or taxi. We took an Airport Direct bus to the city center. Airport Direct has a booth in the arrival’s hall of the airport, so you can book your ride there once you have landed and gotten organized.
 <br>
 When you get off the Airport Direct bus, most accommodation is a bus ride or short walk away. If you haven’t had time to pick up a city bus pass, don’t worry, as you can pay your fare in cash with the bus driver.
 
@@ -43,13 +43,13 @@ When you get off the Airport Direct bus, most accommodation is a bus ride or sho
 
 We started off our trip by exploring Reykjavik, visiting a variety of museums and attractions. Near our hostel was the Botanical Garden, where we actually saw some flowers blooming. Once we made it to the city centre, our first stop was an odd one, the Phallic Museum*, which was filled with all sorts of weird yet interesting facts.
 
-> ❕ Daniela: My favourite was the mythological creature section.
+>
 
 We continued to the harbour, then began our ambitious attempt to maximize the value in our Reykjavik City Card by visiting as many museums as we could during the 24h period. Starting at the National Museum of Iceland, we then visited the National Gallery of Iceland, followed by the Reykjavik Art Museum, the Reykjavik Museum of Photography, and lastly to the Maritime Museum. We also snapped some photos of Hallgrimskirja (a very cool, concrete church) as we walked by, and then again at night – where it had been brightly lit in neon pink.
 
 After exploring the city, we had a little adventure and hiked up Mt. Esja the following day. Local busses can be found by searching for “Mt. Esja” on Google Maps, and they drop you off about 2km from the base of the mountain (where we made [a new friend from Australia](linktoinstagram)). The hike to the ‘Steinn’ was a moderate level hike, approximately 7km out and back from the base, where we gained approximately 600m of elevation. There is a path to summit the mountain, where it does get steeper, however we would have run out of daylight, and we did NOT want to make our way down the mountain in the dark. Oh, and we had to catch the bus back, so we only made it to the base of the peak…one day perhaps. If you choose to do this hike, make sure you check the bus timetables before leaving, so you can plan your hiking speed and route accordingly – the busses don’t run all day, especially in the winter off-season.
 
-> ❕ Will: The bus timetables can usually be found on the bus stop you get dropped off at, near the base of Mt. Esja.
+> ❕ Note: The bus timetables can usually be found on the bus stop you get dropped off at, near the base of Mt. Esja.
 
 > ❕ Tip: there are two paths to Steinn, take the harder one on the way up and the easier one on the way down. Or go the easy way in both directions.
 
@@ -64,7 +64,7 @@ A trip to Iceland would not be complete without touring the many natural attract
 - **Kerið Crater:** Daniela's person favourite, the stunning sapphire coloured lake is contrasted by the red slopes caused by iron oxide.<br>_Fun fact: It is theorized by geologists that the caldera was formed when a volcano erupted and collapsed onto itself about 6,500 years ago._
 - **Celio Corner Store:** We stopped for a quick bathroom break before the hour-long drive back to Reykjavik. There were quite a variety of Icelandic goodies, including Icelandic chocolate!
 
-Some additional stops that could have been done by driving include:
+Some additional stops that could have been done by driving include:**find 2 more stops**
 
 - **Tomato Farm:** Visit a local Icelandic tomato farm that also has a restaurant for tasting the tomatoes! They produce thousands of tomatoes every day and ship them to supermarkets all over Iceland.
 
@@ -75,8 +75,6 @@ Finally, our stay in Iceland would have been lacking if we did not experience at
 > ❕ Tip If you want an even more aesthetic time, go about 1h before the sun sets.
 
 We then headed over to the Nautholsvik Geothermal Beach, where the locals go. There was an outdoor hot tub heated with geothermal water and a sandy beach where you can cool off in the ocean - it was absolutely frigid. The funny part was, it was separated from the main ocean, so the water was a tiny bit less icy. Locals on the other hand waded right into the ocean itself and floated along the coast. There were even people doing a swimming workout; however, we did notice they brought along insulated gloves and little booties – might be a good idea for next time.
-
-> ❕ Daniela: I went into the little section up to my neck, while Will took photos from afar.
 
 > ❕ Tip: In hindsight, we should have gone to the Geothermal Beach first and then to the Sky Lagoon.
 
