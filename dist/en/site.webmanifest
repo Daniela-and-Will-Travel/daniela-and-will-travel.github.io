@@ -7,15 +7,15 @@
 	"categories": ["travel","blog"],
 	"orientation": "portrait-primary",
 	"scope": "http://localhost:8080/",
-	"id": "/?v=1739458208032",
+	"id": "/?v=1739458549727",
 	"start_url": "http://localhost:8080/",
 	"theme_color": "#eceff4",
 	"background_color": "#eceff4",
 	"display": "minimal-ui",
 	"icons": [
 		{
-			"src": "http://localhost:8080/assets/img/icon.svg",
-			"type": "image/svg+xml",
+			"src": "http://localhost:8080/assets/img/icon.png",
+			"type": "image/png",
 			"sizes": "any",
 			"purpose": "any maskable"
 		},
