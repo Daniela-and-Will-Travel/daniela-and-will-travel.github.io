@@ -23,7 +23,7 @@ The world's largest volcanic island, Iceland is a land of fire and ice. With thi
 
 Here is what we did in our time in Iceland, along with some tips based on our experience.
 
-![](https://cvws.icloud-content.com/S/ATAhq0bBudqJbHpICgeiMKAEuhoP/IMG_7056.JPG)
+{% image "/assets/img/posts/europe/IMG_6912.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
 
 ## Arriving in Iceland
 
@@ -45,9 +45,17 @@ When you get off the Airport Direct bus, most accommodation is a bus ride or sho
 
 We started off our trip by exploring Reykjavik, visiting a variety of museums and attractions. Near our hostel was the Botanical Garden, where we actually saw some flowers blooming. Once we made it to the city centre, our first stop was an odd one, the Phallic Museum*, which was filled with all sorts of weird yet interesting facts.
 
+{% image "/assets/img/posts/europe/IMG_7175.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+
+{% image "/assets/img/posts/europe/IMG_6788.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+
 We continued to the harbour, then began our ambitious attempt to maximize the value in our Reykjavik City Card by visiting as many museums as we could during the 24h period. Starting at the National Museum of Iceland, we then visited the National Gallery of Iceland, followed by the Reykjavik Art Museum, the Reykjavik Museum of Photography, and lastly to the Maritime Museum. We also snapped some photos of Hallgrimskirja (a very cool, concrete church) as we walked by, and then again at night – where it had been brightly lit in neon pink.
 
+{% image "/assets/img/posts/europe/IMG_7056.jpg", "", "100vh", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+
 After exploring the city, we had a little adventure and hiked up Mt. Esja the following day. Local busses can be found by searching for “Mt. Esja” on Google Maps, and they drop you off about 2km from the base of the mountain (where we made [a new friend from Australia](linktoinstagram)). The hike to the ‘Steinn’ was a moderate level hike, approximately 7km out and back from the base, where we gained approximately 600m of elevation. There is a path to summit the mountain, where it does get steeper, however we would have run out of daylight, and we did NOT want to make our way down the mountain in the dark. Oh, and we had to catch the bus back, so we only made it to the base of the peak…one day perhaps. If you choose to do this hike, make sure you check the bus timetables before leaving, so you can plan your hiking speed and route accordingly – the busses don’t run all day, especially in the winter off-season.
+
+{% image "/assets/img/posts/europe/IMG_9501.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
 
 > ❕ Note: The bus timetables can usually be found on the bus stop you get dropped off at, near the base of Mt. Esja.
 
@@ -64,6 +72,10 @@ A trip to Iceland would not be complete without touring the many natural attract
 - **Kerið Crater:** Daniela's person favourite, the stunning sapphire coloured lake is contrasted by the red slopes caused by iron oxide.<br>_Fun fact: It is theorized by geologists that the caldera was formed when a volcano erupted and collapsed onto itself about 6,500 years ago._
 - **Celio Corner Store:** We stopped for a quick bathroom break before the hour-long drive back to Reykjavik. There were quite a variety of Icelandic goodies, including Icelandic chocolate!
 
+{% image "/assets/img/posts/europe/IMG_6893.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/europe/IMG_6922.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/europe/IMG_6956.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+
 Some additional stops that could have been done by driving include:**find 2 more stops**
 
 - **Tomato Farm:** Visit a local Icelandic tomato farm that also has a restaurant for tasting the tomatoes! They produce thousands of tomatoes every day and ship them to supermarkets all over Iceland.
@@ -71,6 +83,8 @@ Some additional stops that could have been done by driving include:**find 2 more
 ### Geothermal Spas
 
 Finally, our stay in Iceland would have been lacking if we did not experience at least one geothermal spa. We decided to try Reykjavik’s newest addition, the Sky Lagoon. Crystal clear waters, a warm waterfall, and views of the ocean as far as the eye can see… and did we mention a swim up bar? We went first thing in the morning, and it really lived up to our expectations. There were three different packages available: the Pure Lite, Pure, and Sky. If you have the cash to spend, we recommend the Pure package, however the Pure Lite was sufficient for us. (Add link to page) If the Sky Lagoon wasn’t enough to get a full hot spring experience, make sure to check out the classic Blue Lagoon.
+
+{% image "/assets/img/posts/europe/IMG_6976.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
 
 > ❕ Tip If you want an even more aesthetic time, go about 1h before the sun sets.
 
