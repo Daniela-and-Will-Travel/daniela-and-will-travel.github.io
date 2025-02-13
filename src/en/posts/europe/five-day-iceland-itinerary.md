@@ -23,6 +23,8 @@ The world's largest volcanic island, Iceland is a land of fire and ice. With thi
 
 Here is what we did in our time in Iceland, along with some tips based on our experience.
 
+![](https://cvws.icloud-content.com/S/ATAhq0bBudqJbHpICgeiMKAEuhoP/IMG_7056.JPG)
+
 ## Arriving in Iceland
 
 The only way to arrive in Iceland is by plane… _unless you're coming from Greenland in the summer._ Reykjavik Keflavik `RKV` is the only international airport in the country, about an hour and a half from Reykjavik. If you don’t have a car (like us), you have two options: bus or taxi. We took an Airport Direct bus to the city center. Airport Direct has a booth in the arrival’s hall of the airport, so you can book your ride there once you have landed and gotten organized.
