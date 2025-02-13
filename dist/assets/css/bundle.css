@@ -530,6 +530,18 @@ body {
     color: var(--foreground);
 }
 
+.site-logo svg .cls-1 {
+    fill: var(--foreground);
+}
+
+.site-logo svg .cls-2 {
+    fill: none;
+    stroke: #afe2e7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: .6px;
+}
+
 .site-logo:focus {
     outline: none;
 }
