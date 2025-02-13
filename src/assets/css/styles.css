@@ -350,7 +350,7 @@ body {
 
 .site-logo svg .cls-2 {
     fill: none;
-    stroke: #afe2e7;
+    stroke: var(--foreground);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: .6px;
