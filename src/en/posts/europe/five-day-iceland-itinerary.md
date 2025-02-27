@@ -23,7 +23,9 @@ The world's largest volcanic island, Iceland is a land of fire and ice. With thi
 
 Here is what we did in our time in Iceland, along with some tips based on our experience.
 
-{% image "/assets/img/posts/europe/IMG_6912.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
+<div style="transform: rotate(180deg);">
+{% image "/assets/img/posts/europe/IMG_6912.jpg", "", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
+</div>
 
 ## Arriving in Iceland
 
