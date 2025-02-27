@@ -45,8 +45,6 @@ When you get off the Airport Direct bus, most accommodation is a bus ride or sho
 
 We started off our trip by exploring Reykjavik, visiting a variety of museums and attractions. Near our hostel was the Botanical Garden, where we actually saw some flowers blooming. Once we made it to the city centre, our first stop was an odd one, the Phallic Museum*, which was filled with all sorts of weird yet interesting facts.
 
-{% image "/assets/img/posts/europe/IMG_7175.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
-
 {% image "/assets/img/posts/europe/IMG_6788.jpg", "", "100vw", "Description", "rounded", "lazy", "auto", "async", "", "" %}
 
 We continued to the harbour, then began our ambitious attempt to maximize the value in our Reykjavik City Card by visiting as many museums as we could during the 24h period. Starting at the National Museum of Iceland, we then visited the National Gallery of Iceland, followed by the Reykjavik Art Museum, the Reykjavik Museum of Photography, and lastly to the Maritime Museum. We also snapped some photos of Hallgrimskirja (a very cool, concrete church) as we walked by, and then again at night – where it had been brightly lit in neon pink.
