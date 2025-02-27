@@ -13,8 +13,5 @@ eleventyExcludeFromCollections: false
 seo:
   title: Four Months in Southeast Asia
   description: An overview of how we planned and executed our four month trip through Southeast Asia!
-  changeFrequency: daily
-  sitemapPriority: '1.0'
-  excludeFromSitemap: true
-  noIndex: true
+  changeFrequency: never
 ---

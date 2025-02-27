@@ -132,14 +132,6 @@ blockquote:not([class]) p:last-of-type {
     font-weight: normal;
 }
 
-blockquote p::before {
-    content: open-quote;
-}
-  
-blockquote p::after {
-    content: close-quote;
-}
-
 h4,
 h5,
 h6,
