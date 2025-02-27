@@ -15,6 +15,24 @@
     ],
     "items": [
         {
+            "id": "http://localhost:8080/en/writing/nine-months-europe/",
+            "url": "http://localhost:8080/en/writing/nine-months-europe/",
+            "title": "Nine Months in Europe",
+            "image": "http://localhost:8080/assets/img/opengraph-default.png",
+            "content_html": "",
+            "date_published": "2025-02-16T00:00:00Z",
+            "language": "en"
+        },
+        {
+            "id": "http://localhost:8080/en/writing/four-months-asia/",
+            "url": "http://localhost:8080/en/writing/four-months-asia/",
+            "title": "Four Months in Southeast Asia",
+            "image": "http://localhost:8080/assets/img/opengraph-default.png",
+            "content_html": "",
+            "date_published": "2025-02-16T00:00:00Z",
+            "language": "en"
+        },
+        {
             "id": "http://localhost:8080/en/writing/five-day-iceland-itinerary/",
             "url": "http://localhost:8080/en/writing/five-day-iceland-itinerary/",
             "title": "Five Days in Reykjavik",
