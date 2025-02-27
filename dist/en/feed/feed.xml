@@ -6,12 +6,28 @@
 	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
     <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="http://localhost:8080/" />	
-	<updated>2025-02-07T00:00:00Z</updated>
+	<updated>2025-02-16T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
 		<email>danielaandwilltravel@gmail.com</email>
 	</author>
+	<entry>
+		<title>Nine Months in Europe</title>
+		<link href="http://localhost:8080/en/writing/nine-months-europe/" />
+		<updated>2025-02-16T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/nine-months-europe/</id>
+		<content xml:lang="en" type="html"></content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Four Months in Southeast Asia</title>
+		<link href="http://localhost:8080/en/writing/four-months-asia/" />
+		<updated>2025-02-16T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/four-months-asia/</id>
+		<content xml:lang="en" type="html"></content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
 	<entry>
 		<title>Five Days in Reykjavik</title>
 		<link href="http://localhost:8080/en/writing/five-day-iceland-itinerary/" />
