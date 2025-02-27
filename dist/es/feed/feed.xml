@@ -33,14 +33,6 @@
 		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
 	<entry>
-		<title>Lägger till ytterligare språk</title>
-		<link href="http://localhost:8080/es/skrift/adding-additional-languages/" />
-		<updated>2023-08-05T00:00:00Z</updated>
-		<id>http://localhost:8080/es/skrift/adding-additional-languages/</id>
-		<content xml:lang="es" type="html"></content>
-		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
-	</entry>
-	<entry>
 		<title>Front matter</title>
 		<link href="http://localhost:8080/es/skrift/frontmatter/" />
 		<updated>2023-08-04T00:00:00Z</updated>
