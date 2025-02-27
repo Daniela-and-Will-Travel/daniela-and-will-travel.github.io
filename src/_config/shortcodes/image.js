@@ -41,7 +41,7 @@ module.exports = async function(src, alt, sizes, caption = '', classes = '', loa
     };
     
     const generated = Image.generateHTML(meta, imageAttributes);
-    const affiliateText = '<div class="bottom-left-text">Like this image? License it on <a href="https://www.shutterstock.com/g/danielaasada">Shutter</a><a href="https://www.shutterstock.com/g/willtheorangeguy">stock</a></div>';
+    const affiliateText = '<div class="bottom-left-text">Like this image? License it on <a href="https://www.shutterstock.com/g/danielaasada" target="_blank">Shutter</a><a href="https://www.shutterstock.com/g/willtheorangeguy" target="_blank">stock</a></div>';
     if (caption) {
         return `<figure>${generated}<figcaption>${caption}</figcaption>${affiliateText}</figure>`;
     }
