@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon" href="http://localhost:8080/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1740724932483">
-        <link rel="stylesheet" href="/style.css?v=1740724932483">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1740728505163">
+        <link rel="stylesheet" href="/style.css?v=1740728505163">
 
         <!-- feeds -->
         <link rel="alternate" href="http://localhost:8080/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Daniela and Will Travel">
@@ -47,6 +47,9 @@
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#2e3440">
         
         
+
+        <!-- GetYourGuide Analytics -->
+        <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="8RTQF4P"></script>
 
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
@@ -221,7 +224,7 @@
 </div>
 
 
-    <p class="copyright" ><span id="current-year"></span> - built with <a href="https://elva.scott.ee/">Elva</a> on <a href="https://fontawesome.com/">Font Awesome</a> + <a href="https://www.11ty.dev/">Eleventy</a></p>
+    <p class="copyright" ><span id="current-year"></span> - built with <a href="https://elva.scott.ee/">Elva</a> + <a href="https://fontawesome.com/">Font Awesome</a> on <a href="https://www.11ty.dev/">Eleventy</a></p>
     
     <a href="/en/feed/feed.xml" class="rss-icon" aria-label="RSS Feed" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="icon-rss" role="img" width="24" height="24">
@@ -233,8 +236,24 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1740724932489" defer></script>
+        <script src="/assets/js/bundle.js?v=1740728505168" defer></script>
         <!-- 100% privacy-first analytics -->
         <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <!--Open all external links in new window-->
+        <script>
+            (function () {
+                const links = document.querySelectorAll("a[href^='https://'], a[href^='http://']")
+                const host = window.location.hostname
+
+                const isInternalLink = link => new URL(link).hostname === host
+
+                links.forEach(link => {
+                    if (isInternalLink(link)) return
+
+                    link.setAttribute("target", "_blank")
+                    link.setAttribute("rel", "noopener")
+                })
+                })();
+        </script>
     </body>
 </html>
