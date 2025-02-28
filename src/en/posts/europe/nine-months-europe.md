@@ -12,8 +12,5 @@ eleventyExcludeFromCollections: false
 seo:
   title: Nine Months in Europe 
   description: An overview of how we planned and executed our entire nine month Europe trip!
-  changeFrequency: daily
-  sitemapPriority: '1.0'
-  excludeFromSitemap: true
-  noIndex: true
+  changeFrequency: never
 ---
