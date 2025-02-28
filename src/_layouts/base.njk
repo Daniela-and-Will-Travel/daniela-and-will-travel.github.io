@@ -14,6 +14,7 @@
         <!-- title / description -->
         <title>{{ t }}</title>
 		<meta name="description" content="{{ d }}">
+        <!--AWIN BOOKING.com PARTNER-->
 
         <!-- canonical / alternates -->
         <link rel="canonical" href="{{ u }}">
@@ -46,7 +47,8 @@
         {% if (settings.isProduction or settings.isStaging) and settings.cdn %}<link rel="dns-prefetch" href="//i0.wp.com">{% endif %}
 
         <!-- everything else -->
-        <link rel="manifest" href="{{ "/site.webmanifest" | locale_url | htmlBaseUrl(settings.url) }}"">
+        <meta name="google-site-verification" content="psmCoxaIXJaVMDwyrHNjYp_iQOYMFTchrtIciPl2EQ4" />
+        <link rel="manifest" href="{{ "/site.webmanifest" | locale_url | htmlBaseUrl(settings.url) }}">
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ settings.themeColorLight }}">
         <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="{{ settings.themeColorDark }}">
         {% if settings.isStaging or noIndex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
