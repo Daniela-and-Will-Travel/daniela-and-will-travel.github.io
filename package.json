@@ -54,5 +54,8 @@
     "rimraf": "^5.0.7",
     "tailwindcss": "^3.4.9",
     "terser": "^5.31.1"
+  },
+  "dependencies": {
+    "markdown-it-for-inline": "^2.0.1"
   }
 }
