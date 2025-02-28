@@ -273,10 +273,6 @@ table td {
     padding: var(--space-2xs);
 }
 
-table tbody tr:nth-child(odd) {
-    background-color: var(--background-soft);
-}
-
 h1,
 h2,
 h3,
