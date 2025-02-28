@@ -49,6 +49,12 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>http://localhost:8080/en/writing/five-day-iceland-itinerary/</loc>
+		<lastmod>2025-02-07T00:00:00Z</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>http://localhost:8080/en/</loc>
 		<lastmod>2025-02-07T09:58:59Z</lastmod>
 		<changefreq>monthly</changefreq>
@@ -58,6 +64,18 @@
 		<loc>http://localhost:8080/es/</loc>
 		<lastmod>2025-02-07T09:58:59Z</lastmod>
 		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://localhost:8080/en/writing/four-months-asia/</loc>
+		<lastmod>2025-02-16T00:00:00Z</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>http://localhost:8080/en/writing/nine-months-europe/</loc>
+		<lastmod>2025-02-16T00:00:00Z</lastmod>
+		<changefreq>never</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
