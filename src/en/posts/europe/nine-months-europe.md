@@ -15,8 +15,6 @@ seo:
   changeFrequency: never
 ---
 
-**image**
-
 Planning a long trip is no easy feat, it requires weeks of research and preparation, all in hope that everything works out. This article aims to ease the stress that comes along with planning a multi-month trip to Europe, specifically nine months as we did in 2022-2023.
 
 ### Table of Contents
@@ -28,6 +26,8 @@ Planning a long trip is no easy feat, it requires weeks of research and preparat
 - [Where to go](#where-to-go)
 - [How to get around](#get-around)
 - [Quick Itinerary](#itinerary)
+
+**image**
 
 <h2 id="how-long">How Long to Stay</h2>
 
@@ -76,6 +76,8 @@ Money makes the world go round, so the saying goes. But it is possible to keep c
 - Pick and choose paid activities: Nothing’s cheaper than free
 
 Of course, we still ate out, we did sometimes take transit when we could have walked (sometimes it was raining...) and splurged here and there, **BUT** not every time. We saved thousands of dollars following these "rules".
+
+Save money on hotels with [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726).
 
 **spreadsheet/food**
 
@@ -137,7 +139,7 @@ This is a relatively general and "genderless" list if you will. If you are readi
 - eReader
 - Chargers
 - Earbuds (wired and wireless)
-- Adaptor
+- Adapter
 - Microfiber towel
 - Water bottle
 - Passport and Visas
