@@ -273,10 +273,6 @@ table td {
     padding: var(--space-2xs);
 }
 
-table tbody tr:nth-child(odd) {
-    background-color: var(--background-soft);
-}
-
 h1,
 h2,
 h3,
@@ -762,7 +758,7 @@ svg .svg-map-disabled:hover {
 
 .home-hero-content {
     flex: 1;
-    border-radius: 0 var(--border-radius) 0 var(--border-radius);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
     padding: var(--space-3xl) var(--space-l) var(--space-3xl) var(--space-l); 
     max-width: 40%;
     color: white;
