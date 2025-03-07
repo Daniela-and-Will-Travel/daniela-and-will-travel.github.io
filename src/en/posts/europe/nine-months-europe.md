@@ -17,6 +17,8 @@ seo:
 
 Planning a long trip is no easy feat, it requires weeks of research and preparation, all in hope that everything works out. This article aims to ease the stress that comes along with planning a multi-month trip to Europe, specifically nine months as we did in 2022-2023.
 
+{% image "/assets/img/posts/europe/IMG_7233.jpg", "Orange sunset over Norway Harbor", "100vw", "Orange sunset over Norwegian Harbour", "rounded", "lazy", "auto", "async", "", "" %}
+
 ### Table of Contents
 
 - [How long to stay](#how-long)
@@ -27,15 +29,13 @@ Planning a long trip is no easy feat, it requires weeks of research and preparat
 - [How to get around](#get-around)
 - [Quick Itinerary](#itinerary)
 
-**image**
-
 <h2 id="how-long">How Long to Stay</h2>
 
 Of course this is wholly up to you, but if you have the time, let me explain why we think nine months is an ideal amount of time – if your goal is to cover as much of Europe as possible.
 
 With the Schengen Zone (which I will go into further detail next) affecting all of us who reside outside of the EU, you get three months to explore as much of Europe as you can, before being forced to leave for three months, before you can come back for another three – totalling nine months.
 
-**photo from first three months**
+{% image "/assets/img/posts/europe/IMG_8242.jpg", "View of the London Bridge", "100vw", "View of the London Bridge", "rounded", "lazy", "auto", "async", "", "" %}
 
 The first three months are not enough to fully explore (and I say _fully_ quite generously) all the countries that make up this zone. It would most definitely be possible to travel through a large portion of Europe within this period, but you will be forced to either skip quite a few countries or be extremely rushed.
 
@@ -79,7 +79,7 @@ Of course, we still ate out, we did sometimes take transit when we could have wa
 
 Save money on hotels with [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726).
 
-**spreadsheet/food**
+{% image "/assets/img/posts/europe/IMG_9099.jpg", "Small sandwiches and tea representing afternoon tea", "100vw", "Delicious Afternoon Tea in England", "rounded", "lazy", "auto", "async", "", "" %}
 
 > ⚠ Note: Europe is not cheap, we saved for about 2 years in high school to save this kind of money for such a long trip.
 
@@ -89,7 +89,7 @@ Packing can be quite the challenge for such an extensive period of time. Since w
 
 This is a relatively general and "genderless" list if you will. If you are reading this as a guy, you don’t really need to bring 2 pairs of leggings.
 
-**winter clothes inline**
+{% image "/assets/img/posts/europe/IMG_7853.jpg", "Us wearing winter clothes in the snow of Estonia", "100vw", "Our winter clothes for Estonia", "rounded", "lazy", "auto", "async", "", "" %}
 
 ### Winter
 
@@ -104,7 +104,7 @@ This is a relatively general and "genderless" list if you will. If you are readi
 - 1x trousers
 - Gloves and toque
 
-**summer clothes inline**
+{% image "/assets/img/posts/europe/IMG_8352.jpg", "Us wearing cool, summer clothes in the heat of Spain", "100vw", "Our summer clothes for Spain", "rounded", "lazy", "auto", "async", "", "" %}
 
 ### Summer
 
@@ -153,13 +153,13 @@ This is a relatively general and "genderless" list if you will. If you are readi
 
 Each country is very different from the next, with their own unique respective cultures and experiences. If your goal is to visit them all, it might be too difficult to achieve all 50 – we unfortunately missed out on 5, but we will come back one day to complete the continent. I would recommend  doing your research on which ones are a MUST for you and how long you wish to spend there. We’ll share our itinerary below so you can use it for inspiration. Keep in mind that if you are subject to the Schengen Zone, you may end up with more or less time in an area that originally hoped.
 
-**a nice picture of europe**
+{% image "/assets/img/posts/europe/IMG_2888.jpg", "View of the City of Lucerne from above", "100vw", "View from above of the City of Lucerne", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="get-around">How to get around</h2>
 
 For most of Europe, you can get around quite easily by train. For Western Europe, we highly recommend getting the [Eurail Global Pass](https://www.getyourguide.com/zurich-l55/eurail-global-pass-t410826/?partner_id=8RTQF4P&utm_medium=online_publisher&cmp=europe_nine_month_itinerary) (Iceland is the exception as there are no trains). However, the majority of Eastern Europe relies mainly on buses, so the Eurail is NOT worth it there at all. Once you have an outline, we would suggest planning what Eurail pass is the most worthwhile.
 
-**window of plane/train, train station**
+{% image "/assets/img/posts/europe/IMG_7268.jpg", "View outside of a plane window overlooking forests and hills", "100vw", "A beautiful view on one of our Scandinavian flights", "rounded", "lazy", "auto", "async", "", "" %}
 
 For example, if you start in Iceland like we did, don’t get one until you reach the mainland. From there, if you are splitting up the 90 days in the Schengen zone, it might be worth it to buy a regional pass instead of the global one or a global pass with a shorter duration.
 
