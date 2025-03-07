@@ -17,6 +17,8 @@ seo:
 
 Planning a long trip is no easy feat, it requires weeks of research and preparation, all in hope that everything works out. This article aims to ease the stress that comes along with planning a multi-month trip to Europe, specifically nine months as we did in 2022-2023.
 
+{% image "/assets/img/posts/europe/IMG_7233.jpg", "Orange sunset over Norway Harbor", "100vw", "Orange sunset over Norwegian Harbour", "rounded", "lazy", "auto", "async", "", "" %}
+
 ### Table of Contents
 
 - [How long to stay](#how-long)
@@ -26,8 +28,6 @@ Planning a long trip is no easy feat, it requires weeks of research and preparat
 - [Where to go](#where-to-go)
 - [How to get around](#get-around)
 - [Quick Itinerary](#itinerary)
-
-**image**
 
 <h2 id="how-long">How Long to Stay</h2>
 
