@@ -6,12 +6,127 @@
 	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
     <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="http://localhost:8080/" />	
-	<updated>2025-02-16T00:00:00Z</updated>
+	<updated>2025-03-10T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
 		<email>danielaandwilltravel@gmail.com</email>
 	</author>
+	<entry>
+		<title>One Week Japan Itinerary</title>
+		<link href="http://localhost:8080/en/writing/one-week-japan-itinerary/" />
+		<updated>2025-03-10T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/one-week-japan-itinerary/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;Japan has become THE travel destination of the year, with everyone and their dog pining for a chance to go. We had the privilege to visit early this year in January and managed to do it without breaking the bank.&lt;/p&gt;
+&lt;h3&gt;Table of Contents&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Visas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Where to Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Budget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Accommodation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Cash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Food&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Transportation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Best Time to Visit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;visas&quot;&gt;Visa + Arrival Card&lt;/h2&gt;
+&lt;p&gt;Regardless of where you are coming from, odds are the best deals bring you to Tokyo or Osaka - which is PERFECT for this itinerary. Getting from the airport to the city centre can be a bit of a hassle, here are the cheapest options:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: Make sure to double check which airport!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Narita Airport:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keisei Mainline Rapid, from the Terminal 2/3 Station to Tokyo Station&lt;/li&gt;
+&lt;li&gt;From there, switch onto the Tokyo Metro to get to your specific location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Haneda Airport:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Osaka Airport:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: Bring Yen before you arrive. When we arrived at the Tokyo Narita airport they only accepted cash into the city.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;where-to-go&quot;&gt;Where to Go&lt;/h2&gt;
+&lt;h3&gt;Tokyo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spend 2 days exploring the city, plus the first day and push through the jet lag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fuji&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: Day trip from Tokyo&lt;/li&gt;
+&lt;li&gt;Option 2: Stay a night nearby&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kyoto&lt;/h3&gt;
+&lt;h3&gt;Nara&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spend half a day frolicking with the deer&lt;/li&gt;
+&lt;li&gt;We spent 1 night here to avoid backtracking, but can easily be done as a day trip from either Kyoto or Osaka&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Osaka&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spend a day and a half exploring the city. Some top sights include the Osaka castle and the night area I can’t remember what it’s called&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Kobe&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Can spend either a full day or half day from Osaka&lt;/li&gt;
+&lt;li&gt;As vegetarians, we spent half a day. Heard the beef is nice, we only tried the Sake and visited a sake museum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And there you have it, a simple itinerary to help guide your trip to Japan.&lt;/p&gt;
+&lt;h2 id=&quot;budget&quot;&gt;Budget&lt;/h2&gt;
+&lt;p&gt;We averaged $170 per day for 2 people. So not shoestring, but definitely NOT luxury.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ Note: this does not include flight to Japan. That round trip flight can set you back a tad bit more.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;#accommodation&quot;&gt;Accommodation&lt;/h2&gt;
+&lt;p&gt;We use &lt;a href=&quot;http://localhost:8080/en/feed/booking.com&quot;&gt;Booking.com&lt;/a&gt; 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.&lt;/p&gt;
+&lt;h2 id=&quot;#cash&quot;&gt;Cash&lt;/h2&gt;
+&lt;p&gt;Make sure to bring Yen &lt;code&gt;¥&lt;/code&gt; before arriving in Japan. But if you didn’t bring any or run out, ATMs are widely available, we recommend the 7-Eleven (technically 7-Bank) ATM.&lt;/p&gt;
+&lt;h2 id=&quot;#food&quot;&gt;Food&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sushi - most restaurants let you order with a tablet&lt;/li&gt;
+&lt;li&gt;Revolving sushi - technically this is fast food but we think it’s ✨cool✨&lt;/li&gt;
+&lt;li&gt;Udon&lt;/li&gt;
+&lt;li&gt;Yam balls&lt;/li&gt;
+&lt;li&gt;Mochi&lt;/li&gt;
+&lt;li&gt;Mr. Donut (link to song)&lt;/li&gt;
+&lt;li&gt;Ramen&lt;/li&gt;
+&lt;li&gt;7-Eleven - the &lt;strong&gt;BEST&lt;/strong&gt;, you could honestly eat every meal from there&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;#transport&quot;&gt;Transportation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Shinkansen/Bullet Train (Tokyo-Kyoto)&lt;/li&gt;
+&lt;li&gt;Local trains (Kyoto-Nara, Nara-Osaka)&lt;/li&gt;
+&lt;li&gt;Metro is useful in Tokyo and Osaka, not very useful in Kyoto&lt;/li&gt;
+&lt;li&gt;Buses are useful in Kyoto and Nara&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ Note: For this specific itinerary, to keep costs low, we don’t recommend getting a JR pass. The local trains can get you a lot further than you think if you have the patience for it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: Google Maps is your friend here. Everything we needed, like transit directions, station locations, and train wait times was up to date.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Suica and Passmo:&lt;/strong&gt; These are cards you can add to your Apple wallet. Android users can get physical cards cause Japan ✨hates✨ you. They are super useful and most public transport accepts them. The Shinkansen tickets can also be bought ahead of time using these.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ Note: If you buy a Shinkansen ticket ahead of time with your Suica or Passmo card, your paper ticket will automatically print from the station gates - just make sure to enter through the specified Shinkansen gates!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
+&lt;p&gt;As we are on a budget, we opted for no SIM card. We found many free wifi hotspots scattered throughout the country. Most metro and train stations have them, and all the cities we visited had hotspots in the centre.&lt;/p&gt;
+&lt;p&gt;But if you insist, you can get an e-SIM with &lt;a href=&quot;http://localhost:8080/en/feed/feed.xml&quot;&gt;Airalo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;time-to-visit&quot;&gt;Best Time to Visit&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Spring&lt;/strong&gt; - cherry blossoms, higher prices&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Summer&lt;/strong&gt; - warm&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Winter&lt;/strong&gt; - cold, but affordable&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fall&lt;/strong&gt; - shoulder, may be less expensive but not as cold&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you have extra time:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tech/car side&lt;/li&gt;
+&lt;li&gt;Disneyland?&lt;/li&gt;
+&lt;li&gt;Skiing/ North&lt;/li&gt;
+&lt;li&gt;Okinawa&lt;/li&gt;
+&lt;li&gt;Hiroshima/Nagasaki&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
 	<entry>
 		<title>Nine Months in Europe</title>
 		<link href="http://localhost:8080/en/writing/nine-months-europe/" />
@@ -928,6 +1043,52 @@ When you get off the Airport Direct bus, most accommodation is a bus ride or sho
 &lt;li&gt;Vik&lt;/li&gt;
 &lt;li&gt;The Northern Lights&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Front matter</title>
+		<link href="http://localhost:8080/en/writing/frontmatter/" />
+		<updated>2023-08-04T00:00:00Z</updated>
+		<id>http://localhost:8080/en/writing/frontmatter/</id>
+		<content xml:lang="en" type="html">&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;layout: page
+title: Main page title, heading level one
+date: 2023-08-04
+modified: 2023-08-04
+thumbnail: /assets/img/test.jpg
+thumbnailDescription: An alt text description for the thumbnail image
+tags: &#39;page-demo&#39;
+draft: true
+eleventyExcludeFromCollections: true
+seo:
+  title: Custom title (defaults to title)
+  description: SEO description
+  slug: mmm-slugs
+  changeFrequency: daily
+  sitemapPriority: &#39;1.0&#39;
+  excludeFromSitemap: true
+  noIndex: true&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;layout&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/layouts/&quot;&gt;Page layout&lt;/a&gt; for the page. Default is &lt;code&gt;post&lt;/code&gt; for posts and &lt;code&gt;page&lt;/code&gt; for pages.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt; — The title of the current page.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/dates/&quot;&gt;Published date&lt;/a&gt;. You can set special values here like &lt;code&gt;Last Modified&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;modifed&lt;/code&gt; — Modified date.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;thumbnail&lt;/code&gt; — Relative path to thumbnail / opengraph image. Size &lt;code&gt;1200px x 630px&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;thumbnailDescription&lt;/code&gt; — Alt text for thumbnail.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tags&lt;/code&gt; – &lt;a href=&quot;https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags&quot;&gt;Tags&lt;/a&gt; are currently used for custom body classes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;draft&lt;/code&gt; — Draft pages will appear locally and on staging but not in production.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eleventyExcludeFromCollections&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections&quot;&gt;Hide from 11ty collections&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.title&lt;/code&gt; — Set custom page title for search engines and opengraph.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.description&lt;/code&gt; — Set the page description for search engines and opengraph.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.slug&lt;/code&gt; — Set a new slug for the page that is different from the filename.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.changeFrequency&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#changefreqdef&quot;&gt;How often does this page change&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.sitemapPriority&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#prioritydef&quot;&gt;The priority of this URL relative to other URLs on your site&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.excludeFromSitemap&lt;/code&gt; — Hide this page from your sitemap.xml.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;seo.noIndex&lt;/code&gt; — Discourage search engine indexing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nearly all front matter is optional, except for titles (and dates for posts).&lt;/p&gt;
 </content>
 		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>

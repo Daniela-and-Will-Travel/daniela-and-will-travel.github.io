@@ -6,7 +6,7 @@
 	<icon>http://localhost:8080/assets/img/icon-512.png</icon>
     <link href="http://localhost:8080/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="http://localhost:8080/" />	
-	<updated>2025-02-16T00:00:00Z</updated>
+	<updated>2025-03-10T00:00:00Z</updated>
 	<id>http://localhost:8080/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
@@ -30,6 +30,14 @@
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;För att använda &lt;a href=&quot;https://frontmatter.codes/&quot;&gt;Front Matter CMS&lt;/a&gt;, installera &lt;a href=&quot;https://vscodium.com/&quot;&gt;VSCodium&lt;/a&gt; eller &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; och aktivera tillägget (om det inte aktiveras automatiskt). Den öppnas varje gång du startar ditt projekt.&lt;/p&gt;
 </content>
+		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>Lägger till ytterligare språk</title>
+		<link href="http://localhost:8080/es/skrift/adding-additional-languages/" />
+		<updated>2023-08-05T00:00:00Z</updated>
+		<id>http://localhost:8080/es/skrift/adding-additional-languages/</id>
+		<content xml:lang="es" type="html"></content>
 		<enclosure url="http://localhost:8080/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
 	<entry>
