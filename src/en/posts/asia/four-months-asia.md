@@ -3,6 +3,7 @@ layout: post
 title: Four Months in Southeast Asia
 date: 2025-02-16
 modified: 2025-02-16
+author: Daniela and Will
 tags:
  - asia
  - southeast-asia
