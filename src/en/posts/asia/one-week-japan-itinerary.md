@@ -3,6 +3,7 @@ layout: post
 title: One Week Japan Itinerary
 date: 2025-03-10
 modified: 2025-03-10
+author: Daniela
 tags:
  - asia
  - southeast-asia
@@ -37,14 +38,20 @@ Regardless of where you are coming from, odds are the best deals bring you to To
 
 > ❕ Tip: Make sure to double check which airport!
 
-**Narita Airport:**
+**Tokyo Narita Airport:**
 
 - Keisei Mainline Rapid, from the Terminal 2/3 Station to Tokyo Station
 - From there, switch onto the Tokyo Metro to get to your specific location
 
-**Haneda Airport:**
+**Tokyo Haneda Airport:**
 
-**Osaka Airport:**
+- Keikyu Airport Line, from Terminal 3 to Tokyo Station
+- There are limited "Airport Limited Express" trains, but local trains work as well
+
+**Osaka Kansai Airport:**
+
+- Nankai Express or Nankai Limited Express from the Kansai Airport Station to Namba Station
+- From there, switch onto the Osaka Metro to get to your specific location, or to Osaka/Umeda or Shin-Osaka Station
 
 > ❕ Tip: Bring Yen before you arrive. When we arrived at the Tokyo Narita airport they only accepted cash into the city.
 
@@ -52,12 +59,13 @@ Regardless of where you are coming from, odds are the best deals bring you to To
 
 ### Tokyo
 
-- Spend 2 days exploring the city, plus the first day and push through the jet lag
+- Spend 2 full days exploring the city, plus the first day and push through the jet lag
+- Take a look at the [Top 10 Places to Stay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fjp%2Ftokyo.html)
 
 ### Fuji
 
 - Option 1: Day trip from Tokyo
-- Option 2: Stay a night nearby
+- Option 2: Stay a night nearby - _in [a room with an onsen](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fonsen%2Fregion%2Fjp%2Fmount-fuji.html)_
 
 ### Kyoto
 
@@ -73,7 +81,7 @@ Regardless of where you are coming from, odds are the best deals bring you to To
 ### Kobe
 
 - Can spend either a full day or half day from Osaka
-- As vegetarians, we spent half a day. Heard the beef is nice, we only tried the Sake and visited a sake museum.
+- As vegetarians, we spent half a day. Heard the beef is nice, we only tried the Sake and [visited a sake museum](https://www.getyourguide.com/kobe-l32593/kobe-sake-brewery-tour-with-tasting-sake-t710728/?partner_id=8RTQF4P&utm_medium=online_publisher&cmp=japan-itinerary).
 
 And there you have it, a simple itinerary to help guide your trip to Japan.
 
@@ -85,7 +93,7 @@ We averaged $170 per day for 2 people. So not shoestring, but definitely NOT lux
 
 <h2 id="#accommodation">Accommodation</h2>
 
-We use [Booking.com](booking.com) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
+We use [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
 
 <h2 id="#cash">Cash</h2>
 
@@ -100,7 +108,7 @@ Make sure to bring Yen `¥` before arriving in Japan. But if you didn’t bring 
 - Mochi
 - Mr. Donut (link to song)
 - Ramen
-- 7-Eleven - the **BEST**, you could honestly eat every meal from there 
+- 7-Eleven - the **BEST**, you could honestly eat every meal from there
 
 <h2 id="#transport">Transportation</h2>
 
@@ -121,7 +129,7 @@ Make sure to bring Yen `¥` before arriving in Japan. But if you didn’t bring 
 
 As we are on a budget, we opted for no SIM card. We found many free wifi hotspots scattered throughout the country. Most metro and train stations have them, and all the cities we visited had hotspots in the centre.
 
-But if you insist, you can get an e-SIM with [Airalo]().
+But if you insist, you can get an e-SIM with [Airalo](https://www.airalo.com/japan-esim), using our code `WILLIA1097`.
 
 <h2 id="time-to-visit">Best Time to Visit</h2>
 
