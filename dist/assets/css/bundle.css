@@ -669,7 +669,7 @@ a[aria-current="page"] {
     color: var(--foreground-soft);
 }
 
-/* posts affiliate stuff */
+/* posts affiliate disclaimer */
 
 .affiliate {
     border: 1px solid var(--background);
@@ -681,84 +681,6 @@ a[aria-current="page"] {
     background-color: var(--foreground);
     font-size: var(--step-0);
     color: var(--background);
-}
-
-.affiliate-desktop {
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    margin-bottom: 20px;
-    max-width: 65ch;
-    text-align: center;
-    background-color: var(--foreground);
-    font-size: var(--step-0);
-    color: var(--background);
-}
-
-.affiliate-mobile {
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    margin-bottom: 20px;
-    max-width: 65ch;
-    text-align: center;
-    background-color: var(--foreground);
-    font-size: var(--step-0);
-    color: var(--background);
-}
-
-.affiliate-box-desktop{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius); 
-    width: 50%;
-    margin: var(--space-3xs);
-    padding: var(--space-3xs);
-}
-
-.affiliate-box-mobile{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius); 
-    width: 100%;
-    margin: var(--space-3xs);
-    padding: var(--space-3xs);
-}
-
-.affiliate-link{
-    display: flex; 
-    align-items: center; 
-    text-decoration: none; 
-    color: inherit;
-}
-
-.affiliate-link:hover{
-    color: var(--link);
-}
-
-.affiliate-inner-box{
-    flex-grow: 1;
-}
-
-.affiliate-svg{
-    width: 100px;
-    height: 100px;
-}
-
-@media (min-width: 1024px) { /* hide on desktop */
-    .affiliate-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 1023px) { /* hide on mobile */
-    .affiliate-desktop {
-        display: none;
-    }
 }
 
 /* footer */
@@ -1067,6 +989,90 @@ pre[class*="language-"] {
 .token.regex,
 .token.important {
     color: var(--code-regex);
+}
+/* for desktop */
+.affiliate-desktop {
+    border: 1px solid var(--background);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 65ch;
+    text-align: center;
+    background-color: var(--foreground);
+    font-size: var(--step-0);
+    color: var(--background);
+}
+
+/* for mobile */
+.affiliate-mobile {
+    border: 1px solid var(--background);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 65ch;
+    text-align: center;
+    background-color: var(--foreground);
+    font-size: var(--step-0);
+    color: var(--background);
+}
+
+/* for desktop */
+.affiliate-box-desktop{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: 1px solid var(--background);
+    border-radius: var(--border-radius); 
+    width: 50%;
+    margin: var(--space-3xs);
+    padding: var(--space-3xs);
+}
+
+/* for mobile */
+.affiliate-box-mobile{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: 1px solid var(--background);
+    border-radius: var(--border-radius); 
+    width: 100%;
+    margin: var(--space-3xs);
+    padding: var(--space-3xs);
+}
+
+.affiliate-link{
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: inherit;
+}
+
+.affiliate-link:hover{
+    color: var(--link);
+}
+
+.affiliate-inner-box{
+    flex-grow: 1;
+}
+
+.affiliate-svg{
+    padding-left: var(--space-s);
+    width: 5em;
+    height: 5em;
+    vertical-align: -0.125em;
+}
+
+/* jank solutions */
+@media (min-width: 1024px) { /* hide on desktop */
+    .affiliate-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) { /* hide on mobile */
+    .affiliate-desktop {
+        display: none;
+    }
 }
 .switch-language a,
 .switch-language span {
