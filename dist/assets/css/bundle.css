@@ -1057,8 +1057,8 @@ pre[class*="language-"] {
 
 .affiliate-svg{
     padding-left: var(--space-s);
-    width: 5em;
-    height: 5em;
+    width: 3.5em;
+    height: 3.5em;
     vertical-align: -0.125em;
 }
 
