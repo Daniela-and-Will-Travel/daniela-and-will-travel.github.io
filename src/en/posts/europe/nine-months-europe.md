@@ -3,6 +3,7 @@ layout: post
 title: Nine Months in Europe
 date: 2025-02-16
 modified: 2025-02-16
+author: Daniela and Will
 tags:
  - europe
  - itinerary

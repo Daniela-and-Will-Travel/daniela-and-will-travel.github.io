@@ -54,9 +54,6 @@
         {% if settings.isStaging or noIndex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
         {% if settings.author.fediverseProfile %}<link href="{{ settings.author.fediverseProfile }}" rel="me">{% endif %}
 
-        <!-- GetYourGuide Analytics -->
-        <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="8RTQF4P"></script>
-
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
     </head>
