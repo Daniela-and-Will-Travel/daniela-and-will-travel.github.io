@@ -18,6 +18,8 @@ seo:
   changeFrequency: monthly
 ---
 
+{% image "/assets/img/posts/asia/IMG_0495.jpg", "Shinto temple in Tokyo with smoke in front of it", "100vw", "Shinto Temple in Tokyo", "rounded", "lazy", "auto", "async", "", "" %}
+
 Japan has become THE travel destination of the year, with everyone and their dog pining for a chance to go. We had the privilege to visit early this year in January and managed to do it without breaking the bank.
 
 ### Table of Contents
@@ -34,7 +36,7 @@ Japan has become THE travel destination of the year, with everyone and their dog
 
 <h2 id="visas">Visa + Arrival Card</h2>
 
-Regardless of where you are coming from, odds are the best deals bring you to Tokyo or Osaka - which is PERFECT for this itinerary. Getting from the airport to the city centre can be a bit of a hassle, here are the cheapest options:
+Regardless of where you are coming from, odds are the best deals bring you to Tokyo or Osaka - which is PERFECT for this itinerary. Getting from the airport to the city center can be a bit of a hassle, here are the cheapest options:
 
 > ❕ Tip: Make sure to double check which airport!
 
@@ -59,45 +61,96 @@ Regardless of where you are coming from, odds are the best deals bring you to To
 
 ### Tokyo
 
+{% image "/assets/img/posts/asia/IMG_7518.jpg", "Busy city crossing at night", "100vw", "The energetic Shibuya Crossing", "rounded", "lazy", "auto", "async", "", "" %}
+
 - Spend 2 full days exploring the city, plus the first day and push through the jet lag
+- Here are some districts to check out:
+  - Tokyo Station + Area - _lots of good restaurants, some museums_
+  - Imperial Palace Area - _surrounded by several interesting parks, gardens and shrines_
+  - Ginza - _the high-end shopping district_
+  - Harajuku - _home to the largest shrine in Tokyo_
+  - Shibuya - _shopping district for the young people with great restaurants_
+  - Akihabara - _the tech and pop-culture center_
+  - Ueno - _home to a large park, the city's best museum, a zoo, and a shrine_
+  - Asakusa - _home to the city's most popular temple_
 - Take a look at the [Top 10 Places to Stay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fjp%2Ftokyo.html)
 
 ### Fuji
 
-- Option 1: Day trip from Tokyo
+{% image "/assets/img/posts/asia/IMG_0440.jpg", "Mt. Fuji with reeds in front and clouds in the background", "100vw", "Majestic Mt. Fuji", "rounded", "lazy", "auto", "async", "", "" %}
+
+Mount Fuji is Japan's iconic peak, offering breathtaking views that captivate visitors year-round. Whether you're hiking its trails or admiring its beauty from afar, the mountain's serene presence never fails to leave a lasting impression.
+
+- Option 1: Day trip from Tokyo - _this will give you enough time to get some beautiful pictures and even check out an onsen_
 - Option 2: Stay a night nearby - _in [a room with an onsen](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fonsen%2Fregion%2Fjp%2Fmount-fuji.html)_
+
+Soaking in the natural hot springs offers a deeply relaxing experience, promoting both physical and mental well-being while surrounded by stunning landscapes. An onsen offers a unique cultural experience and a chance to immerse yourself in traditional Japanese relaxation.
 
 ### Kyoto
 
+{% image "/assets/img/posts/asia/IMG_0569.jpg", "Temple in Kyoto with sake offering barrels", "100vw", "Sake offering barrels at a temple", "rounded", "lazy", "auto", "async", "", "" %}
+
+Kyoto offers a beautiful blend of temples, gardens, and if you have the time (and the budget), a traditional tea ceremony.
+
+Here are some of the best places:
+
+- Fushimi Inari Taisha - _famous for its iconic red torii gates leading up Mount Inari, this shrine is one of the most visited_
+- Kinkaku-ji (Golden Pavilion) - _a Zen Buddhist temple covered in gold leaf, set beside a reflective pond_.
+- Gion District - _Kyoto's historic geisha district, where you can stroll through traditional wooden teahouses and possibly try your hand at a matcha tea ceremony_
+- Philosopher’s Path - _a scenic walk along the canal lined with cherry blossoms and peaceful temples_
+- To-ji Temple - _home to Kyoto’s tallest pagoda and a tranquil spot for those seeking peace and architectural marvels_
+- Spend two nights here, which should be enough if you are ok walking around the city
+
 ### Nara
 
-- Spend half a day frolicking with the deer
+{% image "/assets/img/posts/asia/IMG_0662.jpg", "Small deer in front of the Nara Museum", "100vw", "Cute deer at the Deer Park", "rounded", "lazy", "auto", "async", "", "" %}
+
+Japan’s first permanent capital, is a charming city renowned for its friendly, free-roaming deer and ancient temples.
+
+- Nara Deer Park - _spend half a day frolicking with the deer_
+- Todai-ji Temple - _home to a giant Buddha statue_
 - We spent 1 night here to avoid backtracking, but can easily be done as a day trip from either Kyoto or Osaka
 
 ### Osaka
 
-- Spend a day and a half exploring the city. Some top sights include the Osaka castle and the night area I can’t remember what it’s called
+{% image "/assets/img/posts/asia/IMG_8336.jpg", "The Osaka Tower at night", "100vw", "The Osaka Tower", "rounded", "lazy", "auto", "async", "", "" %}
+
+Spend a day and a half exploring Osaka, Japan's vibrant culinary and entertainment capital, which blends skyscrapers and historic landmarks.
+
+Here are some awesome places:
+
+- Osaka Castle - _a symbol of the city, this iconic castle is surrounded by lush parks and offers panoramic views_
+- Dotonbori - _neon lights, street food stalls, and lively atmosphere_
+- Namba Yasaka Shrine - _lesser known shrine, with a massive lion-head-shaped building_
 
 ### Kobe
 
-- Can spend either a full day or half day from Osaka
+{% image "/assets/img/posts/asia/IMG_8442.jpg", "Old sake barrels in a museum exhibit", "100vw", "Old sake barrels in Kobe", "rounded", "lazy", "auto", "async", "", "" %}
+
+- Can spend either a full day or half day from Osaka - Local, Limited, Rapid, and Express trains all stop in Kobe
 - As vegetarians, we spent half a day. Heard the beef is nice, we only tried the Sake and [visited a sake museum](https://www.getyourguide.com/kobe-l32593/kobe-sake-brewery-tour-with-tasting-sake-t710728/?partner_id=8RTQF4P&utm_medium=online_publisher&cmp=japan-itinerary).
 
 And there you have it, a simple itinerary to help guide your trip to Japan.
 
 <h2 id="budget">Budget</h2>
 
-We averaged $170 per day for 2 people. So not shoestring, but definitely NOT luxury.
+We averaged $170 per day for 2 people. So not shoestring, but definitely NOT luxury. You can keep your costs low by booking hotels in advance, and walking around most of the cities.
 
-> ⚠ Note: this does not include flight to Japan. That round trip flight can set you back a tad bit more.
+> ⚠ Note: this does not include flight to Japan. That round trip flight will set you back a tad bit more.
 
 <h2 id="#accommodation">Accommodation</h2>
 
 We use [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
 
+Keep in mind that if you find a cheaper location outside of the center, you may need to spend more time walking/take public transportation, which could add up over time.
+
 <h2 id="#cash">Cash</h2>
 
-Make sure to bring Yen `¥` before arriving in Japan. But if you didn’t bring any or run out, ATMs are widely available, we recommend the 7-Eleven (technically 7-Bank) ATM.
+Make sure to bring Yen `¥` before arriving in Japan. Credit cards are widely accepted, but most markets and smaller restaurants will only take cash. You can also use your Suica or Passmo card to pay at most places (including 7-Eleven).
+
+If you didn’t bring any Yen or run out, ATMs are widely available, we recommend the 7-Eleven (technically 7-Bank) ATM.
+
+{% image "/assets/img/posts/asia/IMG_7502.jpg", "View of a bowl of ramen from above", "100vw", "One of our best bowls of ramen, near Shibuya Crossing", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#food">Food</h2>
 
@@ -106,7 +159,7 @@ Make sure to bring Yen `¥` before arriving in Japan. But if you didn’t bring 
 - Udon
 - Yam balls
 - Mochi
-- Mr. Donut (link to song)
+- Mr. Donut - please check out [this song](https://www.youtube.com/watch?v=nwUOtIEnGCg)
 - Ramen
 - 7-Eleven - the **BEST**, you could honestly eat every meal from there
 
@@ -127,9 +180,11 @@ Make sure to bring Yen `¥` before arriving in Japan. But if you didn’t bring 
 
 <h2 id="data">Data</h2>
 
-As we are on a budget, we opted for no SIM card. We found many free wifi hotspots scattered throughout the country. Most metro and train stations have them, and all the cities we visited had hotspots in the centre.
+As we are on a budget, we opted for no SIM card. We found many free WiFi hotspots scattered throughout the country. Most metro and train stations have them, and all the cities we visited had hotspots in the center.
 
 But if you insist, you can get an e-SIM with [Airalo](https://www.airalo.com/japan-esim), using our code `WILLIA1097`.
+
+{% image "/assets/img/posts/asia/IMG_0540.jpg", "The famous Golden Temple glittering in the sun, surrounded by foliage", "100vw", "The famous Golden Temple glittering in the sun", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="time-to-visit">Best Time to Visit</h2>
 
@@ -143,8 +198,14 @@ But if you insist, you can get an e-SIM with [Airalo](https://www.airalo.com/jap
 
 **If you have extra time:**
 
-- Tech/car side
-- Disneyland?
-- Skiing/ North
+- Tech stops
+  - Tsukuba Space Center (1 hour train ride outside Tokyo)
+  - Miraikan National Science Museum
+- Car stops
+  - Nissan Crossing (located in the Ginza District)
+  - Yokohama
+- Disneyland
+- Universal Studios (in Osaka)
+- Go to the North for Skiing!
 - Okinawa
 - Hiroshima/Nagasaki
