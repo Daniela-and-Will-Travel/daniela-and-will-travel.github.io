@@ -110,7 +110,7 @@ We once again created a spreadsheet (you can see it on [Google Sheets](https://d
 
 <h2 id="what-to-bring">What to Bring</h2>
 
-{% image "/assets/img/posts/asia/IMG_8735.jpg", "Us in practical clothes for temple hopping", "100vh", "A practical outfit for temple hopping", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/IMG_8735.jpg", "Us in practical clothes for temple hopping", "100vw", "A practical outfit for temple hopping", "rounded", "lazy", "auto", "async", "", "" %}
 
 When traveling for long periods, you have to master the art of bringing just the right amount of clothes. For some it is easier than for others. This list is more so for people who are more into hiking/outdoorsy stuff. If that’s not really your thing, you might not need a pair of runners or zip-off pants and can likely get away with some good walking shoes and leggings/shorts.
 
