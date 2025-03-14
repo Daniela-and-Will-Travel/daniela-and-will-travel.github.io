@@ -1,6 +1,21 @@
+@echo off
+:: Run the npm command
+echo Running npm command...
 npx @11ty/eleventy
 
-del /q docs\*
-for /d %%x in (docs\*) do @rd /s /q "%%x"
+:: Check if the npm command was successful
+if %errorlevel% neq 0 (
+    echo npm command failed. Exiting script.
+    exit /b %errorlevel%
+)
 
-xcopy dist\* docs\ /s /e /y
+:: Delete all files in the docs folder
+echo Deleting all files in the docs folder...
+del /q /f docs\*
+
+:: Move all files from dist folder to docs folder
+echo Moving files from dist folder to docs folder...
+move /y dist\* docs\
+
+echo Script completed successfully.
+pause
