@@ -74,8 +74,20 @@
 	</url>
 	<url>
 		<loc>https://daniela-and-will-travel.github.io/</loc>
-		<lastmod>2025-03-11T04:21:31Z</lastmod>
+		<lastmod>2025-04-02T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://daniela-and-will-travel.github.io/en/writing/diy-the-ha-giang-loop/</loc>
+		<lastmod>2025-04-02T00:00:00Z</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://daniela-and-will-travel.github.io/en/writing/ltt-commuter-backpack-review/</loc>
+		<lastmod>2025-04-02T00:00:00Z</lastmod>
+		<changefreq>never</changefreq>
 		<priority>0.7</priority>
 	</url>
 </urlset>
