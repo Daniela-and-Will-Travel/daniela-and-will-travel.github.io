@@ -16,4 +16,6 @@ seo:
 
 I started this trip armed with my [LTT Commuter Backpack](https://www.lttstore.com/products/commuter-backpack?_pos=1&_fid=24eba955c&_ss=c). I kept notes for the first month on my experiences with it, and thought they deserved a write up!
 
+> Check back tomorrow morning to see the entire review...
+
 This post originally appeared on my [personal blog](https://williamvdg.me/).
