@@ -96,4 +96,10 @@
 		<changefreq>yearly</changefreq>
 		<priority>0.7</priority>
 	</url>
+	<url>
+		<loc>https://daniela-and-will-travel.github.io/en/writing/ltt-commuter-backpack-review/</loc>
+		<lastmod>2025-04-02T00:00:00Z</lastmod>
+		<changefreq>never</changefreq>
+		<priority>0.7</priority>
+	</url>
 </urlset>
