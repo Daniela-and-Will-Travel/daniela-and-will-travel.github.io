@@ -16,7 +16,7 @@ def compress_image(file_path, quality=85):
         print(f"Error compressing {file_path}: {e}")
 
 # Function to walk through the directory and compress the images
-def compress_images_in_directory(directory, file_extensions, quality=85):
+def compress_images_in_directory(directory, file_extensions, quality=80):
     # Walk through all files in the directory
     for root, dirs, files in os.walk(directory):
         for file in files:
@@ -30,6 +30,6 @@ if __name__ == "__main__":
     # File extensions to look for
     file_extensions = sys.argv[2].split(",") if len(sys.argv) > 2 else ["jpg", "jpeg", "png"]
     # Compression quality
-    quality = int(sys.argv[3]) if len(sys.argv) > 3 else 85
+    quality = int(sys.argv[3]) if len(sys.argv) > 3 else 80
 
     compress_images_in_directory(directory, file_extensions, quality)
