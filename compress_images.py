@@ -26,7 +26,7 @@ def compress_images_in_directory(directory, file_extensions, quality=80):
 
 if __name__ == "__main__":
     # Directory where images are located
-    directory = sys.argv[1].split(",") if len(sys.argv) > 2 else ["dist", "docs"]
+    directory = sys.argv[1] if len(sys.argv) > 1 else "."
     # File extensions to look for
     file_extensions = sys.argv[2].split(",") if len(sys.argv) > 2 else ["jpg", "jpeg", "png"]
     # Compression quality
