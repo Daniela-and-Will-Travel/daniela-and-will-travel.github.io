@@ -6,12 +6,28 @@
 	<icon>https://daniela-and-will-travel.github.io/assets/img/icon-512.png</icon>
     <link href="https://daniela-and-will-travel.github.io/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="https://daniela-and-will-travel.github.io/" />	
-	<updated>2025-04-02T00:00:00Z</updated>
+	<updated>2025-04-12T00:00:00Z</updated>
 	<id>https://daniela-and-will-travel.github.io/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
 		<email>danielaandwilltravel@gmail.com</email>
 	</author>
+	<entry>
+		<title>How to Use the Planning Sheets</title>
+		<link href="https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/" />
+		<updated>2025-04-12T00:00:00Z</updated>
+		<id>https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/</id>
+		<content xml:lang="en" type="html"></content>
+		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
+		<title>How to Use the Budget Sheets</title>
+		<link href="https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/" />
+		<updated>2025-04-12T00:00:00Z</updated>
+		<id>https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/</id>
+		<content xml:lang="en" type="html"></content>
+		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
 	<entry>
 		<title>One Month LTT Commuter Backpack Review</title>
 		<link href="https://daniela-and-will-travel.github.io/en/writing/ltt-commuter-backpack-review/" />
