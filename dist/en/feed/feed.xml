@@ -6,7 +6,7 @@
 	<icon>https://daniela-and-will-travel.github.io/assets/img/icon-512.png</icon>
     <link href="https://daniela-and-will-travel.github.io/%7B%7B%20lang%20%7D%7D/feed/feed.xml" rel="self"/>
     <link href="https://daniela-and-will-travel.github.io/" />	
-	<updated>2025-04-12T00:00:00Z</updated>
+	<updated>2025-04-20T00:00:00Z</updated>
 	<id>https://daniela-and-will-travel.github.io/</id>
 	<author>
 		<name>Daniela Sada and William Vandergraaf</name>
@@ -15,25 +15,70 @@
 	<entry>
 		<title>How to Use the Planning Sheets</title>
 		<link href="https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/" />
-		<updated>2025-04-12T00:00:00Z</updated>
+		<updated>2025-04-20T00:00:00Z</updated>
 		<id>https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/</id>
-		<content xml:lang="en" type="html"></content>
+		<content xml:lang="en" type="html">&lt;p&gt;I recently posted about &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/&quot;&gt;how we use our budget spreadsheet&lt;/a&gt;, so I thought I might continue with that theme and talk about how we track and share our itinerary through another spreadsheet.&lt;/p&gt;
+&lt;p&gt;On our last two trips I have made a spreadsheet to outline our itinerary - check them out on the &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/tools&quot;&gt;tools page&lt;/a&gt;. While the files you download from our site are &lt;a href=&quot;https://excel.cloud.microsoft/&quot;&gt;Microsoft Excel worksheets&lt;/a&gt;, you can easily upload them to Google Drive and have them work with &lt;a href=&quot;https://workspace.google.com/products/sheets/&quot;&gt;Google Sheets&lt;/a&gt; - which we recommend in this case. With Google Sheets it is much easier to share your spreadsheet with anyone who might be curious about your itinerary, and then they can follow along with your travels!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: This works great for sharing your itinerary with older family members, since Google Sheets apps are available for all mobile phones and tablets.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ Note: Be careful with your sharing settings and who you send the link to when doing this - protecting your location is important!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When we went to Europe, the spreadsheet was split up into three columns, because of hopping in and out of the Schengen zone - but this time in Asia, it’s just one long column. Let’s break it down into the two main types of sheets.&lt;/p&gt;
+&lt;h3&gt;The Main Page&lt;/h3&gt;
+&lt;figure&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-300.avif 300w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-600.avif 600w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-684.avif 684w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-300.webp 300w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-600.webp 600w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-684.webp 684w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;A trip itinerary planning spreadsheet open in Google Sheets&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-300.png&quot; width=&quot;684&quot; height=&quot;518&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-300.png 300w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-600.png 600w, https://daniela-and-will-travel.github.io/assets/img/fz9iD0AVwf-684.png 684w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/figure&gt;
+&lt;p&gt;I suggest starting with a &lt;em&gt;main&lt;/em&gt; or &lt;em&gt;table of contents&lt;/em&gt; style sheet, which lists the arrival and departure dates for each country/state/territory you are going to visit, the name (obviously), and how long you are going to spend there.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: If you want to get fancy with your Excel/Google Sheet skills, you can link the place name on the “Main Sheet” to the “Individual Place” sheets (which we talk about below).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Individual Places&lt;/h3&gt;
+&lt;p&gt;Next, I would make individual sheets for each place, where you can break it down into a day by day itinerary. I suggest using the following columns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;City&lt;/li&gt;
+&lt;li&gt;Date&lt;/li&gt;
+&lt;li&gt;Number of Days
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1&lt;/code&gt; would symbolize a whole day in a city&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0.5&lt;/code&gt; would be for spending half a day in one city, and half in another&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Activities
+&lt;ul&gt;
+&lt;li&gt;use this to list any day trips, or your itinerary for the day&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Accommodation&lt;/li&gt;
+&lt;li&gt;Transportation
+&lt;ul&gt;
+&lt;li&gt;use this space to show how you are getting from location to location&lt;/li&gt;
+&lt;li&gt;when doing a day trip, we use the space to list the train lines or bus routes we need to take&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: You can link the start and end dates on the “Individual Place” sheets to the “Main Sheet” if you want to get really fancy.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As we travel, we try to update the planning document ahead of time so our family and friends can see where we are going, and then go back and update the activities column with what we did during the day.&lt;/p&gt;
+&lt;p&gt;If you want, you can get fancy by adding formulas that will calculate the start and end dates based on how many days you are in a country. When we did the Europe itinerary, this was setup, but for a shorter trip it’s really not necessary. The itinerary sheet was also linked to the budgeting sheet, but that is a whole other story…&lt;/p&gt;
+&lt;p&gt;Let us know how you use the itinerary spreadsheet, or the way that you have been planning your trips! Or, if you have any questions or suggestions, we would love to hear them and might incorporate them into our future trips.&lt;/p&gt;
+</content>
 		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
 	<entry>
 		<title>How to Use the Budget Sheets</title>
 		<link href="https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/" />
-		<updated>2025-04-12T00:00:00Z</updated>
+		<updated>2025-04-20T00:00:00Z</updated>
 		<id>https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/</id>
-		<content xml:lang="en" type="html">&lt;p&gt;When completing long trips it is important to create a budget and stick to it. When we travel, we start by figuring out how much money we have, and subtract initial expenses. Then we can use the rest of the money to figure out how long to spend in each place. More expensive places, unfortunately, mean less time (and money) to spend, while cheaper places allow us to go slow.&lt;/p&gt;
-&lt;p&gt;It might sound difficult, but it is all very easy to understand once it is down in a spreadsheet! Your spreadsheet can be as simple or as complicated as necessary. On our last two trips I have made a spreadsheet to outline our expenses - check them out on the &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/tools&quot;&gt;tools page&lt;/a&gt;. They are currently Excel worksheets, but if you prefer Google Drive, just upload them, and they should automatically convert. If you are having any trouble, let us know!&lt;/p&gt;
-&lt;p&gt;The spreadsheet also helps us split costs between the tow of us whe none person paid for something that we shared. While that is something you need to figure out with your travel partner (if necessary), we try to always split the costs of everything equally since it is likely that we will both benefit from all purchases.&lt;/p&gt;
+		<content xml:lang="en" type="html">&lt;p&gt;When completing long trips it is important to create a budget and stick to it. When we travel, we start by figuring out how much money we have and subtract initial expenses. Then we can use the rest of the money to determine how long to spend in each place. More expensive places, unfortunately, mean less time (and money) to spend, while cheaper places allow us to go slow.&lt;/p&gt;
+&lt;p&gt;It might sound difficult, but it is all very easy to understand once it is down in a spreadsheet! Your spreadsheet can be as simple or as complicated as necessary. On our last two trips I made a spreadsheet to outline our expenses - check them out on the &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/tools&quot;&gt;tools page&lt;/a&gt;. They are currently &lt;a href=&quot;https://excel.cloud.microsoft/&quot;&gt;Microsoft Excel worksheets&lt;/a&gt;, but if you prefer Google Drive, just upload them, and they should automatically convert. If you are having any trouble, let us know!&lt;/p&gt;
+&lt;p&gt;The spreadsheet also helps us split costs between the two of us when one person pays for something that we share. While that is something you need to figure out with your travel partner (if necessary), we try to always split the costs of everything equally since it is likely that we will both benefit from all purchases.&lt;/p&gt;
 &lt;h2&gt;Breaking Down the Spreadsheet&lt;/h2&gt;
 &lt;p&gt;I created three separate sheets, to organize our before and during the trip, and to provide an overview of who owes who what. They are each broken down below:&lt;/p&gt;
 &lt;h3&gt;Budget by Country&lt;/h3&gt;
 &lt;figure&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-300.avif 300w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-600.avif 600w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1200.avif 1200w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1905.avif 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-300.webp 300w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-600.webp 600w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1200.webp 1200w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1905.webp 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;A budget planning spreadsheet open in Google Sheets&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-300.png&quot; width=&quot;1905&quot; height=&quot;673&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-300.png 300w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-600.png 600w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1200.png 1200w, https://daniela-and-will-travel.github.io/assets/img/yej4nqpJjD-1905.png 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/figure&gt;
-&lt;p&gt;The first sheet lists all of the countries, and creates a budget for each one. There are five different categories of expenses, each one with a sub item for whether Daniela or I bought it.&lt;/p&gt;
-&lt;p&gt;You can add the total amount of money you have budget for the trip at the bottom of the sheet, and then customize how many days you will be in each country, to come up with a per country budget. While we travel, we usually divide this up once more by the number of days, so we know how much we can spend per day, and then convert that in to the local currency.&lt;/p&gt;
+&lt;p&gt;The first sheet lists all of the countries, and creates a budget for each one. There are five different categories of expenses, each one with a sub-item for whether Daniela or I bought it.&lt;/p&gt;
+&lt;p&gt;You can add the total amount of money you have budgeted for the trip at the bottom of the sheet, and then customize how many days you will be in each country, to come up with a per-country budget. While we travel, we usually divide this up once more by the number of days, so we know how much we can spend per day, and then convert that into the local currency.&lt;/p&gt;
 &lt;h3&gt;Split by Person&lt;/h3&gt;
 &lt;figure&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-300.avif 300w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-600.avif 600w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1200.avif 1200w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1905.avif 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-300.webp 300w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-600.webp 600w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1200.webp 1200w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1905.webp 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;A budget planning spreadsheet open in Google Sheets&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-300.png&quot; width=&quot;1905&quot; height=&quot;656&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-300.png 300w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-600.png 600w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1200.png 1200w, https://daniela-and-will-travel.github.io/assets/img/z7hKiesw7i-1905.png 1905w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/figure&gt;
 &lt;p&gt;This sheet is only necessary for those that are traveling with multiple people, since it takes the values from the first sheet, divides them by two, and tells you how much each person owes the other. We then figure out who pays who, based on who has the largest outstanding balance.&lt;/p&gt;
@@ -42,12 +87,12 @@
 &lt;/blockquote&gt;
 &lt;h3&gt;Initial Expenses&lt;/h3&gt;
 &lt;figure&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-300.avif 300w, https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-540.avif 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-300.webp 300w, https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-540.webp 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;A budget planning spreadsheet open in Google Sheets&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-300.png&quot; width=&quot;540&quot; height=&quot;597&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-300.png 300w, https://daniela-and-will-travel.github.io/assets/img/g0uj42TA45-540.png 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/figure&gt;
-&lt;p&gt;The sheet lets you see what expenses you have before the start of the trip (&lt;a href=&quot;https://skyscanner.com&quot;&gt;flights&lt;/a&gt;, &lt;a href=&quot;https://tugo.ca&quot;&gt;travel insurance&lt;/a&gt;, vaccinations), and allows you to divide them fairly. These could also be added to the top row on the first sheet, but we found it easier to move them to a separate one. Just do not forget to subtract any initial expenses out of your total budget calculations so you do not end up running out of money while you are traveling!&lt;/p&gt;
+&lt;p&gt;The sheet lets you see what expenses you have before the start of the trip (&lt;a href=&quot;https://skyscanner.com&quot;&gt;flights&lt;/a&gt;, &lt;a href=&quot;https://tugo.ca&quot;&gt;travel insurance&lt;/a&gt;, vaccinations) and allows you to divide them fairly. These could also be added to the top row on the first sheet, but we found it easier to move them to a separate one. Just do not forget to subtract any initial expenses from your total budget calculations so you do not end up running out of money while you are traveling!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;❕ Tip: This sheet is only useful before you leave on your trip, which is why we have moved it to the end of the list - feel free to drag it around as you feel fit.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Hopefully the templates are useful to some people, and since they are spreadsheets you can edit and customize them with fancy formulas to your hearts content.&lt;/p&gt;
-&lt;p&gt;I have also seen some apps that will allow you to manage budgeting for travels or for making it easy to split costs between friends, which might work better for some people. We prefer working with the spreadsheets, since we can have total control over our budgeting needs.&lt;/p&gt;
+&lt;p&gt;Hopefully, the templates are useful to some people, and since they are spreadsheets you can edit and customize them with fancy formulas to your heart’s content.&lt;/p&gt;
+&lt;p&gt;I have also seen some apps that will allow you to manage budgeting for travel or make it easy to split costs between friends, which might work better for some people. We prefer working with spreadsheets since we can have total control over our budgeting needs.&lt;/p&gt;
 &lt;p&gt;Let us know how you use the spreadsheets, or if you had any great changes you made to them - we might want to incorporate them for our future trips!&lt;/p&gt;
 </content>
 		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
