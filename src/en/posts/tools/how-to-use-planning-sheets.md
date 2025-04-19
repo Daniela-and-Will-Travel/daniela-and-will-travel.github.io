@@ -18,9 +18,9 @@ seo:
 
 I recently posted about [how we use our budget spreadsheet](https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/), so I thought I might continue with that theme and talk about how we track and share our itinerary through another spreadsheet.
 
-On our last two trips I have made a spreadsheet to outline our itinerary - check them out on the [tools page](https://daniela-and-will-travel.github.io/en/tools). While the files you download from our site are [Microsoft Excel worksheets](https://excel.cloud.microsoft/), you can easily upload them to Google Drive and have them work with [Google Sheets](https://workspace.google.com/products/sheets/) - which we recommend in this case. With Google Sheets it is much easier to share your spreadsheet with anyone who might be curious about your itinerary, and then they can follow along with your travels!
+On our last two trips I have made a spreadsheet to outline our itinerary - check them out on the [tools page](https://daniela-and-will-travel.github.io/en/tools). While the files you download from our site are [Microsoft Excel worksheets](https://excel.cloud.microsoft/), you can easily upload them to Google Drive and have them work with [Google Sheets](https://workspace.google.com/products/sheets/) - which we recommend in this case. With Google Sheets, it is much easier to share your spreadsheet with anyone who might be curious about your itinerary, and then they can follow along with your travels!
 
-> ❕ Tip: This works great for sharing your itinerary with older family members, since Google Sheets apps are available for all mobile phones and tablets.
+> ❕ Tip: This works great for sharing your itinerary with older family members since Google Sheets apps are available for all mobile phones and tablets.
 
 > ⚠ Note: Be careful with your sharing settings and who you send the link to when doing this - protecting your location is important!
 
@@ -36,7 +36,7 @@ I suggest starting with a _main_ or _table of contents_ style sheet, which lists
 
 ### Individual Places
 
-Next, I would make individual sheets for each place, where you can break it down into a day by day itinerary. I suggest using the following columns:
+Next, I would make individual sheets for each place, where you can break it down into a day-by-day itinerary. I suggest using the following columns:
 
 - City
 - Date
@@ -54,6 +54,6 @@ Next, I would make individual sheets for each place, where you can break it down
 
 As we travel, we try to update the planning document ahead of time so our family and friends can see where we are going, and then go back and update the activities column with what we did during the day.
 
-If you want, you can get fancy by adding formulas that will calculate the start and end dates based on how many days you are in a country. When we did the Europe itinerary, this was setup, but for a shorter trip it’s really not necessary. The itinerary sheet was also linked to the budgeting sheet, but that is a whole other story...
+If you want, you can get fancy by adding formulas that will calculate the start and end dates based on how many days you are in a country. When we did the Europe itinerary, this was set up, but for a shorter trip, it is not necessary. The itinerary sheet was also linked to the budgeting sheet, but that is a whole other story...
 
-Let us know how you use the itinerary spreadsheet, or the way that you have been planning your trips! Or, if you have any questions or suggestions, we would love to hear them and might incorporate them into our future trips.
+Let us know how you use the itinerary spreadsheet or the way that you have been planning your trips! Or, if you have any questions or suggestions, we would love to hear them and might incorporate them into our future trips.
