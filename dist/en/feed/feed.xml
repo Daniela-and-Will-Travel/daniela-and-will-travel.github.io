@@ -18,9 +18,9 @@
 		<updated>2025-04-20T00:00:00Z</updated>
 		<id>https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/</id>
 		<content xml:lang="en" type="html">&lt;p&gt;I recently posted about &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/&quot;&gt;how we use our budget spreadsheet&lt;/a&gt;, so I thought I might continue with that theme and talk about how we track and share our itinerary through another spreadsheet.&lt;/p&gt;
-&lt;p&gt;On our last two trips I have made a spreadsheet to outline our itinerary - check them out on the &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/tools&quot;&gt;tools page&lt;/a&gt;. While the files you download from our site are &lt;a href=&quot;https://excel.cloud.microsoft/&quot;&gt;Microsoft Excel worksheets&lt;/a&gt;, you can easily upload them to Google Drive and have them work with &lt;a href=&quot;https://workspace.google.com/products/sheets/&quot;&gt;Google Sheets&lt;/a&gt; - which we recommend in this case. With Google Sheets it is much easier to share your spreadsheet with anyone who might be curious about your itinerary, and then they can follow along with your travels!&lt;/p&gt;
+&lt;p&gt;On our last two trips I have made a spreadsheet to outline our itinerary - check them out on the &lt;a href=&quot;https://daniela-and-will-travel.github.io/en/tools&quot;&gt;tools page&lt;/a&gt;. While the files you download from our site are &lt;a href=&quot;https://excel.cloud.microsoft/&quot;&gt;Microsoft Excel worksheets&lt;/a&gt;, you can easily upload them to Google Drive and have them work with &lt;a href=&quot;https://workspace.google.com/products/sheets/&quot;&gt;Google Sheets&lt;/a&gt; - which we recommend in this case. With Google Sheets, it is much easier to share your spreadsheet with anyone who might be curious about your itinerary, and then they can follow along with your travels!&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;❕ Tip: This works great for sharing your itinerary with older family members, since Google Sheets apps are available for all mobile phones and tablets.&lt;/p&gt;
+&lt;p&gt;❕ Tip: This works great for sharing your itinerary with older family members since Google Sheets apps are available for all mobile phones and tablets.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;⚠ Note: Be careful with your sharing settings and who you send the link to when doing this - protecting your location is important!&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;p&gt;❕ Tip: If you want to get fancy with your Excel/Google Sheet skills, you can link the place name on the “Main Sheet” to the “Individual Place” sheets (which we talk about below).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3&gt;Individual Places&lt;/h3&gt;
-&lt;p&gt;Next, I would make individual sheets for each place, where you can break it down into a day by day itinerary. I suggest using the following columns:&lt;/p&gt;
+&lt;p&gt;Next, I would make individual sheets for each place, where you can break it down into a day-by-day itinerary. I suggest using the following columns:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;City&lt;/li&gt;
 &lt;li&gt;Date&lt;/li&gt;
@@ -60,8 +60,8 @@
 &lt;p&gt;❕ Tip: You can link the start and end dates on the “Individual Place” sheets to the “Main Sheet” if you want to get really fancy.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;As we travel, we try to update the planning document ahead of time so our family and friends can see where we are going, and then go back and update the activities column with what we did during the day.&lt;/p&gt;
-&lt;p&gt;If you want, you can get fancy by adding formulas that will calculate the start and end dates based on how many days you are in a country. When we did the Europe itinerary, this was setup, but for a shorter trip it’s really not necessary. The itinerary sheet was also linked to the budgeting sheet, but that is a whole other story…&lt;/p&gt;
-&lt;p&gt;Let us know how you use the itinerary spreadsheet, or the way that you have been planning your trips! Or, if you have any questions or suggestions, we would love to hear them and might incorporate them into our future trips.&lt;/p&gt;
+&lt;p&gt;If you want, you can get fancy by adding formulas that will calculate the start and end dates based on how many days you are in a country. When we did the Europe itinerary, this was set up, but for a shorter trip, it is not necessary. The itinerary sheet was also linked to the budgeting sheet, but that is a whole other story…&lt;/p&gt;
+&lt;p&gt;Let us know how you use the itinerary spreadsheet or the way that you have been planning your trips! Or, if you have any questions or suggestions, we would love to hear them and might incorporate them into our future trips.&lt;/p&gt;
 </content>
 		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
