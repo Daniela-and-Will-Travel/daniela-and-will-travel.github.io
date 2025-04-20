@@ -36,6 +36,8 @@ I suggest starting with a _main_ or _table of contents_ style sheet, which lists
 
 ### Individual Places
 
+{% image "/assets/img/tools/planning/individual.png", "A trip itinerary planning spreadsheet open in Google Sheets", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
+
 Next, I would make individual sheets for each place, where you can break it down into a day-by-day itinerary. I suggest using the following columns:
 
 - City

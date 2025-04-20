@@ -78,13 +78,13 @@ I love the orange accents on the inside, and so the colour is an added bonus for
 
 That being said, I do wish that the zipper pulls were slightly shorter, especially the one on the sunglasses pocket. I find that it can get stuck in the main Pocket of Holding zipper if you are not careful.
 
-For traveling, I thought I would take advantage of the passport holder more often, but I found it to be in an inconvenient spot. It is difficult to swing the bag around and get at the pocket without stopping to set the bag down somewhere. The integrated suitcase strap is a great improvement with this bag, however, since on the old one I disposed of it immediately.
+For traveling, I thought I would take advantage of the passport holder more often, but I found it to be in an inconvenient spot. It is difficult to swing the bag around and get at the pocket without stopping to set the bag down somewhere. The integrated suitcase strap is a great improvement on this bag.
 
 Having the freedom to use the side pockets for a water bottle or the zippered pocket is awesome. Despite my partner's insistence, we (I) do not need to carry two water bottles all day, so having the freedom to use the other one as a secure pocket is super.
 
 ## Fit
 
-As a 6' guy who likes to wear their backpacks slightly lower, with the bottom around the waistline, this backpack fit well and was comfortable fully loaded. I had to let out the straps quite a bit, and it took a week or so of adjusting them based on load to get it to the way I wanted it. I also had to move the chest strap down to the lowest "setting", to get it across a comfortable part of my chest.
+As a 180cm guy who likes to wear their backpacks slightly lower, with the bottom around the waistline, this backpack fit well and was comfortable fully loaded. I had to let out the straps quite a bit, and it took a week or so of adjusting them based on load to get it to the way I wanted it. I also had to move the chest strap down to the lowest "setting", to get it across a comfortable part of my chest.
 
 ## Durability
 
