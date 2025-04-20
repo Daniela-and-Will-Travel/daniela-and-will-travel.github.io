@@ -669,3 +669,24 @@ svg .svg-map-disabled:hover {
         display: none;
     }
 }
+
+/* Scroll to Top */
+.return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--foreground);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.return-to-top:hover {
+    background-color: var(--background);
+}
