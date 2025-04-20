@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon" href="https://daniela-and-will-travel.github.io/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1745041229986">
-        <link rel="stylesheet" href="/style.css?v=1745041229986">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1745127637269">
+        <link rel="stylesheet" href="/style.css?v=1745127637269">
 
         <!-- feeds -->
         <link rel="alternate" href="https://daniela-and-will-travel.github.io/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Daniela and Will Travel">
@@ -199,6 +199,7 @@
 <p>❕ Tip: If you want to get fancy with your Excel/Google Sheet skills, you can link the place name on the “Main Sheet” to the “Individual Place” sheets (which we talk about below).</p>
 </blockquote>
 <h3>Individual Places</h3>
+<figure><picture><source type="image/avif" srcset="/assets/img/7Yx31B8QU1-300.avif 300w, /assets/img/7Yx31B8QU1-600.avif 600w, /assets/img/7Yx31B8QU1-1200.avif 1200w, /assets/img/7Yx31B8QU1-1287.avif 1287w" sizes="100vw"><source type="image/webp" srcset="/assets/img/7Yx31B8QU1-300.webp 300w, /assets/img/7Yx31B8QU1-600.webp 600w, /assets/img/7Yx31B8QU1-1200.webp 1200w, /assets/img/7Yx31B8QU1-1287.webp 1287w" sizes="100vw"><img class="rounded" alt="A trip itinerary planning spreadsheet open in Google Sheets" loading="lazy" fetch="auto" decoding="async" src="/assets/img/7Yx31B8QU1-300.png" width="1287" height="637" srcset="/assets/img/7Yx31B8QU1-300.png 300w, /assets/img/7Yx31B8QU1-600.png 600w, /assets/img/7Yx31B8QU1-1200.png 1200w, /assets/img/7Yx31B8QU1-1287.png 1287w" sizes="100vw"></picture></figure>
 <p>Next, I would make individual sheets for each place, where you can break it down into a day-by-day itinerary. I suggest using the following columns:</p>
 <ul>
 <li>City</li>
@@ -367,7 +368,27 @@
 </div>
 
 
-</article></main>
+    ...
+    <button id="return-to-top" class="return-to-top" onclick="scrollToTop()">↑ Top</button>
+
+</article>
+
+<script>
+    // Show the button when scrolling down
+    window.addEventListener('scroll', function () {
+        const button = document.getElementById('return-to-top');
+        if (window.scrollY > 300) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+
+    // Scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script></main>
 
         <!-- footer -->
         <script>
@@ -416,7 +437,7 @@
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1745041229989" defer></script>
+        <script src="/assets/js/bundle.js?v=1745127637272" defer></script>
         <!-- 100% privacy-first analytics -->
         <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <!--Open all external links in new window-->
