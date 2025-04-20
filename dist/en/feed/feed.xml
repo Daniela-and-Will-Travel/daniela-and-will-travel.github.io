@@ -13,6 +13,56 @@
 		<email>danielaandwilltravel@gmail.com</email>
 	</author>
 	<entry>
+		<title>All About VPNs</title>
+		<link href="https://daniela-and-will-travel.github.io/en/writing/vpns/" />
+		<updated>2025-04-20T00:00:00Z</updated>
+		<id>https://daniela-and-will-travel.github.io/en/writing/vpns/</id>
+		<content xml:lang="en" type="html">&lt;p&gt;While it may sound like an advertisement, a VPN really is super important while abroad. Let me break down what a VPN is, what it allows you to do, and why you should get one!&lt;/p&gt;
+&lt;h2&gt;What is a VPN?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VPN stand for &lt;strong&gt;V&lt;/strong&gt;irtual &lt;strong&gt;P&lt;/strong&gt;rivate &lt;strong&gt;N&lt;/strong&gt;etwork.&lt;/li&gt;
+&lt;li&gt;It takes your network data - search queries, photos, videos - and encrypts them before passing it on to a server in a location you select. It then passes that data through to the website you are trying to visit, making it look like you are in that location.&lt;/li&gt;
+&lt;li&gt;Using encryption, using a VPN hides all network traffic, so no one can see what you are looking at.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: You can test to see if your VPN is working by going to &lt;a href=&quot;https://www.whatismyip.com/&quot;&gt;www.whatismyip.com&lt;/a&gt; before and after connecting to your VPN, and making sure that the IP Addresses are different.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What does a VPN allow you to do?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Switching your location allow you to access region blocked content:
+&lt;ul&gt;
+&lt;li&gt;Streaming services do not always have the same catalog of content in all territories&lt;/li&gt;
+&lt;li&gt;Local websites (like banks) will not always allow you to access their services outside of your country of residence&lt;/li&gt;
+&lt;li&gt;Some workplaces may region lock their accounts for security - &lt;em&gt;I ran into this while in Asia&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Some countries (such as Vietnam), block access to certain websites (in Vietnam’s case, Reddit)&lt;/li&gt;
+&lt;li&gt;If you use unsecured WiFi networks while traveling (like in a cafe or airport), the data passing over the internet is not always encrypted and can be “listened” to&lt;/li&gt;
+&lt;li&gt;If you are someone who likes to &lt;em&gt;sail the high seas&lt;/em&gt; to &lt;em&gt;download Linux ISOs&lt;/em&gt;, then a VPN protects you and your landlord from receiving DMCA complaints&lt;/li&gt;
+&lt;li&gt;VPNs can also make it more difficult for advertisers to track you online, but this also requires &lt;a href=&quot;https://windscribe.com/blog/how-to-actually-be-anonymous-online-801811b7088d/&quot;&gt;good cookie hygiene&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: If you plan on using a VPN to access region blocked media, look for a VPN service that has special servers for this purpose.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;What to Look for in a VPN?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When you choose a VPN, make sure it does not keep any &lt;strong&gt;logs&lt;/strong&gt;, meaning there is no information about what sites you have visited ever stored.&lt;/li&gt;
+&lt;li&gt;You also want to make sure you are paying for it. If you ever use a free service, you are the product - and this is one service where you do not want to be the product.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: Try to look for a VPN with a “killswitch” - it will cut off all internet activity if the VPN becomes disconnected&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕ Tip: VPNs with built-in ad blocking are also available, if that is your thing&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Check out this map of VPN relationshsips, before looking at our recommendations down below&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-300.avif 300w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-600.avif 600w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-1200.avif 1200w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-2400.avif 2400w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-3097.avif 3097w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-300.webp 300w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-600.webp 600w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-1200.webp 1200w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-2400.webp 2400w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-3097.webp 3097w&quot; sizes=&quot;100vw&quot;&gt;&lt;img class=&quot;rounded&quot; alt=&quot;A map of VPN company relationships&quot; loading=&quot;lazy&quot; fetch=&quot;auto&quot; decoding=&quot;async&quot; src=&quot;https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-300.jpeg&quot; width=&quot;3097&quot; height=&quot;2241&quot; srcset=&quot;https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-300.jpeg 300w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-600.jpeg 600w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-1200.jpeg 1200w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-2400.jpeg 2400w, https://daniela-and-will-travel.github.io/assets/img/FEkl-e1-kY-3097.jpeg 3097w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/figure&gt;
+&lt;p&gt;We recommend using Windscribe as your VPN - and we &lt;strong&gt;were not paid&lt;/strong&gt; to say that. They have a low-cost “all you can eat” plan, locations all over the world, and a strict no logging policy. You can check them out here: &lt;a href=&quot;https://windscribe.com/yo/m5yerdq3&quot;&gt;windscribe.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We also recommend trying out Private Internet Access, in case Windscribe does not meet your needs. You can check them out here: &lt;a href=&quot;https://www.privateinternetaccess.com/&quot;&gt;PIA&lt;/a&gt;.&lt;/p&gt;
+</content>
+		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
+	</entry>
+	<entry>
 		<title>How to Use the Planning Sheets</title>
 		<link href="https://daniela-and-will-travel.github.io/en/writing/how-to-use-planning-sheets/" />
 		<updated>2025-04-20T00:00:00Z</updated>
@@ -1584,52 +1634,6 @@ When you get off the Airport Direct bus, most accommodation is a bus ride or sho
 &lt;li&gt;Vik&lt;/li&gt;
 &lt;li&gt;The Northern Lights&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
-	</entry>
-	<entry>
-		<title>Front matter</title>
-		<link href="https://daniela-and-will-travel.github.io/en/writing/frontmatter/" />
-		<updated>2023-08-04T00:00:00Z</updated>
-		<id>https://daniela-and-will-travel.github.io/en/writing/frontmatter/</id>
-		<content xml:lang="en" type="html">&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token front-matter-block&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;token front-matter yaml language-yaml&quot;&gt;layout: page
-title: Main page title, heading level one
-date: 2023-08-04
-modified: 2023-08-04
-thumbnail: /assets/img/test.jpg
-thumbnailDescription: An alt text description for the thumbnail image
-tags: &#39;page-demo&#39;
-draft: true
-eleventyExcludeFromCollections: true
-seo:
-  title: Custom title (defaults to title)
-  description: SEO description
-  slug: mmm-slugs
-  changeFrequency: daily
-  sitemapPriority: &#39;1.0&#39;
-  excludeFromSitemap: true
-  noIndex: true&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;layout&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/layouts/&quot;&gt;Page layout&lt;/a&gt; for the page. Default is &lt;code&gt;post&lt;/code&gt; for posts and &lt;code&gt;page&lt;/code&gt; for pages.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;title&lt;/code&gt; — The title of the current page.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;date&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/dates/&quot;&gt;Published date&lt;/a&gt;. You can set special values here like &lt;code&gt;Last Modified&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;modifed&lt;/code&gt; — Modified date.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;thumbnail&lt;/code&gt; — Relative path to thumbnail / opengraph image. Size &lt;code&gt;1200px x 630px&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;thumbnailDescription&lt;/code&gt; — Alt text for thumbnail.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tags&lt;/code&gt; – &lt;a href=&quot;https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags&quot;&gt;Tags&lt;/a&gt; are currently used for custom body classes.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;draft&lt;/code&gt; — Draft pages will appear locally and on staging but not in production.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;eleventyExcludeFromCollections&lt;/code&gt; — &lt;a href=&quot;https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections&quot;&gt;Hide from 11ty collections&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.title&lt;/code&gt; — Set custom page title for search engines and opengraph.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.description&lt;/code&gt; — Set the page description for search engines and opengraph.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.slug&lt;/code&gt; — Set a new slug for the page that is different from the filename.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.changeFrequency&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#changefreqdef&quot;&gt;How often does this page change&lt;/a&gt;?&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.sitemapPriority&lt;/code&gt; — &lt;a href=&quot;https://www.sitemaps.org/protocol.html#prioritydef&quot;&gt;The priority of this URL relative to other URLs on your site&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.excludeFromSitemap&lt;/code&gt; — Hide this page from your sitemap.xml.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;seo.noIndex&lt;/code&gt; — Discourage search engine indexing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nearly all front matter is optional, except for titles (and dates for posts).&lt;/p&gt;
 </content>
 		<enclosure url="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png" length="0" type="image/png"/>
 	</entry>
