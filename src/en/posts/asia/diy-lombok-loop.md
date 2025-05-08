@@ -24,98 +24,55 @@ While we don't think our _Lombok Loop_ will get ever as popular as the [Ha Giang
 ### Table of Contents
 
 - [How to Get There](#get-there)
-- [Tour vs DIY](#tour-vs-diy)
 - [How Many Days](#length)
-- [Motorbike Info](#motorbike)
-- [Police](#police)
+- [Where to Stay](#stay)
 - [What to Bring](#packing)
 - [The Route](#route)
 
+<!--shot from drone of us on motorbike-->
 {% image "/assets/img/posts/asia/howtogetthere.jpg", "Windy road carving through the mountains", "100vw", "Windy road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-there">How to Get There</h2>
+<h2 id="#get-there">How to Get There + Around</h2>
 
-Odds are if you’re reading this, you already know how to get there and are most likely coming from Hanoi or Sa Pa. Both have buses going directly to Ha Giang, use [12go.asia](https://12go.asia/?z=11258902).
+You can get to Lombok via plane or boat. We recommend arriving via ferry from Bali, since it is quicker and significantly cheaper. Ferry tickets from Padbangi Port (Bali) to Bangsal Port (Lombok), can be purchased online from [12go Asia](12golink). You can choose from speedboats (which get you there in under an hour) or ferries (which take around three). There is also the option to leave from Benoa or Sanur Ports (in Bali), and tickets can also be purchases from [12go Asia](12golink), however we have no experience with this journey.
 
-> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than 4pm is our advice.
+> ⚠ Warning: Both the Padbangi and Benoa/Sanur Ports are significantly outside of the main cities on Bali, so make sure you leave adequate time (and money) for a Grab or Gojek ride through the traffic.
 
-{% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
+If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport size. If you do end up flying, you will need to have your motorbike brought to the airport, and then can start your loop from there.
 
-<h2 id="#tour-vs-diy">Tour vs DIY</h2>
+> ❕ Tip: If flying, start your loop at the airport, head down to Kuta, and then go counter-clockwise, ending up at the airport again to catch your flight out.
 
-Many people opt to take an EasyRider tour to make things easier and leave the planning to someone else. If you are not comfortable riding a motorbike, this may be the choice for you. But if you are on the fence, we had a fantastic time doing it ourselves. Just make sure you have a bit of motorcycle riding experience. If you don't, another good option is to rent the bike a day or two beforehand and get some practice runs in around Ha Giang - even more so if you do not have experience with a semi-automatic motorbike.
+### Where to Rent in Bangsal
 
-### Tour Pros + Cons
+We took a ferry to and from Lombok, arriving at the Bangsal Port. There are a bunch of motorbike rental places nearby:
 
-| **Pros** | **Cons** |
-|----------|----------|
-| No riding experience required | A significant investment |
-| Local insight from tour leader | No flexibility in itinerary |
-| No interaction with police | Tour groups can have 60+ people |
-| Meet new people | This is a "party loop" |
-| No planning required | Language barrier with guides/drivers |
+<!--add google maps links-->
+- [Bangsal Rent Car + Scooter]()
+- [Dodyk Rental Scooter]()
+- [Upank's Rent Carr + Scooter]()
 
-### DIY Pros + Cons
-
-| **Pros** | **Cons** |
-|----------|----------|
-| Less touristy spots | Can be dangerous if riding carelessly |
-| Can get popular spots to yourself | Strongly recommended to get a semi-automatic motorbike |
-| Go at your own pace | More planning required |
-| Significantly cheaper (however more likely to get fined) | Less photo opportunities while on the bike |
-| Cultural immersion | Will be very tired at the end of the day/loop |
+We rented from **Bangsal Rent Car + Scooter** and had a great experience. The owner was willing to hold on to our bags for us, was flexible when our plans changed on the last day, and even arranged our ferry back at a discount from the price online. We had no mechanical trouble with the [Honda Vario]() we received, and it was powerful enough to get around the entire island while also being good on fuel.
 
 <h2 id="#length">How Many Days</h2>
 
-There are three length options to choose from when doing the Ha Giang Loop:
+The amount of time you spend on the Lombok Loop is very flexible, with only a minimum requirement of days. We recommend spending **3 nights, 4 days at a minimum** traveling around Lombok. However, you can add more depending on how many days your itinerary allows, and what activities you want to do.
 
-1. **2 days, 1 night** - if you only have an extremely short amount of time, but this option is honestly not worth it
-2. **3 days, 2 nights** - best if you are in an EasyRider tour, or for those on a very tight budget
-3. **4 days, 3 nights** - overall the best option, allows you to really enjoy the ride and the sights
+While we spent one night in each of the major spots listed on [our route](#route), we think these locations could definitely do with some more time:
 
-We chose to do it in **4 days and 3 nights** since, as somewhat inexperienced riders, we thought it would give us a chance to go at our own pace, and really experience all that the loop had to offer. We found that we were 100% right!
+- **Senggigi** - stay here longer if you want to do any of the 7 peaks on Lombok
+- **Mt. Rinjani** - the famous mountain on Lombok, hiking to the top can take anywhere from 2-4 days
+- **Tetebatu** - many waterfalls and hikes to explore nearby, plus a pleasant village atmosphere
+- **Koeta/Kuta** - the party area of Lombok, also a well known spot for surfing and beautiful beaches
+- **Praya** - many beaches nearby, with a more laid-back atmosphere
 
-<h2 id="#motorbike">Motorbike Info</h2>
+There are also the **Gili Islands**, which can be visited from Bangsal Port. We recommend doing these if you liked the party vibe in Bali, and have time either before or after your stay on Lombok.
 
-When renting a motorbike to complete the Ha Giang Loop, you have two options: semi-automatic or fully automatic. Most people (including us) will recommend that you get a semi-automatic, since it combines the benefits of a manual motorbike with that of an automatic.
+<!--sunset near fancy resort-->
+{% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
 
-A semi-automatic bike cannot stall, like an automatic, but it allows you to select which gear you want to use, like a manual, perfect for going up and down all the hills on the Ha Giang Loop. The ability to change gears also allows you to engine brake while going down steep hills.
+<h2 id="#stay">Where to Stay</h2>
+<!--throw in lots of Booking.com links-->
 
-If this will be your first time riding a motorbike, make sure to check out some YouTube videos on changing gears, engine braking, and how to make minor repairs.
-
-We recommend getting a [Honda Blade](https://qtmotorbikesandtours.com.vn/motorbike-rental-ha-giang-cao-bang/#:~:text=HONDA%20BLADE%20SEMI%2DAUTOMATIC%2C%20110CC), which is a 110CC, semi-automatic bike. It is rated for 160kg, something to keep in mind if you plan on putting multiple people + gear on the bike.
-
-### Rental Options in Ha Giang
-
-We rented from [QT Motorbike](https://qtmotorbikesandtours.com.vn/motorbike-rental-ha-giang-cao-bang/), but there are many other reputable shops out there. Do a quick search on Google Maps and check for good reviews:
-
-- It cost us 180,000 VND per day (in 2025)
-- Plus, 80,000 VND per day for insurance (which we recommend for peace of mind)
-- You can find all the bikes on their website, and they also have an online reservation system
-- They will give you **GIGANTIC** plastic bags for your backpack, and a free poncho
-
-> ❕ Tip: Don't forget a helmet that fits properly! Take your time when picking one out since you are pretty much stuck with it after you leave. Check out [Style Motorbike](https://stylemotorbikes.com/) if you need an option in Ha Giang.
-
-> ❕ Tip: [Petrolimex gas stations](https://www.petrolimex.com.vn/stations.aspx) usually have English speaking attendants, and they all take credit card!
-
-<h2 id="#police">Police</h2>
-
-One of the negatives of DIYing the Ha Giang Loop is that you will most likely interact with the local traffic police. Vietnam requires foreign drivers to hold an International Driving Permit (IDP), and it **must be from 1968**, anything else is not valid. The IDP allows you to legally drive in Vietnam. If you do not have one, the police may issue fines, and you could be asked to stop driving.
-
-> ⚠ Warning: Unfortunately, we are not lawyers, and so this information can not be considered counsel or legal advice.
-
-There are checkpoints along the Ha Giang Loop, where police may stop you to check for documentation, including your IDP. These checkpoints are commonly set up just outside of larger towns and cities, and are usually only manned between 8:00 AM and 5:00 PM, with (sometimes) a break for lunch between 12:00 and 1:00 PM. They also usually have white police cars parked outside, and some are equipped with strobe lights.
-
-Here are some tips if you do encounter the police:
-
-- Hide any extra cash, only keep around 2,000,000 VND
-- Have a couple of photocopies of your passport in case they ask for it
-- If you have a Ha Giang Permit, display that as well
-- If you get fined, make sure to get a receipt - they are usually a pamphlet with the date scribbled on it
-
-If you are stopped, you will likely be asked to pay a fine (bribe). They will tell you that the fine is a maximum of 6,000,000 VND, but if you argue for a while, they will usually bring it down to roughly 2,000,000 VND. They can also impound the bike for 10 days if you do not have the money. We did hear some reports that depending on the power level of your bike, they may raise or lower the fine arbitrarily.
-
-> ❕ Tip: Always wear a helmet, as it is required by law in Vietnam - you will notice considerably more people wearing helmets in the big cities due to this law.
 
 {% image "/assets/img/posts/asia/whattobring.jpg", "Small wooden huts on the side of a mountain", "100vw", "Small wooden huts on the side of a mountain", "rounded", "lazy", "auto", "async", "", "" %}
 
@@ -123,20 +80,14 @@ If you are stopped, you will likely be asked to pay a fine (bribe). They will te
 
 - Motorbike
 - Helmet: make sure it fits well
-- Clothes that layer (including, but not limited to):
-  - Base layer top and bottoms
-  - Sweater
-  - Rain jacket
-  - Thicker pants: we don't recommend riding in shorts, even in the summer
-- Gloves: necessary in the winter
-- Rain Pants/Poncho: it can get wet at any time, also bring spares
+- Clothes: take items that layer
+- Rain Jacket: it can get wet at any time
 - Towel
 - Bathing Suit
 - Toiletries
-- SUNSCREEN: even if it's cloudy
+- Sunscreen: even if it's cloudy
 - Charger(s): don't forget this
 - Power Bank: you will need it if using your phone for GPS
-- SIM Card: both Vittel and Mobifone have enough coverage, but Vittel's is near perfect
 - Water Bottle with Filter: optional, but handy
 - First Aid Kit
 
