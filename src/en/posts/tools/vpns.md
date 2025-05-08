@@ -50,7 +50,9 @@ While it may sound like an advertisement, a VPN really is super important while 
 
 **Check out this map of VPN relationshsips, before looking at our recommendations down below**
 
+<a href="https://windscribe.com/vpnmap?utm_source=danielaandwill">
 {% image "/assets/img/tools/vpn-map.jpg", "A map of VPN company relationships", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
+</a>
 
 We recommend using Windscribe as your VPN - and we **were not paid** to say that. They have a low-cost "all you can eat" plan, locations all over the world, and a strict no logging policy. You can check them out here: [windscribe.com](https://windscribe.com/yo/m5yerdq3).
 
