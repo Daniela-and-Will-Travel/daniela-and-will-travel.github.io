@@ -216,7 +216,7 @@ If you are stopped, you will likely be asked to pay a fine (bribe). They will te
 - Arrive in Du Gia
   - The road between the Skypath and Du Gia is **not well maintained**, be extremely careful for potholes
 
-### Day 4
+### Day 4 - Du Gia to Ha Giang
 
 72km, plus 10km for detours - **avoid DT176 south of Du Gia** - there are reports of the road being horrific.
 

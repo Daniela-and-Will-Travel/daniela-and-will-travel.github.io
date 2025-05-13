@@ -69,7 +69,6 @@ While we spent one night in each of the major spots listed on [our route](#route
 
 There are also the **Gili Islands**, which can be visited from Bangsal Port. We do not recommend doing the main three islands: Gili Trawangan, Gili Meno, and Gili Air, since they are super busy and have pretty much the same party vibe as Bali. If you have extra time, visit the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok).
 
-<!--sunset near fancy resort-->
 {% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#stay">Where to Stay</h2>
@@ -100,97 +99,76 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
 
 <h2 id="#route">The Route</h2>
 
-### Day 1 - Ha Giang to Yen Minh
+### Day 1
 
 - Pick up your bike from Bangsal or the airport
 - Jawirem Beach
+  - Free
   - Black sand beach
   - Many locals bathing and fishing nearby
-- Arrive in Desa Anjar
+- Sedang Gile Waterfall
+  - 20,000 IDR per person
+  - No need for a guide, the monkeys are not _that_ scary
+- Tiu Kelep Waterfall
+  - Continue on to this waterfall from Sedan Gile
+- Stay overnight in [Desa Anjar](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Flandmark%2Fid%2Ftiu-kelep-waterfall.html)
 
-### Day 2 - Yen Minh to Dong Van
+### Day 2
 
-46km, plus 52km for detours
+- Hike up Pergasingan Hill
+  - 25,000 IDR per person
+  - No need for a guide, find the route on [AllTrails](https://www.alltrails.com/trail/indonesia/west-nusa-tenggara/bukit-pergasingan)
+  - 1-2 hours
+  - Beautiful views of farmland and Mt. Rinjani volcano
+- Tetebatu Waterfall
+  - 20,000 IDR per person
+  - No need for a guide, follow directions on [Google Maps](https://www.google.com/maps/place/Tetebatu+Waterfall/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc3525a24662c7:0x7a855b6562cb6787!8m2!3d-8.539947!4d116.421514!16s%2Fg%2F11hygsmtw1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=To%20get%20to,for%20a%20guide.)
+  - Enjoy the picturesque walk through the rice fields before cooling off in the falls
+- Sarang Walet Waterfall
+  - No entrance fee, follow directions on [Google Maps](https://www.google.com/maps/place/Air+Terjun+Sarang+Walet/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc354a2deed911:0x227fdd93329c53ae!8m2!3d-8.5462256!4d116.4253093!16s%2Fg%2F11f2pplvkq?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=Beautiful%20waterfall%2C%20the,the%20bamboo%20bridges.)
+  - 5,000 IDR for parking
+  - A unique waterfall inside of a cave, wading through water is necessary to access
+- Stay overnight in [Tetebatu](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Fss%3DTetebatu%252C%2BWest%2BNusa%2BTenggara%252C%2BIndonesia)
 
-- Chin Khoanh Ramp
-  - Lookout along the road
+> ❕ Tip: You may also consider splitting this day up or adding additional days near Mt. Rinjani if you plan on doing an [overnight trek](https://www.getyourguide.com/sembalun-l146649/trekking-mount-rinjani-summit-2-days-1-night-t503204/?partner_id=8RTQF4P&utm_medium=online_publisher&cmp=lombokmotor) of any of the Seven Peaks on Lombok.
+
+### Day 3
+
+Get up early to visit the first waterfalls uninterrupted, and get a head start on the long drive down south!
+
+- Benang Stokel and Benang Kelambu Waterfalls
+  - 160,000 IDR per person ([for four waterfalls](https://www.google.com/maps/place/Benang+Stokel+and+Benang+Kelambu+Waterfall/@-8.5687347,116.3777629,12.49z/data=!4m6!3m5!1s0x2dcdcc7bffffffff:0xbcf69a91a1975fa5!8m2!3d-8.533019!4d116.3413827!16s%2Fg%2F11f15fw7hd?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=Another%20place%20where%20they%20ask%20for%20absurd%20ticket%20fees%20(3%20tiers).%0A%0ASo%2C%20for%20all%20four%20waterfalls%20they%20ask%20for%20160.000%2C%20and%20tell%20you%2C%20you%20need%20a%20guide%20for%20them.%20But%20for%20125.000%20you%20can%20go%20to%20the%20two%20main%20waterfalls%20without%20a%20guide%20(That%27s%20the%20best%20option%20if%20you%20pay).%20And%2075.000%20to%20one.))
+  - Guide is mandatory, through not necessary
+  - Do not pay for parking the first time, just head straight to the ticket booth on your bike
+  - Lots of opportunities to swim and get amazing pictures
+- Tanjung Aan Beach
   - Free
-  - 5 minutes
-- Lung Cu Flagpole - very popular, so try to arrive early
-  - 10km detour
-  - 40,000 VND per person
-  - 30 minutes
-  - Only go if it is clear, the flag is not always up
-- Northernmost Point of Vietnam
-  - 10km detour
+  - Popular beach for swimming, with beautiful sand
+- Pertamina Mandalika International Circuit
   - Free
-  - 1.5 hours
-  - The Google Maps directions are wrong, make sure to take the route through the town of Xeo Lung
-- Dong Cao/Dong Van Viewpoint
-  - 1km detour
-  - Free
-  - 5 minutes
-- Arrive in Dong Van
+  - Open on non-race days to the public
+  - Home of the MotoGP
+- Stay overnight in busy [Koeta/Kuta](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Fkuta-id.id.html)
+  - Try "Mexican Pizza" at the Cantina Mexicana Kuta Lombok
 
-### Day 3 - Dong Van to Du Gia
-
-98km, plus 10km for detours - this is the most difficult leg of the trip, but is also the most iconic.
-
-- Ma Pi Leng Pass - aka _"Death Road"_
-  - Along the route
-  - Free
-  - 1 hour
-  - You are allowed to ride scooters on the road, regardless of the sign
-  - The scenery is very beautiful, but if you are not confident enough to ride it, just walk
-  - We walked it, and honestly it was better since we had more time to take photos
-- Mỏm Đá Tử Thần - aka _"Death Rock"_
-  - On the Ma Pi Leng Pass
-  - Free
-  - 30 minutes
-  - Go early, this is the most iconic photo on the loop
-- Skypath - great place to bring a drone
-  - Hiking trail accessible via Death Road
-  - 3km one way, 6km round trip
-  - Free, parking is 5,000 VND per bike
-  - 1.5 hours to hike
-  - This is a beautiful hike, make sure to bring your camera
-- Arrive in Du Gia
-  - The road between the Skypath and Du Gia is **not well maintained**, be extremely careful for potholes
+> ❕ Tip: If you like the beach or want to try surfing, Koeta is another great place to spend a couple of nights.
 
 ### Day 4
 
-72km, plus 10km for detours - **avoid DT176 south of Du Gia** - there are reports of the road being horrific.
+Get up early _(again)_, so you have enough time to visit all the sights and drive back to the port up north!
 
-- Du Gia Falls 1
-  - Can park right at the falls
+- Lancing Beach
   - Free
-  - 30 minutes
-  - Do not follow the Google Maps directions, follow the tour groups, or check out [this review](https://maps.app.goo.gl/u2m8FZPa4LSuob1W9) on Google Maps
-- Du Gia Falls 2
-  - Access from the same parking lot as Du Gia Falls 1
+  - Beautiful, peaceful beach, great for swimming
+- Semeti Hills
+  - Free, but some enterprising locals might try to charge you
+  - Difficult road to traverse, but slowly you can make it down!
+  - Cool cliffs nearby that can be climbed over
+- Selong Belanak Beach
   - Free
-  - Additional 30 minutes, plus time for swimming
-  - Check out [this review](https://maps.app.goo.gl/BhM2WfXg3UsYp6ro6) on Google Maps for directions
-  - This is a much more private place to swim
-- Aboong "Secret" Waterfall
-  - 4.5km ahead of the Aboong Waterfall
+  - Peaceful beach with little to no people
+- Nambung Beach
   - Free
-  - Not so secret anymore, the tour groups now stop here
-  - 5 minutes
-  - There is no coverage here from either Vittel or Mobifone
-- Aboong Waterfall
-  - Along the route
-  - Free
-  - 30 minutes
-  - Great place to get a video jumping into the waterfall
-  - There is no coverage here from either Vittel or Mobifone
-- Little Ma Pi Leng Canyon
-  - Along the route
-  - Free
-  - 5 minutes
-  - Great place to stop for photos, if you want to do a cruise, do the half tour since it is cheaper
-- Arrive in Ha Giang
-  - If you have extra time, you can visit the Waterfall near Ha Giang
-  - Or, the Ha Giang Viewpoint
-
-> ❕ Tip: Another blog you can check out (and that was super useful in our planning) is TheBrowneTown's [Complete Ha Giang Loop Guide](https://thebrownetown.com/ha-giang-loop-guide/).
+  - Another beautiful, peaceful beach
+  - Far on the right of the beach, there is a waterfall created by the incoming tide
+- Head back up to Bangsal to catch your ferry back, or to the airport
