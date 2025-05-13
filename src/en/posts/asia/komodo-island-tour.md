@@ -34,7 +34,7 @@ Everything you need to know BEFORE going to Komodo National Park!
 
 There is no way to arrive directly in Komodo - instead you will want to fly or ferry into Labuan Bajo, a city on a nearby island. There are many flight options available, leaving from Jakarta, Bali, or Lombok, so pick whatever fits best with your itinerary. If you are up for more of an adventure, there are also ferries that take you from Bali or Lombok to Labuan Bajo, however, these can take anywhere from two to three nights! They do usually come in at a lower cost, but it depends how much you value your time (and potential for seasickness).
 
-> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than 4pm is our advice.
+> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than 2pm is our advice.
 
 <!--12go link/skyscanner-->
 
@@ -88,10 +88,13 @@ Make sure your tour includes at least some of these locations!
 - Bathing Suit
 - Snorkel + Goggles: the boats will have these in case you forget
 - Toiletries
+- Motion Sickness Pills
+- Pepto Bismol: food cleanliness can be sub-optimal
 - Sunscreen: even if it's cloudy
 - Camera: A zoom lense is helpful for getting up close
 - Charger(s): don't forget this
-- Power Bank: you will need it if using your phone for GPS
+- Power Bank: not all boats and homestays have sockets
+- Book/Kindle: the long boat rides can get boring
 - Water Bottle with Filter: optional, but handy
 
 <!--komodo dragon photo-->
