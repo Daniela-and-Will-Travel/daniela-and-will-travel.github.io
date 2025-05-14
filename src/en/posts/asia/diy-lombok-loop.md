@@ -37,11 +37,11 @@ You can get to Lombok via plane or boat. We recommend arriving via ferry from Ba
 
 > ⚠ Warning: Both the Padbangi and Benoa/Sanur Ports are significantly outside of the main cities on Bali, so make sure you leave adequate time (and money) for a Grab or Gojek ride through the traffic.
 
-When departing from Padbangi, your Grab or Gojek driver will need to drop you off outside of the entrance to the port, since there is a **local taxi mafia** that will extract a hefty fee from outside drivers. Once inside the port, Google Maps is your friend to find the office of your chosen ferry company. When arriving back to Padbangi, the taxi mafia will try to scam you into hoping in one of their overpriced cars back to Denpasar, saying things like "the shuttle bus will take four hours" or "you have to walk sixteen kilometers to the Grab pickup point". Do not fall for this - take your bags, exit the port, and walk to the nearby [tourist police station](https://maps.app.goo.gl/HJBxwM53RCZxcjPw9), where you can then order a Grab or Gojek, and will not be hassled.
+When departing from Padbangi, your Grab or Gojek driver will need to drop you off outside of the entrance to the port, since there is a **local taxi mafia** that will extract a hefty fee from outside drivers. Once inside the port, Google Maps is your friend to find the office of your chosen ferry company. When arriving back to Padbangi, the taxi mafia will try to scam you into hoping in one of their overpriced cars back to Denpasar, saying things like "the shuttle bus will take four hours" or "you have to walk sixteen kilometers to the Grab pickup point". Do not fall for this - take your bags, exit the port, and walk to the nearby [tourist police station](https://maps.app.goo.gl/HJBxwM53RCZxcjPw9), where you can then order a Grab or Gojek, and will not be hassled... hopefully.
 
-If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport size. If you do end up flying, you will need to have your motorbike brought to the airport, and then can start your loop from there.
+If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport size. If you do end up flying, you can pay an additional fee to have your motorbike brought to/from the airport, and then can start your loop from there.
 
-> ❕ Tip: If flying, start your loop at the airport, head down to Kuta, and then go counter-clockwise, ending up at the airport again to catch your flight out.
+> ❕ Tip: If flying, start your loop at the airport, head down to Koeta, and then go counter-clockwise, ending up at the airport again to catch your flight out.
 
 <h2 id="#get-around">How to Get Around</h2>
 
@@ -67,13 +67,13 @@ While we spent one night in each of the major spots listed on [our route](#route
 - **Koeta/Kuta** - the party area of Lombok, also a well known spot for surfing and beautiful beaches
 - **Praya** - many beaches nearby, with a more laid-back atmosphere
 
-There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan, Gili Meno, and Gili Air, which can be visited on your way to or from Lombok, when ferrying from Bali. We unfortunately did not have enough time to go to _ANY_ Gilis, so we cannot give a personal recommendation. However, had we gone, we would have most likely gone to the the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok).
+There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan, Gili Meno, and Gili Air, which can be visited on your way to or from Lombok, when ferrying from Bali. We unfortunately did not have enough time to go to _ANY_ Gilis, so we cannot give a personal recommendation. However, had we gone, we would have most likely gone to the the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok) or to the Gilis in the Southeast, by Pink Beach.
 
 {% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#stay">Where to Stay</h2>
 
-Staying in homestays while on your loop around Lombok gives you the best opportunity to visit the more rural parts of Lombok, learn from the locals, and in most cases, experience great company and food! Here are some places we stayed on our loop:
+Staying in homestays while on your loop gives you the best opportunity to visit the more rural parts of Lombok, learn from the locals, and in most cases, experience great company and food! Here are the places we stayed while on our loop:
 
 - [de Travelodge Homestay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fde-travelodge-homestay.en-gb.html), near **Desa Anjar**, a perfect stop on your first night
 - [Tetebatu Sunrise Homestay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Ftetebatu-sunrise.en-gb.html), in **Tetebatu**, delicous food and close to multiple waterfalls
@@ -120,10 +120,10 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
   - No need for a guide, find the route on [AllTrails](https://www.alltrails.com/trail/indonesia/west-nusa-tenggara/bukit-pergasingan)
   - 1-2 hours
   - Beautiful views of farmland and Mt. Rinjani volcano
-  - _We planned to do this activity, but were unable to due to some injuries_
+  - _We planned to do this activity, but were unable to due to some poorly timed injuries_
 - Tetebatu Waterfall
   - 20,000 IDR per person
-  - No need for a guide, follow directions on [Google Maps](https://www.google.com/maps/place/Tetebatu+Waterfall/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc3525a24662c7:0x7a855b6562cb6787!8m2!3d-8.539947!4d116.421514!16s%2Fg%2F11hygsmtw1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=To%20get%20to,for%20a%20guide.)
+  - No need for a guide, follow (Will's) directions on [Google Maps](https://www.google.com/maps/place/Tetebatu+Waterfall/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc3525a24662c7:0x7a855b6562cb6787!8m2!3d-8.539947!4d116.421514!16s%2Fg%2F11hygsmtw1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=To%20get%20to,for%20a%20guide.)
   - Enjoy the picturesque walk through the rice fields before cooling off in the falls
 - Sarang Walet Waterfall
   - No entrance fee, follow directions on [Google Maps](https://www.google.com/maps/place/Air+Terjun+Sarang+Walet/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc354a2deed911:0x227fdd93329c53ae!8m2!3d-8.5462256!4d116.4253093!16s%2Fg%2F11f2pplvkq?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=Beautiful%20waterfall%2C%20the,the%20bamboo%20bridges.)
@@ -150,7 +150,7 @@ Get up early to visit the first waterfalls uninterrupted, and get a head start o
   - Open on non-race days to the public
   - Home of the MotoGP
 - Stay overnight in busy [Koeta/Kuta](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Fkuta-id.id.html)
-  - Try "Mexican Pizza" at the Cantina Mexicana Kuta Lombok
+  - Theres lots of Western and Indonesian restaurants, we were intrigued by the "Mexican Pizza" at the Cantina Mexicana Kuta Lombok
 
 > ❕ Tip: If you like the beach or want to try surfing, Koeta is another great place to spend a couple of nights.
 
@@ -171,5 +171,7 @@ Get up early _(again)_, so you have enough time to visit all the sights and driv
 - Nambung Beach
   - Free
   - Another beautiful, peaceful beach
-  - Far on the right of the beach, there is a waterfall created by the incoming tide
+  - Far on the right of the beach, there is a "waterfall" created by the incoming tide
 - Head back up to Bangsal to catch your ferry back, or to the airport
+
+Hope this guide gives you the inspiration to book that Lombok trip! Thanks for reading, and as always, this is based on our personal experiences and observations. Feel free to message us on Instagram if you have any questions or comments!
