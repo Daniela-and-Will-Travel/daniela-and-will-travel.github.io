@@ -11,12 +11,12 @@ tags:
 draft: false
 eleventyExcludeFromCollections: false
 seo:
-  title: Lombok by Motorbike 2025
+  title: Lombok by Motorbike in 2025
   description: Everything you need to know before riding around Lombok on a motorbike!
   changeFrequency: yearly
 ---
 
-{% image "/assets/img/posts/asia/cover.jpg", "Road carving through the mountains", "100vw", "Road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/lombokcover.jpeg", "Mt. Rinjani rising over a beach between the clouds", "100vw", "Mt. Rinjani rising over a beach between the clouds", "rounded", "lazy", "auto", "async", "", "" %}
 
 While we don't think our _Lombok Loop_ will get ever as popular as the [Ha Giang Loop](http://daniela-and-will-travel.github.io/en/writing/diy-the-ha-giang-loop/) (and honestly, we hope it won't), here is the best way to travel around the island of Lombok and experience everything it has to offer.
 
@@ -29,11 +29,11 @@ While we don't think our _Lombok Loop_ will get ever as popular as the [Ha Giang
 - [What to Bring](#packing)
 - [The Route](#route)
 
-{% image "/assets/img/posts/asia/howtogetthere.jpg", "Windy road carving through the mountains", "100vw", "Windy road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/lombokcover.jpeg", "Mt. Rinjani rising over a beach between the clouds", "100vw", "Mt. Rinjani rising over a beach between the clouds", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#get-there">How to Get There</h2>
 
-You can get to Lombok via plane or boat. We recommend arriving via ferry from Bali, since it is quicker and significantly cheaper. Ferry tickets from Padbangi Port (Bali) to Bangsal Port (Lombok), can be purchased online from [12go Asia](https://12go.asia/?z=11258902). You can choose from speedboats (which get you there in under an hour) or ferries (which take around three). There is also the option to leave from Benoa or Sanur Ports (in Bali), and tickets can also be purchases from [12go Asia](https://12go.asia/?z=11258902), however we have no experience with this journey.
+You can get to Lombok via plane or boat. We recommend arriving via ferry from Bali, since it is quicker and significantly cheaper. Ferry tickets from Padbangi Port (Bali) to Bangsal Port (Lombok), can be purchased online from [12go Asia](https://12go.asia/?z=11258902). You can choose from speedboats (which get you there in under an hour) or ferries (which take around three). There is also the option to leave from Benoa or Sanur Ports (in Bali), and tickets can also be purchased from [12go Asia](https://12go.asia/?z=11258902), however we have no experience with this journey.
 
 > ⚠ Warning: Both the Padbangi and Benoa/Sanur Ports are significantly outside of the main cities on Bali, so make sure you leave adequate time (and money) for a Grab or Gojek ride through the traffic.
 
@@ -67,7 +67,7 @@ While we spent one night in each of the major spots listed on [our route](#route
 - **Koeta/Kuta** - the party area of Lombok, also a well known spot for surfing and beautiful beaches
 - **Praya** - many beaches nearby, with a more laid-back atmosphere
 
-There are also the **Gili Islands**, which can be visited from Bangsal Port. We do not recommend doing the main three islands: Gili Trawangan, Gili Meno, and Gili Air, since they are super busy and have pretty much the same party vibe as Bali. If you have extra time, visit the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok).
+There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan, Gili Meno, and Gili Air, which can be visited on your way to or from Lombok, when ferrying from Bali. We unfortunately did not have enough time to go to _ANY_ Gilis, so we cannot give a personal recommendation. However, had we gone, we would have most likely gone to the the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok).
 
 {% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
 
@@ -120,6 +120,7 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
   - No need for a guide, find the route on [AllTrails](https://www.alltrails.com/trail/indonesia/west-nusa-tenggara/bukit-pergasingan)
   - 1-2 hours
   - Beautiful views of farmland and Mt. Rinjani volcano
+  - _We planned to do this activity, but were unable to due to some injuries_
 - Tetebatu Waterfall
   - 20,000 IDR per person
   - No need for a guide, follow directions on [Google Maps](https://www.google.com/maps/place/Tetebatu+Waterfall/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc3525a24662c7:0x7a855b6562cb6787!8m2!3d-8.539947!4d116.421514!16s%2Fg%2F11hygsmtw1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=To%20get%20to,for%20a%20guide.)
@@ -138,7 +139,7 @@ Get up early to visit the first waterfalls uninterrupted, and get a head start o
 
 - Benang Stokel and Benang Kelambu Waterfalls
   - 160,000 IDR per person ([for four waterfalls](https://www.google.com/maps/place/Benang+Stokel+and+Benang+Kelambu+Waterfall/@-8.5687347,116.3777629,12.49z/data=!4m6!3m5!1s0x2dcdcc7bffffffff:0xbcf69a91a1975fa5!8m2!3d-8.533019!4d116.3413827!16s%2Fg%2F11f15fw7hd?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=Another%20place%20where%20they%20ask%20for%20absurd%20ticket%20fees%20(3%20tiers).%0A%0ASo%2C%20for%20all%20four%20waterfalls%20they%20ask%20for%20160.000%2C%20and%20tell%20you%2C%20you%20need%20a%20guide%20for%20them.%20But%20for%20125.000%20you%20can%20go%20to%20the%20two%20main%20waterfalls%20without%20a%20guide%20(That%27s%20the%20best%20option%20if%20you%20pay).%20And%2075.000%20to%20one.))
-  - Guide is mandatory, through not necessary
+  - Guide is mandatory, though not necessary
   - Do not pay for parking the first time, just head straight to the ticket booth on your bike
   - Lots of opportunities to swim and get amazing pictures
 - Tanjung Aan Beach
