@@ -31,17 +31,19 @@ Everything you need to know BEFORE going to Komodo National Park!
 
 <h2 id="#get-there">How to Get There</h2>
 
-There is no way to arrive directly in Komodo - instead you will want to fly or ferry into [Labuan Bajo](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=komodotour&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Flabuhanbajo.html%3Finac%3D0%26lang%3Den-us%26soz%3D1%26lang_click%3Dother%26cdl%3Did%26lang_changed%3D1), a city on a nearby island. There are many flight options available, leaving from Jakarta, Bali, or Lombok, so pick whatever fits best with your itinerary. If you are up for more of an adventure, there are also ferries that take you from Bali or Lombok to Labuan Bajo, however, these can take anywhere from two to three nights! They do usually come in at a lower cost, but it depends how much you value your time (and potential for seasickness).
+There is no way to arrive directly in Komodo - instead you will need to fly or ferry into [Labuan Bajo](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=komodotour&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Flabuhanbajo.html%3Finac%3D0%26lang%3Den-us%26soz%3D1%26lang_click%3Dother%26cdl%3Did%26lang_changed%3D1), a city on a nearby island. There are many flight options available, leaving from Jakarta, Bali, or Lombok, so pick whatever fits best with your itinerary. If you are up for more of an adventure, there are also ferries that take you from Bali or Lombok to Labuan Bajo, however, these can take anywhere from two to three nights! They do usually come in at a lower cost, but it depends how much you value your time (and potential for seasickness).
 
-> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than **2pm** is our advice.
+> ❕ Tip: Arrive in Labuan Bajo at least one day before with enough time to get everything you need sorted - no later than **2pm** is our advice.
 
 <h2 id="#tour">What to Look for in a Tour</h2>
 
-Head down near the port and along the main street, and you will find many shops offering tours. Make sure you shop around and visit multiple, as well as ask at your accommodation to find the best price. Prices in person are much better than online, just make sure you have enough cash. Do check online to make sure the company you are thinking of traveling with is reputable. We ended up getting an overnight, semi-private tour for 1,600,000 IDR per person.
+Head down near the port and along the main street, and you will find many shops offering tours. Make sure you shop around and visit multiple stalls, as well as ask at your accommodation to find the best price. Prices in person are much better than online - just make sure you have enough cash. We ended up getting an overnight, semi-private tour for 1,600,000 IDR per person. Check online to make sure the company you are thinking of traveling with is reputable.
 
 The entry fee to Komodo National Park helps preserve the environment and protect the Komodo Dragons, but is also quite steep at 600,000 IDR per person. Check to see if it is **included** in the price of your tour before booking.
 
-If you can, try to book a tour that has your overnight accommodation on the boat. We arrived too late in Lauban Bajo and missed all the tours with this option, so we had to wake up at 3:30am to get on the boat. You will want to see Padar Island thanks to its beautiful lighting during the sunrise.
+If you can, try to book a tour that has your overnight accommodation on the boat. We arrived too late in the evening in Lauban Bajo and missed all the tours with this option, so we had to wake up at 3:30am to get on the boat. You will want to see Padar Island thanks to its beautiful lighting during the sunrise.
+
+**Here are some tours from GetYourGuide as a reference or if you like to plan ahead:**
 
 <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="8RTQF4P"></script>
 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="en-US" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="komodotour" data-gyg-partner-id="8RTQF4P" data-gyg-q="Komodo dragon tour"></div>
@@ -85,8 +87,8 @@ Make sure your tour includes at least some of these locations!
 - Snorkel + Goggles: the boats will have these in case you forget
 - Toiletries
 - Motion Sickness Pills
-- Pepto Bismol: food cleanliness can be sub-optimal
-- Sunscreen: even if it's cloudy
+- Pepto Bismol: better safe than sorry
+- Sunscreen: ALWAYS! Even if it's cloudy
 - Camera: A zoom lense is helpful for getting up close
 - Charger(s): don't forget this
 - Power Bank: not all boats and homestays have sockets
@@ -104,7 +106,7 @@ If you do see a Komodo, keep your distance, and **ALWAYS** listen to the park ra
 Here are some other fun facts about the Komodo Dragon:
 
 1. **They're incredibly long-lived:** Komodo dragons can live for 40-60 years. They have been around for millions of years and have adapted to their tropical environment.
-
 2. **They’re apex predators:** Komodo Dragons are considered the top predators in their region, and are incredibly powerful, able to take down large prey like deer, and water buffalo.
-
 3. **They have a unique, complex tongue:** Their tongue is incredibly long and muscular and helps detect prey hidden in the sand.
+
+There you have it! Thanks for reading our guide to Komodo National Park. This is based on our personal experiences and observations, so feel free to message us on Instagram if you have any questions or comments!
