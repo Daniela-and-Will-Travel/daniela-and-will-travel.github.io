@@ -27,16 +27,13 @@ Everything you need to know BEFORE going to Komodo National Park!
 - [What to Bring](#packing)
 - [The Komodo Dragon](#dragon)
 
-<!--stunning picture from instagram-->
-{% image "/assets/img/posts/asia/howtogetthere.jpg", "Windy road carving through the mountains", "100vw", "Windy road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komodocover.jpg", "Beautiful arial shot of the Komodo Islands", "100vw", "Beautiful arial shot of the Komodo Islands", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#get-there">How to Get There</h2>
 
-There is no way to arrive directly in Komodo - instead you will want to fly or ferry into Labuan Bajo, a city on a nearby island. There are many flight options available, leaving from Jakarta, Bali, or Lombok, so pick whatever fits best with your itinerary. If you are up for more of an adventure, there are also ferries that take you from Bali or Lombok to Labuan Bajo, however, these can take anywhere from two to three nights! They do usually come in at a lower cost, but it depends how much you value your time (and potential for seasickness).
+There is no way to arrive directly in Komodo - instead you will want to fly or ferry into [Labuan Bajo](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=komodotour&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Flabuhanbajo.html%3Finac%3D0%26lang%3Den-us%26soz%3D1%26lang_click%3Dother%26cdl%3Did%26lang_changed%3D1), a city on a nearby island. There are many flight options available, leaving from Jakarta, Bali, or Lombok, so pick whatever fits best with your itinerary. If you are up for more of an adventure, there are also ferries that take you from Bali or Lombok to Labuan Bajo, however, these can take anywhere from two to three nights! They do usually come in at a lower cost, but it depends how much you value your time (and potential for seasickness).
 
-> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than 2pm is our advice.
-
-<!--12go link/skyscanner-->
+> ❕ Tip: Arrive at least one day before with enough time to get everything you need sorted - no later than **2pm** is our advice.
 
 <h2 id="#tour">What to Look for in a Tour</h2>
 
@@ -46,10 +43,10 @@ The entry fee to Komodo National Park helps preserve the environment and protect
 
 If you can, try to book a tour that has your overnight accommodation on the boat. We arrived too late in Lauban Bajo and missed all the tours with this option, so we had to wake up at 3:30am to get on the boat. You will want to see Padar Island thanks to its beautiful lighting during the sunrise.
 
-<!--getyourguide link-->
+<script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="8RTQF4P"></script>
+<div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="en-US" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="komodotour" data-gyg-partner-id="8RTQF4P" data-gyg-q="Komodo dragon tour"></div>
 
-<!--night picture-->
-{% image "/assets/img/posts/asia/howtogetthere.jpg", "Windy road carving through the mountains", "100vw", "Windy road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komodosunset.jpg", "Beautiful sunset near Komodo from our tour boat", "100vw", "Beautiful sunset near Komodo from our tour boat", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#length">How Many Days</h2>
 
@@ -76,8 +73,7 @@ Make sure your tour includes at least some of these locations!
 - Pulau Kelor
 - Pulau Kalong
 
-<!--daniela on the beach?-->
-{% image "/assets/img/posts/asia/whattobring.jpg", "Small wooden huts on the side of a mountain", "100vw", "Small wooden huts on the side of a mountain", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komododaniela.jpg", "Daniela enjoying the pink sand beach", "100vw", "Daniela enjoying the pink sand beach", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#packing">What to Bring</h2>
 
@@ -97,8 +93,7 @@ Make sure your tour includes at least some of these locations!
 - Book/Kindle: the long boat rides can get boring
 - Water Bottle with Filter: optional, but handy
 
-<!--komodo dragon photo-->
-{% image "/assets/img/posts/asia/theroute.jpg", "Road carving through the mountains", "100vw", "Road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komododragon.jpg", "Close up of a Komodo Dragon", "100vw", "Close up of a Komodo Dragon", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#dragon">The Komodo Dragon</h2>
 
