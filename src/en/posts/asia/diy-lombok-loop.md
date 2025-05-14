@@ -29,7 +29,7 @@ While we don't think our _Lombok Loop_ will get ever as popular as the [Ha Giang
 - [What to Bring](#packing)
 - [The Route](#route)
 
-{% image "/assets/img/posts/asia/lombokcover.jpeg", "Mt. Rinjani rising over a beach between the clouds", "100vw", "Mt. Rinjani rising over a beach between the clouds", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/lombokget.jpeg", "Multiple ferries in a port, viewed from the side of another ferry", "100vw", "The view from one of the many ferries in Bali", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#get-there">How to Get There</h2>
 
@@ -42,6 +42,8 @@ When departing from Padbangi, your Grab or Gojek driver will need to drop you of
 If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport size. If you do end up flying, you can pay an additional fee to have your motorbike brought to/from the airport, and then can start your loop from there.
 
 > ❕ Tip: If flying, start your loop at the airport, head down to Koeta, and then go counter-clockwise, ending up at the airport again to catch your flight out.
+
+{% image "/assets/img/posts/asia/lombokmotor.png", "Arial footage of a motorcycle driving down the coast", "100vw", "Our trusty, fuel efficient motorbike along the coast", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#get-around">How to Get Around</h2>
 
@@ -69,7 +71,7 @@ While we spent one night in each of the major spots listed on [our route](#route
 
 There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan, Gili Meno, and Gili Air, which can be visited on your way to or from Lombok, when ferrying from Bali. We unfortunately did not have enough time to go to _ANY_ Gilis, so we cannot give a personal recommendation. However, had we gone, we would have most likely gone to the the [_Secrete Gilis_](https://amazinglombokresort.com/explorelombok/read/secret-gili) instead, which are a group of islands on the East coast of Lombok, located in [Sekotong Bay](https://amazinglombokresort.com/explorelombok/read/sekotong-lombok) or to the Gilis in the Southeast, by Pink Beach.
 
-{% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/lombokwaves.png", "Arial view of blue waves crashing over cliffs", "100vw", "Beautiful blue waves crashing over the Semeti Hills", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#stay">Where to Stay</h2>
 
@@ -95,7 +97,7 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
 - Water Bottle with Filter: optional, but handy
 - First Aid Kit
 
-{% image "/assets/img/posts/asia/theroute.jpg", "Road carving through the mountains", "100vw", "Road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/lombokfalls.jpeg", "Two people standing in front of a waterfall", "100vw", "One of the beautiful, multi-level waterfalls you will see", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#route">The Route</h2>
 

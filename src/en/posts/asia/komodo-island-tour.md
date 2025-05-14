@@ -27,7 +27,7 @@ Everything you need to know BEFORE going to Komodo National Park!
 - [What to Bring](#packing)
 - [The Komodo Dragon](#dragon)
 
-{% image "/assets/img/posts/asia/komodocover.jpg", "Beautiful arial shot of the Komodo Islands", "100vw", "Beautiful arial shot of the Komodo Islands", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komodocover.jpg", "Arial shot of islands surrounded by beaches and blue water", "100vw", "Beautiful arial shot of the Komodo Islands", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#get-there">How to Get There</h2>
 
@@ -48,7 +48,7 @@ If you can, try to book a tour that has your overnight accommodation on the boat
 <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="8RTQF4P"></script>
 <div data-gyg-href="https://widget.getyourguide.com/default/activities.frame" data-gyg-locale-code="en-US" data-gyg-widget="activities" data-gyg-number-of-items="3" data-gyg-cmp="komodotour" data-gyg-partner-id="8RTQF4P" data-gyg-q="Komodo dragon tour"></div>
 
-{% image "/assets/img/posts/asia/komodosunset.jpg", "Beautiful sunset near Komodo from our tour boat", "100vw", "Beautiful sunset near Komodo from our tour boat", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komodosunset.jpg", "Multicoloured sunset viewed over the water from the side of a boat", "100vw", "Beautiful sunset near Komodo from our tour boat", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#length">How Many Days</h2>
 
@@ -75,7 +75,7 @@ Make sure your tour includes at least some of these locations!
 - Pulau Kelor
 - Pulau Kalong
 
-{% image "/assets/img/posts/asia/komododaniela.jpg", "Daniela enjoying the pink sand beach", "100vw", "Daniela enjoying the pink sand beach", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/asia/komododaniela.jpg", "Daniela sitting on a pink sand beach", "100vw", "Daniela enjoying the pink sand beach", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="#packing">What to Bring</h2>
 
