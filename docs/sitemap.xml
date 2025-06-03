@@ -86,7 +86,7 @@
 	</url>
 	<url>
 		<loc>https://daniela-and-will-travel.github.io/</loc>
-		<lastmod>2025-05-12T00:00:00Z</lastmod>
+		<lastmod>2025-06-02T00:00:00Z</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -117,6 +117,12 @@
 	<url>
 		<loc>https://daniela-and-will-travel.github.io/en/writing/diy-lombok-loop/</loc>
 		<lastmod>2025-05-12T00:00:00Z</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://daniela-and-will-travel.github.io/en/writing/nias-island/</loc>
+		<lastmod>2025-06-02T00:00:00Z</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.7</priority>
 	</url>
