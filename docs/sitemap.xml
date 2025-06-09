@@ -85,12 +85,6 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://daniela-and-will-travel.github.io/</loc>
-		<lastmod>2025-06-02T00:00:00Z</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
 		<loc>https://daniela-and-will-travel.github.io/en/writing/how-to-use-budget-sheets/</loc>
 		<lastmod>2025-04-20T00:00:00Z</lastmod>
 		<changefreq>yearly</changefreq>
@@ -124,6 +118,12 @@
 		<loc>https://daniela-and-will-travel.github.io/en/writing/nias-island/</loc>
 		<lastmod>2025-06-02T00:00:00Z</lastmod>
 		<changefreq>yearly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://daniela-and-will-travel.github.io/</loc>
+		<lastmod>2025-06-09T14:05:26Z</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
 </urlset>
