@@ -18,6 +18,8 @@ seo:
 
 While it may sound like an advertisement, a VPN really is super important while abroad. Let me break down what a VPN is, what it allows you to do, and why you should get one!
 
+{% image "/assets/img/tools/vpns.jpg", "A collection of computers and phones on a table.", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
+
 ## What is a VPN?
 
 - VPN stand for **V**irtual **P**rivate **N**etwork.
@@ -48,12 +50,12 @@ While it may sound like an advertisement, a VPN really is super important while 
 
 > ❕ Tip: VPNs with built-in ad blocking are also available, if that is your thing
 
-**Check out this map of VPN relationshsips, before looking at our recommendations down below**
-
-<a href="https://windscribe.com/vpnmap?utm_source=danielaandwill">
-{% image "/assets/img/tools/vpn-map.jpg", "A map of VPN company relationships", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
-</a>
-
 We recommend using Windscribe as your VPN - and we **were not paid** to say that. They have a low-cost "all you can eat" plan, locations all over the world, and a strict no logging policy. You can check them out here: [windscribe.com](https://windscribe.com/yo/m5yerdq3).
 
 We also recommend trying out Private Internet Access, in case Windscribe does not meet your needs. You can check them out here: [PIA](https://www.privateinternetaccess.com/).
+
+**Check out this map of VPN relationshsips:**
+
+<a href="https://kumu.io/Windscribe/vpn-relationships">
+{% image "/assets/img/tools/vpn-map.jpg", "A map of VPN company relationships", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}
+</a>
