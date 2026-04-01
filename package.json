@@ -53,7 +53,7 @@
     "node-html-to-image": "^5.0.0",
     "rimraf": "^5.0.7",
     "tailwindcss": "^4.2.2",
-    "terser": "^5.31.1"
+    "terser": "^5.46.1"
   },
   "dependencies": {
     "sharp": "^0.34.5"
