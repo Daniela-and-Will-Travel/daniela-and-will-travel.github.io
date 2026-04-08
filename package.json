@@ -39,7 +39,7 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@alpinejs/intersect": "^3.14.0",
+    "@alpinejs/intersect": "^3.15.11",
     "alpinejs": "^3.15.9",
     "clean-css": "^5.3.3",
     "eleventy-plugin-embed-everything": "^1.21.2",
