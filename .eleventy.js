@@ -8,7 +8,7 @@ const markdownItIns = require('markdown-it-ins');
 const markdownItMark = require('markdown-it-mark');
 const markdownItSub = require('markdown-it-sub');
 const markdownItSup = require('markdown-it-sup');
-const pluginRSS = require('@11ty/eleventy-plugin-rss');
+const { rssPlugin } = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginEmbedEverything = require('eleventy-plugin-embed-everything');
 
@@ -50,7 +50,7 @@ module.exports = eleventyConfig => {
     // Plugins ----------------------------------------
 
     eleventyConfig.addPlugin(require('./src/_config/plugins/drafts'));
-    eleventyConfig.addPlugin(pluginRSS);
+    eleventyConfig.addPlugin(rssPlugin);
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
