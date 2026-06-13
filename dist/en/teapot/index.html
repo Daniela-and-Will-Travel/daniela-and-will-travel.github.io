@@ -7,20 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- title / description -->
-        <title>Front matter • Daniela and Will Travel</title>
-		<meta name="description" content="Daniela and Will&#39;s travel blog featuring travel guides and tips and tricks for a gap year throughout Europe.">
+        <title>418 I&#39;m a Teapot • Daniela and Will Travel</title>
+		<meta name="description" content="Short and stout. The Daniela and Will Travel teapot refuses to brew your coffee, as per RFC 2324.">
         <!--AWIN BOOKING.com PARTNER-->
 
         <!-- canonical / alternates -->
-        <link rel="canonical" href="https://daniela-and-will-travel.github.io/en/writing/frontmatter/">
-        <link rel="alternate" hreflang="en" href="https://daniela-and-will-travel.github.io/en/writing/frontmatter/">
+        <link rel="canonical" href="https://daniela-and-will-travel.github.io/en/teapot/">
+        <link rel="alternate" hreflang="en" href="https://daniela-and-will-travel.github.io/en/teapot/">
 
         <!-- open graph -->
         <meta property="og:site_name" content="Daniela and Will Travel">
-        <meta property="og:title" content="Front matter • Daniela and Will Travel">
-        <meta property="og:description" content="Daniela and Will&#39;s travel blog featuring travel guides and tips and tricks for a gap year throughout Europe.">
+        <meta property="og:title" content="418 I&#39;m a Teapot • Daniela and Will Travel">
+        <meta property="og:description" content="Short and stout. The Daniela and Will Travel teapot refuses to brew your coffee, as per RFC 2324.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://daniela-and-will-travel.github.io/en/writing/frontmatter/">
+        <meta property="og:url" content="https://daniela-and-will-travel.github.io/en/teapot/">
         <meta property="og:image" content="https://daniela-and-will-travel.github.io/assets/img/opengraph-default.png">
         <meta property="og:image:alt" content="An English description of the default opengraph image."/>
 
@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon" href="https://daniela-and-will-travel.github.io/assets/img/icon-180.png">
 
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/bundle.css?v=1781383803444">
-        <link rel="stylesheet" href="/style.css?v=1781383803444">
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1781383803452">
+        <link rel="stylesheet" href="/style.css?v=1781383803452">
 
         <!-- feeds -->
         <link rel="alternate" href="https://daniela-and-will-travel.github.io/en/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Daniela and Will Travel">
@@ -51,7 +51,7 @@
         <!-- set theme before page renders to stop fouc -->
         <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
     </head>
-    <body class="posts">
+    <body class="page,teapot">
         <!-- header -->
         <header id="header" role="banner" class="header">
 
@@ -168,218 +168,151 @@
         <!-- content -->
         <main id="content"><article class="hentry">
     <header class="entry-header">
-        <h1 class="entry-title">Front matter</h1>
-        <ul class="meta">
-            <li class="meta-date">
-                <time class="entry-date published" datatime="2023-08-04T00:00:00Z">Thursday, 3 August 2023</time>
-            </li>
-            <li class="meta-author">by </li>
-            <li class="meta-reading-time">1 minute to read</li>
-        </ul>
+        <h1 class="entry-title">418 — I&#39;m a Teapot</h1>
     </header>
-    
-    <div class="affiliate">
-        This post may contain affiliate links, which help support us at no cost to you! Learn&nbsp;more&nbsp;<a href="/en/affiliates">here</a>.
-    </div>
-
     <div class="entry-content">
-        <pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token front-matter yaml language-yaml">layout: page
-title: Main page title, heading level one
-date: 2023-08-04
-modified: 2023-08-04
-thumbnail: /assets/img/test.jpg
-thumbnailDescription: An alt text description for the thumbnail image
-tags: 'page-demo'
-draft: true
-eleventyExcludeFromCollections: true
-seo:
-  title: Custom title (defaults to title)
-  description: SEO description
-  slug: mmm-slugs
-  changeFrequency: daily
-  sitemapPriority: '1.0'
-  excludeFromSitemap: true
-  noIndex: true</span>
-<span class="token punctuation">---</span></span></code></pre>
-<ul>
-<li><code>layout</code> — <a href="https://www.11ty.dev/docs/layouts/">Page layout</a> for the page. Default is <code>post</code> for posts and <code>page</code> for pages.</li>
-<li><code>title</code> — The title of the current page.</li>
-<li><code>date</code> — <a href="https://www.11ty.dev/docs/dates/">Published date</a>. You can set special values here like <code>Last Modified</code>.</li>
-<li><code>modifed</code> — Modified date.</li>
-<li><code>thumbnail</code> — Relative path to thumbnail / opengraph image. Size <code>1200px x 630px</code>.</li>
-<li><code>thumbnailDescription</code> — Alt text for thumbnail.</li>
-<li><code>tags</code> – <a href="https://www.11ty.dev/docs/collections/#add-to-a-collection-using-tags">Tags</a> are currently used for custom body classes.</li>
-<li><code>draft</code> — Draft pages will appear locally and on staging but not in production.</li>
-<li><code>eleventyExcludeFromCollections</code> — <a href="https://www.11ty.dev/docs/collections/#how-to-exclude-content-from-collections">Hide from 11ty collections</a>.</li>
-<li><code>seo.title</code> — Set custom page title for search engines and opengraph.</li>
-<li><code>seo.description</code> — Set the page description for search engines and opengraph.</li>
-<li><code>seo.slug</code> — Set a new slug for the page that is different from the filename.</li>
-<li><code>seo.changeFrequency</code> — <a href="https://www.sitemaps.org/protocol.html#changefreqdef">How often does this page change</a>?</li>
-<li><code>seo.sitemapPriority</code> — <a href="https://www.sitemaps.org/protocol.html#prioritydef">The priority of this URL relative to other URLs on your site</a>.</li>
-<li><code>seo.excludeFromSitemap</code> — Hide this page from your sitemap.xml.</li>
-<li><code>seo.noIndex</code> — Discourage search engine indexing.</li>
-</ul>
-<p>Nearly all front matter is optional, except for titles (and dates for posts).</p>
+        
+<style>
+  .teapot-page {
+    text-align: center;
+  }
 
-    </div>
-    <br>
+  .teapot-code {
+    font-family: var(--font-mono);
+    font-size: var(--step-6);
+    line-height: 1;
+    letter-spacing: var(--tracking-s);
+    margin: 0;
+    color: var(--foreground);
+  }
 
-    <!--DESKTOP AFFILIATE LINKS-->
-<div class="affiliate-desktop">
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-desktop">
-            <a href="https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Find a Place to Stay</strong>
-                    <span style="display: block;">with Booking.com</span>
-                </div>
-            </a>
-        </div>
-        <div class="affiliate-box-desktop">
-            <a href="https://www.getyourguide.com/?selectedTab=0a06e0d7-8fe2-1e1d-818f-e37e06860000&partner_id=8RTQF4P&utm_medium=online_publisher" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9l0 89.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208l30.9 0 0-24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 55.8c0 .1 0 .2 0 .2s0 .2 0 .2L384 488c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-216-39.4 0c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59l4.2 0c15.6 0 27.1 14.7 23.3 29.8z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book Tours + Attractions</strong>
-                    <span style="display: block;">with GetYourGuide</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-desktop">
-            <a href="https://12go.asia/?z=11258902" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M96 0C43 0 0 43 0 96L0 352c0 48 35.2 87.7 81.1 94.9l-46 46C28.1 499.9 33.1 512 43 512l39.7 0c8.5 0 16.6-3.4 22.6-9.4L160 448l128 0 54.6 54.6c6 6 14.1 9.4 22.6 9.4l39.7 0c10 0 15-12.1 7.9-19.1l-46-46c46-7.1 81.1-46.9 81.1-94.9l0-256c0-53-43-96-96-96L96 0zM64 96c0-17.7 14.3-32 32-32l256 0c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32L96 224c-17.7 0-32-14.3-32-32l0-96zM224 288a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book Flights/Trains</strong>
-                    <span style="display: block;">with 12go Asia/Europe</span>
-                </div>
-            </a>
-        </div>
-        <div class="affiliate-box-desktop">
-            <a href="https://bookmebus.com/?r=8Rp3qQaU4DCyUicacCdbpVw9&utm_source=banner-link&utm_content=option-d" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M288 0C422.4 0 512 35.2 512 80l0 16 0 32c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32l0 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-32-192 0 0 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32c0 0 0 0 0 0l0-32s0 0 0 0l0-16C64 35.2 153.6 0 288 0zM128 160l0 96c0 17.7 14.3 32 32 32l112 0 0-160-112 0c-17.7 0-32 14.3-32 32zM304 288l112 0c17.7 0 32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-112 0 0 160zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16L208 64c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book Busses</strong>
-                    <span style="display: block;">with BookMeBus</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-desktop">
-            <a href="https://www.awin1.com/cread.php?awinmid=115715&awinaffid=1866726&ued=https%3A%2F%2Fesimania.com%2F" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M62.6 2.3C46.2-4.3 27.6 3.6 20.9 20C7.4 53.4 0 89.9 0 128s7.4 74.6 20.9 108c6.6 16.4 25.3 24.3 41.7 17.7S86.9 228.4 80.3 212C69.8 186.1 64 157.8 64 128s5.8-58.1 16.3-84C86.9 27.6 79 9 62.6 2.3zm450.8 0C497 9 489.1 27.6 495.7 44C506.2 69.9 512 98.2 512 128s-5.8 58.1-16.3 84c-6.6 16.4 1.3 35 17.7 41.7s35-1.3 41.7-17.7c13.5-33.4 20.9-69.9 20.9-108s-7.4-74.6-20.9-108C548.4 3.6 529.8-4.3 513.4 2.3zM340.1 165.2c7.5-10.5 11.9-23.3 11.9-37.2c0-35.3-28.7-64-64-64s-64 28.7-64 64c0 13.9 4.4 26.7 11.9 37.2L98.9 466.8c-7.3 16.1-.2 35.1 15.9 42.4s35.1 .2 42.4-15.9L177.7 448l220.6 0 20.6 45.2c7.3 16.1 26.3 23.2 42.4 15.9s23.2-26.3 15.9-42.4L340.1 165.2zM369.2 384l-162.4 0 14.5-32 133.3 0 14.5 32zM288 205.3L325.6 288l-75.2 0L288 205.3zM163.3 73.6c5.3-12.1-.2-26.3-12.4-31.6s-26.3 .2-31.6 12.4C109.5 77 104 101.9 104 128s5.5 51 15.3 73.6c5.3 12.1 19.5 17.7 31.6 12.4s17.7-19.5 12.4-31.6C156 165.8 152 147.4 152 128s4-37.8 11.3-54.4zM456.7 54.4c-5.3-12.1-19.5-17.7-31.6-12.4s-17.7 19.5-12.4 31.6C420 90.2 424 108.6 424 128s-4 37.8-11.3 54.4c-5.3 12.1 .2 26.3 12.4 31.6s26.3-.2 31.6-12.4C466.5 179 472 154.1 472 128s-5.5-51-15.3-73.6z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Get an e-SIM</strong>
-                    <span style="display: block;">from eSIMania</span>
-                </div>
-            </a>
-        </div>
-        <div class="affiliate-box-desktop">
-            <a href="https://windscribe.com/yo/m5yerdq3" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Protect your Data</strong>
-                    <span style="display: block;">with Windscribe's VPN</span>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+  .teapot-stage {
+    position: relative;
+    display: inline-block;
+    margin: var(--space-s) auto var(--space-xs);
+  }
 
-<!--MOBILE AFFILIATE LINKS-->
-<div class="affiliate-mobile">
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Find a Place to Stay</strong>
-                    <span style="display: block;">with Booking.com</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://www.getyourguide.com/?selectedTab=0a06e0d7-8fe2-1e1d-818f-e37e06860000&partner_id=8RTQF4P&utm_medium=online_publisher" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9l0 89.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208l30.9 0 0-24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 55.8c0 .1 0 .2 0 .2s0 .2 0 .2L384 488c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-216-39.4 0c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59l4.2 0c15.6 0 27.1 14.7 23.3 29.8z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book Tours + Attractions</strong>
-                    <span style="display: block;">with GetYourGuide</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://12go.asia/?z=11258902" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M96 0C43 0 0 43 0 96L0 352c0 48 35.2 87.7 81.1 94.9l-46 46C28.1 499.9 33.1 512 43 512l39.7 0c8.5 0 16.6-3.4 22.6-9.4L160 448l128 0 54.6 54.6c6 6 14.1 9.4 22.6 9.4l39.7 0c10 0 15-12.1 7.9-19.1l-46-46c46-7.1 81.1-46.9 81.1-94.9l0-256c0-53-43-96-96-96L96 0zM64 96c0-17.7 14.3-32 32-32l256 0c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32L96 224c-17.7 0-32-14.3-32-32l0-96zM224 288a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book Flights/Trains</strong>
-                    <span style="display: block;">with 12go Asia/Europe</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://www.awin1.com/cread.php?awinmid=87121&awinaffid=1866726&ued=https%3A%2F%2Fgowithguide.com%2F" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M192 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm51.3 182.7L224.2 307l49.7 49.7c9 9 14.1 21.2 14.1 33.9l0 89.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7-73.9-73.9c-15.8-15.8-22.2-38.6-16.9-60.3l20.4-84c8.3-34.1 42.7-54.9 76.7-46.4c19 4.8 35.6 16.4 46.4 32.7L305.1 208l30.9 0 0-24c0-13.3 10.7-24 24-24s24 10.7 24 24l0 55.8c0 .1 0 .2 0 .2s0 .2 0 .2L384 488c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-216-39.4 0c-16 0-31-8-39.9-21.4l-13.3-20zM81.1 471.9L117.3 334c3 4.2 6.4 8.2 10.1 11.9l41.9 41.9L142.9 488.1c-4.5 17.1-22 27.3-39.1 22.8s-27.3-22-22.8-39.1zm55.5-346L101.4 266.5c-3 12.1-14.9 19.9-27.2 17.9l-47.9-8c-14-2.3-22.9-16.3-19.2-30L31.9 155c9.5-34.8 41.1-59 77.2-59l4.2 0c15.6 0 27.1 14.7 23.3 29.8z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Book a Personal Guide</strong>
-                    <span style="display: block;">with GoWithGuide</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://www.awin1.com/cread.php?awinmid=115715&awinaffid=1866726&ued=https%3A%2F%2Fesimania.com%2F" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M62.6 2.3C46.2-4.3 27.6 3.6 20.9 20C7.4 53.4 0 89.9 0 128s7.4 74.6 20.9 108c6.6 16.4 25.3 24.3 41.7 17.7S86.9 228.4 80.3 212C69.8 186.1 64 157.8 64 128s5.8-58.1 16.3-84C86.9 27.6 79 9 62.6 2.3zm450.8 0C497 9 489.1 27.6 495.7 44C506.2 69.9 512 98.2 512 128s-5.8 58.1-16.3 84c-6.6 16.4 1.3 35 17.7 41.7s35-1.3 41.7-17.7c13.5-33.4 20.9-69.9 20.9-108s-7.4-74.6-20.9-108C548.4 3.6 529.8-4.3 513.4 2.3zM340.1 165.2c7.5-10.5 11.9-23.3 11.9-37.2c0-35.3-28.7-64-64-64s-64 28.7-64 64c0 13.9 4.4 26.7 11.9 37.2L98.9 466.8c-7.3 16.1-.2 35.1 15.9 42.4s35.1 .2 42.4-15.9L177.7 448l220.6 0 20.6 45.2c7.3 16.1 26.3 23.2 42.4 15.9s23.2-26.3 15.9-42.4L340.1 165.2zM369.2 384l-162.4 0 14.5-32 133.3 0 14.5 32zM288 205.3L325.6 288l-75.2 0L288 205.3zM163.3 73.6c5.3-12.1-.2-26.3-12.4-31.6s-26.3 .2-31.6 12.4C109.5 77 104 101.9 104 128s5.5 51 15.3 73.6c5.3 12.1 19.5 17.7 31.6 12.4s17.7-19.5 12.4-31.6C156 165.8 152 147.4 152 128s4-37.8 11.3-54.4zM456.7 54.4c-5.3-12.1-19.5-17.7-31.6-12.4s-17.7 19.5-12.4 31.6C420 90.2 424 108.6 424 128s-4 37.8-11.3 54.4c-5.3 12.1 .2 26.3 12.4 31.6s26.3-.2 31.6-12.4C466.5 179 472 154.1 472 128s-5.5-51-15.3-73.6z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Get an e-SIM</strong>
-                    <span style="display: block;">from eSIMania</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div style="display: flex; flex-wrap: nowrap;">
-        <div class="affiliate-box-mobile">
-            <a href="https://windscribe.com/yo/m5yerdq3" class="affiliate-link">
-                <svg class="affiliate-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M256 64l128 0 0 64-128 0 0-64zM240 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l48 0 0 32L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 256 0 0 32-48 0c-26.5 0-48 21.5-48 48l0 96c0 26.5 21.5 48 48 48l160 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48l-48 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-256 0 0-32 48 0c26.5 0 48-21.5 48-48l0-96c0-26.5-21.5-48-48-48L240 0zM96 448l0-64 128 0 0 64L96 448zm320-64l128 0 0 64-128 0 0-64z"/></svg>
-                <div class="affiliate-inner-box">
-                    <strong style="display: block;">Protect your Data</strong>
-                    <span style="display: block;">with Windscribe's VPN</span>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
+  .teapot-svg {
+    width: clamp(180px, 45vw, 320px);
+    height: auto;
+    color: var(--background-soft);
+  }
 
-    
-    <button id="return-to-top" class="return-to-top" onclick="scrollToTop()">↑ Top</button>
+  .teapot-body {
+    fill: var(--background-soft);
+    stroke: var(--foreground);
+    stroke-width: 6;
+    stroke-linejoin: round;
+  }
 
-</article>
+  .teapot-line {
+    fill: none;
+    stroke: var(--foreground);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
 
-<script>
-    // Show the button when scrolling down
-    window.addEventListener('scroll', function () {
-        const button = document.getElementById('return-to-top');
-        if (window.scrollY > 300) {
-            button.style.display = 'block';
-        } else {
-            button.style.display = 'none';
-        }
-    });
+  .teapot-knob {
+    fill: var(--foreground);
+  }
 
-    // Scroll to the top of the page
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+  /* steam */
+  .teapot-steam path {
+    fill: none;
+    stroke: var(--foreground-soft);
+    stroke-width: 5;
+    stroke-linecap: round;
+    opacity: 0;
+    animation: teapot-steam 3.5s ease-in-out infinite;
+  }
+
+  .teapot-steam path:nth-child(2) { animation-delay: 1.1s; }
+  .teapot-steam path:nth-child(3) { animation-delay: 2.2s; }
+
+  @keyframes teapot-steam {
+    0%   { opacity: 0; transform: translateY(8px) scale(0.9); }
+    35%  { opacity: 0.8; }
+    100% { opacity: 0; transform: translateY(-22px) scale(1.05); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .teapot-steam path {
+      animation: none;
+      opacity: 0.55;
     }
-</script></main>
+  }
+</style>
+
+<div class="teapot-page">
+  <p class="teapot-code">418</p>
+
+  <div class="teapot-stage">
+    <svg class="teapot-svg" viewBox="0 0 320 240" role="img" aria-labelledby="teapot-title">
+      <title id="teapot-title">A short and stout teapot, gently steaming</title>
+
+      <!-- steam -->
+      <g class="teapot-steam" transform="translate(150 28)">
+        <path d="M0 60 q-14 -16 0 -32 q14 -16 0 -32" />
+        <path d="M26 60 q-14 -16 0 -32 q14 -16 0 -32" />
+        <path d="M-26 60 q-14 -16 0 -32 q14 -16 0 -32" />
+      </g>
+
+      <!-- lid + knob -->
+      <path class="teapot-line" d="M96 96 q64 -34 128 0" />
+      <circle class="teapot-knob" cx="160" cy="78" r="10" />
+
+      <!-- body -->
+      <path class="teapot-body" d="M96 96
+        q64 26 128 0
+        q22 58 -8 96
+        q-56 26 -112 0
+        q-30 -38 -8 -96 z" />
+
+      <!-- spout -->
+      <path class="teapot-line" d="M96 118
+        q-44 -2 -64 28
+        q14 6 22 -2
+        q12 -22 42 -14" />
+
+      <!-- handle -->
+      <path class="teapot-line" d="M224 110
+        q42 4 38 52
+        q-4 26 -26 30" />
+    </svg>
+  </div>
+
+  <h1 class="entry-title center-text">I'm a teapot.</h1>
+
+  <p>
+    You asked us to brew you a coffee, but this is a travel blog run by two people
+    who have collectively consumed their body weight in tea across three continents.
+    We are, regrettably, a <strong>teapot</strong> — short, stout, and contractually
+    incapable of producing coffee.
+  </p>
+
+  <p>
+    This is HTTP status code <strong>418</strong>, and yes, it is a real one. It was
+    defined in <a href="https://www.rfc-editor.org/info/rfc2324/">RFC&nbsp;2324, the
+    Hyper Text Coffee Pot Control Protocol</a>, originally as an April Fools' joke in
+    1998 and now as a permanent monument to internet whimsy.
+  </p>
+
+  <p>
+    So tip us over, pour us out, and head somewhere more caffeinated:
+  </p>
+
+  <p class="center-text">
+    <a href="/index/">← Back to the blog</a>
+    &nbsp;•&nbsp;
+    <a href="/en/about/">About us</a>
+    &nbsp;•&nbsp;
+    <a href="/en/tools/">Our tools</a>
+  </p>
+</div>
+
+    </div>
+</article></main>
 
         <!-- footer -->
         <script>
@@ -428,7 +361,7 @@ seo:
 </footer>
 
         <!-- scripts -->
-        <script src="/assets/js/bundle.js?v=1781383803444" defer></script>
+        <script src="/assets/js/bundle.js?v=1781383803453" defer></script>
         <!-- 100% privacy-first analytics -->
         <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <!--Open all external links in new window-->
