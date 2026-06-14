@@ -1,9 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer utilities {
-  .change {
-    color: transparent;
-  }
+@theme {
+  --color-change: transparent;
+}
+
+@utility change {
+  color: transparent;
 }

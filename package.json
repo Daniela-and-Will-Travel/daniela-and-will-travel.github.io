@@ -4,8 +4,8 @@
   "description": "A multilingual, clean, green, 11ty starter theme",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o dist/style.css --minify",
-    "dev": "eleventy --serve --watch & npx tailwindcss -i styles/tailwind.css -c styles/tailwind.config.js -o dist/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx @tailwindcss/cli -i styles/tailwind.css -o dist/style.css --minify",
+    "dev": "eleventy --serve --watch & npx @tailwindcss/cli -i styles/tailwind.css -o dist/style.css --watch",
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release-patch": "npm version patch --force && npm publish",
@@ -39,6 +39,7 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@tailwindcss/cli": "^4.3.0",
     "@alpinejs/intersect": "^3.15.11",
     "alpinejs": "^3.15.9",
     "clean-css": "^5.3.3",
