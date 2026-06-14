@@ -20,7 +20,7 @@ Obviously, the main point of a commuter backpack is not to travel to SEA for fou
 
 I received my bag on January 17, 2025 (the beauty of living in Langley, BC), and left for Japan on January 20.
 
-{% image "/assets/img/posts/reviews/lttbagmain.JPG", "The bag at a Japanese temple", "100vw", "The bag at a Japanese temple", "rounded", "lazy", "auto", "async", "", "" %}
+{% image "/assets/img/posts/reviews/lttbagmain.jpg", "The bag at a Japanese temple", "100vw", "The bag at a Japanese temple", "rounded", "lazy", "auto", "async", "", "" %}
 
 ## Loadout
 
