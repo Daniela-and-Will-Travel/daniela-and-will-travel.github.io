@@ -1,4 +1,0 @@
-Sitemap: https://daniela-and-will-travel.github.io/sitemap.xml
-
-User-agent: *
-Disallow: /404.html
