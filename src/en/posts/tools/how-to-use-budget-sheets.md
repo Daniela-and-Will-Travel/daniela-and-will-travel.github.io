@@ -9,6 +9,9 @@ tags:
  - spreadsheets
  - budget
 draft: false
+byline: How to use the budget sheets to maximize your money when planning a trip!
+heroImage: /assets/img/tools/budget/sheet.png
+heroImageAlt: A budget planning spreadsheet open in Google Sheets
 eleventyExcludeFromCollections: false
 seo:
   title: How to Use the Budget Sheets

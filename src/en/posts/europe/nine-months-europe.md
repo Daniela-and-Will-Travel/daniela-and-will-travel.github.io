@@ -9,6 +9,9 @@ tags:
  - itinerary
  - planning
 draft: false
+byline: An overview of how we planned and executed our entire nine month Europe trip!
+heroImage: /assets/img/posts/europe/IMG_7233.jpg
+heroImageAlt: Orange sunset over Norway Harbor
 eleventyExcludeFromCollections: false
 seo:
   title: Nine Months in Europe 

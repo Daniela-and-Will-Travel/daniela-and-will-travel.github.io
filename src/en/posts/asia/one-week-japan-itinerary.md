@@ -11,6 +11,9 @@ tags:
  - itinerary
  - planning
 draft: false
+byline: How to visit Japan on a bougie backpacker budget!
+heroImage: /assets/img/posts/asia/IMG_0495.jpg
+heroImageAlt: Shinto temple in Tokyo with smoke in front of it
 eleventyExcludeFromCollections: false
 seo:
   title: One Week Japan Itinerary

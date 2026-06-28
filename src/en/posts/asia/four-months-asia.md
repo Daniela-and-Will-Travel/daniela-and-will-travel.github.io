@@ -10,6 +10,9 @@ tags:
  - itinerary
  - planning
 draft: false
+byline: An overview of how we planned and executed our four month trip through Southeast Asia!
+heroImage: /assets/img/posts/asia/IMG_2502.jpeg
+heroImageAlt: Us on the coast of Cambodia
 eleventyExcludeFromCollections: false
 seo:
   title: Four Months in Southeast Asia

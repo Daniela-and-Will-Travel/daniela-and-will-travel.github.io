@@ -9,6 +9,9 @@ tags:
  - southeast-asia
  - planning
 draft: false
+byline: Everything you need to know before riding around Lombok!
+heroImage: /assets/img/posts/asia/lombokcover.jpeg
+heroImageAlt: Mt. Rinjani rising over a beach between the clouds
 eleventyExcludeFromCollections: false
 seo:
   title: Lombok by Motorbike in 2025

@@ -14,33 +14,18 @@ seo:
     </p>
   </div>
 </div>
+  {% set latestPosts = collections.posts | languageFilter("en") | reverse | batch(3) | first %}
   <div class="travel-guides-container">
+    {% for post in latestPosts %}
     <div class="travel-guide">
       <div style="padding-bottom: 0.5em;">
-        <h1 class="center-text"><a style="text-decoration: none;" href="/en/writing/diy-lombok-loop">Lombok by Motorbike</a></h1>
-        <h2 class="subtle" style="text-align: center;">Everything you need to know before riding around Lombok!</h2>
-    </div>
-    <div>
-        <a style="text-decoration: none;" href="/en/writing/diy-lombok-loop">{% image "/assets/img/posts/asia/lombokcover.jpeg", "", "100vw", "", "rounded", "lazy", "auto", "async", "2400", "1600" %}</a>
-    </div>
-    </div>
-    <div class="travel-guide">
-      <div style="padding-bottom: 0.5em;">
-          <h1 class="center-text"><a style="text-decoration: none;" href="/en/writing/nias-island/">How to Visit Nias Island</a></h1>
-          <h2 class="subtle" style="text-align: center;">Everything you need to know before traveling to Nias, Indonesia!</h2>
+        <h1 class="center-text"><a style="text-decoration: none;" href="{{ post.url }}">{{ post.data.title }}</a></h1>
+        <h2 class="subtle" style="text-align: center;">{{ post.data.byline }}</h2>
       </div>
       <div>
-          <a style="text-decoration: none;" href="/en/writing/nias-island/">{% image "/assets/img/posts/asia/niascover.jpeg", "Palm trees off the coast of Nias island", "100vw", "", "rounded", "lazy", "auto", "async", "2400", "1600" %}</a>
+        <a style="text-decoration: none;" href="{{ post.url }}">{% image post.data.heroImage, post.data.heroImageAlt, "100vw", "", "rounded", "lazy", "auto", "async" %}</a>
       </div>
     </div>
-    <div class="travel-guide">
-      <div style="padding-bottom: 0.5em;">
-        <h1 class="center-text"><a style="text-decoration: none;" href="/en/writing/diy-the-ha-giang-loop/">DIY the Ha Giang Loop</a></h1>
-        <h2 class="subtle" style="text-align: center;">Everything you need to know before doing this incredible ride!</h2>
-    </div>
-    <div>
-        <a style="text-decoration: none;" href="/en/writing/diy-the-ha-giang-loop/">{% image "/assets/img/posts/asia/cover.jpg", "Us on the Ha Giang Loop", "100vw", "", "rounded", "lazy", "auto", "async", "2400", "1600" %}</a>
-    </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

@@ -9,6 +9,9 @@ tags:
  - privacy
  - vpn
 draft: false
+byline: VPNs are an important part of your online security toolkit - learn more about them!
+heroImage: /assets/img/tools/vpns.jpg
+heroImageAlt: A collection of computers and phones on a table.
 eleventyExcludeFromCollections: false
 seo:
   title: All About VPNs

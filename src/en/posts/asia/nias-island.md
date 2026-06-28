@@ -9,6 +9,9 @@ tags:
  - southeast-asia
  - planning
 draft: false
+byline: Everything you need to know before traveling to Nias, Indonesia!
+heroImage: /assets/img/posts/asia/niascover.jpeg
+heroImageAlt: Palm trees near the sea on Nias Island
 eleventyExcludeFromCollections: false
 seo:
   title: How to Visit Nias in 2025

@@ -9,6 +9,9 @@ tags:
  - southeast-asia
  - planning
 draft: false
+byline: Everything you need to know before taking a tour around the Komodo Islands!
+heroImage: /assets/img/posts/asia/komodocover.jpg
+heroImageAlt: Arial shot of islands surrounded by beaches and blue water
 eleventyExcludeFromCollections: false
 seo:
   title: The Best Way to Visit the Komodo Islands in 2025

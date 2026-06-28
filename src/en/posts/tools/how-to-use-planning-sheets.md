@@ -9,6 +9,9 @@ tags:
  - spreadsheets
  - budget
 draft: false
+byline: How to use the planning sheets to maximize your time and see all the places when planning your trips!
+heroImage: /assets/img/tools/planning/main.png
+heroImageAlt: A trip itinerary planning spreadsheet open in Google Sheets
 eleventyExcludeFromCollections: false
 seo:
   title: How to Use the Planning Sheets

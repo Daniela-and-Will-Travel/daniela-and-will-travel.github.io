@@ -9,6 +9,9 @@ tags:
  - southeast-asia
  - planning
 draft: false
+byline: Everything you need to know before doing this incredible ride!
+heroImage: /assets/img/posts/asia/cover.jpg
+heroImageAlt: Road carving through the mountains
 eleventyExcludeFromCollections: false
 seo:
   title: DIY the Ha Giang Loop 2025

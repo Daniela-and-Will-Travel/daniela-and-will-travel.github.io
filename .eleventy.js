@@ -90,6 +90,7 @@ module.exports = eleventyConfig => {
     // Transforms -------------------------------------
 
     eleventyConfig.addPlugin(require('./src/_config/transforms/css'));
+    eleventyConfig.addPlugin(require('./src/_config/transforms/notices'));
     eleventyConfig.addPlugin(require('./src/_config/transforms/html'));
     eleventyConfig.addPlugin(require('./src/_config/transforms/js'));
 

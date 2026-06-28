@@ -7,6 +7,9 @@ author: Will
 tags:
  - review
 draft: false
+byline: Notes on the experience of using the LTT Commuter Backpack while traveling for one month.
+heroImage: /assets/img/posts/reviews/lttbagmain.JPG
+heroImageAlt: The bag at a Japanese temple
 eleventyExcludeFromCollections: false
 seo:
   title: One Month LTT Commuter Backpack Review

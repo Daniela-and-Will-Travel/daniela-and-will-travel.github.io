@@ -10,6 +10,9 @@ tags:
   - itinerary
   - planning
 draft: false
+byline: Follow along with us as we travel through Iceland for five days!
+heroImage: /assets/img/posts/europe/IMG_6912.jpg
+heroImageAlt: ""
 eleventyExcludeFromCollections: false
 seo:
   title: Five Day Iceland Itinerary
