@@ -1,7 +1,29 @@
 const Image = require('@11ty/eleventy-img');
+const fs = require('node:fs');
+const path = require('node:path');
+
+function resolveImageSource(src) {
+    const sourcePath = path.join('.', 'src', src);
+    if (fs.existsSync(sourcePath)) {
+        return sourcePath;
+    }
+
+    const directory = path.dirname(sourcePath);
+    const filename = path.basename(sourcePath);
+    if (!fs.existsSync(directory)) {
+        return sourcePath;
+    }
+
+    const caseInsensitiveMatch = fs
+        .readdirSync(directory)
+        .find((entry) => entry.toLowerCase() === filename.toLowerCase());
+
+    return caseInsensitiveMatch ? path.join(directory, caseInsensitiveMatch) : sourcePath;
+}
 
 module.exports = async function(src, alt, sizes, caption = '', classes = '', loading = 'lazy', fetch = 'auto', decoding = 'async') {
     const settings = this.ctx.settings;
+    const imageSource = resolveImageSource(src);
     let meta = {};
     let metadata = {
         // set your required image sizes here
@@ -16,7 +38,7 @@ module.exports = async function(src, alt, sizes, caption = '', classes = '', loa
     };
 
     if (( settings.isProduction || settings.isStaging ) && settings.cdn ) {
-        meta = await Image('./src' + src, {
+        meta = await Image(imageSource, {
                 ...metadata,
                 formats: ['webp', 'auto'],
                 urlFormat: function({width}) {
@@ -25,7 +47,7 @@ module.exports = async function(src, alt, sizes, caption = '', classes = '', loa
             }
         );
     } else {
-        meta = await Image('./src' + src, { 
+        meta = await Image(imageSource, {
             ...metadata,
             formats: ['avif', 'webp', 'auto']
         });
