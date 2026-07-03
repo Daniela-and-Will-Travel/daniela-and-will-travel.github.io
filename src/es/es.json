@@ -1,3 +1,7 @@
 {
-    "lang": "es"
+    "lang": "es",
+    "noIndex": true,
+    "seo": {
+        "excludeFromSitemap": true
+    }
 }

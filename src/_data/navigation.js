@@ -15,12 +15,8 @@ module.exports = {
     ],
     es: [
 		{
-			text: 'Países',
-			url: '/paises/'
-		},
-		{
 			text: 'Sobre Nosotros',
-			url: '/sobre-nosotros/'
+			url: '/om/'
 		}
     ]
 };

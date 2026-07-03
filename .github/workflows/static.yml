@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main"]
 
+  # Build (but don't deploy) pull requests, so dependency bumps are tested before merge
+  pull_request:
+    branches: ["main"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -14,15 +18,16 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment per ref, skipping runs queued between the run in-progress and latest queued.
+# Do NOT cancel in-progress production deployments, but do cancel superseded PR builds.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,11 +48,14 @@ jobs:
           path: ./dist
 
   deploy:
+    # Deploy only from the default branch, never from pull request builds
+    if: github.event_name != 'pull_request'
     needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
