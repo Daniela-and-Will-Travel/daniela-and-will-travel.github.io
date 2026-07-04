@@ -27,7 +27,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Generous limit so a cold build (empty image cache) can finish and seed the cache;
+    # warm builds take a few minutes.
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,6 +40,16 @@ jobs:
           cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      # eleventy-img names outputs by a hash of the source file contents and sharp
+      # options, and skips any variant whose output file already exists — so restoring
+      # previously generated images avoids re-encoding every AVIF/WebP on each run.
+      - name: Restore generated images
+        uses: actions/cache@v4
+        with:
+          path: dist/assets/img
+          key: eleventy-img-${{ hashFiles('src/assets/img/**', 'src/_config/shortcodes/image.js') }}
+          restore-keys: |
+            eleventy-img-
       - name: Install dependencies
         run: npm ci
       - name: Build site
