@@ -39,7 +39,7 @@ jobs:
           node-version: 22
           cache: npm
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       # eleventy-img names outputs by a hash of the source file contents and sharp
       # options, and skips any variant whose output file already exists — so restoring
       # previously generated images avoids re-encoding every AVIF/WebP on each run.
