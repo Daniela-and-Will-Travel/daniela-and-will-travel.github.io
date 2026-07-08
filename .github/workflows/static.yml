@@ -44,7 +44,7 @@ jobs:
       # options, and skips any variant whose output file already exists — so restoring
       # previously generated images avoids re-encoding every AVIF/WebP on each run.
       - name: Restore generated images
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: dist/assets/img
           key: eleventy-img-${{ hashFiles('src/assets/img/**', 'src/_config/shortcodes/image.js') }}
