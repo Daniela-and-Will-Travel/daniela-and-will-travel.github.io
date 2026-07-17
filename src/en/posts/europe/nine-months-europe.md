@@ -35,7 +35,7 @@ Planning a long trip is no easy feat, it requires weeks of research and preparat
 
 <h2 id="how-long">How Long to Stay</h2>
 
-Of course this is wholly up to you, but if you have the time, let me explain why we think nine months is an ideal amount of time – if your goal is to cover as much of Europe as possible.
+Of course this is wholly up to you, but if you have the time, let me explain why we think nine months is an ideal amount of time if your goal is to cover as much of Europe as possible.
 
 With the Schengen Zone (which I will go into further detail next) affecting all of us who reside outside of the EU, you get three months to explore as much of Europe as you can, before being forced to leave for three months, before you can come back for another three – totalling nine months.
 
@@ -47,7 +47,7 @@ The first three months are not enough to fully explore (and I say _fully_ quite 
 
 What is the Schengen Zone, you may ask? It is a borderless area that allows visitors to stay a total of 90 out of 180 days. The 90 days do not necessarily have to be consecutive, but you cannot exceed the limit within the period. From the moment you arrive in a country that is part of the Schengen Zone, the countdown begins. Once the 180 days have passed  you can re-enter the Schengen Zone for another 90 days.
 
-> ❕ Tip: _Likely to start in 2025, everyone entering the Schengen Zone is required to pay an [EITAS fee](https://travel-europe.europa.eu/etias/what-etias_en), however, it should only cost roughly **$7 USD**._ This will allow you to move freely in all the countries that have banded together to facilitate travel within this area. Here is a list of all the counties that are included.
+> ❕ Tip: _Likely to start in 2027 or 2028, everyone entering the Schengen Zone is required to pay an [EITAS fee](https://travel-europe.europa.eu/etias/what-etias_en), however, it should only cost roughly **$7 USD**._ This will allow you to move freely in all the countries that have banded together to facilitate travel within this area.
 
 As for the countries that are not, they will make a nine-month trip to Europe possible. The list of countries outside the Schengen Zone are listed here, so you will have to make sure you do not require any additional visas (Canadians did not need any in 2023). The list of countries outside the Schengen Zone are listed here, so you will have to make sure you do not require any additional visas.
 
@@ -83,9 +83,9 @@ Of course, we still ate out, we did sometimes take transit when we could have wa
 
 Save money on hotels with [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726).
 
-{% image "/assets/img/posts/europe/IMG_9099.jpg", "Small sandwiches and tea representing afternoon tea", "100vw", "Delicious Afternoon Tea in England", "rounded", "lazy", "auto", "async", "", "" %}
-
 > ⚠ Note: Europe is not cheap, we saved for about 2 years in high school to save this kind of money for such a long trip.
+
+{% image "/assets/img/posts/europe/IMG_9099.jpg", "Small sandwiches and tea representing afternoon tea", "100vw", "Delicious Afternoon Tea in England", "rounded", "lazy", "auto", "async", "", "" %}
 
 <h2 id="what-to-bring">What to Bring</h2>
 
@@ -175,9 +175,9 @@ Aside from the Netherlands, each part of each country uses a slightly different 
 
 > ❕ Tip: Make sure to always get a ticket! The last thing you need is a fine - and they are **steep** in Europe.
 
-Overall, you can rely on public transportation for the majority of destinations, especially if it is especially touristy. However, not everything can be reached without a car. Due to our age, we were unable to rent cars while we were abroad, so we ended up taking a few tours. With a smaller group, it can be more affordable to take these tours than to fully DIY it, but if you are traveling with more people (and one who is of car rental age) it can be less expensive to rent a car.
+Overall, you can rely on public transportation for the majority of destinations, especially if it is touristy. However, not everything can be reached without a car. Due to our age, we were unable to rent cars while we were abroad, so we ended up taking a few tours. With a smaller group, it can be more affordable to take these tours than to fully DIY it, but if you are traveling with more people (and one who is of car rental age) it is likely to be less expensive to rent a car.
 
-The final way of getting around is plane. We tried to avoid that whenever possible as train or bus travel was usually much more affordable. We usually flew with Ryanair, a very budget airline that had quite good deals.
+The final way of getting around is plane. We tried to avoid that whenever possible as train or bus travel was usually much more affordable. We usually flew with Ryanair, a very budget airline that had quite a few good deals.
 
 > ⚠ Note: Ryanair is infamously strict with their policies, especially their baggage regulations. Always make sure to plan accordingly so you don’t end up being charged extra fees at the airport.
 

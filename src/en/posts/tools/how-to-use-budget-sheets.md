@@ -27,7 +27,7 @@ The spreadsheet also helps us split costs between the two of us when one person 
 
 ## Breaking Down the Spreadsheet
 
-I created three separate sheets, to organize our before and during the trip, and to provide an overview of who owes who what. They are each broken down below:
+I created three separate sheets, to organize expenses before and during the trip, and to provide an overview of who owes who what. They are each broken down below:
 
 ### Budget by Country
 

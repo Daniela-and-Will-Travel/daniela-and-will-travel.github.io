@@ -25,9 +25,9 @@ On our last two trips I have made a spreadsheet to outline our itinerary - check
 
 > ❕ Tip: This works great for sharing your itinerary with older family members since Google Sheets apps are available for all mobile phones and tablets.
 
-> ⚠ Note: Be careful with your sharing settings and who you send the link to when doing this - protecting your location is important!
+> ⚠ Note: Be careful with your sharing settings and who you send the link to when doing this - protecting your location as you travel is important!
 
-When we went to Europe, the spreadsheet was split up into three columns, because of hopping in and out of the Schengen zone - but this time in Asia, it’s just one long column. Let's break it down into the two main types of sheets.
+When we went to Europe, the spreadsheet was split into three columns, because of hopping in and out of the Schengen zone - but for Asia, it’s just one long column. Let's break it down into the two main types of sheets.
 
 ### The Main Page
 

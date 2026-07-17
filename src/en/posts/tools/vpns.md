@@ -33,12 +33,12 @@ While it may sound like an advertisement, a VPN really is super important while 
 
 ## What does a VPN allow you to do?
 
-- Switching your location allow you to access region blocked content:
+- Switching your location allows you to access region blocked content:
   - Streaming services do not always have the same catalog of content in all territories
   - Local websites (like banks) will not always allow you to access their services outside of your country of residence
   - Some workplaces may region lock their accounts for security - _I ran into this while in Asia_
 - Some countries (such as Vietnam), block access to certain websites (in Vietnam's case, Reddit)
-- If you use unsecured WiFi networks while traveling (like in a cafe or airport), the data passing over the internet is not always encrypted and can be "listened" to
+- If you use unsecured WiFi networks while traveling (like in a cafe or airport), the data passing over the internet is not always encrypted and can be "listened" in on
 - If you are someone who likes to _sail the high seas_ to _download Linux ISOs_, then a VPN protects you and your landlord from receiving DMCA complaints
 - VPNs can also make it more difficult for advertisers to track you online, but this also requires [good cookie hygiene](https://windscribe.com/blog/how-to-actually-be-anonymous-online-801811b7088d/)
 
@@ -57,7 +57,7 @@ We recommend using Windscribe as your VPN - and we **were not paid** to say that
 
 We also recommend trying out Private Internet Access, in case Windscribe does not meet your needs. You can check them out here: [PIA](https://www.privateinternetaccess.com/).
 
-**Check out this map of VPN relationshsips:**
+**Check out this map of VPN relationships:**
 
 <a href="https://kumu.io/Windscribe/vpn-relationships">
 {% image "/assets/img/tools/vpn-map.jpg", "A map of VPN company relationships", "100vw", "", "rounded", "lazy", "auto", "async", "", "" %}

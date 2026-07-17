@@ -69,7 +69,7 @@ A trip to Iceland would not be complete without touring the many natural attract
 - **Þingvellir National Park:** Where the Eurasian and American tectonic plates are slowly separating.
 - **Icelandic Horses:** Side stop where we gave “candy” to Icelandic Horses.<br>_Fun fact: Once an Icelandic horse leaves the country it can never return._
 - **Gullfoss Waterfall:** Many rushing cascades with a double tiered waterfall with a height of 31m – we even saw a rainbow.
-- **The Great Geysir:** The active Strokkur hot springs shoots water up to 30m up every 8-ish minutes. Across the street to the Geysir Restaurant and Cafe, where we tried traditional Icelandic ‘Happy Marriage Cake’ (rhubarb cake) and a blueberry cheesecake.<br>_Fun fact: This geyser is where the word itself originates, meaning ‘to gush’. Notice the difference between the spelling, “The Great Geysir” versus “geyser” for the natural feature in general._
+- **The Great Geysir:** The active Strokkur hot spring shoots water up to 30m up every 8-ish minutes. Across the street to the Geysir Restaurant and Cafe, where we tried traditional Icelandic ‘Happy Marriage Cake’ (rhubarb cake) and a blueberry cheesecake.<br>_Fun fact: This geyser is where the word itself originates, meaning ‘to gush’. Notice the difference between the spelling, “The Great Geysir” versus “geyser” for the natural feature in general._
 - **Kerið Crater:** Daniela's person favourite, the stunning sapphire coloured lake is contrasted by the red slopes caused by iron oxide.<br>_Fun fact: It is theorized by geologists that the caldera was formed when a volcano erupted and collapsed onto itself about 6,500 years ago._
 - **Celio Corner Store:** We stopped for a quick bathroom break before the hour-long drive back to Reykjavik. There were quite a variety of Icelandic goodies, including Icelandic chocolate!
 
@@ -89,13 +89,13 @@ Finally, our stay in Iceland would have been lacking if we did not experience at
 
 {% image "/assets/img/posts/europe/IMG_6976.jpg", "Daniela at Sky Lagoon", "100vw", "Daniela at Sky Lagoon", "rounded", "lazy", "auto", "async", "", "" %}
 
-> ❕ Tip If you want an even more aesthetic time, go about 1h before the sun sets.
+> ❕ Tip: If you want an even more aesthetic time, go about 1h before the sun sets.
 
 We then headed over to the Nautholsvik Geothermal Beach, where the locals go. There was an outdoor hot tub heated with geothermal water and a sandy beach where you can cool off in the ocean - it was absolutely frigid. The funny part was, it was separated from the main ocean, so the water was a tiny bit less icy. Locals on the other hand waded right into the ocean itself and floated along the coast. There were even people doing a swimming workout; however, we did notice they brought along insulated gloves and little booties – might be a good idea for next time.
 
 > ❕ Tip: In hindsight, we should have gone to the Geothermal Beach first and then to the Sky Lagoon.
 
-Our 5 days in Iceland were packed with so many sights to see and things to do. Iceland has so much to offer, we barely made a dent. We recommend renting a car for this island to better explore, including the Golden Circle so you can go to all of the places that interest you, on your own time. Renting a car also allows you to get out of the city center late at night, away from the light pollution, to increase your chances of getting a glimpse of the Northern Lights.
+Our five days in Iceland were packed with so many sights to see and things to do. Iceland has so much to offer, we barely made a dent. We recommend renting a car for this island to better explore, including the Golden Circle so you can go to all of the places that interest you, on your own time. Renting a car also allows you to get out of the city center late at night, away from the light pollution, to increase your chances of getting a glimpse of the Northern Lights.
 
 Finally, if you have some extra time, here is a list of places we _wished_ we had time to visit:
 
