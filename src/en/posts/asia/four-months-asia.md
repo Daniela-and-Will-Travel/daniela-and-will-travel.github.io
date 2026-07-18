@@ -41,11 +41,11 @@ Asia quite literally takes us to the other side of the world, since Canada is ho
 
 This one is hard to answer, Southeast Asia is so big and has so much to offer (plus we quickly visited Japan, which is another country we could have stayed in **MUCH** longer). We have chosen to travel about four to five months after much research on expenses, what do, and where to go. We plan to visit nine countries in Southeast Asia + Japan, staying about two weeks in each, some significantly less where we will only stay a couple days, to other where we will stay almost a month. All these were planned out via a spreadsheet, shared below.
 
-_Why add Japan? Well, it was in the area and Will was dying to visit. Plus, there were some pretty solid (and cheap) direct flights from YVR._
+_Why add Japan? Well, it was in the area and Will was dying to visit. Plus, there were some pretty solid (and cheap) direct flights from Vancouver._
 
 <h2 id="visas">Visas</h2>
 
-Most counties in this area require most travelers to apply for a visa, which can either be done at the border or online as an e-visa. If you apply for an e-visa, it is often cheaper, but you must make sure the border crossing you are entering from accepts them.
+Most counties in this area require travelers to apply for a visa, which can either be done at the border or online as an e-visa. If you apply for an e-visa, it is often cheaper, but you must make sure the border crossing you are entering from accepts them.
 
 **This table gives some basic information (as of 2025) on visas and e-visas for Canadian travel.** It is always best to check with [the Government of Canada](https://travel.gc.ca/travelling/advisories) for travel advice and advisories, or if you are American, check with the [Department of State](https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/).
 
@@ -77,7 +77,7 @@ Southeast Asia is a very tropical climate, and with that comes disease. It is be
 
 > ⚠ Note: We are **NOT** doctors in any way shape or form, so take this list as a guide.
 
-### SEA Vaccines
+### Southeast Asia Vaccines
 
 - Hepatitis A
 - Hepatitis B
@@ -104,12 +104,12 @@ Traveling in this area should be relatively affordable, as long as you spend mon
 - Hostels and guesthouses over hotels - try [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726)
 - Street food = cheap, sit down restaurant = expensive
 - Grab breakfast from grocery stores and pack lunch + snacks
-- DIY excursions: Save money and gain freedom
+- DIY excursions: save money and gain freedom
 - Walk whenever possible
 - Be picky with what ‘tourist attractions’ you pay to visit - some are totally worth it, others are less so
 - **Pack light** - nothing sucks more than having to pay big bucks for extra baggage fees
 
-We once again created a spreadsheet (you can see it on [Google Sheets](https://docs.google.com/spreadsheets/d/12G97W4vMMMh4kUDjELmHW9V8xrLxGRIfaOTAzfYjB8A/edit?usp=sharing))with our estimated expenses per day for two people, and we are tracking how much money we have and spend via the sheets. We are trying our best to stick to our ‘rules’ but sometimes it is worth it to splurge here and there.
+We once again created a spreadsheet (you can see it on [Google Sheets](https://docs.google.com/spreadsheets/d/12G97W4vMMMh4kUDjELmHW9V8xrLxGRIfaOTAzfYjB8A/edit?usp=sharing)) with our estimated expenses per day for two people, and we are tracking how much money we have and spend via the sheets. We are trying our best to stick to our ‘rules’ but sometimes it is worth it to splurge here and there.
 
 <h2 id="what-to-bring">What to Bring</h2>
 
@@ -178,9 +178,9 @@ Also, keep in mind temples and many other historical sites have a dress code and
 
 <h2 id="data">Data</h2>
 
-It is important to stay connected with family and friends while traveling – for safety reasons. But that is not the only reason you should consider having data. Looking up directions, additional things to do, where to eat, are all conveniences that come with having a data plan. Additionally, it can be quite useful to have for emergencies.
+It is important to stay connected with family and friends while traveling for safety reasons. But that is not the only reason you should consider having data. Looking up directions, additional things to do, where to eat, are all conveniences that come with having a data plan.
 
-There are two options for affordable data in Asia: a **physical** SIM vs an **e-SIM**.
+There are two options for affordable data in Asia: a **physical** SIM or an **e-SIM**.
 
 Physical SIMs work on all devices. Be sure that your provider at home did not lock your phone, as that would be quite unfortunate. They are usually cheaper than e-SIMs if you buy them from the right place. Typically, airports are not the cheapest and you have to make your way into your destination to get the best deal.
 
@@ -192,7 +192,7 @@ e-SIMs are extremely convenient, you are able to  purchase one before arriving t
 
 Each county has their own transportation system, all with varying degrees of efficiency. It is important to make sure that you can get to your new destination  from where you are staying before, as not all cities have good connections.
 
-- Japan is obviously well known for their public transportation. High speed bullet trains, local trains, metro and buses leave everything well connected and easy to access via public transport. Most can be paid using the [Suica](https://en.japantravel.com/guide/how-to-get-a-suica-card/22316) or [Passamo](https://www.pasmo.co.jp/visitors/en/) card.
+- Japan is obviously well known for their public transportation. High speed bullet trains, local trains, metros and buses leave everything well connected and easy to access via public transport. Most can be paid using the [Suica](https://en.japantravel.com/guide/how-to-get-a-suica-card/22316) or [Passamo](https://www.pasmo.co.jp/visitors/en/) card.
 - Thailand has one train line from Bangkok to Chiang Mai, everything else must be reached by bus. Many can be booked online via [12Go.asia](https://12go.asia/en) or [BookMeBus](https://bookmebus.com/?r=8Rp3qQaU4DCyUicacCdbpVw9&utm_source=banner-link&utm_content=option-d) in advance. The local buses can be paid onboard the bus with cash. In order to reach tourist attractions outside the city, you can usually take a songthaew or tuktuk. If not, renting a scooter is a great option.
 - Laos also has one train line, funded by China, it runs from the North to South of Laos. The main cities of Luang Prabang, Vang Vieng, and Vientiane can be reached via this line. Everything else can be reached by bus. Be aware that many popular destinations in Laos are VERY far from each other and take over 8h.
 - Cambodia has one train line, which we took from Phnom Penh to Sihanoukville, which took 7h at a very slow pace. Traveling anywhere else requires the use of minivans or busses. Many of these can be booked online via [12Go.asia](https://12go.asia/en) or [BookMeBus](https://bookmebus.com/?r=8Rp3qQaU4DCyUicacCdbpVw9&utm_source=banner-link&utm_content=option-d) in advance.
