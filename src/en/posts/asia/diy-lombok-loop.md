@@ -42,7 +42,7 @@ You can get to Lombok via plane or boat. We recommend arriving via ferry from Ba
 
 When departing from Padbangi, your Grab or Gojek driver will need to drop you off outside of the entrance to the port, since there is a **local taxi mafia** that will extract a hefty fee from outside drivers. Once inside the port, Google Maps is your friend to find the office of your chosen ferry company. When arriving back to Padbangi, the taxi mafia will try to scam you into hoping in one of their overpriced cars back to Denpasar, saying things like "the shuttle bus will take four hours" or "you have to walk sixteen kilometers to the Grab pickup point". Do not fall for this - take your bags, exit the port, and walk to the nearby [tourist police station](https://maps.app.goo.gl/HJBxwM53RCZxcjPw9), where you can then order a Grab or Gojek, and will not be hassled... hopefully.
 
-If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport size. If you do end up flying, you can pay an additional fee to have your motorbike brought to/from the airport, and then can start your loop from there.
+If you choose to arrive via plane, flights will arrive at Lombok's only airport: _Lombok International Airport_ in the Praya District. Flights can be expensive due to the small airport. If you do end up flying, you can pay an additional fee to have your motorbike brought to/from the airport, and then can start your loop from there.
 
 > ❕ Tip: If flying, start your loop at the airport, head down to Koeta, and then go counter-clockwise, ending up at the airport again to catch your flight out.
 
@@ -62,7 +62,7 @@ We rented from **Bangsal Rent Car + Scooter** and had a great experience. The ow
 
 <h2 id="#length">How Many Days</h2>
 
-The amount of time you spend on the Lombok Loop is very flexible, with only a minimum requirement of days. We recommend spending **3 nights, 4 days at a minimum** traveling around Lombok. However, you can add more depending on how many days your itinerary allows, and what activities you want to do.
+The amount of time you spend on the Lombok Loop is very flexible - we recommend spending **3 nights, 4 days at a minimum**!. However, you can add more depending on how many days your itinerary allows, and what activities you want to do.
 
 While we spent one night in each of the major spots listed on [our route](#route), we think these locations could definitely do with some more time:
 
