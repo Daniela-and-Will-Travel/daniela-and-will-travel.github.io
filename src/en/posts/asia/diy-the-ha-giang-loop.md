@@ -92,7 +92,7 @@ We recommend getting a [Honda Blade](https://qtmotorbikesandtours.com.vn/motorbi
 We rented from [QT Motorbike](https://qtmotorbikesandtours.com.vn/motorbike-rental-ha-giang-cao-bang/), but there are many other reputable shops out there. Do a quick search on Google Maps and check for good reviews:
 
 - It cost us 180,000 VND per day (in 2025)
-- Plus, 80,000 VND per day for insurance (which we recommend for peace of mind)
+- Plus 80,000 VND per day for insurance (which we recommend for peace of mind)
 - You can find all the bikes on their website, and they also have an online reservation system
 - They will give you **GIGANTIC** plastic bags for your backpack, and a free poncho
 
