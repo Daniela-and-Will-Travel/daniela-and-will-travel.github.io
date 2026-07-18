@@ -57,7 +57,7 @@ Additionally, from Nias you can get to the Batu Islands by ferry, but unfortunat
 
 <h2 id="#get-around">How to Get Around</h2>
 
-Once on the island, options for getting around are limited. From the airport to the southern tip cost 600,000 IDR when we asked the taxi drivers, and they would not budge. The place we stayed at, Harus Damai Inn offered it for 500,000 IDR.
+Once on the island, options for getting around are limited. From the airport to the southern tip cost 600,000 IDR when we asked the taxi drivers, and they would not budge. The place we stayed, Harus Damai Inn offered it for 500,000 IDR.
 
 We decided to try to get there by local bus for only 30,000 IDR per person, which did work, but it quite a process:
 
