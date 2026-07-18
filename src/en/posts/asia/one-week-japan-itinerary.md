@@ -39,9 +39,9 @@ Japan has become THE travel destination of the year, with everyone and their dog
 
 <h2 id="visas">Visa + Arrival Card</h2>
 
-Regardless of where you are coming from, odds are the best deals bring you to Tokyo or Osaka - which is PERFECT for this itinerary. Getting from the airport to the city center can be a bit of a hassle, here are the cheapest options:
+Regardless of where you are coming from, odds are the best flight deals bring you to Tokyo or Osaka - which is PERFECT for this itinerary. Getting from the airport to the city center can be a bit of a hassle, here are the cheapest options:
 
-> ❕ Tip: Make sure to double check which airport!
+> ❕ Tip: Make sure to double check which airport you are flying into (or out of) in Tokyo or Osaka!
 
 **Tokyo Narita Airport:**
 
@@ -58,7 +58,7 @@ Regardless of where you are coming from, odds are the best deals bring you to To
 - Nankai Express or Nankai Limited Express from the Kansai Airport Station to Namba Station
 - From there, switch onto the Osaka Metro to get to your specific location, or to Osaka/Umeda or Shin-Osaka Station
 
-> ❕ Tip: Bring Yen before you arrive. When we arrived at the Tokyo Narita airport they only accepted cash into the city.
+> ❕ Tip: Bring Yen before you arrive. When we arrived at the Tokyo Narita airport they only accepted cash for train fares into the city.
 
 <h2 id="where-to-go">Where to Go</h2>
 
@@ -72,7 +72,7 @@ Regardless of where you are coming from, odds are the best deals bring you to To
   - Imperial Palace Area - _surrounded by several interesting parks, gardens and shrines_
   - Ginza - _the high-end shopping district_
   - Harajuku - _home to the largest shrine in Tokyo_
-  - Shibuya - _shopping district for the young people with great restaurants_
+  - Shibuya - _shopping district catering to the young, also features great restaurants_
   - Akihabara - _the tech and pop-culture center_
   - Ueno - _home to a large park, the city's best museum, a zoo, and a shrine_
   - Asakusa - _home to the city's most popular temple_
@@ -93,7 +93,7 @@ Soaking in the natural hot springs offers a deeply relaxing experience, promotin
 
 {% image "/assets/img/posts/asia/IMG_0569.jpg", "Temple in Kyoto with sake offering barrels", "100vw", "Sake offering barrels at a temple", "rounded", "lazy", "auto", "async", "", "" %}
 
-Kyoto offers a beautiful blend of temples, gardens, and if you have the time (and the budget), a traditional tea ceremony.
+Kyoto offers a beautiful blend of temples, gardens, and if you have the time (and budget), a traditional tea ceremony.
 
 Here are some of the best places:
 
@@ -139,7 +139,7 @@ And there you have it, a simple itinerary to help guide your trip to Japan.
 
 We averaged $170 per day for 2 people. So not shoestring, but definitely NOT luxury. You can keep your costs low by booking hotels in advance, and walking around most of the cities.
 
-> ⚠ Note: this does not include flight to Japan. That round trip flight will set you back a tad bit more.
+> ⚠ Note: this does not include the flight to Japan. That round trip flight will set you back a tad bit more.
 
 <h2 id="#accommodation">Accommodation</h2>
 
@@ -177,7 +177,7 @@ If you didn’t bring any Yen or run out, ATMs are widely available, we recommen
 
 > ❕ Tip: Google Maps is your friend here. Everything we needed, like transit directions, station locations, and train wait times was up to date.
 
-**Suica and Passmo:** These are cards you can add to your Apple wallet. Android users can get physical cards cause Japan ✨hates✨ you. They are super useful and most public transport accepts them. The Shinkansen tickets can also be bought ahead of time using these.
+**Suica and Passmo:** These are cards you can add to your Apple wallet, while Android users can get physical cards. They are super useful and most public transport (and convenience/grocery stores) accepts them. The Shinkansen tickets can also be bought ahead of time using these.
 
 > ⚠ Note: If you buy a Shinkansen ticket ahead of time with your Suica or Passmo card, your paper ticket will automatically print from the station gates - just make sure to enter through the specified Shinkansen gates!
 
