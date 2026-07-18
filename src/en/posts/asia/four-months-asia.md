@@ -101,7 +101,7 @@ You should already have these as part of routine vaccination schedules in most W
 
 Traveling in this area should be relatively affordable, as long as you spend money wisely (Japan and probably Singapore are the exception). Accommodation and food will take up a large portion of our budget, so here are some tips to save money:
 
-- Hostels and guesthouses over hotels - try [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726)
+- Hostels and guesthouses over hotels - try [Booking.com](https://www.tkqlhce.com/click-101819299-17293132)
 - Street food = cheap, sit down restaurant = expensive
 - Grab breakfast from grocery stores and pack lunch + snacks
 - DIY excursions: save money and gain freedom

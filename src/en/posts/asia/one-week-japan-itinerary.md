@@ -76,7 +76,7 @@ Regardless of where you are coming from, odds are the best flight deals bring yo
   - Akihabara - _the tech and pop-culture center_
   - Ueno - _home to a large park, the city's best museum, a zoo, and a shrine_
   - Asakusa - _home to the city's most popular temple_
-- Take a look at the [Top 10 Places to Stay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fjp%2Ftokyo.html)
+- Take a look at the [Top 10 Places to Stay](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fjp%2Ftokyo.html)
 
 ### Fuji
 
@@ -85,7 +85,7 @@ Regardless of where you are coming from, odds are the best flight deals bring yo
 Mount Fuji is Japan's iconic peak, offering breathtaking views that captivate visitors year-round. Whether you're hiking its trails or admiring its beauty from afar, the mountain's serene presence never fails to leave a lasting impression.
 
 - Option 1: Day trip from Tokyo - _this will give you enough time to get some beautiful pictures and even check out an onsen_
-- Option 2: Stay a night nearby - _in [a room with an onsen](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com%2Fonsen%2Fregion%2Fjp%2Fmount-fuji.html)_
+- Option 2: Stay a night nearby - _in [a room with an onsen](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fonsen%2Fregion%2Fjp%2Fmount-fuji.html)_
 
 Soaking in the natural hot springs offers a deeply relaxing experience, promoting both physical and mental well-being while surrounded by stunning landscapes. An onsen offers a unique cultural experience and a chance to immerse yourself in traditional Japanese relaxation.
 
@@ -143,7 +143,7 @@ We averaged $170 per day for 2 people. So not shoestring, but definitely NOT lux
 
 <h2 id="#accommodation">Accommodation</h2>
 
-We use [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=japan-itinerary&ued=https%3A%2F%2Fwww.booking.com) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
+We use [Booking.com](https://www.tkqlhce.com/click-101819299-17293132) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
 
 Keep in mind that if you find a cheaper location outside of the center, you may need to spend more time walking/take public transportation, which could add up over time.
 

@@ -80,10 +80,10 @@ There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan,
 
 Staying in homestays while on your loop gives you the best opportunity to visit the more rural parts of Lombok, learn from the locals, and in most cases, experience great company and food! Here are the places we stayed while on our loop:
 
-- [de Travelodge Homestay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fde-travelodge-homestay.en-gb.html), near **Desa Anjar**, a perfect stop on your first night
-- [Tetebatu Sunrise Homestay](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Ftetebatu-sunrise.en-gb.html), in **Tetebatu**, delicous food and close to multiple waterfalls
+- [de Travelodge Homestay](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fde-travelodge-homestay.en-gb.html), near **Desa Anjar**, a perfect stop on your first night
+- [Tetebatu Sunrise Homestay](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Ftetebatu-sunrise.en-gb.html), in **Tetebatu**, delicous food and close to multiple waterfalls
 
-If you are staying a night (or more) in **Koeta**, homestays are no longer your best option due to the large number of tourists. We opted for the quiet [Puri Rinjani](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fpuri-rinjani-bungalows.en-gb.html) resort, minutes away from the beach, with a pool and buffet breakfast.
+If you are staying a night (or more) in **Koeta**, homestays are no longer your best option due to the large number of tourists. We opted for the quiet [Puri Rinjani](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fpuri-rinjani-bungalows.en-gb.html) resort, minutes away from the beach, with a pool and buffet breakfast.
 
 <h2 id="#packing">What to Bring</h2>
 
@@ -116,7 +116,7 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
   - No need for a guide, the monkeys are not _that_ scary
 - Tiu Kelep Waterfall
   - Continue on to this waterfall from Sedan Gile
-- Stay overnight in [Desa Anjar](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Flandmark%2Fid%2Ftiu-kelep-waterfall.html)
+- Stay overnight in [Desa Anjar](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Flandmark%2Fid%2Ftiu-kelep-waterfall.html)
 
 ### Day 2
 
@@ -134,7 +134,7 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
   - No entrance fee, follow directions on [Google Maps](https://www.google.com/maps/place/Air+Terjun+Sarang+Walet/@-8.5492251,116.4232204,14.24z/data=!4m6!3m5!1s0x2dcc354a2deed911:0x227fdd93329c53ae!8m2!3d-8.5462256!4d116.4253093!16s%2Fg%2F11f2pplvkq?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D#:~:text=Beautiful%20waterfall%2C%20the,the%20bamboo%20bridges.)
   - 5,000 IDR for parking
   - A unique waterfall inside of a cave, wading through water is necessary to access
-- Stay overnight in [Tetebatu](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Fss%3DTetebatu%252C%2BWest%2BNusa%2BTenggara%252C%2BIndonesia)
+- Stay overnight in [Tetebatu](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Fss%3DTetebatu%252C%2BWest%2BNusa%2BTenggara%252C%2BIndonesia)
 
 > ❕ Tip: You may also consider splitting this day up or adding additional days near Mt. Rinjani if you plan on doing an [overnight trek](https://www.getyourguide.com/sembalun-l146649/trekking-mount-rinjani-summit-2-days-1-night-t503204/?partner_id=8RTQF4P&utm_medium=online_publisher&cmp=lombokmotor) of any of the Seven Peaks on Lombok.
 
@@ -154,7 +154,7 @@ Get up early to visit the first waterfalls uninterrupted, and get a head start o
   - Free
   - Open on non-race days to the public
   - Home of the MotoGP
-- Stay overnight in busy [Koeta/Kuta](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726&campaign=lombokmotor&ued=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Fkuta-id.id.html)
+- Stay overnight in busy [Koeta/Kuta](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fid%2Fkuta-id.id.html)
   - Theres lots of Western and Indonesian restaurants, we were intrigued by the "Mexican Pizza" at the Cantina Mexicana Kuta Lombok
 
 > ❕ Tip: If you like the beach or want to try surfing, Koeta is another great place to spend a couple of nights.

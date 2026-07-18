@@ -81,7 +81,7 @@ Money makes the world go round, so the saying goes. But it is possible to keep c
 
 Of course, we still ate out, we did sometimes take transit when we could have walked (sometimes it was raining...) and splurged here and there, **BUT** not every time. We saved thousands of dollars following these "rules".
 
-Save money on hotels with [Booking.com](https://www.awin1.com/cread.php?awinmid=6776&awinaffid=1866726).
+Save money on hotels with [Booking.com](https://www.tkqlhce.com/click-101819299-17293132).
 
 > ⚠ Note: Europe is not cheap, we saved for about 2 years in high school to save this kind of money for such a long trip.
 
