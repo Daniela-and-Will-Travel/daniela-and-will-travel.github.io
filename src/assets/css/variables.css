@@ -5,12 +5,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Bad Script';
-    src: url('../fonts/Bad_Script/BadScript-Regular.ttf') format('ttf');
-    font-weight: 100 900;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 :root {
     /* branding */
