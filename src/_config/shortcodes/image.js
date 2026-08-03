@@ -1,6 +1,13 @@
-const Image = require('@11ty/eleventy-img');
 const fs = require('node:fs');
 const path = require('node:path');
+
+let imagePromise;
+function getImage() {
+    if (!imagePromise) {
+        imagePromise = import('@11ty/eleventy-img').then((mod) => mod.default);
+    }
+    return imagePromise;
+}
 
 function resolveImageSource(src) {
     const sourcePath = path.join('.', 'src', src);
@@ -22,6 +29,7 @@ function resolveImageSource(src) {
 }
 
 module.exports = async function(src, alt, sizes, caption = '', classes = '', loading = 'lazy', fetch = 'auto', decoding = 'async') {
+    const Image = await getImage();
     const settings = this.ctx.settings;
     const imageSource = resolveImageSource(src);
     let meta = {};

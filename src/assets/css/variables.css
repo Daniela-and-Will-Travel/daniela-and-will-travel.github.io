@@ -1,7 +1,14 @@
 @font-face {
-    font-family: 'ALbert Sans';
+    font-family: 'Albert Sans';
     src: url('../fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf') format('ttf');
-    font-weight: 100 900; /* Adjust the range according to your font */
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bad Script';
+    src: url('../fonts/Bad_Script/BadScript-Regular.ttf') format('ttf');
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -47,7 +54,7 @@
 
     /* typography */
     --font-base: "Albert Sans", Verdana, Arial, Times, 'Times New Roman', serif;
-    --font-headings: "Segoe Script", cursive, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-headings: "Segoe Script", "Bad Script", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-quote: Verdana, Arial, Times, 'Times New Roman', serif;
     --font-mono: "Fira Code", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1500,22,1.333,6,1,800&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
