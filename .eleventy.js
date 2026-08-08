@@ -118,6 +118,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter('exclude', require('./src/_config/filters/exclude'));
     eleventyConfig.addFilter('withoutTags', require('./src/_config/filters/withoutTags'));
     eleventyConfig.addFilter('escapeHtml', require('./src/_config/filters/escapehtml'));
+    eleventyConfig.addFilter('localeFallback', require('./src/_config/filters/localefallback'));
 
 
     // Passthrough -------------------------------------

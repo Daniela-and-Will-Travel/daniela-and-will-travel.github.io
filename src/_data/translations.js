@@ -9,7 +9,9 @@ module.exports = {
         },
         header: {
             skipLink: 'Skip to content',
-            home: 'Home'
+            home: 'Home',
+            menu: 'Menu',
+            close: 'Close'
         },
         readingTime: {
             underMinute: 'Less than 1 minute to read',
@@ -19,6 +21,25 @@ module.exports = {
         feeds: {
             info: 'This is an RSS feed. Copy and paste the URL into your feed reader. Visit <a href="https://aboutfeeds.com">About Feeds</a> to learn more about RSS.',
             title: 'Recently Published'
+        },
+        footer: {
+            tagline: "Travel guides, itineraries and honest advice from nine months across Europe and four months through Southeast Asia — so you don't make the same mistakes we did.",
+            explore: 'Explore',
+            smallPrint: 'The Small Print',
+            affiliates: 'Affiliate Disclosure',
+            privacy: 'Privacy Policy',
+            terms: 'Terms of Use',
+            doNotSell: 'Do Not Sell My Info',
+            styleGuide: 'Style Guide',
+            builtWith: 'Built with <a href="https://elva.scott.ee/">Elva</a> on <a href="https://www.11ty.dev/">Eleventy</a>. Icons by <a href="https://fontawesome.com/">Font Awesome</a>.'
+        },
+        post: {
+            by: 'By {{ author }}',
+            affiliateNotice: 'This post may contain affiliate links, which help support us at no cost to you! Learn&nbsp;more',
+            affiliateLink: 'here',
+            relatedEyebrow: 'Keep reading',
+            relatedTitle: 'More travel guides',
+            backToTop: 'Back to top'
         },
         dark: 'Dark',
         light: 'Light'
@@ -33,7 +54,9 @@ module.exports = {
         },
         header: {
             skipLink: 'Saltar al contenido',
-            home: 'Inicio'
+            home: 'Inicio',
+            menu: 'Menú',
+            close: 'Cerrar'
         },
         readingTime: {
             underMinute: 'Menos de 1 minuto para leer',
@@ -43,6 +66,25 @@ module.exports = {
         feeds: {
             info: 'Este es un feed RSS. Copia y pega la URL en tu lector de feeds. Visita <a href="https://aboutfeeds.com">About Feeds</a> para obtener más información sobre RSS.',
             title: 'Publicado Recientemente'
+        },
+        footer: {
+            tagline: 'Guías de viaje, itinerarios y consejos honestos de nueve meses por Europa y cuatro meses por el Sudeste Asiático — para que no cometas los mismos errores que nosotros.',
+            explore: 'Explorar',
+            smallPrint: 'La Letra Pequeña',
+            affiliates: 'Divulgación de Afiliados',
+            privacy: 'Política de Privacidad',
+            terms: 'Términos de Uso',
+            doNotSell: 'No Vendan Mi Información',
+            styleGuide: 'Guía de Estilo',
+            builtWith: 'Hecho con <a href="https://elva.scott.ee/">Elva</a> sobre <a href="https://www.11ty.dev/">Eleventy</a>. Iconos de <a href="https://fontawesome.com/">Font Awesome</a>.'
+        },
+        post: {
+            by: 'Por {{ author }}',
+            affiliateNotice: 'Esta publicación puede contener enlaces de afiliados, que nos ayudan sin ningún costo para ti. Más&nbsp;información',
+            affiliateLink: 'aquí',
+            relatedEyebrow: 'Sigue leyendo',
+            relatedTitle: 'Más guías de viaje',
+            backToTop: 'Volver arriba'
         },
         dark: 'Oscuro',
         light: 'Claro'

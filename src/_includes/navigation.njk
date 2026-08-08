@@ -73,7 +73,7 @@
         @click="open = !open"
     >
         <span class="navigation-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span x-text="open ? 'Close' : 'Menu'">Menu</span>
+        <span x-text="open ? '{{ 'header.close' | translate }}' : '{{ 'header.menu' | translate }}'">{{ 'header.menu' | translate }}</span>
     </button>
 
     <div class="navigation-panel" id="site-menu" data-open="false" :data-open="open ? 'true' : 'false'">
