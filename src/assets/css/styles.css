@@ -237,6 +237,36 @@ figure > figcaption {
     max-width: var(--measure);
 }
 
+/* A captioned figure is a two-row grid: image on top, caption below. The photo
+   credit chip becomes a grid item sharing the image cell, so it stays pinned
+   inside the photograph however many lines the caption runs to. Figures
+   without a caption (cards, tiles, heroes) never carry a chip and are left as
+   plain blocks, where the absolute positioning below still applies. */
+figure:has(> figcaption) {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+figure:has(> figcaption) > picture,
+figure:has(> figcaption) > img,
+figure:has(> figcaption) > .bottom-left-text {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+figure:has(> figcaption) > figcaption {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+figure:has(> figcaption) > .bottom-left-text {
+    position: relative;
+    inset: auto;
+    align-self: end;
+    justify-self: end;
+    margin: var(--space-s);
+}
+
 .oembed-youtube,
 .oembed-vimeo {
     border-radius: var(--radius-m);
