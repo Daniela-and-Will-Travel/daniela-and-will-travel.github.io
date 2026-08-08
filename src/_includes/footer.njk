@@ -5,7 +5,7 @@
 
             <div class="footer__brand">
                 <a class="footer__wordmark" href="/">Daniela and Will</a>
-                <p class="footer__tagline">Travel guides, itineraries and honest advice from nine months across Europe and four months through Southeast Asia — so you don't make the same mistakes we did.</p>
+                <p class="footer__tagline">{{ 'footer.tagline' | translate }}</p>
                 <ul class="social-menu">
                     <li><a href="https://www.instagram.com/danielaandwill">Instagram</a></li>
                     <li><a href="https://www.youtube.com/channel/UC5ccB45YDsFrsZ305iKi7HQ">YouTube</a></li>
@@ -14,24 +14,24 @@
             </div>
 
             <div>
-                <h2 class="footer__heading">Explore</h2>
+                <h2 class="footer__heading">{{ 'footer.explore' | translate }}</h2>
                 <ul class="footer__list">
                     {% set footerNavigation = navigation[page.lang] or navigation['en'] %}
                     {% for item in footerNavigation %}
                     <li><a href="{{ item.url | locale_url }}">{{ item.text }}</a></li>
                     {% endfor %}
-                    <li><a href="{{ "/feed/feed.xml" | locale_url }}">RSS Feed</a></li>
+                    <li><a href="{{ "/feed/feed.xml" | locale_url }}">{{ 'meta.rssTitle' | translate }}</a></li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="footer__heading">The Small Print</h2>
+                <h2 class="footer__heading">{{ 'footer.smallPrint' | translate }}</h2>
                 <ul class="footer__list">
-                    <li><a href="{{ "/affiliates/" | locale_url }}">Affiliate Disclosure</a></li>
-                    <li><a href="{{ "/privacy/" | locale_url }}">Privacy Policy</a></li>
-                    <li><a href="{{ "/terms/" | locale_url }}">Terms of Use</a></li>
-                    <li><a href="{{ "/do-not-sell-my-personal-information/" | locale_url }}">Do Not Sell My Info</a></li>
-                    <li><a href="/styleguide/">Style Guide</a></li>
+                    <li><a href="{{ "/affiliates/" | locale_url | localeFallback }}">{{ 'footer.affiliates' | translate }}</a></li>
+                    <li><a href="{{ "/privacy/" | locale_url | localeFallback }}">{{ 'footer.privacy' | translate }}</a></li>
+                    <li><a href="{{ "/terms/" | locale_url | localeFallback }}">{{ 'footer.terms' | translate }}</a></li>
+                    <li><a href="{{ "/do-not-sell-my-personal-information/" | locale_url | localeFallback }}">{{ 'footer.doNotSell' | translate }}</a></li>
+                    <li><a href="/styleguide/">{{ 'footer.styleGuide' | translate }}</a></li>
                 </ul>
             </div>
 
@@ -50,7 +50,7 @@
 
         <div class="footer__bottom">
             <p class="copyright"><span id="current-year">© 2022 - {% year %} Daniela and Will</span></p>
-            <p class="copyright">Built with <a href="https://elva.scott.ee/">Elva</a> on <a href="https://www.11ty.dev/">Eleventy</a>. Icons by <a href="https://fontawesome.com/">Font Awesome</a>.</p>
+            <p class="copyright">{{ 'footer.builtWith' | translate | safe }}</p>
         </div>
 
     </div>

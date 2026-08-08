@@ -1,7 +1,7 @@
 {% set postslist = collections.posts | languageFilter | reverse %}
 <div class="grid">
 {% for post in postslist %}
-	<article class="card{% if post.url === page.url %} postlist-item-active{% endif %}">
+	<article class="card{% if not post.data.heroImage %} card--minimal{% endif %}{% if post.url === page.url %} postlist-item-active{% endif %}">
 		{% if post.data.heroImage %}
 		<div class="card__media">
 			{% image post.data.heroImage, post.data.heroImageAlt, "(min-width: 60rem) 30vw, 100vw", "", "", "lazy", "auto", "async" %}

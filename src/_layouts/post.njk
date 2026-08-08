@@ -10,7 +10,7 @@ layout: base
         <div class="post-hero__inner">
 
             <ol class="breadcrumb">
-                <li><a href="/">Home</a></li>
+                <li><a href="/">{{ 'header.home' | translate }}</a></li>
                 {%- if postTags.length %}<li>{{ postTags[0] | replace("-", " ") }}</li>{% endif %}
             </ol>
 
@@ -21,7 +21,7 @@ layout: base
             {% endif %}
 
             <ul class="meta-line post-hero__meta">
-                <li class="meta-author">By {{ author or settings.author.name }}</li>
+                <li class="meta-author">{{ 'post.by' | translate(page.lang, { author: author or settings.author.name }) }}</li>
                 <li class="meta-date">
                     <time class="entry-date published" datetime="{{ date | dateToRfc3339 }}">{{ date | formatDate }}</time>
                 </li>
@@ -34,7 +34,7 @@ layout: base
     <div class="entry-content prose">
 
         <div class="affiliate">
-            This post may contain affiliate links, which help support us at no cost to you! Learn&nbsp;more&nbsp;<a href="{{ "/affiliates/" | locale_url }}">here</a>.
+            {{ 'post.affiliateNotice' | translate | safe }}&nbsp;<a href="{{ "/affiliates/" | locale_url | localeFallback }}">{{ 'post.affiliateLink' | translate }}</a>.
         </div>
 
         {{ content | safe }}
@@ -56,12 +56,12 @@ layout: base
     <section class="section section--tinted">
         <div class="shell">
             <div class="section-header section-header--center">
-                <p class="eyebrow">Keep reading</p>
-                <h2 class="section-header__title">More travel guides</h2>
+                <p class="eyebrow">{{ 'post.relatedEyebrow' | translate }}</p>
+                <h2 class="section-header__title">{{ 'post.relatedTitle' | translate }}</h2>
             </div>
             <div class="grid">
                 {% for post in relatedPosts %}
-                <article class="card">
+                <article class="card{% if not post.data.heroImage %} card--minimal{% endif %}">
                     {% if post.data.heroImage %}
                     <div class="card__media">
                         {% image post.data.heroImage, post.data.heroImageAlt, "(min-width: 60rem) 30vw, 100vw", "", "", "lazy", "auto", "async" %}
@@ -78,7 +78,7 @@ layout: base
     </section>
     {% endif %}
 
-    <button id="return-to-top" class="return-to-top" aria-label="Back to top" onclick="scrollToTop()">↑</button>
+    <button id="return-to-top" class="return-to-top" aria-label="{{ 'post.backToTop' | translate }}" onclick="scrollToTop()">↑</button>
 
 </article>
 

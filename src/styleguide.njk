@@ -76,6 +76,7 @@ seo:
             </ul>
             <p class="sg-nav__heading">Practice</p>
             <ul>
+                <li><a href="#i18n">Localisation</a></li>
                 <li><a href="#dodont">Do &amp; don't</a></li>
             </ul>
         </nav>
@@ -794,6 +795,51 @@ seo:
                 </table>
             </section>
 
+            <!-- ---------- localisation ---------- -->
+            <section class="sg-section" id="i18n">
+                <h2 class="sg-section__title">Localisation</h2>
+                <p class="sg-section__intro">The site is bilingual (English and Spanish) via <code>EleventyI18nPlugin</code>. Content lives under <code>src/en/</code> and <code>src/es/</code>; every string of interface chrome comes from <code>src/_data/translations.js</code>. Never hard-code UI text in a layout or include &mdash; a Spanish reader sees the same template you do.</p>
+
+                <table class="sg-table">
+                    <thead><tr><th>Filter</th><th>Use it for</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>translate</code></td><td>Any interface string. <code>{{ "{{ 'footer.explore' | translate }}" }}</code>. Supports substitution: <code>{{ "{{ 'post.by' | translate(page.lang, { author: author }) }}" }}</code>.</td></tr>
+                        <tr><td><code>locale_url</code></td><td>Internal links. Rewrites <code>/about/</code> to <code>/en/about/</code> or <code>/es/om/</code> depending on the page.</td></tr>
+                        <tr><td><code>localeFallback</code></td><td>Chain after <code>locale_url</code> for pages that exist in only one language. <code>locale_url</code> hands back an unprefixed, 404-ing URL when there is no translation; this restores the default-language prefix.</td></tr>
+                        <tr><td><code>languageFilter</code></td><td>Narrow a collection to one language before listing posts.</td></tr>
+                        <tr><td><code>formatDate</code></td><td>Dates already localise from <code>page.lang</code> &mdash; no extra work needed.</td></tr>
+                    </tbody>
+                </table>
+
+                {% set i18nMarkup %}
+&lt;!-- a link to a page that exists in both languages --&gt;
+&lt;a href="{{ "{{ '/about/' | locale_url }}" }}"&gt;{{ "{{ 'header.home' | translate }}" }}&lt;/a&gt;
+
+&lt;!-- a link to an English-only page, safe from every locale --&gt;
+&lt;a href="{{ "{{ '/affiliates/' | locale_url | localeFallback }}" }}"&gt;
+    {{ "{{ 'footer.affiliates' | translate }}" }}
+&lt;/a&gt;
+                {% endset %}
+                <div class="sg-story">
+                    <p class="sg-story__label">Linking<span class="sg-story__note">every internal link goes through a locale filter</span></p>
+                    <pre class="sg-code"><code>{{ i18nMarkup | safe }}</code></pre>
+                </div>
+
+                {% set langSwitchMarkup %}
+<div class="switch-language">
+    <a href="#" lang="en" hreflang="en" aria-label="EN: English" aria-current="page" class="current">EN</a>
+    <a href="#" lang="es" hreflang="es" aria-label="ES: Spanish">ES</a>
+    <span aria-label="FR: French" class="disabled">FR</span>
+</div>
+                {% endset %}
+                {{ story('Language switch', langSwitchMarkup, 'current locale is solid, available locales outline, untranslated pages dashed and disabled') }}
+
+                <div class="callout">
+                    <p class="callout__title">Adding a string</p>
+                    <p>Add the key to <strong>both</strong> the <code>en</code> and <code>es</code> blocks of <code>src/_data/translations.js</code>, then reference it with <code>translate</code>. A key missing from one language renders empty rather than falling back, so they must stay in step.</p>
+                </div>
+            </section>
+
             <!-- ---------- do / don't ---------- -->
             <section class="sg-section" id="dodont">
                 <h2 class="sg-section__title">Do &amp; don't</h2>
@@ -839,6 +885,14 @@ seo:
                     <div class="sg-dont">
                         <h4>Don't</h4>
                         <p>Hard-code a hex, px size or radius inside a component.</p>
+                    </div>
+                    <div class="sg-do">
+                        <h4>Do</h4>
+                        <p>Put interface text in <code>translations.js</code> and pull it with <code>translate</code>.</p>
+                    </div>
+                    <div class="sg-dont">
+                        <h4>Don't</h4>
+                        <p>Type English chrome straight into a layout &mdash; it leaks onto the Spanish pages.</p>
                     </div>
                 </div>
             </section>
