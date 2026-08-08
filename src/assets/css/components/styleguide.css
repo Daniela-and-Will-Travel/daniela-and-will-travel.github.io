@@ -1,0 +1,416 @@
+/* =========================================================================
+   Style guide — chrome for the /styleguide/ page only.
+   Deliberately plain so the components on show do the talking.
+   ========================================================================= */
+
+.sg {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-l);
+    align-items: start;
+}
+
+/* grid items default to min-width:auto, which lets wide code blocks and
+   tables stretch the track instead of scrolling inside it */
+.sg > * {
+    min-width: 0;
+}
+
+@media (min-width: 64rem) {
+    .sg {
+        grid-template-columns: 15rem minmax(0, 1fr);
+        gap: var(--space-xl);
+    }
+}
+
+/* --- sidebar navigation --------------------------------------------------- */
+
+.sg-nav {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-m));
+    align-self: start;
+    border-left: 2px solid var(--border);
+    padding-left: var(--space-s);
+    max-height: calc(100vh - var(--header-height) - var(--space-xl));
+    overflow-y: auto;
+}
+
+.sg-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-3xs);
+}
+
+.sg-nav a {
+    display: block;
+    font-size: var(--step--1);
+    font-weight: var(--weight-medium);
+    color: var(--ink-muted);
+    text-decoration: none;
+    padding-block: 0.15em;
+}
+
+.sg-nav a:hover {
+    color: var(--accent-deep);
+}
+
+.sg-nav__heading {
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: var(--space-s) 0 var(--space-3xs);
+}
+
+.sg-nav__heading:first-child {
+    margin-top: 0;
+}
+
+/* on narrow screens the sidebar becomes a compact wrap of chips so it does
+   not push the content a full screen down */
+@media (max-width: 63.99rem) {
+    .sg-nav {
+        position: static;
+        max-height: none;
+        border-left: 0;
+        padding: var(--space-s) var(--space-m);
+        background-color: var(--surface-alt);
+        border-radius: var(--radius-m);
+    }
+
+    .sg-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2xs);
+    }
+
+    .sg-nav a {
+        border: 1px solid var(--border-strong);
+        border-radius: var(--radius-pill);
+        padding: 0.3em 0.9em;
+        background-color: var(--surface);
+        font-size: var(--step--2);
+    }
+
+    .sg-nav__heading {
+        margin-top: var(--space-s);
+        margin-bottom: var(--space-2xs);
+    }
+}
+
+/* --- a documented section ------------------------------------------------- */
+
+.sg-section {
+    scroll-margin-top: calc(var(--header-height) + var(--space-m));
+    padding-bottom: var(--space-l);
+    border-bottom: 1px solid var(--divider);
+}
+
+.sg-section + .sg-section {
+    padding-top: var(--space-l);
+}
+
+.sg-section__title {
+    font-size: var(--step-3);
+    margin: 0 0 var(--space-2xs);
+}
+
+.sg-section__intro {
+    color: var(--ink-muted);
+    max-width: var(--measure);
+    margin: 0 0 var(--space-m);
+}
+
+/* --- a single story: label, canvas, code --------------------------------- */
+
+.sg-story {
+    margin-top: var(--space-m);
+}
+
+.sg-story__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-2xs);
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: var(--space-2xs);
+}
+
+.sg-story__note {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--tracking-normal);
+    text-transform: none;
+    color: var(--ink-muted);
+}
+
+.sg-canvas {
+    background-color: var(--surface);
+    background-image:
+        linear-gradient(45deg, var(--border) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--border) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--border) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--border) 75%);
+    background-size: 16px 16px;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    padding: var(--space-m);
+    overflow: hidden;
+}
+
+/* opaque inner so components sit on a real surface, not the checkerboard */
+.sg-canvas > .sg-canvas__inner {
+    background-color: var(--surface);
+    border-radius: var(--radius-s);
+    padding: var(--space-m);
+}
+
+.sg-canvas--flush {
+    padding: 0;
+    background-image: none;
+}
+
+.sg-canvas--flush > .sg-canvas__inner {
+    padding: 0;
+    border-radius: 0;
+}
+
+.sg-canvas--tinted > .sg-canvas__inner {
+    background-color: var(--surface-alt);
+}
+
+.sg-canvas--dark > .sg-canvas__inner {
+    background-color: var(--surface-invert);
+    color: var(--ink-invert);
+}
+
+.sg-code {
+    margin: 0;
+    margin-top: var(--space-2xs);
+    background-color: var(--code-background);
+    color: var(--code-default);
+    border-radius: var(--radius-s);
+    padding: var(--space-s) var(--space-m);
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.sg-code code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* --- token tables --------------------------------------------------------- */
+
+.sg-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--step--1);
+}
+
+.sg-table th,
+.sg-table td {
+    text-align: left;
+    padding: var(--space-2xs) var(--space-xs);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.sg-table thead th {
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    color: var(--ink-faint);
+    border-bottom: 2px solid var(--border-strong);
+}
+
+.sg-table code {
+    font-size: var(--step--2);
+    white-space: nowrap;
+}
+
+/* --- colour swatches ------------------------------------------------------ */
+
+.sg-swatches {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr));
+}
+
+.sg-swatch {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    background-color: var(--surface-raised);
+}
+
+.sg-swatch__chip {
+    height: 5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.sg-swatch__meta {
+    padding: var(--space-xs);
+    display: grid;
+    gap: 0.1em;
+}
+
+.sg-swatch__name {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-strong);
+    overflow-wrap: anywhere;
+}
+
+.sg-swatch__value {
+    font-size: var(--step--2);
+    color: var(--ink-faint);
+}
+
+/* --- type specimens ------------------------------------------------------- */
+
+.sg-specimen {
+    display: grid;
+    gap: var(--space-s);
+}
+
+.sg-specimen__row {
+    display: grid;
+    gap: var(--space-3xs);
+    padding-bottom: var(--space-s);
+    border-bottom: 1px dashed var(--border);
+}
+
+.sg-specimen__row:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sg-specimen__meta {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-faint);
+}
+
+.sg-specimen__sample {
+    margin: 0;
+    line-height: var(--leading-heading);
+    color: var(--ink-strong);
+    overflow-wrap: anywhere;
+}
+
+/* --- spacing ruler -------------------------------------------------------- */
+
+.sg-space {
+    display: grid;
+    gap: var(--space-2xs);
+}
+
+.sg-space__row {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    align-items: center;
+    gap: var(--space-s);
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+}
+
+.sg-space__bar {
+    height: 1rem;
+    background-color: var(--accent-soft);
+    border-radius: var(--radius-xs);
+}
+
+/* --- misc ----------------------------------------------------------------- */
+
+.sg-radius-grid,
+.sg-shadow-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
+}
+
+.sg-radius-demo {
+    aspect-ratio: 3 / 2;
+    background-color: var(--brand-indigo);
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+}
+
+.sg-shadow-demo {
+    aspect-ratio: 3 / 2;
+    background-color: var(--surface-raised);
+    border-radius: var(--radius-m);
+    display: grid;
+    place-items: center;
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+}
+
+.sg-do-dont {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+
+.sg-do,
+.sg-dont {
+    border-radius: var(--radius-m);
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--border);
+    border-left-width: 4px;
+}
+
+.sg-do {
+    border-left-color: var(--signal-success);
+    background-color: color-mix(in srgb, var(--signal-success) 7%, var(--surface));
+}
+
+.sg-dont {
+    border-left-color: var(--signal-danger);
+    background-color: color-mix(in srgb, var(--signal-danger) 7%, var(--surface));
+}
+
+.sg-do h4,
+.sg-dont h4 {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    margin: 0 0 var(--space-3xs);
+}
+
+.sg-do h4 {
+    color: var(--signal-success);
+}
+
+.sg-dont h4 {
+    color: var(--signal-danger);
+}
+
+.sg-do p,
+.sg-dont p {
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+}

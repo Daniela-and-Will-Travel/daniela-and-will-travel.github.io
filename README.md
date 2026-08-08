@@ -16,6 +16,42 @@ The project is organized as follows:
   - `_includes/`: Contains components.
   - `_layouts/`: Contains layouts of the pages.
 
+## Design system
+
+The blog runs on a token-driven CSS design system — no framework, no utility
+classes. Everything visual resolves back to a custom property, so dark mode and
+future tweaks stay cheap.
+
+- `src/assets/css/variables.css` — design tokens: brand palette, semantic
+  colours, type scale, spacing, radii, shadows, motion. **Add new values here
+  rather than hard-coding them in a component.**
+- `src/assets/css/reset.css` — modern reset.
+- `src/assets/css/styles.css` — element defaults, layout shells (`.shell`,
+  `.section`, `.grid`) and shared utilities.
+- `src/assets/css/components/*.css` — one file per component (buttons, cards,
+  hero, navigation, prose, footer, …).
+- `src/assets/css/bundle.njk` — concatenates the above into
+  `/assets/css/bundle.css`. New component files must be added here.
+
+### Style guide
+
+A living style guide is published at **[`/styleguide/`](https://daniela-and-will-travel.github.io/styleguide/)**
+(`src/styleguide.njk`). Every example on that page is rendered with the real
+stylesheet and shown next to the markup that produced it, so it never drifts
+from the site.
+
+Check it before building a new page, and add a story to it when you add a
+component. Stories are written as:
+
+```njk
+{% set myMarkup %}
+<a class="button" href="#">Browse destinations</a>
+{% endset %}
+{{ story('Label', myMarkup, 'optional note') }}
+```
+
+The same string is rendered live and printed as escaped source.
+
 ## Getting Started
 
 To get started with this project, follow these steps:
@@ -68,6 +104,9 @@ tags:
  - itinerary
  - planning
 draft: false
+byline: How to visit Japan on a bougie backpacker budget!
+heroImage: /assets/img/posts/asia/IMG_0495.jpg
+heroImageAlt: A street scene in Japan
 eleventyExcludeFromCollections: false
 seo:
   title: One Week Japan Itinerary
@@ -75,6 +114,12 @@ seo:
   changeFrequency: monthly
 ---
 ```
+
+`byline`, `heroImage` and `heroImageAlt` are what make a post look right in the
+card grids on the home page, the countries page and the related-posts strip —
+don't ship a post without them. See the
+[style guide](https://daniela-and-will-travel.github.io/styleguide/#frontmatter)
+for the full list of keys and where each one appears.
 
 ### Deployment
 

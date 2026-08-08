@@ -1,83 +1,88 @@
-/* for desktop */
-.affiliate-desktop {
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    margin-bottom: 20px;
-    max-width: 65ch;
-    text-align: center;
-    background-color: var(--foreground);
-    font-size: var(--step-0);
-    color: var(--background);
-}
+/* =========================================================================
+   Affiliate partner grid shown at the foot of every post
+   ========================================================================= */
 
-/* for mobile */
+.affiliate-desktop,
 .affiliate-mobile {
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    margin-bottom: 20px;
-    max-width: 65ch;
-    text-align: center;
-    background-color: var(--foreground);
-    font-size: var(--step-0);
-    color: var(--background);
+    background-color: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-l);
+    padding: var(--space-m);
+    max-width: none;
 }
 
-/* for desktop */
-.affiliate-box-desktop{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius); 
-    width: 50%;
-    margin: var(--space-3xs);
-    padding: var(--space-3xs);
+.affiliate-desktop > div,
+.affiliate-mobile > div {
+    display: grid !important;
+    gap: var(--space-2xs);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
 }
 
-/* for mobile */
-.affiliate-box-mobile{
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    border: 1px solid var(--background);
-    border-radius: var(--border-radius); 
-    width: 100%;
-    margin: var(--space-3xs);
-    padding: var(--space-3xs);
+.affiliate-box-desktop,
+.affiliate-box-mobile {
+    box-sizing: border-box;
+    width: 100% !important;
+    margin: 0;
+    padding: var(--space-s);
+    background-color: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    transition: border-color var(--transition-base), box-shadow var(--transition-base),
+        transform var(--transition-base);
 }
 
-.affiliate-link{
-    display: flex; 
-    align-items: center; 
-    text-decoration: none; 
-    color: inherit;
+.affiliate-box-desktop:hover,
+.affiliate-box-mobile:hover {
+    border-color: var(--accent-soft);
+    box-shadow: var(--shadow-s);
+    transform: translateY(-2px);
 }
 
-.affiliate-link:hover{
-    color: var(--link);
+.affiliate-link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: var(--space-s);
+    text-decoration: none;
+    color: var(--ink);
 }
 
-.affiliate-inner-box{
+.affiliate-link:hover {
+    color: var(--accent-deep);
+}
+
+.affiliate-link strong {
+    font-family: var(--font-display);
+    font-size: var(--step--1);
+    letter-spacing: var(--tracking-tight);
+    color: var(--ink-strong);
+}
+
+.affiliate-link span {
+    font-size: var(--step--2);
+    color: var(--ink-muted);
+}
+
+.affiliate-inner-box {
     flex-grow: 1;
 }
 
-.affiliate-svg{
-    padding-left: var(--space-s);
-    width: 3.5em;
-    height: 3.5em;
-    vertical-align: -0.125em;
+.affiliate-svg {
+    flex-shrink: 0;
+    padding-left: 0;
+    width: 2rem;
+    height: 2rem;
+    color: var(--accent-deep);
 }
 
-/* jank solutions */
-@media (min-width: 1024px) { /* hide on desktop */
+/* the two variants exist so the markup can differ per breakpoint */
+@media (min-width: 64rem) {
     .affiliate-mobile {
         display: none;
     }
 }
 
-@media (max-width: 1023px) { /* hide on mobile */
+@media (max-width: 63.99rem) {
     .affiliate-desktop {
         display: none;
     }

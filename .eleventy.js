@@ -115,6 +115,9 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter('sort', require('./src/_config/filters/sort'));
     eleventyConfig.addFilter('base64', require('./src/_config/filters/base64'));
     eleventyConfig.addFilter('readingTime', require('./src/_config/filters/readingtime'));
+    eleventyConfig.addFilter('exclude', require('./src/_config/filters/exclude'));
+    eleventyConfig.addFilter('withoutTags', require('./src/_config/filters/withoutTags'));
+    eleventyConfig.addFilter('escapeHtml', require('./src/_config/filters/escapehtml'));
 
 
     // Passthrough -------------------------------------

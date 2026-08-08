@@ -1,0 +1,365 @@
+/* =========================================================================
+   Prose — long-form article body.
+
+   Built as a named-line grid so plain markdown needs no wrapper divs:
+   text sits in the `content` column, figures and embeds widen out into
+   the `wide` column, and anything marked .bleed spans `full`.
+   ========================================================================= */
+
+.prose {
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(var(--gutter), 1fr)
+        [wide-start] minmax(0, calc((var(--width-wide) - var(--width-content)) / 2))
+        [content-start] min(var(--width-content), 100% - var(--gutter) * 2) [content-end]
+        minmax(0, calc((var(--width-wide) - var(--width-content)) / 2)) [wide-end]
+        minmax(var(--gutter), 1fr) [full-end];
+    font-size: var(--step-0);
+    line-height: var(--leading-body);
+    color: var(--ink);
+}
+
+.prose > * {
+    grid-column: content;
+    min-width: 0;
+}
+
+.prose > * + * {
+    margin-top: var(--space-m);
+}
+
+/* --- headings ------------------------------------------------------------ */
+
+.prose > h2 {
+    font-size: var(--step-3);
+    margin-top: var(--space-xl);
+    padding-top: var(--space-s);
+    border-top: 1px solid var(--divider);
+    scroll-margin-top: calc(var(--header-height) + var(--space-m));
+}
+
+.prose > h3 {
+    font-size: var(--step-2);
+    margin-top: var(--space-l);
+    scroll-margin-top: calc(var(--header-height) + var(--space-m));
+}
+
+.prose > h4 {
+    font-size: var(--step-1);
+    margin-top: var(--space-m-l);
+}
+
+.prose > h5,
+.prose > h6 {
+    margin-top: var(--space-m);
+}
+
+.prose > h2 + *,
+.prose > h3 + *,
+.prose > h4 + * {
+    margin-top: var(--space-s);
+}
+
+/* --- body copy ----------------------------------------------------------- */
+
+.prose p {
+    margin: 0;
+}
+
+/* only inline prose links get the underline treatment — component links
+   (card titles, buttons, tags, tiles) keep their own styling */
+.prose :is(p, li, dd, dt, td, th, blockquote, figcaption) a:not([class]) {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: var(--link-underline);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
+.prose :is(p, li, dd, dt, td, th, blockquote, figcaption) a:not([class]):hover {
+    color: var(--link-hover);
+    text-decoration-color: currentColor;
+}
+
+/* --- lists --------------------------------------------------------------- */
+
+.prose ul,
+.prose ol {
+    margin-block: 0;
+    padding-inline-start: 1.35em;
+}
+
+.prose li + li {
+    margin-top: var(--space-2xs);
+}
+
+.prose li::marker {
+    color: var(--accent-deep);
+    font-weight: var(--weight-bold);
+}
+
+.prose ul ul,
+.prose ul ol,
+.prose ol ul,
+.prose ol ol {
+    margin-top: var(--space-2xs);
+}
+
+/* --- quotes -------------------------------------------------------------- */
+
+.prose blockquote:not([class]) {
+    margin: 0;
+    padding: var(--space-s) 0 var(--space-s) var(--space-m);
+    border-left: 3px solid var(--accent);
+    font-size: var(--step-1);
+    line-height: var(--leading-tight);
+    color: var(--ink-strong);
+    font-style: italic;
+}
+
+.prose blockquote:not([class]) p + p {
+    margin-top: var(--space-xs);
+}
+
+.prose blockquote:not([class]) cite {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: var(--step--1);
+    font-style: normal;
+    color: var(--ink-muted);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+}
+
+/* --- figures, images and embeds ------------------------------------------ */
+
+.prose > figure,
+.prose > .oembed,
+.prose > p:has(> picture),
+.prose > p:has(> img),
+.prose > .wide {
+    grid-column: wide;
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-l);
+}
+
+.prose > figure + *,
+.prose > .oembed + * {
+    margin-top: 0;
+}
+
+.prose figure img {
+    width: 100%;
+    border-radius: var(--radius-l);
+}
+
+.prose figcaption {
+    text-align: center;
+    margin-inline: auto;
+    color: var(--ink-muted);
+    font-size: var(--step--1);
+}
+
+.prose > .bleed {
+    grid-column: full;
+}
+
+/* .wide blocks stay inside the page shell so card grids line up with the
+   rest of the site rather than running to the viewport edge */
+.prose > .wide {
+    width: 100%;
+    max-width: var(--width-page);
+    margin-inline: auto;
+}
+
+.prose iframe,
+.prose lite-youtube {
+    width: 100%;
+    border-radius: var(--radius-m);
+}
+
+/* --- tables --------------------------------------------------------------- */
+
+.prose > table {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    margin-top: var(--space-l);
+}
+
+/* below the reading column width a wide table scrolls rather than squashing */
+@media (max-width: 48rem) {
+    .prose > table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+    }
+}
+
+/* --- code ----------------------------------------------------------------- */
+
+.prose > pre {
+    margin-top: var(--space-l);
+}
+
+/* --- horizontal rule ------------------------------------------------------ */
+
+.prose > hr {
+    margin-block: var(--space-xl);
+}
+
+/* --- notices, affiliate boxes and other injected blocks ------------------- */
+
+.prose > .notice {
+    max-width: none;
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-l);
+}
+
+/* Third-party widgets (GetYourGuide etc.) drop in as bare divs */
+.prose > div[data-gyg-widget],
+.prose > .widget {
+    margin-top: var(--space-l);
+}
+
+/* =========================================================================
+   Table of contents
+   Markdown authors write "### Table of Contents" followed by a list; the
+   .toc class can be added around it, or use .toc on a wrapping div.
+   ========================================================================= */
+
+.toc {
+    background-color: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    padding: var(--space-m);
+}
+
+.toc > :first-child {
+    margin-top: 0;
+}
+
+.toc h2,
+.toc h3,
+.toc h4 {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    font-weight: var(--weight-bold);
+    color: var(--ink-muted);
+    border: 0;
+    padding: 0;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.toc ul,
+.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2xs);
+}
+
+.toc li + li {
+    margin-top: 0;
+}
+
+.toc a {
+    display: block;
+    text-decoration: none;
+    font-weight: var(--weight-medium);
+    color: var(--ink-strong);
+    padding-left: var(--space-s);
+    border-left: 2px solid var(--border-strong);
+    transition: border-color var(--transition-fade), color var(--transition-fade),
+        padding-left var(--transition-fade);
+}
+
+.toc a:hover {
+    color: var(--accent-deep);
+    border-left-color: var(--accent);
+    padding-left: calc(var(--space-s) + 3px);
+}
+
+/* =========================================================================
+   Callouts — hand-written boxes for tips, packing lists, budgets
+   ========================================================================= */
+
+.callout {
+    background-color: var(--surface-alt);
+    border-radius: var(--radius-m);
+    padding: var(--space-m);
+    border: 1px solid var(--border);
+}
+
+.callout__title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: var(--font-display);
+    font-size: var(--step--1);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    margin: 0 0 var(--space-2xs) 0;
+}
+
+.callout > :last-child {
+    margin-bottom: 0;
+}
+
+.callout--accent {
+    background-color: var(--accent-wash);
+    border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.callout--invert {
+    background-color: var(--surface-invert);
+    border-color: transparent;
+    color: var(--ink-invert);
+}
+
+.callout--invert .callout__title {
+    color: var(--brand-blush);
+}
+
+/* =========================================================================
+   Post footer pieces
+   ========================================================================= */
+
+.post-footer {
+    width: 100%;
+    max-width: calc(var(--width-content) + var(--gutter) * 2);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    margin-top: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Affiliate disclosure that sits under the post header */
+.affiliate {
+    max-width: none;
+    text-align: center;
+    background-color: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-m);
+    padding: var(--space-xs) var(--space-s);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+}
+
+.affiliate a {
+    color: var(--accent-deep);
+}

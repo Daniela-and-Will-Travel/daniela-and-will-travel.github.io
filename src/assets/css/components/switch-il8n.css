@@ -1,22 +1,45 @@
-.switch-language a,
-.switch-language span {
-    padding: var(--space-3xs) var(--space-2xs);
-    text-decoration: none;
-    margin-left: var(--space-2xs);
-    background-color: var(--link);
-    color: var(--background);
-    border-radius: var(--step--1);
-    display: inline-block;
+/* =========================================================================
+   Language switch
+   ========================================================================= */
+
+.switch-language {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3xs);
 }
 
-.switch-language a:hover,
+.switch-language a,
+.switch-language span {
+    display: inline-block;
+    padding: 0.35em 0.8em;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-muted);
+    background-color: transparent;
+    border: 1px solid var(--border);
+    transition: background-color var(--transition-fade), color var(--transition-fade),
+        border-color var(--transition-fade);
+}
+
+.switch-language a:hover {
+    color: var(--accent-deep);
+    border-color: var(--accent-soft);
+    background-color: var(--accent-wash);
+}
+
 .switch-language a.current {
-    background-color: var(--foreground);
-    color: var(--background);
+    background-color: var(--surface-invert);
+    border-color: transparent;
+    color: var(--ink-invert);
 }
 
 .switch-language span.disabled {
-    background-color: var(--background-soft);
-    color: var(--foreground-soft);
+    color: var(--ink-faint);
+    border-style: dashed;
     cursor: not-allowed;
 }

@@ -1,0 +1,163 @@
+/* =========================================================================
+   Buttons
+   .button                 solid indigo, the default call to action
+   .button--accent         terracotta, used sparingly for the primary action
+   .button--outline        hairline outline on any surface
+   .button--ghost          text-only with an arrow, used inside cards/sections
+   .button--invert         for use on dark or photographic backgrounds
+   .button--small/--large  size modifiers
+   ========================================================================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    font-family: var(--font-display);
+    font-size: var(--step--1);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 1.05em 1.9em;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    background-color: var(--brand-indigo);
+    color: var(--white);
+    transition: background-color var(--transition-base), color var(--transition-base),
+        border-color var(--transition-base), transform var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.button:hover {
+    background-color: var(--brand-indigo-deep);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-s);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.button[aria-disabled='true'],
+.button:disabled {
+    background-color: var(--border);
+    color: var(--ink-faint);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- variants ---------------------------------------------------------- */
+
+.button--accent {
+    background-color: var(--accent);
+    color: var(--brand-indigo-ink);
+}
+
+.button--accent:hover {
+    background-color: var(--accent-deep);
+    color: var(--white);
+}
+
+.button--outline {
+    background-color: transparent;
+    border-color: var(--border-strong);
+    color: var(--ink-strong);
+}
+
+.button--outline:hover {
+    background-color: var(--ink-strong);
+    border-color: var(--ink-strong);
+    color: var(--surface);
+}
+
+.button--invert {
+    background-color: var(--white);
+    color: var(--brand-indigo-ink);
+}
+
+.button--invert:hover {
+    background-color: var(--accent);
+    color: var(--brand-indigo-ink);
+}
+
+.button--ghost {
+    background-color: transparent;
+    color: var(--ink-strong);
+    padding: 0.4em 0;
+    border-radius: 0;
+    border-bottom: 2px solid var(--accent);
+}
+
+.button--ghost:hover {
+    background-color: transparent;
+    color: var(--accent-deep);
+    border-bottom-color: var(--accent-deep);
+    transform: none;
+    box-shadow: none;
+}
+
+/* --- sizes -------------------------------------------------------------- */
+
+.button--small {
+    font-size: var(--step--2);
+    padding: 0.85em 1.4em;
+}
+
+.button--large {
+    font-size: var(--step-0);
+    padding: 1.1em 2.3em;
+}
+
+.button--block {
+    display: flex;
+    width: 100%;
+}
+
+/* --- arrow affordance ---------------------------------------------------- */
+
+.button__arrow {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    transition: transform var(--transition-base);
+}
+
+.button:hover .button__arrow {
+    transform: translateX(3px);
+}
+
+/* --- icon button (square, used for controls) ----------------------------- */
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-circle);
+    background-color: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background-color var(--transition-fade), color var(--transition-fade),
+        border-color var(--transition-fade);
+}
+
+.icon-button:hover {
+    background-color: var(--surface-alt);
+    border-color: var(--border-strong);
+    color: var(--accent-deep);
+}
+
+.icon-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}

@@ -1,0 +1,149 @@
+/* =========================================================================
+   Site footer — multi-column, tinted, with the script wordmark up top
+   ========================================================================= */
+
+.footer {
+    margin-top: auto;
+    background-color: var(--footer-surface);
+    color: color-mix(in srgb, var(--footer-ink) 78%, transparent);
+    padding-block: var(--space-xl) var(--space-m);
+}
+
+.footer__inner {
+    width: 100%;
+    max-width: var(--width-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+.footer__top {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: 1fr;
+    padding-bottom: var(--space-l);
+}
+
+@media (min-width: 48rem) {
+    .footer__top {
+        grid-template-columns: 1.4fr repeat(2, 1fr) auto;
+        gap: var(--space-m);
+    }
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    max-width: 26rem;
+}
+
+.footer__wordmark {
+    font-family: var(--font-script);
+    font-size: var(--step-3);
+    line-height: 1.2;
+    color: var(--footer-ink);
+    text-decoration: none;
+}
+
+.footer__tagline {
+    font-size: var(--step--1);
+    line-height: var(--leading-tight);
+    margin: 0;
+}
+
+.footer__heading {
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--footer-heading);
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2xs);
+    font-size: var(--step--1);
+}
+
+.footer__list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__list a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-s);
+    padding-top: var(--space-m);
+    border-top: 1px solid color-mix(in srgb, var(--footer-ink) 15%, transparent);
+    font-size: var(--step--2);
+}
+
+.footer__bottom a {
+    color: inherit;
+}
+
+.footer__bottom a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    margin: 0;
+    font-size: var(--step--2);
+}
+
+.footer__utilities {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+}
+
+.rss-icon {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: inherit;
+}
+
+.rss-icon:hover {
+    color: var(--accent);
+}
+
+.rss-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* social links and the theme switch inherit the footer's own colours */
+.footer .social-menu a {
+    color: inherit;
+}
+
+.footer .social-menu a:hover {
+    color: var(--accent);
+}
+
+.footer .switch-wrapper .switch + .switch-btn {
+    background: color-mix(in srgb, var(--footer-ink) 25%, transparent);
+    border: 1px solid color-mix(in srgb, var(--footer-ink) 35%, transparent);
+}
+
+.footer .switch-wrapper .switch + .switch-btn::after {
+    background: var(--footer-ink);
+}
+
+.footer .switch-wrapper .icon {
+    color: var(--footer-surface);
+}

@@ -2,10 +2,19 @@
 layout: base
 ---
 <article class="hentry">
-    <header class="entry-header">
-        <h1 class="entry-title">{{title}}</h1>
+
+    <header class="page-hero">
+        <div class="page-hero__inner">
+            {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+            <h1 class="page-hero__title entry-title">{{ title }}</h1>
+            {% if byline or seo.description %}
+            <p class="page-hero__lede">{{ byline or seo.description }}</p>
+            {% endif %}
+        </div>
     </header>
-    <div class="entry-content">
+
+    <div class="entry-content prose">
         {{ content | safe }}
     </div>
+
 </article>

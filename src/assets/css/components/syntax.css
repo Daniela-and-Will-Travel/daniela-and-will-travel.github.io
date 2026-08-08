@@ -18,18 +18,23 @@ pre[class*="language-"] {
 }
 
 code[class*="language-"] {
-    padding-right: var(--space-s-l);
+    padding-right: var(--space-m);
+}
+
+pre[class*="language-"] {
+    font-size: var(--step--1);
+    line-height: 1.6;
 }
 
 [class*="language-"]::selection,
 [class*="language-"] *::selection {
-    background: var(--nord13);
-    color: var(--nord0);
+    background: var(--accent-soft);
+    color: var(--brand-indigo-ink);
 }
 
 /* code blocks */
 pre[class*="language-"] {
-    padding: var(--space-s-l);
+    padding: var(--space-m);
     overflow: auto;
 }
 
