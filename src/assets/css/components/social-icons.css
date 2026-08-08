@@ -1,48 +1,68 @@
-/* .social span,
-.social a {
-    padding: var(--space-3xs) var(--space-2xs);
-    text-decoration: none;
-    margin-left: var(--space-2xs);
-    background-color: var(--link);
-    color: var(--background);
-    border-radius: var(--step--1);
-    display: inline-block;
-}
-
-.social a:hover,
-.social a.current {
-    background-color: var(--foreground);
-    color: var(--background);
-}
-
-.social span.disabled {
-    background-color: var(--background-soft);
-    color: var(--foreground-soft);
-    cursor: not-allowed;
-}
- */
+/* =========================================================================
+   Social links
+   ========================================================================= */
 
 .social-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
     list-style: none;
-    border: 0;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: var(--space-s-m);
-    text-align: right;
 }
 
 .social-menu li {
     margin: 0;
     padding: 0;
-    text-align: right;
 }
 
-.social-menu li a {
+.social-menu li p {
+    margin: 0;
+}
+
+.social-menu a {
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: var(--tracking-s);
+    color: var(--ink-muted);
+    transition: color var(--transition-fade);
 }
 
-.social-menu li a:focus {
-    outline-offset: 0.6ch;
+.social-menu a:hover {
+    color: var(--accent-deep);
+}
+
+/* icon variant, used in the footer */
+.social-menu--icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+    border-radius: var(--radius-circle);
+    color: inherit;
+}
+
+.social-menu--icons a:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--brand-indigo-ink);
+}
+
+.social-menu--icons svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.social-icon {
+    color: var(--link);
+}
+
+.social-icon:hover {
+    color: var(--link-hover);
+    text-decoration: none;
 }

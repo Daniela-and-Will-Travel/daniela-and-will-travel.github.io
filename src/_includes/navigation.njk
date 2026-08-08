@@ -1,6 +1,5 @@
-<nav class="navigation">
+<nav class="navigation" x-data="{ open: false }" @keydown.escape.window="open = false">
     <a class="site-logo" href="/" {% if page.url === '/' %}aria-current="page"{% endif %} aria-label="{{ 'header.home' | translate }}">
-        <?xml version="1.0" encoding="UTF-8"?>
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.35 58.63">
             <g>
                 <path class="cls-2" d="m34.24,17.2c-.75,1.28.57,3.13.76,2.27.09-.38.38-.21.5-.58.1-.3-.03-1.43.34-1.43.25,0,.25-.34.39-.54.26-.37.81.73,1.07.37.06-.08.13-.16.2-.23.13-.15.31-.26.5-.19.2.08-.3-1.24-.28-1,.03.36-.02.7-.14,1.03-.1.27-.27.48-.53.6-.41.19-.23.97-.34,1.44-.01.06,1.17-.84,1.18-.8.14.39.46.54.64.92"/>
@@ -64,22 +63,39 @@
             </g>
         </svg>
     </a>
-    
-    <ul class="navigation-menu">
-        {% for item in navigation[page.lang] %}
-        {%- set url = item.url | locale_url %}
-        <li>
-            <a 
-                href="{{ url }}"
-                {% if page.url === url %}aria-current="page"{% endif %}
-            >
-                {{ item.text }}
-            </a>
-        </li>
-        {%- endfor %}
-    </ul>
-    
-    {% include "social-icons.njk" %}
 
-    {# {% include "switch-il8n.njk" %} #}
+    <button
+        type="button"
+        class="navigation-toggle"
+        aria-controls="site-menu"
+        aria-expanded="false"
+        :aria-expanded="open ? 'true' : 'false'"
+        @click="open = !open"
+    >
+        <span class="navigation-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span x-text="open ? 'Close' : 'Menu'">Menu</span>
+    </button>
+
+    <div class="navigation-panel" id="site-menu" data-open="false" :data-open="open ? 'true' : 'false'">
+        <ul class="navigation-menu">
+            {% set navigationItems = navigation[page.lang] or navigation['en'] %}
+            {% for item in navigationItems %}
+            {%- set url = item.url | locale_url %}
+            <li>
+                <a
+                    href="{{ url }}"
+                    {% if page.url === url %}aria-current="page"{% endif %}
+                    @click="open = false"
+                >
+                    {{ item.text }}
+                </a>
+            </li>
+            {%- endfor %}
+        </ul>
+
+        <div class="navigation-utilities">
+            {% include "social-icons.njk" %}
+            {# {% include "switch-il8n.njk" %} #}
+        </div>
+    </div>
 </nav>

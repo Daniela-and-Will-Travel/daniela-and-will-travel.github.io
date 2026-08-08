@@ -1,9 +1,17 @@
 {% set postslist = collections.posts | languageFilter | reverse %}
-<ol reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+<div class="grid">
 {% for post in postslist %}
-	<li class="postlist-item{% if post.url === url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | dateToRfc3339 }}">{{ post.date | formatDate }}</time>
-	</li>
+	<article class="card{% if post.url === page.url %} postlist-item-active{% endif %}">
+		{% if post.data.heroImage %}
+		<div class="card__media">
+			{% image post.data.heroImage, post.data.heroImageAlt, "(min-width: 60rem) 30vw, 100vw", "", "", "lazy", "auto", "async" %}
+		</div>
+		{% endif %}
+		<div class="card__body">
+			<h2 class="card__title"><a href="{{ post.url }}">{% if post.data.title %}{{ post.data.title }}{% else %}{{ post.url }}{% endif %}</a></h2>
+			{% if post.data.byline %}<p class="card__excerpt">{{ post.data.byline }}</p>{% endif %}
+			<p class="card__meta"><time datetime="{{ post.date | dateToRfc3339 }}">{{ post.date | formatDate }}</time></p>
+		</div>
+	</article>
 {% endfor %}
-</ol>
+</div>
