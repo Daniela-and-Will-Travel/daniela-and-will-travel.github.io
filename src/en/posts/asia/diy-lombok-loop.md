@@ -34,7 +34,7 @@ While we don't think our _Lombok Loop_ will get ever as popular as the [Ha Giang
 
 {% image "/assets/img/posts/asia/lombokget.jpeg", "Multiple ferries in a port, viewed from the side of another ferry", "100vw", "The view from one of the many ferries in Bali", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-there">How to Get There</h2>
+<h2 id="get-there">How to Get There</h2>
 
 You can get to Lombok via plane or boat. We recommend arriving via ferry from Bali, since it is quicker and significantly cheaper. Ferry tickets from Padbangi Port (Bali) to Bangsal Port (Lombok), can be purchased online from [12go Asia](https://12go.asia/?z=11258902). You can choose from speedboats (which get you there in under an hour) or ferries (which take around three). There is also the option to leave from Benoa or Sanur Ports (in Bali), and tickets can also be purchased from [12go Asia](https://12go.asia/?z=11258902), however we have no experience with this journey.
 
@@ -48,7 +48,7 @@ If you choose to arrive via plane, flights will arrive at Lombok's only airport:
 
 {% image "/assets/img/posts/asia/lombokmotor.png", "Arial footage of a motorcycle driving down the coast", "100vw", "Our trusty, fuel efficient motorbike along the coast", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-around">How to Get Around</h2>
+<h2 id="get-around">How to Get Around</h2>
 
 The best way to get around Lombok is via motorbike - they are fuel efficient, go at a decent speed, and let you enjoy the scenery while on the move. We took a ferry to and from Lombok, arriving at the Bangsal Port. There are a bunch of motorbike rental places nearby:
 
@@ -60,7 +60,7 @@ We rented from **Bangsal Rent Car + Scooter** and had a great experience. The ow
 
 > ❕ Tip: Roads throughout Lombok were good quality, except for the road going down to the Semeti Hills.
 
-<h2 id="#length">How Many Days</h2>
+<h2 id="length">How Many Days</h2>
 
 The amount of time you spend on the Lombok Loop is very flexible - we recommend spending **3 nights, 4 days at a minimum**!. However, you can add more depending on how many days your itinerary allows, and what activities you want to do.
 
@@ -76,7 +76,7 @@ There are also **26 Gillies around Lombok**. The most famous are Gili Trawangan,
 
 {% image "/assets/img/posts/asia/lombokwaves.png", "Arial view of blue waves crashing over cliffs", "100vw", "Beautiful blue waves crashing over the Semeti Hills", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#stay">Where to Stay</h2>
+<h2 id="stay">Where to Stay</h2>
 
 Staying in homestays while on your loop gives you the best opportunity to visit the more rural parts of Lombok, learn from the locals, and in most cases, experience great company and food! Here are the places we stayed while on our loop:
 
@@ -85,7 +85,7 @@ Staying in homestays while on your loop gives you the best opportunity to visit 
 
 If you are staying a night (or more) in **Koeta**, homestays are no longer your best option due to the large number of tourists. We opted for the quiet [Puri Rinjani](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fpuri-rinjani-bungalows.en-gb.html) resort, minutes away from the beach, with a pool and buffet breakfast.
 
-<h2 id="#packing">What to Bring</h2>
+<h2 id="packing">What to Bring</h2>
 
 - Motorbike
 - Helmet: make sure it fits well
@@ -102,7 +102,7 @@ If you are staying a night (or more) in **Koeta**, homestays are no longer your 
 
 {% image "/assets/img/posts/asia/lombokfalls.jpeg", "Two people standing in front of a waterfall", "100vw", "One of the beautiful, multi-level waterfalls you will see", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#route">The Route</h2>
+<h2 id="route">The Route</h2>
 
 ### Day 1
 

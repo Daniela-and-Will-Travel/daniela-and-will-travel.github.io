@@ -25,7 +25,10 @@ module.exports = eleventyConfig => {
     eleventyConfig.addGlobalData('settings', {
         // these get merged with _data/settings.js
         url: process.env.URL || process.env.CF_PAGES_URL || 'https://daniela-and-will-travel.github.io',
-        isProduction: process.env.NODE_ENV === 'production',
+        // `npm run build` sets ELEVENTY_PRODUCTION; NODE_ENV is only exported for
+        // the Tailwind step that follows it, so checking NODE_ENV alone left the
+        // deployed site with unminified HTML, CSS and JS.
+        isProduction: process.env.NODE_ENV === 'production' || process.env.ELEVENTY_PRODUCTION === 'true',
         // github.io is this site's production domain, so never treat it as staging
         isStaging: (process.env.CF_PAGES_URL && process.env.CF_PAGES_URL.includes('pages.dev')) || false
     });
