@@ -8,6 +8,3 @@ module.exports = function (tags, extra = []) {
     const removed = STRUCTURAL.concat(extra);
     return list.filter((tag) => !removed.includes(tag));
 };
-
-// shared with the tagPages collection in .eleventy.js
-module.exports.STRUCTURAL = STRUCTURAL;

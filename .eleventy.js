@@ -120,35 +120,8 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter('readingTime', require('./src/_config/filters/readingtime'));
     eleventyConfig.addFilter('exclude', require('./src/_config/filters/exclude'));
     eleventyConfig.addFilter('withoutTags', require('./src/_config/filters/withoutTags'));
-    eleventyConfig.addFilter('tagLabel', require('./src/_config/filters/taglabel'));
     eleventyConfig.addFilter('escapeHtml', require('./src/_config/filters/escapehtml'));
     eleventyConfig.addFilter('localeFallback', require('./src/_config/filters/localefallback'));
-
-    // Collections -------------------------------------
-
-    // One entry per (language, editorial tag) pair, newest post first. Drives
-    // the archive pages at /<lang>/tag/<tag>/ that the post tag pills link to.
-    eleventyConfig.addCollection('tagPages', collectionApi => {
-        const { STRUCTURAL } = require('./src/_config/filters/withoutTags');
-        const entries = new Map();
-
-        for (const post of collectionApi.getFilteredByTag('posts')) {
-            const lang = post.page.lang;
-            const tags = post.data.tags || [];
-
-            for (const tag of Array.isArray(tags) ? tags : [tags]) {
-                if (STRUCTURAL.includes(tag)) continue;
-
-                const key = `${lang}::${tag}`;
-                if (!entries.has(key)) entries.set(key, { lang, tag, posts: [] });
-                entries.get(key).posts.unshift(post);
-            }
-        }
-
-        return [...entries.values()].sort(
-            (a, b) => a.lang.localeCompare(b.lang) || a.tag.localeCompare(b.tag)
-        );
-    });
 
 
     // Passthrough -------------------------------------

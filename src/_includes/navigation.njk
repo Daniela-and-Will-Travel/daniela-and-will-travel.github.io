@@ -76,27 +76,6 @@
         <span x-text="open ? '{{ 'header.close' | translate }}' : '{{ 'header.menu' | translate }}'">{{ 'header.menu' | translate }}</span>
     </button>
 
-    <!-- the panel is toggled by Alpine; without it there is nothing to open the
-         menu with, so fall back to showing the links inline -->
-    <noscript>
-        <style>
-            @media (max-width: 60rem) {
-                /* an always-open menu makes the bar too tall to stay stuck */
-                .site-header { position: static; }
-                .navigation { flex-wrap: wrap; }
-                .navigation-toggle { display: none; }
-                .navigation-panel[data-open='false'] {
-                    display: flex;
-                    position: static;
-                    width: 100%;
-                    box-shadow: none;
-                    border-bottom: 0;
-                    padding: 0 0 var(--space-s);
-                }
-            }
-        </style>
-    </noscript>
-
     <div class="navigation-panel" id="site-menu" data-open="false" :data-open="open ? 'true' : 'false'">
         <ul class="navigation-menu">
             {% set navigationItems = navigation[page.lang] or navigation['en'] %}

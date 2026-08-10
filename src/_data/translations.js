@@ -39,15 +39,7 @@ module.exports = {
             affiliateLink: 'here',
             relatedEyebrow: 'Keep reading',
             relatedTitle: 'More travel guides',
-            backToTop: 'Back to top',
-            tagsLabel: 'Filed under'
-        },
-        tags: {
-            eyebrow: 'Tag',
-            count: 'Every guide we have tagged with this, newest first — {{ count }} in total.',
-            browseEyebrow: 'Every tag',
-            browseTitle: 'Browse another topic',
-            metaDescription: 'Travel guides, itineraries and tips from Daniela and Will tagged {{ tag }}.'
+            backToTop: 'Back to top'
         },
         dark: 'Dark',
         light: 'Light'
@@ -92,15 +84,7 @@ module.exports = {
             affiliateLink: 'aquí',
             relatedEyebrow: 'Sigue leyendo',
             relatedTitle: 'Más guías de viaje',
-            backToTop: 'Volver arriba',
-            tagsLabel: 'Archivado en'
-        },
-        tags: {
-            eyebrow: 'Etiqueta',
-            count: 'Todas las guías con esta etiqueta, de más reciente a más antigua — {{ count }} en total.',
-            browseEyebrow: 'Todas las etiquetas',
-            browseTitle: 'Explora otro tema',
-            metaDescription: 'Guías de viaje, itinerarios y consejos de Daniela y Will etiquetados como {{ tag }}.'
+            backToTop: 'Volver arriba'
         },
         dark: 'Oscuro',
         light: 'Claro'

@@ -319,14 +319,6 @@ figure:has(> figcaption) > .bottom-left-text {
     padding-bottom: var(--space-2xl);
 }
 
-/* A page that ends on a full-width section already carries that section's own
-   bottom padding — a second one leaves a dead band above the footer, and on a
-   tinted section it reads as a stray stripe of the page colour. */
-#content:has(> .section:last-child),
-#content:has(> .hentry > .section:last-child) {
-    padding-bottom: 0;
-}
-
 /* Centred, gutter-aware container. Modifiers change the max width only. */
 .shell {
     width: 100%;
@@ -522,31 +514,6 @@ a.tag:hover {
     background-color: var(--surface-invert);
     border-color: transparent;
     color: var(--ink-invert);
-}
-
-/* the count that trails a tag on the archive pages */
-.tag__count {
-    font-size: 0.9em;
-    font-weight: var(--weight-regular);
-    letter-spacing: var(--tracking-normal);
-    color: var(--ink-faint);
-}
-
-a.tag:hover .tag__count,
-.tag--accent .tag__count {
-    color: inherit;
-    opacity: 0.7;
-}
-
-/* Wrapping list of every tag, shown at the foot of a tag archive */
-.tag-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-2xs);
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* Divider with a small centred ornament */
