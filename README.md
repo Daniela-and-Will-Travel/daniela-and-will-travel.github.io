@@ -76,7 +76,15 @@ organisational only — it never appears in the URL.
 | `npm run build` | Production build. Drafts are excluded. |
 | `npm run preview` | Serve the built `dist/` locally. |
 | `npm run check` | Type-check components and validate every post against the schema. |
+| `npm test` | Run the regression tests against `dist/`. Build first. |
 | `npm run clean` | Remove `dist/` and the build caches. |
+
+`npm test` runs against the built output rather than the source, because what it
+guards only exists after a build. See `tests/theme-persistence.test.mjs`: Astro's
+ClientRouter strips every attribute off `<html>` on a soft navigation, which
+destroys the `data-theme` the theme script sets at runtime. The repaint that
+fixes it lives in `src/scripts/site.ts` and is invisible to both the type check
+and the build, so it needs a test.
 
 The first build re-encodes every photograph and takes a few minutes. Later
 builds reuse the cache in `node_modules/.astro` and take seconds; CI restores

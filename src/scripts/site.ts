@@ -10,18 +10,33 @@ type Theme = 'light' | 'dark';
 
 const THEME_KEY = 'theme';
 
-function currentTheme(): Theme {
-    return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+/** The reader's explicit choice, or null if they have never made one. */
+function storedTheme(): Theme | null {
+    const value = localStorage.getItem(THEME_KEY);
+    return value === 'dark' || value === 'light' ? value : null;
 }
 
-function applyTheme(theme: Theme): void {
+function systemTheme(): Theme {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+/**
+ * The theme that *should* be showing.
+ *
+ * Deliberately derived from storage rather than from the DOM: after a view
+ * transition the `data-theme` attribute is gone (see the astro:after-swap
+ * handler below), so reading the document would report the wrong answer at
+ * exactly the moment it matters.
+ */
+function resolveTheme(): Theme {
+    return storedTheme() ?? systemTheme();
+}
+
+/** Put a theme on screen, without recording it as a choice. */
+function paintTheme(theme: Theme): void {
     document.documentElement.dataset.theme = theme;
-    localStorage.setItem(THEME_KEY, theme);
-    syncToggles();
-}
 
-function syncToggles(): void {
-    const dark = currentTheme() === 'dark';
+    const dark = theme === 'dark';
     for (const toggle of document.querySelectorAll<HTMLElement>('[data-theme-toggle]')) {
         toggle.setAttribute('aria-checked', String(dark));
     }
@@ -29,8 +44,14 @@ function syncToggles(): void {
     if (checkbox) checkbox.checked = dark;
 }
 
+/** Record an explicit choice and show it. */
+function chooseTheme(theme: Theme): void {
+    localStorage.setItem(THEME_KEY, theme);
+    paintTheme(theme);
+}
+
 function setupTheme(): void {
-    syncToggles();
+    paintTheme(resolveTheme());
 
     for (const toggle of document.querySelectorAll<HTMLElement>('[data-theme-toggle]')) {
         if (toggle.dataset.themeBound) continue;
@@ -38,7 +59,7 @@ function setupTheme(): void {
 
         const toggleTheme = (event: Event) => {
             event.preventDefault();
-            applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+            chooseTheme(resolveTheme() === 'dark' ? 'light' : 'dark');
         };
 
         toggle.addEventListener('click', toggleTheme);
@@ -52,10 +73,27 @@ function setupTheme(): void {
 function setupSystemThemeWatch(): void {
     const query = window.matchMedia('(prefers-color-scheme: dark)');
     query.addEventListener('change', (event) => {
-        if (localStorage.getItem(THEME_KEY) !== null) return;
-        document.documentElement.dataset.theme = event.matches ? 'dark' : 'light';
-        syncToggles();
+        // paintTheme, not chooseTheme: following the OS must not harden into a
+        // stored preference, or the next OS change would be ignored.
+        if (storedTheme() === null) paintTheme(event.matches ? 'dark' : 'light');
     });
+}
+
+/**
+ * Repaint the theme after every soft navigation.
+ *
+ * Astro's ClientRouter calls swapRootAttributes(), which strips *every*
+ * attribute off <html> and copies the incoming document's attributes over.
+ * `data-theme` only exists at runtime — the inline head script sets it, and
+ * that script is keyed by its text content and marked as already-executed, so
+ * it never runs again. Without this the attribute is silently destroyed on
+ * every navigation and the page reverts to the light palette.
+ *
+ * astro:after-swap fires after the swap but before the browser paints, so
+ * restoring it here produces no flash.
+ */
+function setupThemePersistence(): void {
+    document.addEventListener('astro:after-swap', () => paintTheme(resolveTheme()));
 }
 
 function setupNavigation(): void {
@@ -126,7 +164,9 @@ function init(): void {
 }
 
 init();
+// Registered once, at module scope — the module is not re-evaluated on swap.
 setupSystemThemeWatch();
+setupThemePersistence();
 
 // ClientRouter swaps the document body on navigation; re-bind against the new DOM.
 document.addEventListener('astro:page-load', init);

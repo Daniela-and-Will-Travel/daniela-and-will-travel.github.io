@@ -134,14 +134,18 @@ const manifest = localeUrl('/site.webmanifest', lang);
             ))
         }
 
-        <!-- Resolve the theme before first paint so the page never flashes light. -->
+        <!-- Resolve the theme before first paint so the page never flashes light.
+             Only runs on a full page load; src/scripts/site.ts repaints after a
+             view transition, where the ClientRouter wipes the attribute. -->
         <script is:inline>
             (() => {
                 const stored = localStorage.getItem('theme');
-                const theme =
-                    stored ??
-                    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                document.documentElement.dataset.theme = theme;
+                document.documentElement.dataset.theme =
+                    stored === 'dark' || stored === 'light'
+                        ? stored
+                        : window.matchMedia('(prefers-color-scheme: dark)').matches
+                          ? 'dark'
+                          : 'light';
             })();
         </script>
 
