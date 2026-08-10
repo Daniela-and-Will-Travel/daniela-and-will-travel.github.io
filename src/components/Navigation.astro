@@ -1,0 +1,69 @@
+---
+import type { Lang } from '@data/locales';
+import { navigation } from '@data/navigation';
+import { DEFAULT_LANG } from '@data/locales';
+import { localeUrl, t } from '@lib/i18n';
+
+import Logo from './Logo.astro';
+import LanguageSwitch from './LanguageSwitch.astro';
+
+interface Props {
+    lang: Lang;
+    /** Current path, for aria-current. */
+    pathname: string;
+}
+
+const { lang, pathname } = Astro.props;
+const translate = t(lang);
+
+// Languages without their own menu fall back to English rather than rendering
+// an empty nav.
+const items = navigation[lang]?.length ? navigation[lang] : navigation[DEFAULT_LANG];
+const resolved = items.map((item) => ({ ...item, href: localeUrl(item.url, lang) }));
+---
+
+<nav class="navigation" data-navigation>
+    <a
+        class="site-logo"
+        href="/"
+        aria-current={pathname === '/' ? 'page' : undefined}
+        aria-label={translate('header.home')}
+    >
+        <Logo />
+    </a>
+
+    <button
+        type="button"
+        class="navigation-toggle"
+        aria-controls="site-menu"
+        aria-expanded="false"
+        data-navigation-toggle
+    >
+        <span class="navigation-toggle__bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </span>
+        <span
+            data-navigation-label
+            data-open={translate('header.menu')}
+            data-close={translate('header.close')}>{translate('header.menu')}</span
+        >
+    </button>
+
+    <div class="navigation-panel" id="site-menu" data-open="false" data-navigation-panel>
+        <ul class="navigation-menu">
+            {
+                resolved.map((item) => (
+                    <li>
+                        <a href={item.href} aria-current={pathname === item.href ? 'page' : undefined}>
+                            {item.text}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+
+        <div class="navigation-utilities">
+            <LanguageSwitch lang={lang} pathname={pathname} />
+        </div>
+    </div>
+</nav>

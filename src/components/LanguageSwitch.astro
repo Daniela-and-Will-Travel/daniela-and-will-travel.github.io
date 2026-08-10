@@ -1,0 +1,59 @@
+---
+/**
+ * Language switcher.
+ *
+ * In the Nunjucks nav this was commented out, because with no translated pages
+ * it rendered a row of disabled badges on every page. Instead of carrying dead
+ * markup forward, this renders nothing at all unless the current page genuinely
+ * has a translation — so today it is invisible, and it lights up on its own the
+ * day a Spanish page lands.
+ */
+import { LANGS, locales, type Lang } from '@data/locales';
+import { localeLinks } from '@lib/i18n';
+
+interface Props {
+    lang: Lang;
+    pathname: string;
+}
+
+const { lang, pathname } = Astro.props;
+const alternates = localeLinks(pathname, lang);
+const byLang = new Map(alternates.map((link) => [link.lang, link.url]));
+---
+
+{
+    alternates.length > 0 && (
+        <div class="switch-language">
+            {LANGS.map((candidate) => {
+                const properties = locales[candidate];
+                const label = `${properties.shorthand}: ${properties.label}`;
+
+                if (candidate === lang) {
+                    return (
+                        <a
+                            href={pathname}
+                            lang={candidate}
+                            hreflang={candidate}
+                            aria-label={label}
+                            aria-current="page"
+                            class="current"
+                        >
+                            {properties.shorthand}
+                        </a>
+                    );
+                }
+
+                const href = byLang.get(candidate);
+                return href ? (
+                    <a href={href} lang={candidate} hreflang={candidate} aria-label={label}>
+                        {properties.shorthand}
+                    </a>
+                ) : (
+                    <span aria-label={label} class="disabled">
+                        {properties.shorthand}
+                    </span>
+                );
+            })}
+        </div>
+    )
+}

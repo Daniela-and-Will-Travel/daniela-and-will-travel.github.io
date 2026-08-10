@@ -1,0 +1,69 @@
+---
+/**
+ * The post card used by every grid on the site: the home page, the archive,
+ * the tag pages and the related-posts strip.
+ */
+import type { Lang } from '@data/locales';
+import { formatDate, toRfc3339 } from '@lib/format';
+import { postUrl, type Post } from '@lib/posts';
+
+import Figure from './Figure.astro';
+
+interface Props {
+    post: Post;
+    lang: Lang;
+    /** Heading level, so each grid keeps a sane document outline. */
+    as?: 'h2' | 'h3';
+    sizes?: string;
+    /** Extra classes, e.g. "feature-row__lead" or "card--horizontal". */
+    class?: string;
+    /** Eyebrow label above the title. */
+    eyebrow?: string;
+    showDate?: boolean;
+    active?: boolean;
+}
+
+const {
+    post,
+    lang,
+    as: Heading = 'h2',
+    sizes = '(min-width: 60rem) 30vw, 100vw',
+    class: extraClass = '',
+    eyebrow,
+    showDate = true,
+    active = false
+} = Astro.props;
+
+const { title, byline, heroImage, heroImageAlt, date } = post.data;
+
+const classes = [
+    'card',
+    heroImage ? '' : 'card--minimal',
+    extraClass,
+    active ? 'postlist-item-active' : ''
+]
+    .filter(Boolean)
+    .join(' ');
+---
+
+<article class={classes}>
+    {
+        heroImage && (
+            <div class="card__media">
+                <Figure src={heroImage} alt={heroImageAlt} sizes={sizes} />
+            </div>
+        )
+    }
+    <div class="card__body">
+        {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+        <Heading class="card__title"><a href={postUrl(post)}>{title}</a></Heading>
+        {byline && <p class="card__excerpt">{byline}</p>}
+        {
+            showDate && (
+                <p class="card__meta">
+                    <time datetime={toRfc3339(date)}>{formatDate(date, lang)}</time>
+                </p>
+            )
+        }
+    </div>
+</article>

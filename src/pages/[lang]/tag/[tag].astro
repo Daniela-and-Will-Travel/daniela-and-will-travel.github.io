@@ -1,0 +1,97 @@
+---
+/**
+ * Tag archives at /<lang>/tag/<tag>/.
+ *
+ * Every post's tag pills and breadcrumb point here. The equivalent Eleventy
+ * collection was dropped by a bad merge on main, so these URLs currently 404 in
+ * production — this restores them.
+ */
+import type { GetStaticPaths } from 'astro';
+
+import Base from '@layouts/Base.astro';
+import Card from '@components/Card.astro';
+
+import type { Lang } from '@data/locales';
+import { t } from '@lib/i18n';
+import { getTagIndex, type TagEntry } from '@lib/posts';
+
+export const getStaticPaths = (async () => {
+    const index = await getTagIndex();
+
+    return index.map((entry) => ({
+        params: { lang: entry.lang, tag: entry.slug },
+        props: { entry, siblings: index.filter((other) => other.lang === entry.lang) }
+    }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+    entry: TagEntry;
+    siblings: TagEntry[];
+}
+
+const { entry, siblings } = Astro.props;
+const lang = entry.lang as Lang;
+const translate = t(lang);
+
+const count = entry.posts.length;
+const lede =
+    count === 1
+        ? translate('tags.countOne', { tag: entry.label })
+        : translate('tags.count', { count, tag: entry.label });
+---
+
+<Base
+    title={entry.label}
+    description={translate('tags.metaDescription', { tag: entry.label })}
+    lang={lang}
+    image={entry.posts[0]?.data.heroImage}
+    imageAlt={entry.posts[0]?.data.heroImageAlt}
+>
+    <header class="page-hero">
+        <div class="page-hero__inner">
+            <ol class="breadcrumb">
+                <li><a href="/">{translate('header.home')}</a></li>
+                <li>{translate('tags.eyebrow')}</li>
+            </ol>
+
+            <h1 class="page-hero__title">{entry.label}</h1>
+            <p class="page-hero__lede">{lede}</p>
+        </div>
+    </header>
+
+    <section class="section section--tight">
+        <div class="shell">
+            <div class="grid">
+                {entry.posts.map((post) => <Card post={post} lang={lang} as="h2" />)}
+            </div>
+        </div>
+    </section>
+
+    {
+        siblings.length > 1 && (
+            <section class="section section--tinted">
+                <div class="shell">
+                    <div class="section-header section-header--center">
+                        <p class="eyebrow">{translate('tags.browseEyebrow')}</p>
+                        <h2 class="section-header__title">{translate('tags.browseTitle')}</h2>
+                    </div>
+
+                    <ul class="tag-cloud">
+                        {siblings.map((sibling) => (
+                            <li>
+                                <a
+                                    class={`tag${sibling.tag === entry.tag ? ' tag--accent' : ''}`}
+                                    href={`/${sibling.lang}/tag/${sibling.slug}/`}
+                                    aria-current={sibling.tag === entry.tag ? 'page' : undefined}
+                                >
+                                    {sibling.label}
+                                    <span class="tag__count">{sibling.posts.length}</span>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        )
+    }
+</Base>

@@ -1,0 +1,308 @@
+---
+import Base from '@layouts/Base.astro';
+import Card from '@components/Card.astro';
+import Figure from '@components/Figure.astro';
+
+import { settings } from '@data/settings.js';
+import { absoluteUrl, localeUrl } from '@lib/i18n';
+import { getPosts, getPostsByTag, postUrl } from '@lib/posts';
+
+export const meta = {
+    title: 'Travel Blog & Travel Guides',
+    lang: 'en',
+    changeFrequency: 'weekly',
+    sitemapPriority: '1.0',
+    excludeFromSitemap: false
+};
+
+const lang = 'en' as const;
+
+const posts = await getPosts(lang);
+const lead = posts[0];
+const secondary = posts.slice(1, 3);
+const recent = posts.slice(3, 9);
+
+const asiaPosts = await getPostsByTag('asia', lang);
+const europePosts = await getPostsByTag('europe', lang);
+
+// The tools grid used to concatenate two Eleventy tag collections; a single
+// pass over the posts keeps a guide from appearing twice when it carries both.
+const toolPosts = posts.filter((post) =>
+    post.data.tags.some((tag) => tag === 'tools' || tag === 'spreadsheets')
+);
+
+const jsonLd = [
+    {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Daniela and Will Travel',
+        url: settings.url,
+        description: meta.title,
+        inLanguage: lang
+    },
+    {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Daniela and Will Travel',
+        url: settings.url,
+        logo: absoluteUrl('/assets/img/icon-512.png', settings.url),
+        sameAs: [settings.social.instagram, settings.social.youtube, settings.social.unsplash]
+    }
+];
+---
+
+<Base
+    title="Travel Blog & Travel Guides"
+    description="Daniela and Will's travel blog featuring travel guides and tips and tricks for a gap year throughout Europe or Asia."
+    lang={lang}
+    bodyClass="home"
+    jsonLd={jsonLd}
+>
+    <!-- hero -->
+    <section class="hero hero--center">
+        <div class="hero__media">
+            <Figure
+                src="/assets/img/en.jpg"
+                alt="A winding coastal road seen from above"
+                sizes="100vw"
+                loading="eager"
+                fetchpriority="high"
+            />
+        </div>
+        <div class="hero__inner">
+            <div class="hero__content">
+                <span class="hero__script">Welcome to our travel blog</span>
+                <h1 class="hero__title">Two people, a long way from home.</h1>
+                <p class="hero__lede">
+                    In 2022&ndash;23 we spent nine months crossing Europe. In 2025 we rode, sailed and
+                    hiked our way through Southeast Asia. Here are the guides, budgets and hard-won
+                    lessons from both&nbsp;trips.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--accent" href={localeUrl('/countries/', lang)}>
+                        Browse destinations
+                    </a>
+                    <a class="button button--invert" href={localeUrl('/about/', lang)}>
+                        Meet Daniela &amp; Will
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="hero__credit">
+            Like our photos? Find them on <a href={settings.social.shutterstockDaniela}>Shutter</a><a
+                href={settings.social.shutterstockWill}>stock</a
+            >.
+        </p>
+    </section>
+
+    <!-- latest guides -->
+    {
+        lead && (
+            <section class="section">
+                <div class="shell">
+                    <div class="section-header">
+                        <p class="eyebrow">Fresh off the road</p>
+                        <h2 class="section-header__title">Latest travel guides</h2>
+                        <p>Everything we wish somebody had told us before we booked the flight.</p>
+                    </div>
+
+                    <div class="feature-row">
+                        <Card
+                            post={lead}
+                            lang={lang}
+                            as="h3"
+                            class="feature-row__lead"
+                            eyebrow="Newest guide"
+                            sizes="(min-width: 60rem) 60vw, 100vw"
+                        />
+
+                        <div class="feature-row__aside">
+                            {secondary.map((post) => (
+                                <Card
+                                    post={post}
+                                    lang={lang}
+                                    as="h3"
+                                    class="card--horizontal"
+                                    sizes="(min-width: 60rem) 20vw, 100vw"
+                                    showDate={false}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    <!-- destinations -->
+    <section class="section section--tinted">
+        <div class="shell">
+            <div class="section-header section-header--center">
+                <p class="eyebrow">Where we've been</p>
+                <h2 class="section-header__title">Pick a corner of the world</h2>
+                <p>
+                    Two continents down, plenty to go. Every guide is written from a trip we actually
+                    took.
+                </p>
+            </div>
+
+            <div class="grid grid--2">
+                <a class="tile" href={`${localeUrl('/countries/', lang)}#Asia`}>
+                    <Figure
+                        src="/assets/img/posts/asia/cover.jpg"
+                        alt="Limestone karsts rising out of the water in Southeast Asia"
+                        sizes="(min-width: 60rem) 33vw, 100vw"
+                    />
+                    <span class="tile__label">
+                        <span class="tile__count">{asiaPosts.length} guides</span>
+                        Southeast Asia
+                    </span>
+                </a>
+
+                <a class="tile" href={`${localeUrl('/countries/', lang)}#Europe`}>
+                    <Figure
+                        src="/assets/img/posts/europe/IMG_7233.jpg"
+                        alt="A European street scene on a bright day"
+                        sizes="(min-width: 60rem) 33vw, 100vw"
+                    />
+                    <span class="tile__label">
+                        <span class="tile__count">{europePosts.length} guides</span>
+                        Europe
+                    </span>
+                </a>
+
+                <div class="card card--boxed">
+                    <div class="card__body">
+                        <p class="eyebrow">The whole map</p>
+                        <h3 class="card__title">
+                            <a href={localeUrl('/countries/', lang)}>
+                                Every country we've written about
+                            </a>
+                        </h3>
+                        <p class="card__excerpt">
+                            Tap a continent on the map to jump straight to the guides for it &mdash;
+                            itineraries, budgets and the routes we'd do again.
+                        </p>
+                        <p class="card__meta">Open the map &rarr;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- more reading -->
+    {
+        recent.length > 0 && (
+            <section class="section">
+                <div class="shell">
+                    <div class="section-header">
+                        <p class="eyebrow">The archive</p>
+                        <h2 class="section-header__title">More from the blog</h2>
+                    </div>
+
+                    <div class="grid">
+                        {recent.map((post) => (
+                            <Card post={post} lang={lang} as="h3" />
+                        ))}
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    <!-- tools -->
+    {
+        toolPosts.length > 0 && (
+            <section class="section section--tinted">
+                <div class="shell">
+                    <div class="section-header section-header--center">
+                        <p class="eyebrow">Plan it properly</p>
+                        <h2 class="section-header__title">Tools we actually use</h2>
+                        <p>
+                            The spreadsheets, apps and services that kept our trips on budget and on
+                            schedule.
+                        </p>
+                    </div>
+
+                    <div class="grid">
+                        {toolPosts.map((post) => (
+                            <article class="card card--boxed">
+                                <div class="card__body">
+                                    <p class="eyebrow">Tool</p>
+                                    <h3 class="card__title">
+                                        <a href={postUrl(post)}>{post.data.title}</a>
+                                    </h3>
+                                    {post.data.byline && (
+                                        <p class="card__excerpt">{post.data.byline}</p>
+                                    )}
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+
+                    <div class="section-header section-header--center section-header--flush">
+                        <div class="section-header__actions">
+                            <a class="button button--outline" href={localeUrl('/tools/', lang)}>
+                                See all tools
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    <!-- meet us -->
+    <section class="section">
+        <div class="shell">
+            <div class="feature-row">
+                <div class="card">
+                    <div class="card__media card__media--wide">
+                        <Figure
+                            src="/assets/img/IMG_0237.jpg"
+                            alt="Daniela and Will on the coast of Portugal"
+                            sizes="(min-width: 60rem) 60vw, 100vw"
+                        />
+                    </div>
+                </div>
+
+                <div class="feature-row__aside">
+                    <div>
+                        <p class="eyebrow">Who's writing</p>
+                        <h2>Hey &mdash; we're Daniela and Will.</h2>
+                        <p class="lede lede--spaced">
+                            We travel slowly, on a budget, and we write down everything we get wrong so
+                            you don't have to. Daniela plans the routes and the food. Will builds the
+                            spreadsheets and this website.
+                        </p>
+                        <p class="stack-top">
+                            <a class="button" href={localeUrl('/about/', lang)}>Read our story</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="section section--tight">
+        <div class="shell">
+            <div class="newsletter newsletter--invert">
+                <p class="eyebrow">Stay in touch</p>
+                <h2 class="newsletter__title">New guides, straight from the road</h2>
+                <p class="newsletter__lede">
+                    We post when we've actually got something worth saying &mdash; follow along on
+                    Instagram or grab the RSS feed.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--accent" href={settings.social.instagram}>
+                        Follow on Instagram
+                    </a>
+                    <a class="button button--invert" href={localeUrl('/feed/feed.xml', lang)}>
+                        Subscribe by RSS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Base>

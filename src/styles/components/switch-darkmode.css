@@ -1,0 +1,68 @@
+/* =========================================================================
+   Light / dark theme switch
+   ========================================================================= */
+
+.switch-wrapper .switch {
+	display: none;
+}
+
+.switch-wrapper .switch + .switch-btn {
+	position: relative;
+	display: block;
+	width: 3.5rem;
+	height: 2rem;
+	padding: 6px;
+	background: var(--border-strong);
+	border-radius: var(--radius-pill);
+	cursor: pointer;
+	user-select: none;
+	transition: background var(--transition-base);
+}
+
+.switch-wrapper .switch + .switch-btn::before,
+.switch-wrapper .switch + .switch-btn::after {
+	position: relative;
+	display: block;
+	content: '';
+	height: 100%;
+}
+
+.switch-wrapper .switch + .switch-btn::before {
+	display: none;
+	width: 50%;
+}
+
+.switch-wrapper .switch + .switch-btn::after {
+	left: 0;
+	width: unset;
+	aspect-ratio: 1 / 1;
+	border-radius: var(--radius-circle);
+	background: var(--surface);
+	box-shadow: var(--shadow-xs);
+	transition: transform var(--transition-base), background var(--transition-base);
+}
+
+/* Driven by the `data-theme` attribute the inline head script sets before first
+   paint, rather than by a class Alpine used to add after hydrating. The knob is
+   therefore already on the correct side on the very first frame, which is what
+   the old `x-cloak` rule existed to hide. */
+:root[data-theme='dark'] .switch-wrapper .switch-btn::after {
+	transform: translateX(106%);
+}
+
+.switch-wrapper .icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.9rem;
+	height: 0.9rem;
+	color: var(--surface);
+}
+
+.switch-wrapper .icon-sun {
+	left: 13%;
+}
+
+.switch-wrapper .icon-moon {
+	right: 13%;
+}

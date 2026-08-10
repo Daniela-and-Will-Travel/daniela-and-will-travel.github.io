@@ -1,0 +1,58 @@
+---
+import type { Lang } from '@data/locales';
+import { settings } from '@data/settings.js';
+import { absoluteUrl } from '@lib/i18n';
+
+import Base from './Base.astro';
+
+interface Props {
+    title: string;
+    lang: Lang;
+    eyebrow?: string;
+    byline?: string;
+    description?: string;
+    noIndex?: boolean;
+    bodyClass?: string;
+}
+
+const { title, lang, eyebrow, byline, description, noIndex, bodyClass } = Astro.props;
+
+const lede = byline ?? description;
+
+const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    inLanguage: lang,
+    url: absoluteUrl(Astro.url.pathname, settings.url),
+    isPartOf: {
+        '@type': 'WebSite',
+        name: 'Daniela and Will Travel',
+        url: settings.url
+    }
+};
+---
+
+<Base
+    title={title}
+    description={description}
+    lang={lang}
+    noIndex={noIndex}
+    bodyClass={bodyClass}
+    jsonLd={jsonLd}
+>
+    <article class="hentry">
+        <header class="page-hero">
+            <div class="page-hero__inner">
+                {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+                <h1 class="page-hero__title entry-title">{title}</h1>
+                {lede && <p class="page-hero__lede">{lede}</p>}
+            </div>
+        </header>
+
+        <div class="entry-content prose">
+            <slot />
+        </div>
+    </article>
+</Base>

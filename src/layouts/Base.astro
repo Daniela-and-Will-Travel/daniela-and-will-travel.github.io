@@ -1,0 +1,180 @@
+---
+import { ClientRouter } from 'astro:transitions';
+
+import { DEFAULT_LANG, locales, type Lang } from '@data/locales';
+import { settings } from '@data/settings.js';
+import { absoluteUrl, htmlLang, localeLinks, localeUrl, t } from '@lib/i18n';
+
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+
+import '@styles/main.css';
+
+interface Props {
+    /** Page title, before the site name is appended. Omit for the home page. */
+    title?: string;
+    description?: string;
+    lang?: Lang;
+    /** Social card image, as a site-absolute path. */
+    image?: string;
+    imageAlt?: string;
+    noIndex?: boolean;
+    /** Extra classes on <body>; the old templates used the tag list here. */
+    bodyClass?: string;
+    /** One or more schema.org objects, emitted as ld+json. */
+    jsonLd?: object | object[];
+}
+
+const {
+    title,
+    description,
+    lang = DEFAULT_LANG,
+    image,
+    imageAlt,
+    noIndex = false,
+    bodyClass = '',
+    jsonLd
+} = Astro.props;
+
+const translate = t(lang);
+const locale = locales[lang];
+
+const siteName = translate('meta.title');
+const fullTitle = title ? `${title} ${settings.meta.separator} ${siteName}` : siteName;
+const metaDescription = description ?? translate('meta.description');
+
+const pathname = Astro.url.pathname;
+const canonical = absoluteUrl(pathname, settings.url);
+const socialImage = absoluteUrl(image ?? settings.meta.opengraphDefaultImage, settings.url);
+const socialImageAlt = imageAlt ?? translate('meta.opengraphDefaultAlt');
+
+const alternates = localeLinks(pathname, lang);
+const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+const feedXml = localeUrl('/feed/feed.xml', lang);
+const feedJson = localeUrl('/feed/feed.json', lang);
+const manifest = localeUrl('/site.webmanifest', lang);
+---
+
+<!doctype html>
+<html lang={htmlLang(lang)} dir={locale.dir}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- title / description -->
+        <title>{fullTitle}</title>
+        <meta name="description" content={metaDescription} />
+
+        <!-- canonical / alternates -->
+        <link rel="canonical" href={canonical} />
+        <link rel="alternate" hreflang={lang} href={canonical} />
+        {
+            alternates.map((link) => (
+                <link rel="alternate" hreflang={link.lang} href={absoluteUrl(link.url, settings.url)} />
+            ))
+        }
+
+        <!-- open graph -->
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:title" content={fullTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={socialImage} />
+        <meta property="og:image:alt" content={socialImageAlt} />
+        <meta property="og:locale" content={locale.locale.replace('-', '_')} />
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={fullTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={socialImage} />
+        <meta name="twitter:image:alt" content={socialImageAlt} />
+
+        <!-- icons -->
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/assets/img/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
+
+        <!-- fonts: self-hosted, so preload the face above the fold rather than
+             waiting for the stylesheet to discover it -->
+        <link
+            rel="preload"
+            href="/assets/fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+
+        <!-- feeds -->
+        <link
+            rel="alternate"
+            href={feedXml}
+            type="application/atom+xml"
+            title={`${translate('meta.rssTitle')} ${settings.meta.separator} ${siteName}`}
+        />
+        <link
+            rel="alternate"
+            href={feedJson}
+            type="application/json"
+            title={`${translate('meta.jsonTitle')} ${settings.meta.separator} ${siteName}`}
+        />
+
+        <!-- everything else -->
+        <meta name="google-site-verification" content={settings.meta.googleSiteVerification} />
+        <link rel="manifest" href={manifest} />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content={settings.themeColorLight} />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content={settings.themeColorDark} />
+        {(settings.isStaging || noIndex) && <meta name="robots" content="noindex, nofollow" />}
+
+        {
+            structuredData.map((entry) => (
+                <script type="application/ld+json" set:html={JSON.stringify(entry)} />
+            ))
+        }
+
+        <!-- Resolve the theme before first paint so the page never flashes light.
+             Only runs on a full page load; src/scripts/site.ts repaints after a
+             view transition, where the ClientRouter wipes the attribute. -->
+        <script is:inline>
+            (() => {
+                const stored = localStorage.getItem('theme');
+                document.documentElement.dataset.theme =
+                    stored === 'dark' || stored === 'light'
+                        ? stored
+                        : window.matchMedia('(prefers-color-scheme: dark)').matches
+                          ? 'dark'
+                          : 'light';
+            })();
+        </script>
+
+        <ClientRouter />
+    </head>
+
+    <body class={bodyClass}>
+        <Header lang={lang} pathname={pathname} />
+
+        <main id="content">
+            <slot />
+        </main>
+
+        <Footer lang={lang} />
+
+        <script>
+            import '../scripts/site';
+        </script>
+
+        <!-- 100% privacy-first analytics -->
+        <script is:inline data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <script
+            is:inline
+            async
+            data-collect="outbound,emails,downloads"
+            data-extensions="pdf,csv,docx,xlsx,zip,doc,xls"
+            data-use-title="true"
+            data-full-urls="false"
+            src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
+    </body>
+</html>

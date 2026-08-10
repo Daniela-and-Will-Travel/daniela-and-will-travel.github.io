@@ -1,0 +1,72 @@
+---
+/**
+ * The replacement for the Eleventy `{% image %}` shortcode.
+ *
+ * Same arguments, same output shape: a <figure> wrapping a <picture> that
+ * offers AVIF and WebP before the original format, plus the optional caption
+ * and the Shutterstock credit chip that goes with it.
+ */
+import { Picture } from 'astro:assets';
+import { resolveImage, responsiveWidths } from '../lib/images';
+import { settings } from '../data/settings.js';
+
+interface Props {
+    /** Published path, e.g. "/assets/img/posts/asia/cover.jpg". */
+    src: string;
+    alt: string;
+    /** `sizes` attribute; defaults to full-bleed. */
+    sizes?: string;
+    /** Visible caption. Its presence is also what shows the photo credit. */
+    caption?: string;
+    /** Class applied to the <img>. */
+    class?: string;
+    loading?: 'lazy' | 'eager';
+    fetchpriority?: 'high' | 'low' | 'auto';
+    decoding?: 'async' | 'sync' | 'auto';
+}
+
+const {
+    src,
+    alt,
+    sizes = '100vw',
+    caption = '',
+    class: className = '',
+    loading = 'lazy',
+    fetchpriority = 'auto',
+    decoding = 'async'
+} = Astro.props;
+
+const image = await resolveImage(src);
+const widths = responsiveWidths(image);
+---
+
+<figure>
+    <Picture
+        src={image}
+        formats={['avif', 'webp']}
+        widths={widths}
+        sizes={sizes}
+        alt={alt}
+        class={className}
+        loading={loading}
+        decoding={decoding}
+        fetchpriority={fetchpriority}
+    />
+    {
+        caption && (
+            <>
+                <figcaption>{caption}</figcaption>
+                <div class="bottom-left-text">
+                    Like our photos? Find them on{' '}
+                    <a href={settings.social.shutterstockDaniela} target="_blank">
+                        Shutter
+                    </a>
+                    <a href={settings.social.shutterstockWill} target="_blank">
+                        stock
+                    </a>
+                    .
+                </div>
+            </>
+        )
+    }
+</figure>

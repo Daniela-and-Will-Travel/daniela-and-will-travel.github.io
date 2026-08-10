@@ -1,0 +1,18 @@
+---
+import type { Lang } from '@data/locales';
+import { t } from '@lib/i18n';
+import Navigation from './Navigation.astro';
+
+interface Props {
+    lang: Lang;
+    pathname: string;
+}
+
+const { lang, pathname } = Astro.props;
+---
+
+<a href="#content" class="skip-link">{t(lang)('header.skipLink')}</a>
+
+<header id="header" role="banner" class="site-header">
+    <Navigation lang={lang} pathname={pathname} />
+</header>

@@ -1,0 +1,21 @@
+---
+/**
+ * A single design token, shown as a colour chip with its name and role.
+ * The chip reads the token through a custom property so it always shows the
+ * value currently in force, including after a dark-mode switch.
+ */
+interface Props {
+    token: string;
+    value: string;
+}
+
+const { token, value } = Astro.props;
+---
+
+<div class="sg-swatch">
+    <div class="sg-swatch__chip" style={`background: var(${token});`}></div>
+    <div class="sg-swatch__meta">
+        <span class="sg-swatch__name">{token}</span>
+        <span class="sg-swatch__value">{value}</span>
+    </div>
+</div>
