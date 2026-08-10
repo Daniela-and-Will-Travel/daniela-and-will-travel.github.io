@@ -1,0 +1,25 @@
+/* =========================================================================
+   The whole design system, in the order the cascade needs it.
+
+   Replaces src/assets/css/bundle.njk. Astro bundles and minifies these into a
+   single hashed stylesheet, so adding a component file here is all that's
+   needed — there is no separate build step to keep in sync any more.
+   ========================================================================= */
+
+@import './variables.css';
+@import './reset.css';
+@import './styles.css';
+
+@import './components/button.css';
+@import './components/navigation.css';
+@import './components/hero.css';
+@import './components/card.css';
+@import './components/prose.css';
+@import './components/newsletter.css';
+@import './components/footer.css';
+@import './components/syntax.css';
+@import './components/affiliates.css';
+@import './components/switch-il8n.css';
+@import './components/social-icons.css';
+@import './components/switch-darkmode.css';
+@import './components/styleguide.css';

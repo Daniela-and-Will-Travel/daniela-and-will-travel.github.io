@@ -1,0 +1,36 @@
+---
+/**
+ * One style guide entry: the markup rendered live, and the same string printed
+ * as escaped source underneath.
+ *
+ * The single `markup` string is the whole point — because the canvas and the
+ * code block are fed from it, an example can never drift from what it claims to
+ * show. Stories are declared as template literals in the page frontmatter and
+ * passed in here, which is the Astro equivalent of the old
+ * `{% set %}` + `story()` macro pair.
+ */
+interface Props {
+    label: string;
+    markup: string;
+    /**
+     * Printed instead of `markup` when the two must differ — the image stories
+     * render resolved, hashed asset URLs but should document the readable
+     * authoring path.
+     */
+    source?: string;
+    note?: string;
+    canvasClass?: string;
+}
+
+const { label, markup, source, note = '', canvasClass = '' } = Astro.props;
+---
+
+<div class="sg-story">
+    <p class="sg-story__label">
+        {label}{note && <span class="sg-story__note">{note}</span>}
+    </p>
+    <div class:list={['sg-canvas', canvasClass]}>
+        <div class="sg-canvas__inner" set:html={markup} />
+    </div>
+    <pre class="sg-code"><code>{(source ?? markup).trim()}</code></pre>
+</div>

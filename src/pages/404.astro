@@ -1,0 +1,33 @@
+---
+import Base from '@layouts/Base.astro';
+import { DEFAULT_LANG } from '@data/locales';
+import { localeUrl, t } from '@lib/i18n';
+
+// GitHub Pages serves /404.html for any unmatched path, so this page has to be
+// language-neutral; it uses the default language.
+const lang = DEFAULT_LANG;
+const translate = t(lang);
+
+export const meta = { excludeFromSitemap: true };
+---
+
+<Base
+    title={translate('notFound.title')}
+    description={translate('notFound.lede')}
+    lang={lang}
+    noIndex
+>
+    <div class="page-hero">
+        <div class="page-hero__inner">
+            <p class="eyebrow">{translate('notFound.eyebrow')}</p>
+            <h1 class="page-hero__title">{translate('notFound.title')}</h1>
+            <p class="page-hero__lede">{translate('notFound.lede')}</p>
+            <div class="hero__actions">
+                <a class="button" href="/">{translate('notFound.home')}</a>
+                <a class="button button--outline" href={localeUrl('/countries/', lang)}>
+                    {translate('notFound.destinations')}
+                </a>
+            </div>
+        </div>
+    </div>
+</Base>

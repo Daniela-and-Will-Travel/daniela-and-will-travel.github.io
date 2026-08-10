@@ -1,0 +1,103 @@
+---
+import type { Lang } from '@data/locales';
+import { DEFAULT_LANG } from '@data/locales';
+import { navigation } from '@data/navigation';
+import { settings } from '@data/settings.js';
+import { localeUrl, localeFallbackUrl, t } from '@lib/i18n';
+
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+    lang: Lang;
+}
+
+const { lang } = Astro.props;
+const translate = t(lang);
+
+const items = navigation[lang]?.length ? navigation[lang] : navigation[DEFAULT_LANG];
+
+// The legal pages only exist in English, so they resolve through the fallback
+// rather than being blindly prefixed with the current language.
+const smallPrint = [
+    { href: localeFallbackUrl('/affiliates/', lang), text: translate('footer.affiliates') },
+    { href: localeFallbackUrl('/privacy/', lang), text: translate('footer.privacy') },
+    { href: localeFallbackUrl('/terms/', lang), text: translate('footer.terms') },
+    {
+        href: localeFallbackUrl('/do-not-sell-my-personal-information/', lang),
+        text: translate('footer.doNotSell')
+    },
+    { href: '/styleguide/', text: translate('footer.styleGuide') }
+];
+
+const feedUrl = localeUrl('/feed/feed.xml', lang);
+const currentYear = new Date().getFullYear();
+---
+
+<footer id="footer" class="footer">
+    <div class="footer__inner">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <a class="footer__wordmark" href="/">Daniela and Will</a>
+                <p class="footer__tagline">{translate('footer.tagline')}</p>
+                <ul class="social-menu">
+                    <li><a href={settings.social.instagram}>Instagram</a></li>
+                    <li><a href={settings.social.youtube}>YouTube</a></li>
+                    <li><a href={settings.social.unsplash}>Unsplash</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="footer__heading">{translate('footer.explore')}</h2>
+                <ul class="footer__list">
+                    {
+                        items.map((item) => (
+                            <li>
+                                <a href={localeUrl(item.url, lang)}>{item.text}</a>
+                            </li>
+                        ))
+                    }
+                    <li><a href={feedUrl}>{translate('meta.rssTitle')}</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="footer__heading">{translate('footer.smallPrint')}</h2>
+                <ul class="footer__list">
+                    {
+                        smallPrint.map((item) => (
+                            <li>
+                                <a href={item.href}>{item.text}</a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div class="footer__utilities">
+                <ThemeToggle lang={lang} />
+
+                <a href={feedUrl} class="rss-icon" aria-label={translate('meta.rssTitle')}>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        width="24"
+                        height="24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            {/* Rendered at build time; the old inline script that rewrote this on
+                DOMContentLoaded only mattered for a cached, long-lived page. */}
+            <p class="copyright">© 2022 - {currentYear} Daniela and Will</p>
+            <p class="copyright" set:html={translate('footer.builtWith')} />
+        </div>
+    </div>
+</footer>

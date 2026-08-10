@@ -1,0 +1,179 @@
+---
+import type { Lang } from '@data/locales';
+import { settings } from '@data/settings.js';
+import { formatDate, readingTime, tagLabel, toRfc3339 } from '@lib/format';
+import { absoluteUrl, localeFallbackUrl, t } from '@lib/i18n';
+import { editorialTags, postUrl, type Post } from '@lib/posts';
+import { slugify } from '@lib/format';
+
+import Base from './Base.astro';
+import Affiliates from '@components/Affiliates.astro';
+import Card from '@components/Card.astro';
+
+interface Props {
+    post: Post;
+    lang: Lang;
+    related: Post[];
+}
+
+const { post, lang, related } = Astro.props;
+
+// Estimated from the source body rather than the rendered HTML: MDX compiles
+// straight to a component, so there is no HTML string to count at this point.
+// Stripping the JSX tags and front matter leaves essentially the same prose.
+const prose = (post.body ?? '').replace(/<[^>]+>/g, ' ').replace(/^import .*$/gm, '');
+const { title, byline, author, date, modified, heroImage, heroImageAlt, seo } = post.data;
+
+const translate = t(lang);
+const tags = editorialTags(post);
+const url = postUrl(post);
+
+const jsonLd = [
+    {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: title,
+        description: byline,
+        image: absoluteUrl(heroImage, settings.url),
+        datePublished: toRfc3339(date),
+        dateModified: toRfc3339(modified ?? date),
+        inLanguage: lang,
+        keywords: tags.map(tagLabel).join(', '),
+        author: { '@type': 'Person', name: author ?? settings.author.name },
+        publisher: {
+            '@type': 'Organization',
+            name: translate('meta.title'),
+            logo: {
+                '@type': 'ImageObject',
+                url: absoluteUrl('/assets/img/icon-512.png', settings.url)
+            }
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(url, settings.url) }
+    },
+    {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: translate('header.home'),
+                item: absoluteUrl('/', settings.url)
+            },
+            ...(tags.length
+                ? [
+                      {
+                          '@type': 'ListItem',
+                          position: 2,
+                          name: tagLabel(tags[0]),
+                          item: absoluteUrl(`/${lang}/tag/${slugify(tags[0])}/`, settings.url)
+                      }
+                  ]
+                : []),
+            {
+                '@type': 'ListItem',
+                position: tags.length ? 3 : 2,
+                name: title,
+                item: absoluteUrl(url, settings.url)
+            }
+        ]
+    }
+];
+---
+
+<Base
+    title={seo?.title ?? title}
+    description={seo?.description ?? byline}
+    lang={lang}
+    image={post.data.thumbnail ?? heroImage}
+    imageAlt={post.data.thumbnailDescription ?? heroImageAlt}
+    noIndex={seo?.noIndex}
+    bodyClass={tags.join(' ')}
+    jsonLd={jsonLd}
+>
+    <article class="hentry post">
+        <header class="post-hero">
+            <div class="post-hero__inner">
+                <ol class="breadcrumb">
+                    <li><a href="/">{translate('header.home')}</a></li>
+                    {
+                        tags.length > 0 && (
+                            <li>
+                                <a href={`/${lang}/tag/${slugify(tags[0])}/`}>{tagLabel(tags[0])}</a>
+                            </li>
+                        )
+                    }
+                </ol>
+
+                <h1 class="post-hero__title entry-title">{title}</h1>
+
+                {byline && <p class="post-hero__byline">{byline}</p>}
+
+                <ul class="meta-line post-hero__meta">
+                    <li class="meta-author">
+                        {translate('post.by', { author: author ?? settings.author.name })}
+                    </li>
+                    <li class="meta-date">
+                        <time class="entry-date published" datetime={toRfc3339(date)}>
+                            {formatDate(date, lang)}
+                        </time>
+                    </li>
+                    <li class="meta-reading-time">{readingTime(prose, lang)}</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="entry-content prose">
+            <div class="affiliate">
+                <span set:html={translate('post.affiliateNotice')} />&nbsp;<a
+                    href={localeFallbackUrl('/affiliates/', lang)}>{translate('post.affiliateLink')}</a
+                >.
+            </div>
+
+            <slot />
+        </div>
+
+        <footer class="post-footer">
+            {
+                tags.length > 0 && (
+                    <ul class="post-tags">
+                        {tags.map((tag) => (
+                            <li>
+                                <a class="tag" href={`/${lang}/tag/${slugify(tag)}/`}>
+                                    {tagLabel(tag)}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                )
+            }
+
+            <Affiliates />
+        </footer>
+
+        {
+            related.length > 0 && (
+                <section class="section section--tinted">
+                    <div class="shell">
+                        <div class="section-header section-header--center">
+                            <p class="eyebrow">{translate('post.relatedEyebrow')}</p>
+                            <h2 class="section-header__title">{translate('post.relatedTitle')}</h2>
+                        </div>
+                        <div class="grid">
+                            {related.map((item) => (
+                                <Card post={item} lang={lang} as="h3" showDate={false} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )
+        }
+    </article>
+
+    <button
+        type="button"
+        class="return-to-top"
+        aria-label={translate('post.backToTop')}
+        data-back-to-top>↑</button
+    >
+</Base>

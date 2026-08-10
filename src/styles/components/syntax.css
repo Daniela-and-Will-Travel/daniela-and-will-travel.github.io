@@ -1,0 +1,41 @@
+/* =========================================================================
+   Syntax highlighting
+
+   Shiki, run at build time — it emits inline colours per token, so there is no
+   token class list to theme by hand any more (this file used to carry a Prism
+   theme built from the --code-* tokens).
+
+   Two themes are compiled into every code block: the light one as inline
+   styles, the dark one as --shiki-dark* custom properties. The rule below is
+   what actually switches them, keyed on the same data-theme attribute the rest
+   of the design system uses.
+   ========================================================================= */
+
+pre.astro-code {
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--radius-m);
+    overflow-x: auto;
+    font-size: var(--step--1);
+    line-height: 1.6;
+    tab-size: 4;
+}
+
+pre.astro-code code {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* `!important` is required here: Shiki writes the light theme as an inline
+   style attribute, which would otherwise always win. */
+:root[data-theme='dark'] pre.astro-code,
+:root[data-theme='dark'] pre.astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+    font-style: var(--shiki-dark-font-style) !important;
+    font-weight: var(--shiki-dark-font-weight) !important;
+    text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* Inline code inside prose keeps the design system's own treatment — see the
+   `:not(pre) > code` rule in styles.css. */

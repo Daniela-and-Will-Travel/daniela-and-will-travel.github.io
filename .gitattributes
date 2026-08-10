@@ -1,0 +1,13 @@
+# The project's .editorconfig mandates LF. Without this, a checkout on Windows
+# rewrites every file to CRLF and the two disagree.
+* text=auto eol=lf
+
+# Binary assets must never be line-ending normalised.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.JPG binary
+*.JPEG binary
+*.ico binary
+*.ttf binary
+*.xlsx binary

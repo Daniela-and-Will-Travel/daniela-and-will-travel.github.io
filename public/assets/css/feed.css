@@ -1,0 +1,87 @@
+/* =========================================================================
+   Stylesheet for the feed's XSL view (/<lang>/feed/feed.xsl).
+
+   Deliberately standalone and unhashed: an XSL document is handed straight to
+   the browser and never passes through Astro's asset pipeline, so it cannot
+   link the hashed main bundle. Keep this in sync with the `.rss-xslt` block in
+   src/styles/styles.css if that changes — it is a small, deliberate duplicate.
+   ========================================================================= */
+
+:root {
+    --surface: #fff;
+    --ink: #22232e;
+    --ink-strong: #14151d;
+    --ink-muted: #61637a;
+    --link: #5761a2;
+    --link-hover: #c9702f;
+    --divider: #e6e3de;
+    --accent-wash: #fbede3;
+    --radius-m: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --surface: #16171f;
+        --ink: #e8e6ef;
+        --ink-strong: #fbfaff;
+        --ink-muted: #a5a4b6;
+        --link: #a9b6e6;
+        --link-hover: #e99253;
+        --divider: #2e3040;
+        --accent-wash: #262231;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: var(--surface);
+    color: var(--ink);
+    font-family: 'Albert Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+        Arial, sans-serif;
+    line-height: 1.7;
+}
+
+.rss-xslt {
+    max-width: 760px;
+    margin-inline: auto;
+    padding: 3rem 1.5rem;
+}
+
+h1 {
+    color: var(--ink-strong);
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+    margin-top: 2rem;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+.notice {
+    background-color: var(--accent-wash);
+    border-radius: var(--radius-m);
+    padding: 1rem 1.25rem;
+    margin: 0;
+}
+
+.posts {
+    list-style: none;
+    margin: 2rem 0 0 0;
+    padding: 0;
+}
+
+.posts li {
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--divider);
+}
+
+.posts span {
+    color: var(--ink-muted);
+    font-size: 0.9rem;
+    display: block;
+}

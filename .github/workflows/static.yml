@@ -1,4 +1,4 @@
-name: Build and deploy 11ty site to Pages
+name: Build and deploy Astro site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -28,7 +28,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # Generous limit so a cold build (empty image cache) can finish and seed the cache;
-    # warm builds take a few minutes.
+    # warm builds take well under a minute.
     timeout-minutes: 30
     steps:
       - name: Checkout
@@ -40,18 +40,23 @@ jobs:
           cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v6
-      # eleventy-img names outputs by a hash of the source file contents and sharp
-      # options, and skips any variant whose output file already exists — so restoring
-      # previously generated images avoids re-encoding every AVIF/WebP on each run.
+      # Astro keys every generated image on a hash of the source file and the
+      # transform options, and skips any variant already present in its cache.
+      # Restoring that cache is the difference between a ~3 minute cold build
+      # and a ~30 second warm one.
       - name: Restore generated images
         uses: actions/cache@v6
         with:
-          path: dist/assets/img
-          key: eleventy-img-${{ hashFiles('src/assets/img/**', 'src/_config/shortcodes/image.js') }}
+          path: node_modules/.astro
+          key: astro-assets-${{ hashFiles('src/assets/img/**', 'src/components/Figure.astro', 'src/lib/images.ts') }}
           restore-keys: |
-            eleventy-img-
+            astro-assets-
       - name: Install dependencies
         run: npm ci
+      - name: Type-check and validate content
+        # Fails the build on a broken import, a bad component prop, or a post
+        # whose front matter does not satisfy the content collection schema.
+        run: npm run check
       - name: Build site
         run: npm run build
       - name: Upload artifact
