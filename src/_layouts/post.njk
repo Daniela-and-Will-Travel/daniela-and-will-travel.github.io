@@ -11,7 +11,7 @@ layout: base
 
             <ol class="breadcrumb">
                 <li><a href="/">{{ 'header.home' | translate }}</a></li>
-                {%- if postTags.length %}<li>{{ postTags[0] | replace("-", " ") }}</li>{% endif %}
+                {%- if postTags.length %}<li><a href="/{{ page.lang }}/tag/{{ postTags[0] | slugify }}/">{{ postTags[0] | tagLabel }}</a></li>{% endif %}
             </ol>
 
             <h1 class="post-hero__title entry-title">{{ title }}</h1>
@@ -43,9 +43,12 @@ layout: base
     <footer class="post-footer">
 
         {% if postTags.length %}
-        <ul class="post-tags">
-            {%- for tag in postTags %}<li><span class="tag">{{ tag | replace("-", " ") }}</span></li>{% endfor %}
-        </ul>
+        <nav class="post-tags" aria-label="{{ 'post.tagsLabel' | translate }}">
+            <h2 class="post-tags__label">{{ 'post.tagsLabel' | translate }}</h2>
+            <ul class="post-tags__list">
+                {%- for tag in postTags %}<li><a class="tag" href="/{{ page.lang }}/tag/{{ tag | slugify }}/">{{ tag | tagLabel }}</a></li>{% endfor %}
+            </ul>
+        </nav>
         {% endif %}
 
         {% include "affiliates.njk" %}
@@ -78,9 +81,9 @@ layout: base
     </section>
     {% endif %}
 
-    <button id="return-to-top" class="return-to-top" aria-label="{{ 'post.backToTop' | translate }}" onclick="scrollToTop()">↑</button>
-
 </article>
+
+<button id="return-to-top" class="return-to-top" aria-label="{{ 'post.backToTop' | translate }}" onclick="scrollToTop()">↑</button>
 
 <script>
     window.addEventListener('scroll', function () {

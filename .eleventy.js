@@ -25,7 +25,10 @@ module.exports = eleventyConfig => {
     eleventyConfig.addGlobalData('settings', {
         // these get merged with _data/settings.js
         url: process.env.URL || process.env.CF_PAGES_URL || 'https://daniela-and-will-travel.github.io',
-        isProduction: process.env.NODE_ENV === 'production',
+        // `npm run build` sets ELEVENTY_PRODUCTION; NODE_ENV is only exported for
+        // the Tailwind step that follows it, so checking NODE_ENV alone left the
+        // deployed site with unminified HTML, CSS and JS.
+        isProduction: process.env.NODE_ENV === 'production' || process.env.ELEVENTY_PRODUCTION === 'true',
         // github.io is this site's production domain, so never treat it as staging
         isStaging: (process.env.CF_PAGES_URL && process.env.CF_PAGES_URL.includes('pages.dev')) || false
     });
@@ -117,8 +120,35 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter('readingTime', require('./src/_config/filters/readingtime'));
     eleventyConfig.addFilter('exclude', require('./src/_config/filters/exclude'));
     eleventyConfig.addFilter('withoutTags', require('./src/_config/filters/withoutTags'));
+    eleventyConfig.addFilter('tagLabel', require('./src/_config/filters/taglabel'));
     eleventyConfig.addFilter('escapeHtml', require('./src/_config/filters/escapehtml'));
     eleventyConfig.addFilter('localeFallback', require('./src/_config/filters/localefallback'));
+
+    // Collections -------------------------------------
+
+    // One entry per (language, editorial tag) pair, newest post first. Drives
+    // the archive pages at /<lang>/tag/<tag>/ that the post tag pills link to.
+    eleventyConfig.addCollection('tagPages', collectionApi => {
+        const { STRUCTURAL } = require('./src/_config/filters/withoutTags');
+        const entries = new Map();
+
+        for (const post of collectionApi.getFilteredByTag('posts')) {
+            const lang = post.page.lang;
+            const tags = post.data.tags || [];
+
+            for (const tag of Array.isArray(tags) ? tags : [tags]) {
+                if (STRUCTURAL.includes(tag)) continue;
+
+                const key = `${lang}::${tag}`;
+                if (!entries.has(key)) entries.set(key, { lang, tag, posts: [] });
+                entries.get(key).posts.unshift(post);
+            }
+        }
+
+        return [...entries.values()].sort(
+            (a, b) => a.lang.localeCompare(b.lang) || a.tag.localeCompare(b.tag)
+        );
+    });
 
 
     // Passthrough -------------------------------------

@@ -1,0 +1,76 @@
+---
+layout: base
+pagination:
+  data: collections.tagPages
+  size: 1
+  alias: tagPage
+permalink: "/{{ tagPage.lang }}/tag/{{ tagPage.tag | slugify }}/"
+eleventyComputed:
+  title: "{{ tagPage.tag | tagLabel }}"
+  seo:
+    description: "{{ 'tags.metaDescription' | translate(tagPage.lang, { tag: tagPage.tag | tagLabel }) }}"
+    changeFrequency: weekly
+---
+{%- set siblingTags = collections.tagPages | where('lang', tagPage.lang) -%}
+
+<header class="page-hero">
+    <div class="page-hero__inner">
+
+        <ol class="breadcrumb">
+            <li><a href="/">{{ 'header.home' | translate }}</a></li>
+            <li>{{ 'tags.eyebrow' | translate }}</li>
+        </ol>
+
+        <h1 class="page-hero__title">{{ tagPage.tag | tagLabel }}</h1>
+        <p class="page-hero__lede">{{ 'tags.count' | translate(tagPage.lang, { count: tagPage.posts.length }) }}</p>
+
+    </div>
+</header>
+
+<section class="section section--tight">
+    <div class="shell">
+
+        <div class="grid">
+            {% for post in tagPage.posts %}
+            <article class="card{% if not post.data.heroImage %} card--minimal{% endif %}">
+                {% if post.data.heroImage %}
+                <div class="card__media">
+                    {% image post.data.heroImage, post.data.heroImageAlt, "(min-width: 60rem) 30vw, 100vw", "", "", "lazy", "auto", "async" %}
+                </div>
+                {% endif %}
+                <div class="card__body">
+                    <h2 class="card__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                    {% if post.data.byline %}<p class="card__excerpt">{{ post.data.byline }}</p>{% endif %}
+                    <p class="card__meta"><time datetime="{{ post.date | dateToRfc3339 }}">{{ post.date | formatDate }}</time></p>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+{% if siblingTags.length > 1 %}
+<section class="section section--tinted">
+    <div class="shell">
+
+        <div class="section-header section-header--center">
+            <p class="eyebrow">{{ 'tags.browseEyebrow' | translate }}</p>
+            <h2 class="section-header__title">{{ 'tags.browseTitle' | translate }}</h2>
+        </div>
+
+        <ul class="tag-cloud">
+            {%- for entry in siblingTags %}
+            <li>
+                <a class="tag{% if entry.tag === tagPage.tag %} tag--accent{% endif %}"
+                   href="/{{ entry.lang }}/tag/{{ entry.tag | slugify }}/"
+                   {% if entry.tag === tagPage.tag %}aria-current="page"{% endif %}>
+                    {{ entry.tag | tagLabel }}<span class="tag__count">{{ entry.posts.length }}</span>
+                </a>
+            </li>
+            {%- endfor %}
+        </ul>
+
+    </div>
+</section>
+{% endif %}

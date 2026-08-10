@@ -154,6 +154,13 @@
     margin-bottom: var(--space-xl);
 }
 
+/* A section brings its own top padding, and a page that is nothing but a hero
+   (404) has the footer to sit against — neither needs the gap doubled up. */
+.page-hero:has(+ .section),
+.page-hero:last-child {
+    margin-bottom: 0;
+}
+
 .page-hero__inner {
     width: 100%;
     max-width: var(--width-page);

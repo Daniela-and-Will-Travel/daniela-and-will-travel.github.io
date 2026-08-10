@@ -326,19 +326,29 @@ seo:
             <!-- ---------- labels ---------- -->
             <section class="sg-section" id="labels">
                 <h2 class="sg-section__title">Eyebrows &amp; tags</h2>
-                <p class="sg-section__intro">The eyebrow is the small uppercase kicker that sits above almost every heading on the site. Tags are for post categories.</p>
+                <p class="sg-section__intro">The eyebrow is the small uppercase kicker that sits above almost every heading on the site. Tags are for post categories &mdash; a tag is always a link to its archive at <code>/&lt;lang&gt;/tag/&lt;slug&gt;/</code>, so write it as an <code>&lt;a&gt;</code>. Use <code>--accent</code> for the tag you are currently on and <code>--solid</code> when a tag needs to carry more weight than its neighbours.</p>
 
                 {% set labelMarkup %}
 <p class="eyebrow">Where we've been</p>
 <p class="eyebrow eyebrow--muted">The archive</p>
 <div class="cluster" style="margin-top: 1rem;">
-    <span class="tag">southeast asia</span>
-    <span class="tag tag--accent">itinerary</span>
-    <span class="tag tag--solid">planning</span>
-    <a class="tag" href="#">japan</a>
+    <a class="tag" href="/en/tag/southeast-asia/">Southeast Asia</a>
+    <a class="tag tag--accent" href="/en/tag/itinerary/">Itinerary</a>
+    <a class="tag tag--solid" href="/en/tag/planning/">Planning</a>
+    <a class="tag" href="/en/tag/japan/">Japan<span class="tag__count">1</span></a>
 </div>
                 {% endset %}
                 {{ story('Eyebrow and tag', labelMarkup) }}
+
+                {% set tagCloudMarkup %}
+<ul class="tag-cloud">
+    <li><a class="tag" href="/en/tag/asia/">Asia<span class="tag__count">6</span></a></li>
+    <li><a class="tag" href="/en/tag/europe/">Europe<span class="tag__count">2</span></a></li>
+    <li><a class="tag" href="/en/tag/budget/">Budget<span class="tag__count">2</span></a></li>
+    <li><a class="tag" href="/en/tag/review/">Review<span class="tag__count">1</span></a></li>
+</ul>
+                {% endset %}
+                {{ story('Tag cloud', tagCloudMarkup, 'the browse-another-topic strip at the foot of a tag archive') }}
 
                 {% set metaMarkup %}
 <ul class="meta-line">

@@ -35,7 +35,7 @@ Nias is an island off the coast of Sumatra, that over the years has become diffi
 
 {% image "/assets/img/posts/asia/niasgetthere.jpeg", "Wing Airline ATR 72 before takeoff", "100vw", "Wing Airline ATR 72 before takeoff", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-there">How to Get There</h2>
+<h2 id="get-there">How to Get There</h2>
 
 Getting to Nias requires a bit of preplanning since it can only be accessed via ferry or plane. The port of entry is in Gunungsitoli, the largest city in Nias, but there seems to be a ferry running once a week to Tuluk Dalam in the south.
 
@@ -55,7 +55,7 @@ Additionally, from Nias you can get to the Batu Islands by ferry, but unfortunat
 
 {% image "/assets/img/posts/asia/niasgetaround.jpeg", "Local fishing boats, docked at the end of a long day", "100vw", "Local fishing boats, docked at the end of a long day", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-around">How to Get Around</h2>
+<h2 id="get-around">How to Get Around</h2>
 
 Once on the island, options for getting around are limited. From the airport to the southern tip cost 600,000 IDR when we asked the taxi drivers, and they would not budge. The place we stayed, Harus Damai Inn offered it for 500,000 IDR.
 
@@ -75,7 +75,7 @@ On the way back, we had a flight leaving at 6:30am, so we took a shared car back
 
 Another way to get around is by motorbike, most accommodations offer rentals, and there are rental places available in Gunungsitoli. We tried to rent one from a couple places before we got there, but they all required a deposit beforehand and we did not feel comfortable doing so.
 
-<h2 id="#budget">How Much to Spend</h2>
+<h2 id="budget">How Much to Spend</h2>
 
 Nias is not the most affordable island in Indonesia and information can be limited online. Here is a breakdown of information we were able to find in person.
 
@@ -89,17 +89,17 @@ Nias is not the most affordable island in Indonesia and information can be limit
 
 {% image "/assets/img/posts/asia/niashowmanydays.jpeg", "Old foundations near the pro surfing side of the island", "100vw", "Old foundations near the pro surfing side of the island", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#length">How Many Days</h2>
+<h2 id="length">How Many Days</h2>
 
 For the amount of work required to get to Nias, we suggest staying at minimum of 5 days. We stayed for 7 and it went by really quick. There are also a couple other spots along the island you can visit, which would add more time to your stay.
 
-<h2 id="#stay">Where to Stay</h2>
+<h2 id="stay">Where to Stay</h2>
 
 There are a variety of places you can stay on Nias, if you are there to surf, staying at **The Point** is the best for catching waves. For the rest of us beginners, the Lagoon Taluk is good for learning. There are a few places to stay right on the beach (we stayed at [Harus Dami Inn](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fharus-damai-inn.html)), but you can also stay in [Taluk Dalam](https://www.tkqlhce.com/click-101819299-17293132) if you want to stay in town.
 
 {% image "/assets/img/posts/asia/niaswhattodo.jpeg", "Will surfing", "100vw", "Will surfing", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#route">What to Do</h2>
+<h2 id="route">What to Do</h2>
 
 **Surfing:** Both beginners looking to learn and experienced surfers would have a great time. Plus the water was nice and warm, so you can be out there for hours without getting cold.
 
@@ -109,7 +109,7 @@ There are a variety of places you can stay on Nias, if you are there to surf, st
 
 **Hinako Islands:** Just off the West coast of Nias, there is a small archipelago that is accessible by ferry. Your accommodation should be able to help arrange private transfers to the islands.
 
-<h2 id="#volunteering">Volunteering</h2>
+<h2 id="volunteering">Volunteering</h2>
 
 We found a beach conservation volunteering program at [Harus Dami](https://www.tkqlhce.com/click-101819299-17293132?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fid%2Fharus-damai-inn.html) on [Worldpackers](https://www.worldpackers.com/). We cleaned up the beach each morning for about an hour or so and then we had the whole day to ourselves. They charged a fee of $10 USD per volunteer or $16 USD for a couple, per day. This helped cover food, accommodation, and kept their project going. Just make sure everyone is on the same page when it gets converted into Indonesia Rupiah. They told us they had plans to expand their program to include teaching English to the local kids and surf lessons over the coming year.
 

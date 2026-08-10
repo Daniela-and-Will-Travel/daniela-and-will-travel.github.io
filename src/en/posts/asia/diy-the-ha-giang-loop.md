@@ -35,7 +35,7 @@ Everything you need to know before doing this incredible ride on your own.
 
 {% image "/assets/img/posts/asia/howtogetthere.jpg", "Windy road carving through the mountains", "100vw", "Windy road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#get-there">How to Get There</h2>
+<h2 id="get-there">How to Get There</h2>
 
 Odds are if you’re reading this, you already know how to get there and are most likely coming from Hanoi or Sa Pa. Both have buses going directly to Ha Giang, use [12go.asia](https://12go.asia/?z=11258902).
 
@@ -43,7 +43,7 @@ Odds are if you’re reading this, you already know how to get there and are mos
 
 {% image "/assets/img/posts/asia/tourvsdiy.jpg", "Daniela hanging over the Death Rock", "100vw", "Daniela hanging over the Death Rock", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#tour-vs-diy">Tour vs DIY</h2>
+<h2 id="tour-vs-diy">Tour vs DIY</h2>
 
 Many people opt to take an EasyRider tour to make things easier and leave the planning to someone else. If you are not comfortable riding a motorbike, this may be the choice for you. But if you are on the fence, we had a fantastic time doing it ourselves. Just make sure you have a bit of motorcycle riding experience. If you don't, another good option is to rent the bike a day or two beforehand and get some practice runs in around Ha Giang - even more so if you do not have experience with a semi-automatic motorbike.
 
@@ -67,7 +67,7 @@ Many people opt to take an EasyRider tour to make things easier and leave the pl
 | Significantly cheaper (however more likely to get fined) | Less photo opportunities while on the bike |
 | Cultural immersion | Will be very tired at the end of the day/loop |
 
-<h2 id="#length">How Many Days</h2>
+<h2 id="length">How Many Days</h2>
 
 There are three length options to choose from when doing the Ha Giang Loop:
 
@@ -77,7 +77,7 @@ There are three length options to choose from when doing the Ha Giang Loop:
 
 We chose to do it in **4 days and 3 nights** since, as somewhat inexperienced riders, we thought it would give us a chance to go at our own pace, and really experience all that the loop had to offer. We found that we were 100% right!
 
-<h2 id="#motorbike">Motorbike Info</h2>
+<h2 id="motorbike">Motorbike Info</h2>
 
 When renting a motorbike to complete the Ha Giang Loop, you have two options: semi-automatic or fully automatic. Most people (including us) will recommend that you get a semi-automatic, since it combines the benefits of a manual motorbike with that of an automatic.
 
@@ -100,7 +100,7 @@ We rented from [QT Motorbike](https://qtmotorbikesandtours.com.vn/motorbike-rent
 
 > ❕ Tip: [Petrolimex gas stations](https://www.petrolimex.com.vn/stations.aspx) usually have English speaking attendants, and they all take credit card!
 
-<h2 id="#police">Police</h2>
+<h2 id="police">Police</h2>
 
 One of the negatives of DIYing the Ha Giang Loop is that you will most likely interact with the local traffic police. Vietnam requires foreign drivers to hold an International Driving Permit (IDP), and it **must be from 1968**, anything else is not valid. The IDP allows you to legally drive in Vietnam. If you do not have one, the police may issue fines, and you could be asked to stop driving.
 
@@ -121,7 +121,7 @@ If you are stopped, you will likely be asked to pay a fine (bribe). They will te
 
 {% image "/assets/img/posts/asia/whattobring.jpg", "Small wooden huts on the side of a mountain", "100vw", "Small wooden huts on the side of a mountain", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#packing">What to Bring</h2>
+<h2 id="packing">What to Bring</h2>
 
 - Motorbike
 - Helmet: make sure it fits well
@@ -144,7 +144,7 @@ If you are stopped, you will likely be asked to pay a fine (bribe). They will te
 
 {% image "/assets/img/posts/asia/theroute.jpg", "Road carving through the mountains", "100vw", "Road carving through the mountains", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#route">The Route</h2>
+<h2 id="route">The Route</h2>
 
 ### Day 1 - Ha Giang to Yen Minh
 

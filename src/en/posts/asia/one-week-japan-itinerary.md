@@ -141,13 +141,13 @@ We averaged $170 per day for 2 people. So not shoestring, but definitely NOT lux
 
 > ⚠ Note: this does not include the flight to Japan. That round trip flight will set you back a tad bit more.
 
-<h2 id="#accommodation">Accommodation</h2>
+<h2 id="accommodation">Accommodation</h2>
 
 We use [Booking.com](https://www.tkqlhce.com/click-101819299-17293132) 99% of the time. We sort price lowest to highest and see what comes up. Make sure that the ratings look good before you book. We averaged $40 per night, but prices fluctuate depending on the season.
 
 Keep in mind that if you find a cheaper location outside of the center, you may need to spend more time walking/take public transportation, which could add up over time.
 
-<h2 id="#cash">Cash</h2>
+<h2 id="cash">Cash</h2>
 
 Make sure to bring Yen `¥` before arriving in Japan. Credit cards are widely accepted, but most markets and smaller restaurants will only take cash. You can also use your Suica or Passmo card to pay at most places (including 7-Eleven).
 
@@ -155,7 +155,7 @@ If you didn’t bring any Yen or run out, ATMs are widely available, we recommen
 
 {% image "/assets/img/posts/asia/IMG_7502.jpg", "View of a bowl of ramen from above", "100vw", "One of our best bowls of ramen, near Shibuya Crossing", "rounded", "lazy", "auto", "async", "", "" %}
 
-<h2 id="#food">Food</h2>
+<h2 id="food">Food</h2>
 
 - Sushi - most restaurants let you order with a tablet
 - Revolving sushi - technically this is fast food but we think it’s ✨cool✨
@@ -166,7 +166,7 @@ If you didn’t bring any Yen or run out, ATMs are widely available, we recommen
 - Ramen
 - 7-Eleven - the **BEST**, you could honestly eat every meal from there
 
-<h2 id="#transport">Transportation</h2>
+<h2 id="transport">Transportation</h2>
 
 - Shinkansen/Bullet Train (Tokyo-Kyoto)
 - Local trains (Kyoto-Nara, Nara-Osaka)

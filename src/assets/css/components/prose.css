@@ -143,9 +143,23 @@
     margin-bottom: var(--space-l);
 }
 
+/* A figure or embed owns the space beneath it, so the block that follows does
+   not stack its own on top. */
 .prose > figure + *,
-.prose > .oembed + * {
+.prose > .oembed + *,
+.prose > p:has(> picture) + *,
+.prose > p:has(> img) + * {
     margin-top: 0;
+}
+
+/* …except a heading, which would otherwise be crammed against the photo above
+   it — and for an h2, its rule would sit tight to the image. This tops the
+   figure's own bottom margin back up to the run-in space a heading expects. */
+.prose > figure + :is(h2, h3, h4),
+.prose > .oembed + :is(h2, h3, h4),
+.prose > p:has(> picture) + :is(h2, h3, h4),
+.prose > p:has(> img) + :is(h2, h3, h4) {
+    margin-top: var(--space-s);
 }
 
 .prose figure img {
@@ -165,10 +179,13 @@
 }
 
 /* .wide blocks stay inside the page shell so card grids line up with the
-   rest of the site rather than running to the viewport edge */
+   rest of the site rather than running to the viewport edge. .shell carries
+   its gutter as padding, so match its content box, not its outer width —
+   otherwise a card grid here sits a gutter wider than the same grid on the
+   home page. */
 .prose > .wide {
     width: 100%;
-    max-width: var(--width-page);
+    max-width: calc(var(--width-page) - var(--gutter) * 2);
     margin-inline: auto;
 }
 
@@ -340,6 +357,23 @@
 }
 
 .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.post-tags__label {
+    font-family: var(--font-display);
+    font-size: var(--step--2);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0;
+}
+
+.post-tags__list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2xs);
