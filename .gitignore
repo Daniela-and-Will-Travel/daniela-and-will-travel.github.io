@@ -5,3 +5,5 @@
 .recall
 node_modules
 dist
+.bandit/
+.recall/
