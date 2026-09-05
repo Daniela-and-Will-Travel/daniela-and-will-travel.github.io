@@ -13,13 +13,15 @@ interface Props {
     description?: string;
     noIndex?: boolean;
     bodyClass?: string;
+    /** Extra schema.org nodes, emitted alongside this layout's WebPage node. */
+    jsonLd?: object | object[];
 }
 
-const { title, lang, eyebrow, byline, description, noIndex, bodyClass } = Astro.props;
+const { title, lang, eyebrow, byline, description, noIndex, bodyClass, jsonLd: extraJsonLd } = Astro.props;
 
 const lede = byline ?? description;
 
-const jsonLd = {
+const webPage = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: title,
@@ -32,6 +34,10 @@ const jsonLd = {
         url: settings.url
     }
 };
+
+const jsonLd = extraJsonLd
+    ? [webPage, ...(Array.isArray(extraJsonLd) ? extraJsonLd : [extraJsonLd])]
+    : webPage;
 ---
 
 <Base

@@ -6,6 +6,7 @@
 // tells robots. Run `npm run build` first.
 import fs from 'node:fs';
 import path from 'node:path';
+import { JSDOM } from 'jsdom';
 
 let passed = 0;
 let failed = 0;
@@ -168,6 +169,162 @@ for (const [slug, html] of posts) {
         blog.dateModified
     );
 }
+
+/** Every ld+json node on a page. */
+function schemaOf(html) {
+    return [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map((m) =>
+        JSON.parse(m[1])
+    );
+}
+
+// --- M1: the H1 must not drift from the title by accident ------------------
+//
+// The Iceland post was titled "Five Day Iceland Itinerary" but headed "Five
+// Days in Reykjavik" — a narrower place than the body actually covers, and a
+// different search intent. Divergence is legitimate when it is *deliberate*: a
+// post may set `seo.title` to bid for a phrase the H1 doesn't need to carry.
+// So the rule is that the two agree unless the post opted out in front matter,
+// which makes the exception visible in review rather than silent drift.
+const declaresSeoTitle = new Set(
+    fs
+        .readdirSync('src/content/posts/en', { recursive: true })
+        .filter((file) => String(file).endsWith('.mdx'))
+        .filter((file) => {
+            const source = fs.readFileSync(path.join('src/content/posts/en', String(file)), 'utf8');
+            const frontMatter = source.split('---')[1] ?? '';
+            return /^\s+title:/m.test(frontMatter.split('seo:')[1] ?? '');
+        })
+        .map((file) => path.basename(String(file), '.mdx'))
+);
+
+for (const [slug, html] of posts) {
+    const h1 = html.match(/<h1[^>]*>(.*?)<\/h1>/s)?.[1].replace(/<[^>]+>/g, '').trim();
+    const title = html.match(/<title>(.*?)<\/title>/s)?.[1].trim();
+
+    check(`${slug}: has an H1`, Boolean(h1));
+    if (declaresSeoTitle.has(slug)) continue;
+
+    check(
+        `${slug}: H1 matches the title`,
+        Boolean(h1 && title && title.startsWith(h1)),
+        `${title} vs ${h1}`
+    );
+}
+
+// --- M2: fonts ship as woff2 ------------------------------------------------
+const css = fs
+    .readdirSync('dist/_astro')
+    .filter((file) => file.endsWith('.css'))
+    .map((file) => fs.readFileSync(path.join('dist/_astro', file), 'utf8'))
+    .join('');
+
+check('no truetype @font-face left', !/truetype|\.ttf/.test(css));
+check(
+    'no TTF shipped',
+    !fs.readdirSync('dist/assets/fonts', { recursive: true }).some((f) => String(f).endsWith('.ttf'))
+);
+
+const home = fs.readFileSync('dist/index.html', 'utf8');
+const preload = home.match(/<link rel="preload"[^>]*>/);
+check(
+    'preload points at a woff2 font',
+    Boolean(preload && /\.woff2/.test(preload[0]) && /type="font\/woff2"/.test(preload[0])),
+    preload?.[0] ?? 'no preload'
+);
+// Preloading both faces would have them compete for the same bandwidth.
+check('only one font is preloaded', (home.match(/rel="preload"[^>]*as="font"/g) ?? []).length === 1);
+
+// --- M3: entities resolve rather than repeating names ----------------------
+for (const [slug, html] of posts) {
+    const blog = schemaOf(html).find((entry) => entry['@type'] === 'BlogPosting');
+    const authors = [blog.author].flat();
+
+    check(
+        `${slug}: every author has an @id and sameAs`,
+        authors.every((a) => a['@id'] && Array.isArray(a.sameAs) && a.sameAs.length > 0),
+        JSON.stringify(authors.map((a) => a.name))
+    );
+}
+
+const aboutPeople = schemaOf(fs.readFileSync('dist/en/about/index.html', 'utf8')).filter(
+    (entry) => entry['@type'] === 'Person'
+);
+check('about page marks up both people', aboutPeople.length === 2, `saw ${aboutPeople.length}`);
+
+// The @id is a fragment on the about page, so the anchor has to be real.
+const aboutHtml = fs.readFileSync('dist/en/about/index.html', 'utf8');
+for (const person of aboutPeople) {
+    check(
+        `${person.name}: standalone Person has a schema context`,
+        person['@context'] === 'https://schema.org'
+    );
+    const anchor = person['@id'].split('#')[1];
+    check(`about page has an #${anchor} anchor`, aboutHtml.includes(`id="${anchor}"`));
+}
+
+const org = schemaOf(home).find((entry) => entry['@type'] === 'Organization');
+const brandProfiles = new Set(org?.sameAs ?? []);
+const personNodes = [
+    ...aboutPeople,
+    ...(org?.founder ?? []),
+    ...posts.flatMap(([, html]) => schemaOf(html)
+        .filter((entry) => entry['@type'] === 'BlogPosting')
+        .flatMap((entry) => [entry.author].flat()))
+];
+check(
+    'people do not claim the organization profiles as their identities',
+    personNodes.every((person) => person.sameAs.every((url) => !brandProfiles.has(url)))
+);
+check(
+    'organization retains the shared Instagram profile',
+    brandProfiles.has('https://www.instagram.com/danielaandwill')
+);
+check('organization names its founders', org?.founder?.length === 2);
+check(
+    'founder @ids resolve to the about page',
+    Boolean(org?.founder?.every((f) => aboutPeople.some((p) => p['@id'] === f['@id'])))
+);
+
+for (const entry of fs.readdirSync(tagDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+
+    const html = fs.readFileSync(path.join(tagDir, entry.name, 'index.html'), 'utf8');
+    const collection = schemaOf(html).find((node) => node['@type'] === 'CollectionPage');
+    const cards = (html.match(/class="[^"]*\bcard\b[^"]*"/g) ?? []).length;
+
+    check(`tag/${entry.name}: has CollectionPage`, Boolean(collection));
+    check(
+        `tag/${entry.name}: ItemList matches the cards shown`,
+        collection?.mainEntity?.numberOfItems === cards,
+        `${collection?.mainEntity?.numberOfItems} vs ${cards}`
+    );
+}
+
+const countries = fs.readFileSync('dist/en/countries/index.html', 'utf8');
+check(
+    'countries page has a CollectionPage',
+    schemaOf(countries).some((node) => node['@type'] === 'CollectionPage')
+);
+const countryList = schemaOf(countries).find((node) => node['@type'] === 'CollectionPage')?.mainEntity;
+const countryDocument = new JSDOM(countries, { url: 'https://danielaandwilltravel.ca/en/countries/' }).window.document;
+const countryCards = [...countryDocument.querySelectorAll('.card__title a')].map((link, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    url: link.href,
+    name: link.textContent.trim()
+}));
+check(
+    'countries ItemList matches visible card URLs, titles and order',
+    countryList?.numberOfItems === countryCards.length &&
+        JSON.stringify(countryList?.itemListElement) === JSON.stringify(countryCards)
+);
+
+// --- M4: no empty section on an indexed hub --------------------------------
+check('countries page has no empty continent block', !/Coming soon/.test(countries));
+check(
+    'a continent with no guides is greyed out on the map',
+    /class="svg-map-disabled" href="#NorthAmerica"/.test(countries)
+);
 
 console.log(`\n${passed}/${passed + failed} passed`);
 process.exit(failed ? 1 : 0);

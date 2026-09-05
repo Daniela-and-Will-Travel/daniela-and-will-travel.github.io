@@ -4,6 +4,7 @@ import { settings } from '@data/settings.js';
 import { formatDate, readingTime, tagLabel, toRfc3339 } from '@lib/format';
 import { absoluteUrl, localeFallbackUrl, t } from '@lib/i18n';
 import { editorialTags, postUrl, type Post } from '@lib/posts';
+import { authorSchema } from '@lib/schema';
 import { slugify } from '@lib/format';
 
 import Base from './Base.astro';
@@ -39,7 +40,7 @@ const jsonLd = [
         dateModified: toRfc3339(modified ?? date),
         inLanguage: lang,
         keywords: tags.map(tagLabel).join(', '),
-        author: { '@type': 'Person', name: author ?? settings.author.name },
+        author: authorSchema(author),
         publisher: {
             '@type': 'Organization',
             name: translate('meta.title'),
