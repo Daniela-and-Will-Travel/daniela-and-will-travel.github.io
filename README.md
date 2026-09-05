@@ -114,7 +114,6 @@ heroImageAlt: A street scene in Japan
 seo:
   title: One Week Japan Itinerary
   description: How to visit Japan on a bougie backpacker budget!
-  changeFrequency: monthly
 ---
 ```
 
@@ -132,6 +131,15 @@ has never been revised. Don't mirror `date` into it; the schema rejects a
 purpose: `actions/checkout` stamps every file with the clone time, and a git
 last-commit date moves for build-only commits, so either would announce a
 refresh that never happened.
+
+Static pages under `src/pages/` export a `meta` object that the sitemap reads.
+Set `lastModified` (an ISO date) when you change one — it becomes the URL's
+`<lastmod>`, the one sitemap hint Google actually reads. It is declared rather
+than derived for the same reason `modified` is on posts: the build time would
+claim every page changed on every deploy, and `actions/checkout` stamps the
+whole tree with the clone time. `<priority>` and `<changefreq>` are not emitted
+at all — Google ignores both, and every page here had declared priority 1.0,
+which makes a relative signal say nothing.
 
 Every tag becomes an archive page at `/<lang>/tag/<tag>/` automatically. Add a
 display override to `TAG_LABEL_OVERRIDES` in `src/lib/format.ts` for any tag
@@ -234,6 +242,11 @@ drift apart.
 Spanish currently has no content. The machinery is in place: add
 `src/pages/es/<page>.astro` or `src/content/posts/es/<slug>.mdx` and the
 language switcher, `hreflang` tags, feeds and manifest pick it up automatically.
+
+Until then no `hreflang` is emitted at all, by design: a set naming only the
+page it sits on is self-referential and tells a crawler nothing the canonical
+doesn't. The moment a page has a translation it gets the full set — both
+languages plus `x-default` — because a partial set is ignored wholesale.
 
 ## Deployment
 

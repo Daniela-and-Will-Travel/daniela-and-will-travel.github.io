@@ -1,3 +1,10 @@
+// The sitemap carries <loc> and <lastmod> only.
+//
+// Google ignores <priority> and <changefreq>, and this site demonstrated why
+// they are worth dropping rather than tuning: every page declared priority 1.0,
+// including the privacy policy, which makes a relative signal say nothing at
+// all. <lastmod> is the one hint that is actually read, so it is now emitted
+// for every URL instead of only for posts and archives.
 import type { APIRoute } from 'astro';
 
 import { settings } from '@data/settings.js';
@@ -6,8 +13,8 @@ import { toRfc3339 } from '@lib/format';
 import { getPosts, getTagIndex, isThinTag, postUrl } from '@lib/posts';
 
 interface PageMetaExport {
-    changeFrequency?: string;
-    sitemapPriority?: string;
+    /** ISO date this page's content last actually changed. */
+    lastModified?: string;
     excludeFromSitemap?: boolean;
 }
 
@@ -26,8 +33,6 @@ const pageModules = import.meta.glob<Record<string, unknown>>('/src/pages/**/*.a
 interface UrlEntry {
     loc: string;
     lastmod?: string;
-    changefreq: string;
-    priority: string;
 }
 
 /** '/src/pages/en/about.astro' → '/en/about/' */
@@ -52,11 +57,11 @@ export const GET: APIRoute = async () => {
 
         entries.push({
             loc: absoluteUrl(routeOf(filePath), settings.url),
-            // No lastmod: an .astro page has no meaningful content date, and
-            // emitting the build time would claim every page changed on every
-            // deploy.
-            changefreq: meta?.changeFrequency ?? settings.seo.defaultChangeFrequency,
-            priority: meta?.sitemapPriority ?? settings.seo.defaultPriority
+            // Declared per page rather than derived. An .astro file has no
+            // content date of its own, and the two automatic sources both lie:
+            // the build time claims every page changed on every deploy, and
+            // `actions/checkout` stamps the whole tree with the clone time.
+            lastmod: meta?.lastModified
         });
     }
 
@@ -66,9 +71,7 @@ export const GET: APIRoute = async () => {
 
         entries.push({
             loc: absoluteUrl(postUrl(post), settings.url),
-            lastmod: toRfc3339(post.data.modified ?? post.data.date),
-            changefreq: post.data.seo?.changeFrequency ?? settings.seo.defaultChangeFrequency,
-            priority: post.data.seo?.sitemapPriority ?? settings.seo.defaultPriority
+            lastmod: toRfc3339(post.data.modified ?? post.data.date)
         });
     }
 
@@ -82,9 +85,8 @@ export const GET: APIRoute = async () => {
         const newest = entry.posts[0];
         entries.push({
             loc: absoluteUrl(`/${entry.lang}/tag/${entry.slug}/`, settings.url),
-            lastmod: newest ? toRfc3339(newest.data.modified ?? newest.data.date) : undefined,
-            changefreq: 'weekly',
-            priority: '0.5'
+            // An archive is as fresh as the newest thing it lists.
+            lastmod: newest ? toRfc3339(newest.data.modified ?? newest.data.date) : undefined
         });
     }
 
@@ -94,8 +96,6 @@ ${entries
     .map(
         (entry) => `	<url>
 		<loc>${entry.loc}</loc>${entry.lastmod ? `\n\t\t<lastmod>${entry.lastmod}</lastmod>` : ''}
-		<changefreq>${entry.changefreq}</changefreq>
-		<priority>${entry.priority}</priority>
 	</url>`
     )
     .join('\n')}

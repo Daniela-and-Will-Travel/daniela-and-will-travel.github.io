@@ -326,5 +326,51 @@ check(
     /class="svg-map-disabled" href="#NorthAmerica"/.test(countries)
 );
 
+// --- hreflang: complete, or absent -----------------------------------------
+//
+// A set naming only the page it sits on is self-referential and says nothing a
+// crawler can't read off the canonical. A partial set — alternates without
+// x-default — is ignored wholesale. So the only two valid states are "no
+// hreflang at all" and "every language plus x-default".
+const allPages = [
+    ['home', fs.readFileSync('dist/index.html', 'utf8')],
+    ['about', fs.readFileSync('dist/en/about/index.html', 'utf8')],
+    ...posts
+];
+
+for (const [name, html] of allPages) {
+    const tags = html.match(/<link rel="alternate" hreflang="[^"]*"[^>]*>/g) ?? [];
+    check(
+        `${name}: hreflang set is complete or absent`,
+        tags.length === 0 || tags.some((tag) => tag.includes('hreflang="x-default"')),
+        `${tags.length} alternates, no x-default`
+    );
+}
+
+// --- locale: .ca domain, authors in Vancouver ------------------------------
+for (const [name, html] of allPages) {
+    check(`${name}: html lang is en-ca`, /<html lang="en-ca"/.test(html));
+    check(`${name}: og:locale is en_ca`, /og:locale" content="en_ca"/.test(html));
+}
+
+// --- sitemap: lastmod on everything, nothing Google ignores ----------------
+check('sitemap declares no priority', !sitemap.includes('<priority>'));
+check('sitemap declares no changefreq', !sitemap.includes('<changefreq>'));
+
+const locs = (sitemap.match(/<loc>/g) ?? []).length;
+const lastmods = (sitemap.match(/<lastmod>/g) ?? []).length;
+check('every sitemap URL carries lastmod', locs === lastmods, `${lastmods} of ${locs}`);
+check(
+    'no lastmod claims the build date',
+    !sitemap.includes(`<lastmod>${today}`),
+    'a page is reporting today as its content date'
+);
+
+// --- the one security header a static host can still set -------------------
+check(
+    'referrer policy is declared',
+    /<meta name="referrer" content="strict-origin-when-cross-origin"/.test(home)
+);
+
 console.log(`\n${passed}/${passed + failed} passed`);
 process.exit(failed ? 1 : 0);

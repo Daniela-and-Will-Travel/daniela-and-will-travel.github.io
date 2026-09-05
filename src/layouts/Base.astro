@@ -60,6 +60,15 @@ const socialImageAlt = imageAlt ?? translate('meta.opengraphDefaultAlt');
 const robotsContent = settings.isStaging ? 'noindex, nofollow' : noIndex ? robots : null;
 
 const alternates = localeLinks(pathname, lang);
+
+// x-default is the page a visitor gets when none of the languages match them.
+const defaultLangUrl =
+    lang === DEFAULT_LANG
+        ? canonical
+        : absoluteUrl(
+              alternates.find((link) => link.lang === DEFAULT_LANG)?.url ?? pathname,
+              settings.url
+          );
 const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
 const feedXml = localeUrl('/feed/feed.xml', lang);
@@ -77,13 +86,27 @@ const manifest = localeUrl('/site.webmanifest', lang);
         <title>{fullTitle}</title>
         <meta name="description" content={metaDescription} />
 
-        <!-- canonical / alternates -->
+        <!-- canonical / alternates.
+             Only emitted where a translation actually exists: an hreflang set
+             naming a single page is self-referential and tells a crawler
+             nothing it can't read off the canonical. When one does exist the
+             set is complete — every language, plus x-default pointing at the
+             default one — because a partial set is ignored wholesale. -->
         <link rel="canonical" href={canonical} />
-        <link rel="alternate" hreflang={lang} href={canonical} />
         {
-            alternates.map((link) => (
-                <link rel="alternate" hreflang={link.lang} href={absoluteUrl(link.url, settings.url)} />
-            ))
+            alternates.length > 0 && (
+                <>
+                    <link rel="alternate" hreflang={lang} href={canonical} />
+                    {alternates.map((link) => (
+                        <link
+                            rel="alternate"
+                            hreflang={link.lang}
+                            href={absoluteUrl(link.url, settings.url)}
+                        />
+                    ))}
+                    <link rel="alternate" hreflang="x-default" href={defaultLangUrl} />
+                </>
+            )
         }
 
         <!-- open graph -->
@@ -135,6 +158,13 @@ const manifest = localeUrl('/site.webmanifest', lang);
         />
 
         <!-- everything else -->
+        <!-- Referrer-Policy is one of the few security headers a static host can
+             still set, since it has a meta equivalent. HSTS and
+             X-Content-Type-Options are response headers with no meta form, and
+             GitHub Pages does not allow custom headers — those need a proxy in
+             front. A meta CSP is possible but not added: it cannot carry a
+             nonce, and the inline theme script below has to keep running. -->
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
         <meta name="google-site-verification" content={settings.meta.googleSiteVerification} />
         <link rel="manifest" href={manifest} />
         <meta name="theme-color" media="(prefers-color-scheme: light)" content={settings.themeColorLight} />

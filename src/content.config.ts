@@ -16,10 +16,6 @@ const seo = z
         description: z.string().optional(),
         /** Overrides the filename when building the URL. */
         slug: z.string().optional(),
-        changeFrequency: z
-            .enum(['always', 'hourly', 'daily', 'weekly', 'monthly', 'yearly', 'never'])
-            .optional(),
-        sitemapPriority: z.string().optional(),
         excludeFromSitemap: z.boolean().default(false),
         noIndex: z.boolean().default(false)
     })

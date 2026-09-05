@@ -82,10 +82,6 @@ export const settings = {
     // the Organization at a person's profile asserts they are the same entity.
     // Those live on the Person entries instead, with `founder` tying them here.
     organizationSameAs: [social.instagram, social.youtube],
-    seo: {
-        defaultChangeFrequency: 'monthly',
-        defaultPriority: '0.7'
-    },
     manifest: {
         themeColor: '#eceff4',
         backgroundColor: '#eceff4',

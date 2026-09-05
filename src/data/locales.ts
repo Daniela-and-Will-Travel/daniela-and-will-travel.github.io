@@ -23,7 +23,11 @@ export const locales = {
         dir: 'ltr',
         label: 'English',
         shorthand: 'EN',
-        locale: 'en-gb',
+        // The site is written from Vancouver and served from a .ca domain, so
+        // en-gb was wrong in both <html lang> and og:locale. It also drives
+        // Intl date formatting, which now reads "March 10, 2025" rather than
+        // "10 March 2025".
+        locale: 'en-ca',
         postSegment: 'writing'
     },
     es: {
