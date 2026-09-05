@@ -11,22 +11,31 @@ import type { GetStaticPaths } from 'astro';
 import { render } from 'astro:content';
 
 import Post from '@layouts/Post.astro';
-import { getPosts, getRelatedPosts, postLang, postUrl } from '@lib/posts';
+// Aliased: `Post` is the layout component imported above.
+import { getPosts, getRelatedIndex, postLang, postUrl, type Post as PostEntry } from '@lib/posts';
 
 export const getStaticPaths = (async () => {
     const posts = await getPosts();
 
-    return Promise.all(
-        posts.map(async (post) => ({
-            // Astro wants the rest param without its leading or trailing slash.
-            params: { slug: postUrl(post).slice(1, -1) },
-            props: {
-                post,
-                lang: postLang(post),
-                related: await getRelatedPosts(post)
-            }
-        }))
-    );
+    // Resolved once per language rather than once per page: the related strip
+    // spreads internal links across the whole archive, so it cannot be decided
+    // from inside a single post.
+    const related = new Map<string, PostEntry[]>();
+    for (const lang of new Set(posts.map(postLang))) {
+        for (const [id, picks] of await getRelatedIndex(lang)) {
+            related.set(id, picks);
+        }
+    }
+
+    return posts.map((post) => ({
+        // Astro wants the rest param without its leading or trailing slash.
+        params: { slug: postUrl(post).slice(1, -1) },
+        props: {
+            post,
+            lang: postLang(post),
+            related: related.get(post.id) ?? []
+        }
+    }));
 }) satisfies GetStaticPaths;
 
 const { post, lang, related } = Astro.props;

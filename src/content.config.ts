@@ -47,6 +47,16 @@ const posts = defineCollection({
         thumbnailDescription: z.string().optional(),
         seo
     })
+        // `modified` is an editorial claim that the post was revised, and it is
+        // the only thing feeding JSON-LD `dateModified` and sitemap `lastmod`.
+        // Deriving it from the filesystem instead was considered and rejected:
+        // `actions/checkout` stamps every file with the clone time, and a git
+        // last-commit date moves for build-only commits too — both would report
+        // a refresh that never happened. Omit it until the content really changes.
+        .refine((data) => !data.modified || data.modified >= data.date, {
+            message: 'modified is earlier than date — a post cannot be revised before it was published',
+            path: ['modified']
+        })
 });
 
 // Editorial pages (about, tools, the legal set) are .astro files under

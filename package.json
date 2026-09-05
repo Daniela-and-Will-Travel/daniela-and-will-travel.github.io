@@ -11,7 +11,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "clean": "rimraf dist .astro node_modules/.astro",
-    "test": "node tests/theme-persistence.test.mjs"
+    "test": "node tests/theme-persistence.test.mjs && node tests/seo.test.mjs"
   },
   "author": {
     "name": "Daniela Sada and William Vandergraaf",

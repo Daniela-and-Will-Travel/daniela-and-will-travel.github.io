@@ -100,7 +100,6 @@ key **fails the build** rather than quietly producing a broken card.
 ---
 title: One Week Japan Itinerary
 date: 2025-03-10
-modified: 2025-03-10
 author: Daniela
 tags:
  - asia
@@ -124,9 +123,27 @@ the last three are what make a post look right in the card grids on the home
 page, the countries page and the related-posts strip. `seo` is optional; set
 `seo.slug` to override the URL slug, which otherwise comes from the filename.
 
+`modified` is optional and deliberately so. It feeds `dateModified` in the
+post's JSON-LD and `lastmod` in the sitemap, so **only add it when the content
+actually changed** — refreshed prices, a new visa rule, a rewritten section.
+Omitted, both fall back to `date`, which is the honest answer for a post that
+has never been revised. Don't mirror `date` into it; the schema rejects a
+`modified` earlier than `date`. It is not derived from the filesystem on
+purpose: `actions/checkout` stamps every file with the clone time, and a git
+last-commit date moves for build-only commits, so either would announce a
+refresh that never happened.
+
 Every tag becomes an archive page at `/<lang>/tag/<tag>/` automatically. Add a
 display override to `TAG_LABEL_OVERRIDES` in `src/lib/format.ts` for any tag
-that doesn't survive plain title casing (`vpn` → `VPN`).
+that doesn't survive plain title casing (`vpn` → `VPN`). A tag holding fewer
+than `MIN_INDEXABLE_TAG_POSTS` posts (`src/lib/posts.ts`, currently 3) still
+gets a page, but it is served `noindex, follow` and kept out of the sitemap — a
+one-post archive is a near-duplicate of the post it lists and competes with it.
+Tags cross the threshold on their own as posts accumulate.
+
+Tags also drive the related-posts strip: it recommends the three posts sharing
+the most tags with the current one, spreading links so no post is left without
+inbound links. Tagging accurately is what makes that work.
 
 ### Images
 
@@ -146,6 +163,14 @@ import Figure from '@components/Figure.astro';
 `Figure` generates AVIF, WebP and original-format variants at several widths.
 **Passing a `caption` also renders the Shutterstock photo credit chip** — it is
 an affiliate placement, so don't skip the caption on our own photographs.
+
+Images lazy-load by default. **The first `Figure` in a post must carry
+`priority`** — it is the one above the fold, and a lazy image isn't discovered
+until layout decides it is near the viewport, which is exactly what makes it a
+slow Largest Contentful Paint. `priority` sets `loading="eager"` and
+`fetchpriority="high"` together. Use it on exactly one image per page; marking
+several is the same as marking none, because they compete with each other.
+`npm test` fails the build if a post's hero isn't eager.
 
 Files in `public/` are copied as-is and are *not* optimized; that folder is for
 icons, fonts and downloads only.

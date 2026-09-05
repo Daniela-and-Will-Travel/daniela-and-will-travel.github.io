@@ -3,7 +3,7 @@ import type { APIRoute } from 'astro';
 import { settings } from '@data/settings.js';
 import { absoluteUrl } from '@lib/i18n';
 import { toRfc3339 } from '@lib/format';
-import { getPosts, getTagIndex, postUrl } from '@lib/posts';
+import { getPosts, getTagIndex, isThinTag, postUrl } from '@lib/posts';
 
 interface PageMetaExport {
     changeFrequency?: string;
@@ -74,6 +74,11 @@ export const GET: APIRoute = async () => {
 
     // --- tag archives -------------------------------------------------------
     for (const entry of tagIndex) {
+        // Thin archives are noindexed by the tag template; submitting a URL we
+        // ask Google not to index is a contradiction it reports back as an
+        // error, so they are left out here too.
+        if (isThinTag(entry)) continue;
+
         const newest = entry.posts[0];
         entries.push({
             loc: absoluteUrl(`/${entry.lang}/tag/${entry.slug}/`, settings.url),
