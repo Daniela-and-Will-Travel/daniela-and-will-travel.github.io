@@ -109,12 +109,14 @@ const manifest = localeUrl('/site.webmanifest', lang);
         <link rel="apple-touch-icon" href="/assets/img/icon-180.png" />
 
         <!-- fonts: self-hosted, so preload the face above the fold rather than
-             waiting for the stylesheet to discover it -->
+             waiting for the stylesheet to discover it. Only the roman face —
+             italic is body copy that is rarely above the fold, and preloading a
+             second face would compete with this one for the same bandwidth. -->
         <link
             rel="preload"
-            href="/assets/fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf"
+            href="/assets/fonts/Albert_Sans/AlbertSans-VariableFont_wght.woff2"
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossorigin
         />
 

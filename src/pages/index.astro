@@ -4,6 +4,7 @@ import Card from '@components/Card.astro';
 import Figure from '@components/Figure.astro';
 
 import { settings } from '@data/settings.js';
+import { allPeople } from '@lib/schema';
 import { absoluteUrl, localeUrl } from '@lib/i18n';
 import { getPosts, getPostsByTag, postUrl } from '@lib/posts';
 
@@ -46,7 +47,10 @@ const jsonLd = [
         name: 'Daniela and Will Travel',
         url: settings.url,
         logo: absoluteUrl('/assets/img/icon-512.png', settings.url),
-        sameAs: [settings.social.instagram, settings.social.youtube, settings.social.unsplash]
+        sameAs: settings.organizationSameAs,
+        // Ties the brand to the two people who write it — the actual source of
+        // first-hand experience behind every guide.
+        founder: allPeople()
     }
 ];
 ---

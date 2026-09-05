@@ -13,7 +13,10 @@ import Card from '@components/Card.astro';
 
 import type { Lang } from '@data/locales';
 import { t } from '@lib/i18n';
-import { getTagIndex, isThinTag, type TagEntry } from '@lib/posts';
+import { getTagIndex, isThinTag, postUrl, type TagEntry } from '@lib/posts';
+import { collectionPageSchema } from '@lib/schema';
+import { settings } from '@data/settings.js';
+import { absoluteUrl } from '@lib/i18n';
 
 export const getStaticPaths = (async () => {
     const index = await getTagIndex();
@@ -38,6 +41,20 @@ const count = entry.posts.length;
 // A tag holding one or two posts says nothing its posts don't already say, so
 // it stays out of the index — but `follow` keeps it passing equity to them.
 const thin = isThinTag(entry);
+
+// Says what this page collects, rather than leaving a crawler to infer it from
+// a grid of links. Emitted on thin archives too — they are noindex, but the
+// list still explains the relationship to the posts they point at.
+const jsonLd = collectionPageSchema({
+    name: entry.label,
+    description: translate('tags.metaDescription', { tag: entry.label }),
+    url: absoluteUrl(`/${entry.lang}/tag/${entry.slug}/`, settings.url),
+    lang,
+    items: entry.posts.map((post) => ({
+        url: absoluteUrl(postUrl(post), settings.url),
+        name: post.data.title
+    }))
+});
 const lede =
     count === 1
         ? translate('tags.countOne', { tag: entry.label })
@@ -52,6 +69,7 @@ const lede =
     imageAlt={entry.posts[0]?.data.heroImageAlt}
     noIndex={thin}
     robots="noindex, follow"
+    jsonLd={jsonLd}
 >
     <header class="page-hero">
         <div class="page-hero__inner">

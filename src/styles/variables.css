@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Albert Sans';
-    src: url('/assets/fonts/Albert_Sans/AlbertSans-VariableFont_wght.ttf') format('truetype');
+    src: url('/assets/fonts/Albert_Sans/AlbertSans-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Albert Sans';
-    src: url('/assets/fonts/Albert_Sans/AlbertSans-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/assets/fonts/Albert_Sans/AlbertSans-Italic-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Bad Script';
-    src: url('/assets/fonts/Bad_Script/BadScript-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/Bad_Script/BadScript-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
