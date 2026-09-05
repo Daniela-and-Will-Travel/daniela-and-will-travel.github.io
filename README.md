@@ -182,7 +182,7 @@ future tweaks stay cheap.
 ### Style guide
 
 A living style guide is published at
-**[`/styleguide/`](https://daniela-and-will-travel.github.io/styleguide/)**
+**[`/styleguide/`](https://danielaandwilltravel.ca/styleguide/)**
 (`src/pages/styleguide.astro`). Every example on that page is rendered with the
 real stylesheet and shown next to the markup that produced it, so it never
 drifts from the site.

@@ -2,9 +2,11 @@
 // so this file stays plain JS with no Astro-only imports.
 
 export const SITE_URL =
-    process.env.URL || process.env.CF_PAGES_URL || 'https://daniela-and-will-travel.github.io';
+    process.env.URL || process.env.CF_PAGES_URL || 'https://danielaandwilltravel.ca';
 
-// github.io is this site's production domain, so never treat it as staging.
+// danielaandwilltravel.ca is this site's production domain — the github.io host
+// only 301s to it — so every canonical, og:url, hreflang and sitemap <loc> must
+// name the .ca apex. Preview builds on pages.dev are the only staging case.
 export const isStaging = Boolean(process.env.CF_PAGES_URL?.includes('pages.dev'));
 
 export const settings = {
