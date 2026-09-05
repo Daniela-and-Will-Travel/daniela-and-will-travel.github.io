@@ -103,8 +103,74 @@ export async function getTagIndex(lang?: Lang): Promise<TagEntry[]> {
     );
 }
 
-/** Up to `count` other posts in the same language, newest first. */
-export async function getRelatedPosts(post: Post, count = 3): Promise<Post[]> {
-    const posts = await getPosts(langOf(post));
-    return posts.filter((candidate) => candidate.id !== post.id).slice(0, count);
+/**
+ * A tag archive earns its place in the index by collecting posts. Below this
+ * many it is a near-duplicate of the one post it lists, and the two compete
+ * with each other for the same query.
+ */
+export const MIN_INDEXABLE_TAG_POSTS = 3;
+
+/** Whether a tag archive is too thin to be worth indexing on its own. */
+export function isThinTag(entry: TagEntry): boolean {
+    return entry.posts.length < MIN_INDEXABLE_TAG_POSTS;
+}
+
+/**
+ * The related-posts strip for every post in a language, keyed by post id.
+ *
+ * Built in one pass for the whole language rather than per page, because the
+ * two things it has to balance pull against each other and only the second is
+ * visible from a single post:
+ *
+ *  1. Relevance. Candidates are ranked by how many editorial tags they share
+ *     with the post being rendered.
+ *  2. Coverage. This module is the site's main source of internal links, and
+ *     internal links are its own vote for what each page is about. It used to
+ *     recommend "the newest three posts that aren't this one", so the three most
+ *     recent articles collected every link on the site and the rest were
+ *     reachable only from the country index. Ranking by tags alone fixes the
+ *     topic mismatch but still strands whichever posts sit on unpopular tags.
+ *
+ * So among candidates tied on shared tags, the one recommended least often so
+ * far wins. `getPosts` is newest-first and `Array.prototype.sort` is stable, so
+ * recency remains the final tie-break.
+ */
+export async function getRelatedIndex(lang: Lang, count = 3): Promise<Map<string, Post[]>> {
+    const posts = await getPosts(lang);
+    const tagsOf = new Map(posts.map((post) => [post.id, new Set(editorialTags(post))]));
+    const timesRecommended = new Map(posts.map((post) => [post.id, 0]));
+    const index = new Map<string, Post[]>();
+
+    for (const post of posts) {
+        const mine = tagsOf.get(post.id)!;
+        const candidates = posts
+            .filter((candidate) => candidate.id !== post.id)
+            .map((candidate) => ({
+                post: candidate,
+                shared: [...tagsOf.get(candidate.id)!].filter((tag) => mine.has(tag)).length
+            }));
+
+        const picks: Post[] = [];
+        const taken = new Set<string>();
+
+        while (picks.length < count && taken.size < candidates.length) {
+            const [best] = candidates
+                .filter((candidate) => !taken.has(candidate.post.id))
+                .sort(
+                    (a, b) =>
+                        b.shared - a.shared ||
+                        timesRecommended.get(a.post.id)! - timesRecommended.get(b.post.id)!
+                );
+
+            if (!best) break;
+
+            picks.push(best.post);
+            taken.add(best.post.id);
+            timesRecommended.set(best.post.id, timesRecommended.get(best.post.id)! + 1);
+        }
+
+        index.set(post.id, picks);
+    }
+
+    return index;
 }

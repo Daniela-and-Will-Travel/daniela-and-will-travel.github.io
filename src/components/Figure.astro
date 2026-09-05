@@ -20,6 +20,19 @@ interface Props {
     caption?: string;
     /** Class applied to the <img>. */
     class?: string;
+    /**
+     * Marks this as the page's LCP image.
+     *
+     * A lazy image is not discovered until layout decides it is near the
+     * viewport, and the browser cannot prioritize what it has not discovered —
+     * so the one image above the fold has to opt out of lazy loading. Sets
+     * `loading="eager"` and `fetchpriority="high"` together, because either
+     * alone leaves the fetch behind the rest of the page.
+     *
+     * Exactly one image per page should carry it: marking several is the same
+     * as marking none, since they then compete with each other.
+     */
+    priority?: boolean;
     loading?: 'lazy' | 'eager';
     fetchpriority?: 'high' | 'low' | 'auto';
     decoding?: 'async' | 'sync' | 'auto';
@@ -31,8 +44,10 @@ const {
     sizes = '100vw',
     caption = '',
     class: className = '',
-    loading = 'lazy',
-    fetchpriority = 'auto',
+    priority = false,
+    // `priority` sets both of these; passing either explicitly still wins.
+    loading = priority ? 'eager' : 'lazy',
+    fetchpriority = priority ? 'high' : 'auto',
     decoding = 'async'
 } = Astro.props;
 

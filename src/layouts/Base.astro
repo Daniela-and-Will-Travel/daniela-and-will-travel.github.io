@@ -19,6 +19,13 @@ interface Props {
     image?: string;
     imageAlt?: string;
     noIndex?: boolean;
+    /**
+     * Robots directive used when `noIndex` is set. Defaults to blocking both,
+     * but a page kept out of the index for being thin — a one-post tag archive
+     * — still wants its links crawled, so it asks for `noindex, follow`.
+     * Staging always wins over this.
+     */
+    robots?: string;
     /** Extra classes on <body>; the old templates used the tag list here. */
     bodyClass?: string;
     /** One or more schema.org objects, emitted as ld+json. */
@@ -32,6 +39,7 @@ const {
     image,
     imageAlt,
     noIndex = false,
+    robots = 'noindex, nofollow',
     bodyClass = '',
     jsonLd
 } = Astro.props;
@@ -47,6 +55,9 @@ const pathname = Astro.url.pathname;
 const canonical = absoluteUrl(pathname, settings.url);
 const socialImage = absoluteUrl(image ?? settings.meta.opengraphDefaultImage, settings.url);
 const socialImageAlt = imageAlt ?? translate('meta.opengraphDefaultAlt');
+
+// Staging is blocked outright; otherwise only a page that asked to be.
+const robotsContent = settings.isStaging ? 'noindex, nofollow' : noIndex ? robots : null;
 
 const alternates = localeLinks(pathname, lang);
 const structuredData = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
@@ -126,7 +137,7 @@ const manifest = localeUrl('/site.webmanifest', lang);
         <link rel="manifest" href={manifest} />
         <meta name="theme-color" media="(prefers-color-scheme: light)" content={settings.themeColorLight} />
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content={settings.themeColorDark} />
-        {(settings.isStaging || noIndex) && <meta name="robots" content="noindex, nofollow" />}
+        {robotsContent && <meta name="robots" content={robotsContent} />}
 
         {
             structuredData.map((entry) => (
