@@ -26,6 +26,7 @@ export function personId(person: PersonSettings): string {
 /** A full Person node, for the page that actually describes them. */
 export function personSchema(person: PersonSettings) {
     return {
+        '@context': 'https://schema.org',
         '@type': 'Person',
         '@id': personId(person),
         name: person.name,

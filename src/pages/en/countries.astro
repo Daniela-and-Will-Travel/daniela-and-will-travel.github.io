@@ -2,7 +2,6 @@
 import Page from '@layouts/Page.astro';
 import Figure from '@components/Figure.astro';
 import { collectionPageSchema } from '@lib/schema';
-import { getPosts, postUrl } from '@lib/posts';
 import { settings } from '@data/settings.js';
 import { absoluteUrl } from '@lib/i18n';
 
@@ -14,17 +13,86 @@ export const meta = {
     "excludeFromSitemap": false
 };
 
-// The cards below are hand-written per continent, but the hub collects the same
-// guides the rest of the site knows about, so the list is built from the posts
-// rather than kept in sync with the markup by hand.
+// The visible cards and structured list share this curated order and content.
+const guides = {
+    "asia": [
+        {
+            "url": "/en/writing/diy-lombok-loop/",
+            "title": "Lombok by Motorbike",
+            "image": "/assets/img/posts/asia/lombokcover.jpeg",
+            "alt": "A waterfall in the hills of Lombok",
+            "category": "Indonesia",
+            "excerpt": "Everything you need to know before riding around Lombok!"
+        },
+        {
+            "url": "/en/writing/komodo-island-tour/",
+            "title": "Visit Komodo Island",
+            "image": "/assets/img/posts/asia/komodocover.jpg",
+            "alt": "Aerial shot of islands surrounded by beaches and blue water",
+            "category": "Indonesia",
+            "excerpt": "Everything you need to know before taking a tour around the Komodo Islands!"
+        },
+        {
+            "url": "/en/writing/diy-the-ha-giang-loop/",
+            "title": "DIY the Ha Giang Loop",
+            "image": "/assets/img/posts/asia/cover.jpg",
+            "alt": "Mountain road winding through northern Vietnam",
+            "category": "Vietnam",
+            "excerpt": "Everything you need to know before doing this incredible ride!"
+        },
+        {
+            "url": "/en/writing/four-months-asia/",
+            "title": "4 Months in Southeast Asia",
+            "image": "/assets/img/posts/asia/IMG_2502.jpeg",
+            "alt": "A view over Southeast Asia",
+            "category": "Itinerary",
+            "excerpt": "An overview of how we planned and executed our four month trip through Southeast Asia!"
+        },
+        {
+            "url": "/en/writing/one-week-japan-itinerary/",
+            "title": "One Week in Japan",
+            "image": "/assets/img/posts/asia/IMG_0495.jpg",
+            "alt": "A street scene in Japan",
+            "category": "Japan",
+            "excerpt": "How to visit Japan on a bougie backpacker budget!"
+        },
+        {
+            "url": "/en/writing/nias-island/",
+            "title": "How to Visit Nias",
+            "image": "/assets/img/posts/asia/niascover.jpeg",
+            "alt": "Waves rolling into the coast of Nias",
+            "category": "Indonesia",
+            "excerpt": "Everything you need to know before traveling to Nias, Indonesia!"
+        }
+    ],
+    "europe": [
+        {
+            "url": "/en/writing/nine-months-europe/",
+            "title": "9 Months in Europe",
+            "image": "/assets/img/posts/europe/IMG_7233.jpg",
+            "alt": "Orange sunset over a Norwegian harbour",
+            "category": "Itinerary",
+            "excerpt": "An overview of how we planned and executed our entire nine month Europe trip!"
+        },
+        {
+            "url": "/en/writing/five-day-iceland-itinerary/",
+            "title": "Five Day Iceland Itinerary",
+            "image": "/assets/img/posts/europe/IMG_6912.jpg",
+            "alt": "An Icelandic landscape",
+            "category": "Iceland",
+            "excerpt": "Follow along with us as we travel through Iceland for five days!"
+        }
+    ]
+};
+
 const jsonLd = collectionPageSchema({
     name: 'Countries',
     description: 'See our top posts from the all the countries we have visited.',
     url: absoluteUrl('/en/countries/', settings.url),
     lang: 'en',
-    items: (await getPosts('en')).map((post) => ({
-        url: absoluteUrl(postUrl(post), settings.url),
-        name: post.data.title
+    items: [...guides.asia, ...guides.europe].map((guide) => ({
+        url: absoluteUrl(guide.url, settings.url),
+        name: guide.title
     }))
 });
 ---
@@ -141,66 +209,18 @@ const jsonLd = collectionPageSchema({
   </div>
 
   <div class="grid grid--2">
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/diy-lombok-loop/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/lombokcover.jpeg" alt="A waterfall in the hills of Lombok" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Indonesia</p>
-        <h3 class="card__title"><a href="/en/writing/diy-lombok-loop/">Lombok by Motorbike</a></h3>
-        <p class="card__excerpt">Everything you need to know before riding around Lombok!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/komodo-island-tour/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/komodocover.jpg" alt="Aerial shot of islands surrounded by beaches and blue water" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Indonesia</p>
-        <h3 class="card__title"><a href="/en/writing/komodo-island-tour/">Visit Komodo Island</a></h3>
-        <p class="card__excerpt">Everything you need to know before taking a tour around the Komodo Islands!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/diy-the-ha-giang-loop/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/cover.jpg" alt="Mountain road winding through northern Vietnam" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Vietnam</p>
-        <h3 class="card__title"><a href="/en/writing/diy-the-ha-giang-loop/">DIY the Ha Giang Loop</a></h3>
-        <p class="card__excerpt">Everything you need to know before doing this incredible ride!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/four-months-asia/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/IMG_2502.jpeg" alt="A view over Southeast Asia" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Itinerary</p>
-        <h3 class="card__title"><a href="/en/writing/four-months-asia/">4 Months in Southeast Asia</a></h3>
-        <p class="card__excerpt">An overview of how we planned and executed our four month trip through Southeast Asia!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/one-week-japan-itinerary/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/IMG_0495.jpg" alt="A street scene in Japan" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Japan</p>
-        <h3 class="card__title"><a href="/en/writing/one-week-japan-itinerary/">One Week in Japan</a></h3>
-        <p class="card__excerpt">How to visit Japan on a bougie backpacker budget!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/nias-island/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/asia/niascover.jpeg" alt="Waves rolling into the coast of Nias" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Indonesia</p>
-        <h3 class="card__title"><a href="/en/writing/nias-island/">How to Visit Nias</a></h3>
-        <p class="card__excerpt">Everything you need to know before traveling to Nias, Indonesia!</p>
-      </div>
-    </article>
+    {guides.asia.map((guide) => (
+      <article class="card">
+        <div class="card__media">
+          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, 100vw" /></a>
+        </div>
+        <div class="card__body">
+          <p class="eyebrow">{guide.category}</p>
+          <h3 class="card__title"><a href={guide.url}>{guide.title}</a></h3>
+          <p class="card__excerpt">{guide.excerpt}</p>
+        </div>
+      </article>
+    ))}
   </div>
 </div>
 
@@ -212,26 +232,18 @@ const jsonLd = collectionPageSchema({
   </div>
 
   <div class="grid grid--2">
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/nine-months-europe/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/europe/IMG_7233.jpg" alt="Orange sunset over a Norwegian harbour" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Itinerary</p>
-        <h3 class="card__title"><a href="/en/writing/nine-months-europe/">9 Months in Europe</a></h3>
-        <p class="card__excerpt">An overview of how we planned and executed our entire nine month Europe trip!</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card__media">
-        <a href="/en/writing/five-day-iceland-itinerary/" tabindex="-1" aria-hidden="true"><Figure src="/assets/img/posts/europe/IMG_6912.jpg" alt="An Icelandic landscape" sizes="(min-width: 60rem) 30vw, 100vw" /></a>
-      </div>
-      <div class="card__body">
-        <p class="eyebrow">Iceland</p>
-        <h3 class="card__title"><a href="/en/writing/five-day-iceland-itinerary/">Five Day Iceland Itinerary</a></h3>
-        <p class="card__excerpt">Follow along with us as we travel through Iceland for five days!</p>
-      </div>
-    </article>
+    {guides.europe.map((guide) => (
+      <article class="card">
+        <div class="card__media">
+          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, 100vw" /></a>
+        </div>
+        <div class="card__body">
+          <p class="eyebrow">{guide.category}</p>
+          <h3 class="card__title"><a href={guide.url}>{guide.title}</a></h3>
+          <p class="card__excerpt">{guide.excerpt}</p>
+        </div>
+      </article>
+    ))}
   </div>
 </div>
 

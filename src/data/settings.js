@@ -34,7 +34,7 @@ export const people = {
         name: 'Daniela Sada',
         jobTitle: 'Travel writer',
         path: '/en/about/#daniela',
-        sameAs: [social.instagram, social.shutterstockDaniela]
+        sameAs: [social.shutterstockDaniela]
     },
     will: {
         id: 'will',
@@ -42,7 +42,6 @@ export const people = {
         jobTitle: 'Travel writer and web developer',
         path: '/en/about/#will',
         sameAs: [
-            social.instagram,
             social.shutterstockWill,
             social.unsplash,
             'https://williamvdg.me',

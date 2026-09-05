@@ -6,6 +6,7 @@
 // tells robots. Run `npm run build` first.
 import fs from 'node:fs';
 import path from 'node:path';
+import { JSDOM } from 'jsdom';
 
 let passed = 0;
 let failed = 0;
@@ -253,11 +254,31 @@ check('about page marks up both people', aboutPeople.length === 2, `saw ${aboutP
 // The @id is a fragment on the about page, so the anchor has to be real.
 const aboutHtml = fs.readFileSync('dist/en/about/index.html', 'utf8');
 for (const person of aboutPeople) {
+    check(
+        `${person.name}: standalone Person has a schema context`,
+        person['@context'] === 'https://schema.org'
+    );
     const anchor = person['@id'].split('#')[1];
     check(`about page has an #${anchor} anchor`, aboutHtml.includes(`id="${anchor}"`));
 }
 
 const org = schemaOf(home).find((entry) => entry['@type'] === 'Organization');
+const brandProfiles = new Set(org?.sameAs ?? []);
+const personNodes = [
+    ...aboutPeople,
+    ...(org?.founder ?? []),
+    ...posts.flatMap(([, html]) => schemaOf(html)
+        .filter((entry) => entry['@type'] === 'BlogPosting')
+        .flatMap((entry) => [entry.author].flat()))
+];
+check(
+    'people do not claim the organization profiles as their identities',
+    personNodes.every((person) => person.sameAs.every((url) => !brandProfiles.has(url)))
+);
+check(
+    'organization retains the shared Instagram profile',
+    brandProfiles.has('https://www.instagram.com/danielaandwill')
+);
 check('organization names its founders', org?.founder?.length === 2);
 check(
     'founder @ids resolve to the about page',
@@ -283,6 +304,19 @@ const countries = fs.readFileSync('dist/en/countries/index.html', 'utf8');
 check(
     'countries page has a CollectionPage',
     schemaOf(countries).some((node) => node['@type'] === 'CollectionPage')
+);
+const countryList = schemaOf(countries).find((node) => node['@type'] === 'CollectionPage')?.mainEntity;
+const countryDocument = new JSDOM(countries, { url: 'https://danielaandwilltravel.ca/en/countries/' }).window.document;
+const countryCards = [...countryDocument.querySelectorAll('.card__title a')].map((link, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    url: link.href,
+    name: link.textContent.trim()
+}));
+check(
+    'countries ItemList matches visible card URLs, titles and order',
+    countryList?.numberOfItems === countryCards.length &&
+        JSON.stringify(countryList?.itemListElement) === JSON.stringify(countryCards)
 );
 
 // --- M4: no empty section on an indexed hub --------------------------------
