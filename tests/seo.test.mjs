@@ -326,5 +326,68 @@ check(
     /class="svg-map-disabled" href="#NorthAmerica"/.test(countries)
 );
 
+// --- hreflang: complete, or absent -----------------------------------------
+//
+// A set naming only the page it sits on is self-referential and says nothing a
+// crawler can't read off the canonical. A partial set — alternates without
+// x-default — is ignored wholesale. So the only two valid states are "no
+// hreflang at all" and "every language plus x-default".
+const allPages = [
+    ['home', fs.readFileSync('dist/index.html', 'utf8')],
+    ['about', fs.readFileSync('dist/en/about/index.html', 'utf8')],
+    ...posts
+];
+
+for (const [name, html] of allPages) {
+    const tags = html.match(/<link rel="alternate" hreflang="[^"]*"[^>]*>/g) ?? [];
+    check(
+        `${name}: hreflang set is complete or absent`,
+        tags.length === 0 || tags.some((tag) => tag.includes('hreflang="x-default"')),
+        `${tags.length} alternates, no x-default`
+    );
+}
+
+// --- locale: .ca domain, authors in Vancouver ------------------------------
+for (const [name, html] of allPages) {
+    check(`${name}: html lang is en-ca`, /<html lang="en-ca"/.test(html));
+    check(`${name}: og:locale is en_ca`, /og:locale" content="en_ca"/.test(html));
+}
+
+// --- sitemap: lastmod on everything, nothing Google ignores ----------------
+check('sitemap declares no priority', !sitemap.includes('<priority>'));
+check('sitemap declares no changefreq', !sitemap.includes('<changefreq>'));
+
+const locs = (sitemap.match(/<loc>/g) ?? []).length;
+const lastmods = (sitemap.match(/<lastmod>/g) ?? []).length;
+check('every sitemap URL carries lastmod', locs === lastmods, `${lastmods} of ${locs}`);
+for (const [, entry] of sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+    const url = new URL(entry.match(/<loc>(.*?)<\/loc>/)[1]);
+    const lastmod = entry.match(/<lastmod>(.*?)<\/lastmod>/)?.[1];
+    check(`${url.pathname}: lastmod is a valid date`, Number.isFinite(Date.parse(lastmod)));
+
+    // Archive dates are derived from their posts; static pages and articles
+    // must match their declared editorial dates, even when that date is today.
+    if (url.pathname.includes('/tag/')) continue;
+    let expected;
+    if (url.pathname.startsWith('/en/writing/')) {
+        expected = postDates.get(url.pathname.split('/').at(-2))?.modified;
+    } else {
+        const file = url.pathname === '/' ? 'index' : url.pathname.slice(1, -1);
+        const source = fs.readFileSync(`src/pages/${file}.astro`, 'utf8');
+        expected = Date.parse(source.match(/lastModified:\s*['"]([^'"]+)['"]/)?.[1]);
+    }
+    check(
+        `${url.pathname}: lastmod matches the declared content date`,
+        Date.parse(lastmod) === expected,
+        lastmod
+    );
+}
+
+// --- the one security header a static host can still set -------------------
+check(
+    'referrer policy is declared',
+    /<meta name="referrer" content="strict-origin-when-cross-origin"/.test(home)
+);
+
 console.log(`\n${passed}/${passed + failed} passed`);
 process.exit(failed ? 1 : 0);
