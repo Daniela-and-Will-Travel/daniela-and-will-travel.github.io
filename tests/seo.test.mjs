@@ -360,11 +360,28 @@ check('sitemap declares no changefreq', !sitemap.includes('<changefreq>'));
 const locs = (sitemap.match(/<loc>/g) ?? []).length;
 const lastmods = (sitemap.match(/<lastmod>/g) ?? []).length;
 check('every sitemap URL carries lastmod', locs === lastmods, `${lastmods} of ${locs}`);
-check(
-    'no lastmod claims the build date',
-    !sitemap.includes(`<lastmod>${today}`),
-    'a page is reporting today as its content date'
-);
+for (const [, entry] of sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+    const url = new URL(entry.match(/<loc>(.*?)<\/loc>/)[1]);
+    const lastmod = entry.match(/<lastmod>(.*?)<\/lastmod>/)?.[1];
+    check(`${url.pathname}: lastmod is a valid date`, Number.isFinite(Date.parse(lastmod)));
+
+    // Archive dates are derived from their posts; static pages and articles
+    // must match their declared editorial dates, even when that date is today.
+    if (url.pathname.includes('/tag/')) continue;
+    let expected;
+    if (url.pathname.startsWith('/en/writing/')) {
+        expected = postDates.get(url.pathname.split('/').at(-2))?.modified;
+    } else {
+        const file = url.pathname === '/' ? 'index' : url.pathname.slice(1, -1);
+        const source = fs.readFileSync(`src/pages/${file}.astro`, 'utf8');
+        expected = Date.parse(source.match(/lastModified:\s*['"]([^'"]+)['"]/)?.[1]);
+    }
+    check(
+        `${url.pathname}: lastmod matches the declared content date`,
+        Date.parse(lastmod) === expected,
+        lastmod
+    );
+}
 
 // --- the one security header a static host can still set -------------------
 check(
