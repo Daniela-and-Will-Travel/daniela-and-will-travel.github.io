@@ -9,7 +9,7 @@
 import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
 
-const SITE = 'https://daniela-and-will-travel.github.io/';
+const SITE = 'https://danielaandwilltravel.ca/';
 
 if (!fs.existsSync('dist/index.html')) {
     console.error('No build found. Run `npm run build` before `npm test`.');
