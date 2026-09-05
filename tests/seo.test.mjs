@@ -127,9 +127,23 @@ for (const entry of fs.readdirSync(tagDir, { withFileTypes: true })) {
 
 // --- H4: dateModified is honest --------------------------------------------
 //
-// It may equal datePublished — most of these posts have never been revised —
-// but it must never precede it, and it must never be the build date.
-const today = new Date().toISOString().slice(0, 10);
+// Compare against the editorial dates, not the wall clock: publishing or
+// genuinely revising a post on the day it is built is valid.
+const postDates = new Map(
+    fs.readdirSync('src/content/posts/en', { recursive: true })
+        .filter((file) => /\.mdx?$/.test(String(file)))
+        .map((file) => {
+            const source = fs.readFileSync(path.join('src/content/posts/en', String(file)), 'utf8');
+            const frontMatter = source.split('---')[1] ?? '';
+            // Posts declare YAML date scalars, e.g. date: 2025-03-10.
+            const date = frontMatter.match(/^date:[ \t]*(\S+)/m)?.[1];
+            const modified = frontMatter.match(/^modified:[ \t]*(\S+)/m)?.[1];
+            return [path.basename(String(file)).replace(/\.mdx?$/, ''), {
+                published: new Date(date).valueOf(),
+                modified: new Date(modified ?? date).valueOf()
+            }];
+        })
+);
 for (const [slug, html] of posts) {
     const blog = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
         .map((m) => JSON.parse(m[1]))
@@ -144,8 +158,13 @@ for (const [slug, html] of posts) {
         `${blog.dateModified} < ${blog.datePublished}`
     );
     check(
-        `${slug}: dateModified is not the build date`,
-        !blog.dateModified.startsWith(today),
+        `${slug}: datePublished matches front matter`,
+        new Date(blog.datePublished).valueOf() === postDates.get(slug)?.published,
+        blog.datePublished
+    );
+    check(
+        `${slug}: dateModified matches front matter`,
+        new Date(blog.dateModified).valueOf() === postDates.get(slug)?.modified,
         blog.dateModified
     );
 }
