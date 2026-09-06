@@ -4,6 +4,8 @@
 
 .affiliate-desktop,
 .affiliate-mobile {
+    display: grid;
+    gap: var(--space-2xs);
     background-color: var(--surface-alt);
     border: 1px solid var(--border);
     border-radius: var(--radius-l);
@@ -11,11 +13,12 @@
     max-width: none;
 }
 
-.affiliate-desktop > div,
-.affiliate-mobile > div {
-    display: grid !important;
-    gap: var(--space-2xs);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+.affiliate-desktop {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.affiliate-mobile {
+    grid-template-columns: minmax(0, 1fr);
 }
 
 .affiliate-box-desktop,
@@ -43,6 +46,8 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: var(--space-s);
+    width: 100%;
+    min-width: 0;
     text-decoration: none;
     color: var(--ink);
 }
@@ -64,10 +69,14 @@
 }
 
 .affiliate-inner-box {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    min-width: 0;
 }
 
 .affiliate-svg {
+    display: block;
     flex-shrink: 0;
     padding-left: 0;
     width: 2rem;
