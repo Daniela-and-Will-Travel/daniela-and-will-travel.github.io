@@ -52,6 +52,21 @@
         linear-gradient(to top, var(--scrim-strong) 0%, color-mix(in srgb, var(--brand-indigo-ink) 20%, transparent) 55%, color-mix(in srgb, var(--brand-indigo-ink) 35%, transparent) 100%);
 }
 
+/* A bottom-weighted gradient assumes the text sits at the bottom. `--center`
+   puts it through the middle of the frame, where that gradient has already
+   faded to 20% — so against the bright sky the blush script line measured
+   1.7:1 and the lede 2.3:1, both failing AA. Lay an even wash under the
+   gradient for these heroes: the vertical shape survives, but the frame stays
+   dark enough throughout that the worst pixel behind each text run clears its
+   threshold — measured 3.7:1 script and 5.8:1 title (both large text, need 3),
+   5.3:1 lede (needs 4.5). The wash is deliberately no heavier than that; past
+   roughly 55% the photograph stops reading as a photograph. */
+.hero--center::after {
+    background:
+        linear-gradient(to top, var(--scrim-strong) 0%, color-mix(in srgb, var(--brand-indigo-ink) 30%, transparent) 60%, color-mix(in srgb, var(--brand-indigo-ink) 40%, transparent) 100%),
+        color-mix(in srgb, var(--brand-indigo-ink) 48%, transparent);
+}
+
 .hero__inner {
     width: 100%;
     max-width: var(--width-wide);
