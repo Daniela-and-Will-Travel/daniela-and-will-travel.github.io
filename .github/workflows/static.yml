@@ -81,3 +81,36 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      # Tell the IndexNow endpoint what just went live. Bing, Yandex, Seznam and
+      # Naver share one submission; Google does not participate. The key is
+      # public by design — it proves control of the domain only because the file
+      # at /<key>.txt is served from it, so there is nothing here to keep secret.
+      #
+      # Deliberately non-fatal: the site is already deployed by this point, and
+      # a search engine declining a ping is not a reason to redden a release.
+      - name: Notify IndexNow
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: 421a7622a751bb88818f33cf9d293353
+        run: |
+          urls=$(curl -sf https://danielaandwilltravel.ca/sitemap.xml \
+            | grep -o '<loc>[^<]*</loc>' \
+            | sed -e 's|<loc>||' -e 's|</loc>||' \
+            | jq -R . | jq -s .)
+          count=$(echo "$urls" | jq 'length')
+          echo "Submitting $count URLs to IndexNow"
+          test "$count" -gt 0 || { echo "No URLs found in sitemap; skipping."; exit 0; }
+          payload=$(jq -n \
+            --arg host danielaandwilltravel.ca \
+            --arg key "$INDEXNOW_KEY" \
+            --arg keyLocation "https://danielaandwilltravel.ca/$INDEXNOW_KEY.txt" \
+            --argjson urlList "$urls" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}')
+          status=$(curl -s -o /tmp/indexnow.out -w '%{http_code}' \
+            -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "$payload")
+          echo "IndexNow responded $status"
+          cat /tmp/indexnow.out
+          # 200 accepted, 202 accepted pending key validation.
+          case "$status" in 200|202) exit 0 ;; *) exit 1 ;; esac
