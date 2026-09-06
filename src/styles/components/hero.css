@@ -305,9 +305,21 @@
     color: var(--ink-faint);
 }
 
+/* The label stays small; the tap area does not. A 14px-tall link is a
+   mis-tap waiting to happen on a phone, so pad the anchor out to 44px and pull
+   the row back in with a negative margin so the trail keeps its spacing. */
 .breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 0.25em;
+    margin-inline: -0.25em;
     color: var(--accent-deep);
     text-decoration: none;
+}
+
+.breadcrumb {
+    margin-block: -0.5rem;
 }
 
 .breadcrumb a:hover {
