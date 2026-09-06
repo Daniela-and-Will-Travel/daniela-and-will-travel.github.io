@@ -61,6 +61,51 @@ export function allPeople() {
     return [people.daniela, people.will].map(personSchema);
 }
 
+/** Canonical `@id` for the Organization, mirroring what `personId` does. */
+export function organizationId(): string {
+    return `${settings.url}/#organization`;
+}
+
+/**
+ * The full Organization node, built once on the home page.
+ *
+ * The people already resolve by `@id`; the Organization did not, so every post
+ * described a second, thinner publisher of the same name — no `url`, no
+ * `sameAs`, no `founder` — and a crawler had two look-alike brands to
+ * reconcile. Build it here, reference it everywhere else.
+ */
+export function organizationSchema() {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': organizationId(),
+        name: 'Daniela and Will Travel',
+        url: settings.url,
+        logo: absoluteUrl('/assets/img/icon-512.png', settings.url),
+        sameAs: settings.organizationSameAs,
+        // Ties the brand to the two people who write it — the actual source of
+        // first-hand experience behind every guide.
+        founder: allPeople()
+    };
+}
+
+/** What a post's `publisher` should be: a pointer, not a second copy. */
+export function publisherRef() {
+    return { '@id': organizationId() };
+}
+
+/**
+ * The About-page anchor for an `author:` string, or undefined when the name
+ * isn't one of ours. One author resolves to their own section; a co-written
+ * post resolves to the page itself, since the byline names them jointly.
+ */
+export function authorHref(author?: string): string | undefined {
+    const matched = author ? authorsByName[author as keyof typeof authorsByName] : undefined;
+
+    if (!matched) return undefined;
+    return matched.length === 1 ? matched[0].path : '/en/about/';
+}
+
 export interface CollectionItem {
     url: string;
     name: string;

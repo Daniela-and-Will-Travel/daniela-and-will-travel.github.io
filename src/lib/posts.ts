@@ -12,7 +12,7 @@ export type Post = CollectionEntry<'posts'>;
  */
 const STRUCTURAL_TAGS = new Set(['posts', 'page', 'home', 'all']);
 
-/** Entry ids look like `en/asia/one-week-japan-itinerary`. */
+/** Entry ids look like `en/asia/nine-day-japan-itinerary`. */
 function langOf(post: Post): Lang {
     const [first] = post.id.split('/');
     return isLang(first) ? first : DEFAULT_LANG;

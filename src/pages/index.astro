@@ -4,12 +4,12 @@ import Card from '@components/Card.astro';
 import Figure from '@components/Figure.astro';
 
 import { settings } from '@data/settings.js';
-import { allPeople } from '@lib/schema';
-import { absoluteUrl, localeUrl } from '@lib/i18n';
+import { organizationSchema } from '@lib/schema';
+import { localeUrl } from '@lib/i18n';
 import { getPosts, getPostsByTag, postUrl } from '@lib/posts';
 
 export const meta = {
-    lastModified: '2026-09-04',
+    lastModified: '2026-09-06',
     title: 'Travel Blog & Travel Guides',
     lang: 'en',
     excludeFromSitemap: false
@@ -40,23 +40,13 @@ const jsonLd = [
         description: meta.title,
         inLanguage: lang
     },
-    {
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'Daniela and Will Travel',
-        url: settings.url,
-        logo: absoluteUrl('/assets/img/icon-512.png', settings.url),
-        sameAs: settings.organizationSameAs,
-        // Ties the brand to the two people who write it — the actual source of
-        // first-hand experience behind every guide.
-        founder: allPeople()
-    }
+    organizationSchema()
 ];
 ---
 
 <Base
     title="Travel Blog & Travel Guides"
-    description="Daniela and Will's travel blog featuring travel guides and tips and tricks for a gap year throughout Europe or Asia."
+    description="Travel guides, itineraries and honest budgets from Daniela and Will, covering nine months across Europe and four months through Southeast Asia."
     lang={lang}
     bodyClass="home"
     jsonLd={jsonLd}
@@ -115,7 +105,7 @@ const jsonLd = [
                             as="h3"
                             class="feature-row__lead"
                             eyebrow="Newest guide"
-                            sizes="(min-width: 60rem) 60vw, 100vw"
+                            sizes="(min-width: 60rem) 60vw, calc(100vw - 50px)"
                         />
 
                         <div class="feature-row__aside">
@@ -125,7 +115,7 @@ const jsonLd = [
                                     lang={lang}
                                     as="h3"
                                     class="card--horizontal"
-                                    sizes="(min-width: 60rem) 20vw, 100vw"
+                                    sizes="(min-width: 60rem) 20vw, calc(100vw - 50px)"
                                     showDate={false}
                                 />
                             ))}
@@ -153,7 +143,7 @@ const jsonLd = [
                     <Figure
                         src="/assets/img/posts/asia/cover.jpg"
                         alt="Limestone karsts rising out of the water in Southeast Asia"
-                        sizes="(min-width: 60rem) 33vw, 100vw"
+                        sizes="(min-width: 60rem) 33vw, calc(100vw - 50px)"
                     />
                     <span class="tile__label">
                         <span class="tile__count">{asiaPosts.length} guides</span>
@@ -165,7 +155,7 @@ const jsonLd = [
                     <Figure
                         src="/assets/img/posts/europe/IMG_7233.jpg"
                         alt="A European street scene on a bright day"
-                        sizes="(min-width: 60rem) 33vw, 100vw"
+                        sizes="(min-width: 60rem) 33vw, calc(100vw - 50px)"
                     />
                     <span class="tile__label">
                         <span class="tile__count">{europePosts.length} guides</span>
@@ -263,7 +253,7 @@ const jsonLd = [
                         <Figure
                             src="/assets/img/IMG_0237.jpg"
                             alt="Daniela and Will on the coast of Portugal"
-                            sizes="(min-width: 60rem) 60vw, 100vw"
+                            sizes="(min-width: 60rem) 60vw, calc(100vw - 50px)"
                         />
                     </div>
                 </div>

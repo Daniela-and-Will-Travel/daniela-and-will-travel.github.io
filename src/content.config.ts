@@ -23,6 +23,35 @@ const seo = z
     // site-side goes through `post.data.seo?.…`.
     .optional();
 
+/**
+ * The at-a-glance facts an itinerary is actually searched for.
+ *
+ * These live in front matter rather than being parsed back out of the prose:
+ * the numbers are already stated in the body, but a reader deciding whether to
+ * read at all should not have to find them, and a search engine should not have
+ * to infer them. Optional, because only itinerary posts have a shape like this.
+ */
+const trip = z
+    .object({
+        /** Human-readable, e.g. "9 days". Shown as-is. */
+        duration: z.string(),
+        bestSeason: z.string().optional(),
+        /** What it cost us, phrased for a reader: "$170 CAD per day for two". */
+        budget: z.string().optional(),
+        /** The route, in order. Feeds both the facts block and ItemList schema. */
+        stops: z
+            .array(
+                z.object({
+                    /** e.g. "Days 1-3" — matches the section heading. */
+                    days: z.string(),
+                    place: z.string()
+                })
+            )
+            .min(2)
+            .optional()
+    })
+    .optional();
+
 const posts = defineCollection({
     loader: glob({
         pattern: '**/*.{md,mdx}',
@@ -41,6 +70,7 @@ const posts = defineCollection({
         /** Overrides heroImage for social cards. */
         thumbnail: z.string().optional(),
         thumbnailDescription: z.string().optional(),
+        trip,
         seo
     })
         // `modified` is an editorial claim that the post was revised, and it is

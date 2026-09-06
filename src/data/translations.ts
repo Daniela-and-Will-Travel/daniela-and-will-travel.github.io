@@ -47,6 +47,10 @@ export const translations = {
         },
         post: {
             by: 'By {{ author }}',
+            tripDuration: 'Trip length',
+            tripSeason: 'Best time to go',
+            tripBudget: 'What we spent',
+            tripRoute: 'Route',
             affiliateNotice:
                 'This post may contain affiliate links, which help support us at no cost to you! Learn&nbsp;more',
             affiliateLink: 'here',
@@ -56,7 +60,8 @@ export const translations = {
         },
         tags: {
             eyebrow: 'Tag',
-            metaDescription: 'Every travel guide we have written about {{ tag }}.',
+            metaDescription:
+                'Every guide, itinerary and honest budget we have published about {{ tag }}, written from our own trips across Europe and Southeast Asia.',
             count: '{{ count }} guides tagged {{ tag }}.',
             countOne: '1 guide tagged {{ tag }}.',
             browseEyebrow: 'Browse',
@@ -116,6 +121,10 @@ export const translations = {
         },
         post: {
             by: 'Por {{ author }}',
+            tripDuration: 'Duración del viaje',
+            tripSeason: 'Mejor época para ir',
+            tripBudget: 'Lo que gastamos',
+            tripRoute: 'Ruta',
             affiliateNotice:
                 'Esta publicación puede contener enlaces de afiliados, que nos ayudan sin ningún costo para ti. Más&nbsp;información',
             affiliateLink: 'aquí',
@@ -125,7 +134,8 @@ export const translations = {
         },
         tags: {
             eyebrow: 'Etiqueta',
-            metaDescription: 'Todas las guías de viaje que hemos escrito sobre {{ tag }}.',
+            metaDescription:
+                'Todas las guías, itinerarios y presupuestos que hemos publicado sobre {{ tag }}, escritos desde nuestros propios viajes por Europa y Asia.',
             count: '{{ count }} guías etiquetadas {{ tag }}.',
             countOne: '1 guía etiquetada {{ tag }}.',
             browseEyebrow: 'Explorar',

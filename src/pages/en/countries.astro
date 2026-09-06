@@ -6,7 +6,7 @@ import { settings } from '@data/settings.js';
 import { absoluteUrl } from '@lib/i18n';
 
 export const meta = {
-    lastModified: '2026-09-04',
+    lastModified: '2026-09-06',
     "title": "Countries",
     "lang": "en",
     "excludeFromSitemap": false
@@ -48,7 +48,7 @@ const guides = {
             "excerpt": "An overview of how we planned and executed our four month trip through Southeast Asia!"
         },
         {
-            "url": "/en/writing/one-week-japan-itinerary/",
+            "url": "/en/writing/nine-day-japan-itinerary/",
             "title": "One Week in Japan",
             "image": "/assets/img/posts/asia/IMG_0495.jpg",
             "alt": "A street scene in Japan",
@@ -86,7 +86,8 @@ const guides = {
 
 const jsonLd = collectionPageSchema({
     name: 'Countries',
-    description: 'See our top posts from the all the countries we have visited.',
+    description:
+        'Browse our travel guides by country across Europe and Southeast Asia, from Iceland and Norway to Vietnam, Indonesia, Japan and everywhere between.',
     url: absoluteUrl('/en/countries/', settings.url),
     lang: 'en',
     items: [...guides.asia, ...guides.europe].map((guide) => ({
@@ -100,7 +101,7 @@ const jsonLd = collectionPageSchema({
     title="Countries"
     lang="en"
     byline="Two continents, one long list of guides. Tap a continent on the map to jump to its posts."
-    description="See our top posts from the all the countries we have visited."
+    description="Browse our travel guides by country across Europe and Southeast Asia, from Iceland and Norway to Vietnam, Indonesia, Japan and everywhere between."
     bodyClass="countries"
     jsonLd={jsonLd}
 >
@@ -211,7 +212,7 @@ const jsonLd = collectionPageSchema({
     {guides.asia.map((guide) => (
       <article class="card">
         <div class="card__media">
-          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, 100vw" /></a>
+          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, calc(100vw - 50px)" /></a>
         </div>
         <div class="card__body">
           <p class="eyebrow">{guide.category}</p>
@@ -234,7 +235,7 @@ const jsonLd = collectionPageSchema({
     {guides.europe.map((guide) => (
       <article class="card">
         <div class="card__media">
-          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, 100vw" /></a>
+          <a href={guide.url} tabindex="-1" aria-hidden="true"><Figure src={guide.image} alt={guide.alt} sizes="(min-width: 60rem) 30vw, calc(100vw - 50px)" /></a>
         </div>
         <div class="card__body">
           <p class="eyebrow">{guide.category}</p>
