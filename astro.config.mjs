@@ -25,7 +25,12 @@ export default defineConfig({
     // route list we generate the sitemap from.
     redirects: {
         '/en/': '/',
-        '/es/': '/'
+        '/es/': '/',
+        // Renamed when the itinerary was renumbered: the stays it describes add
+        // up to nine days, not seven. A static host cannot 301, so this is the
+        // same meta-refresh stub, and its canonical points at the new URL so
+        // the two don't compete.
+        '/en/writing/one-week-japan-itinerary/': '/en/writing/nine-day-japan-itinerary/'
     },
 
     markdown: {
