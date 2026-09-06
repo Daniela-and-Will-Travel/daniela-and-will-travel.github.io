@@ -6,6 +6,7 @@
 // tells robots. Run `npm run build` first.
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { JSDOM } from 'jsdom';
 
 let passed = 0;
@@ -26,12 +27,20 @@ if (!fs.existsSync('dist/index.html')) {
     process.exit(1);
 }
 
-/** Every built post page, as [slug, html]. */
+/**
+ * Every built post page, as [slug, html].
+ *
+ * A renamed post leaves a redirect stub behind at its old URL, which lives in
+ * this directory and is emphatically not a post: no hero, no schema, no H1.
+ */
+const isRedirectStub = (html) => /<meta http-equiv="refresh"/i.test(html);
+
 const postDir = 'dist/en/writing';
 const posts = fs
     .readdirSync(postDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
-    .map((entry) => [entry.name, fs.readFileSync(path.join(postDir, entry.name, 'index.html'), 'utf8')]);
+    .map((entry) => [entry.name, fs.readFileSync(path.join(postDir, entry.name, 'index.html'), 'utf8')])
+    .filter(([, html]) => !isRedirectStub(html));
 
 check('found the built post pages', posts.length >= 12, `saw ${posts.length}`);
 
@@ -351,6 +360,97 @@ for (const [name, html] of allPages) {
 for (const [name, html] of allPages) {
     check(`${name}: html lang is en-ca`, /<html lang="en-ca"/.test(html));
     check(`${name}: og:locale is en_ca`, /og:locale" content="en_ca"/.test(html));
+}
+
+// --- meta descriptions: long enough to be worth showing --------------------
+//
+// Google rewrites a description it considers unhelpful, and a 25-character
+// stub ("Learn about our policies.") is the shape it rewrites most readily —
+// three of those were identical across the legal pages. 160 is roughly where
+// desktop truncation starts, so the useful band is 120-160.
+const indexablePages = fs
+    .readdirSync('dist', { recursive: true, withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name === 'index.html')
+    .map((entry) => path.join(entry.parentPath ?? entry.path, entry.name))
+    .map((file) => [
+        `/${path.relative('dist', file).replace(/\\/g, '/').replace(/index\.html$/, '')}`,
+        fs.readFileSync(file, 'utf8')
+    ])
+    .filter(([, html]) => !/<meta name="robots" content="noindex/.test(html));
+
+check('found the indexable pages', indexablePages.length >= 24, `saw ${indexablePages.length}`);
+
+const seenDescriptions = new Map();
+for (const [url, html] of indexablePages) {
+    const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1];
+    check(`${url}: has a meta description`, Boolean(description));
+    if (!description) continue;
+
+    // Entities are one character to a reader, so measure the decoded string.
+    const length = description.replace(/&[a-z]+;|&#\d+;/g, 'x').length;
+    check(
+        `${url}: meta description is 120-160 characters`,
+        length >= 120 && length <= 160,
+        `${length} chars`
+    );
+
+    seenDescriptions.set(description, [...(seenDescriptions.get(description) ?? []), url]);
+}
+
+for (const [, urls] of seenDescriptions) {
+    check(`${urls[0]}: meta description is not reused`, urls.length === 1, urls.join(', '));
+}
+
+// --- lastModified is declared by hand, so check it against git --------------
+//
+// sitemap.xml.ts trusts a date the page declares about itself, which is the
+// right design — a build stamp claims every page changed on every deploy. The
+// cost is that the field goes stale silently: countries.astro declared
+// 2026-09-04 through a commit that rewrote half of it the next day.
+const gitDate = (file) => {
+    const stamp = execFileSync('git', ['log', '-1', '--format=%cI', '--', file], {
+        encoding: 'utf8'
+    }).trim();
+    return stamp ? new Date(stamp) : undefined;
+};
+
+// A tree with uncommitted edits would report the last commit, not the working
+// state, so this only means anything on a clean checkout of the file.
+const staticPages = fs
+    .readdirSync('src/pages/en')
+    .filter((name) => name.endsWith('.astro'))
+    .map((name) => `src/pages/en/${name}`)
+    .concat('src/pages/index.astro');
+
+const declaredDates = new Map();
+for (const file of staticPages) {
+    const source = fs.readFileSync(file, 'utf8');
+    const declared = source.match(/lastModified:\s*['"]([^'"]+)['"]/)?.[1];
+    check(`${file}: declares lastModified`, Boolean(declared));
+    if (!declared) continue;
+
+    const dirty = execFileSync('git', ['status', '--porcelain', '--', file], { encoding: 'utf8' });
+    if (!dirty.trim()) {
+        const committed = gitDate(file);
+        // Same-day edits are fine; the failure this catches is a declared date
+        // that sits *behind* a commit which changed the file.
+        const declaredDay = new Date(`${declared}T23:59:59Z`);
+        check(
+            `${file}: lastModified is not behind its last commit`,
+            !committed || committed <= declaredDay,
+            `declared ${declared}, last commit ${committed?.toISOString().slice(0, 10)}`
+        );
+    }
+
+    declaredDates.set(declared, [...(declaredDates.get(declared) ?? []), file]);
+}
+
+// Five unrelated documents do not change on the same day. This is a warning
+// rather than a failure: a genuine site-wide edit can legitimately share one.
+for (const [date, files] of declaredDates) {
+    if (files.length >= 3) {
+        console.warn(`WARN  ${files.length} pages share lastModified ${date} — ${files.join(', ')}`);
+    }
 }
 
 // --- sitemap: lastmod on everything, nothing Google ignores ----------------
