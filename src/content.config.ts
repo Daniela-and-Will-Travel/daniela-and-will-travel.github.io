@@ -70,6 +70,14 @@ const posts = defineCollection({
         /** Overrides heroImage for social cards. */
         thumbnail: z.string().optional(),
         thumbnailDescription: z.string().optional(),
+        /**
+         * A whole-trip overview rather than a single destination — the post
+         * that answers "what if I have longer than a week?". The related-posts
+         * strip pins one of these to every destination post on the same
+         * continent, because that is the question a one-week itinerary raises
+         * and nothing else on the site answers it.
+         */
+        overview: z.boolean().default(false),
         trip,
         seo
     })
