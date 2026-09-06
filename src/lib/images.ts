@@ -44,12 +44,21 @@ export async function resolveImage(src: string): Promise<ImageMetadata> {
 }
 
 /**
- * The widths the Eleventy shortcode generated, clamped to the source image —
- * Astro will not upscale, so asking for 2400px from a 1200px original is an error.
- * The intrinsic width is always included so the largest srcset entry is the
+ * The candidate widths for a srcset, clamped to the source image — Astro will
+ * not upscale, so asking for 2400px from a 1200px original is an error. The
+ * intrinsic width is always included so the largest srcset entry is the
  * sharpest the original can actually deliver.
+ *
+ * The 300/600/1200/2400 ladder came over from the Eleventy shortcode and was
+ * too sparse for the current layout: a card renders around 362 CSS px, so on a
+ * 2x screen the browser wants ~700px, finds nothing between 600 and 1200, and
+ * takes the 1200 — roughly twice the bytes it needs. The 400/640/800 rungs
+ * exist to be picked at those sizes.
  */
-export function responsiveWidths(image: ImageMetadata, widths = [300, 600, 1200, 2400]): number[] {
+export function responsiveWidths(
+    image: ImageMetadata,
+    widths = [300, 400, 640, 800, 1200, 2400]
+): number[] {
     const usable = widths.filter((width) => width < image.width);
     return [...new Set([...usable, image.width])].sort((a, b) => a - b);
 }
