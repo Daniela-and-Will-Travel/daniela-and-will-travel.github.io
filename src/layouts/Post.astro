@@ -4,7 +4,7 @@ import { settings } from '@data/settings.js';
 import { formatDate, readingTime, tagLabel, toRfc3339 } from '@lib/format';
 import { absoluteUrl, localeFallbackUrl, t } from '@lib/i18n';
 import { editorialTags, postUrl, type Post } from '@lib/posts';
-import { authorSchema } from '@lib/schema';
+import { authorHref, authorSchema, publisherRef } from '@lib/schema';
 import { slugify } from '@lib/format';
 
 import Base from './Base.astro';
@@ -23,11 +23,14 @@ const { post, lang, related } = Astro.props;
 // straight to a component, so there is no HTML string to count at this point.
 // Stripping the JSX tags and front matter leaves essentially the same prose.
 const prose = (post.body ?? '').replace(/<[^>]+>/g, ' ').replace(/^import .*$/gm, '');
-const { title, byline, author, date, modified, heroImage, heroImageAlt, seo } = post.data;
+const { title, byline, author, date, modified, heroImage, heroImageAlt, seo, trip } = post.data;
 
 const translate = t(lang);
 const tags = editorialTags(post);
 const url = postUrl(post);
+
+const authorName = author ?? settings.author.name;
+const authorBio = authorHref(author);
 
 const jsonLd = [
     {
@@ -41,14 +44,7 @@ const jsonLd = [
         inLanguage: lang,
         keywords: tags.map(tagLabel).join(', '),
         author: authorSchema(author),
-        publisher: {
-            '@type': 'Organization',
-            name: translate('meta.title'),
-            logo: {
-                '@type': 'ImageObject',
-                url: absoluteUrl('/assets/img/icon-512.png', settings.url)
-            }
-        },
+        publisher: publisherRef(),
         mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(url, settings.url) }
     },
     {
@@ -78,7 +74,25 @@ const jsonLd = [
                 item: absoluteUrl(url, settings.url)
             }
         ]
-    }
+    },
+    // An itinerary is a sequence, and saying so is the difference between a
+    // page that mentions six cities and a page that puts them in an order.
+    ...(trip?.stops?.length
+        ? [
+              {
+                  '@context': 'https://schema.org',
+                  '@type': 'ItemList',
+                  name: title,
+                  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+                  numberOfItems: trip.stops.length,
+                  itemListElement: trip.stops.map((stop, index) => ({
+                      '@type': 'ListItem',
+                      position: index + 1,
+                      name: `${stop.days}: ${stop.place}`
+                  }))
+              }
+          ]
+        : [])
 ];
 ---
 
@@ -112,7 +126,20 @@ const jsonLd = [
 
                 <ul class="meta-line post-hero__meta">
                     <li class="meta-author">
-                        {translate('post.by', { author: author ?? settings.author.name })}
+                        {
+                            // The Person schema already points at these anchors as its
+                            // `@id`; without the link the markup and the schema disagree
+                            // about whether a byline names an entity or just a string.
+                            authorBio ? (
+                                <Fragment
+                                    set:html={translate('post.by', {
+                                        author: `<a href="${authorBio}" rel="author">${authorName}</a>`
+                                    })}
+                                />
+                            ) : (
+                                translate('post.by', { author: authorName })
+                            )
+                        }
                     </li>
                     <li class="meta-date">
                         <time class="entry-date published" datetime={toRfc3339(date)}>
@@ -121,6 +148,38 @@ const jsonLd = [
                     </li>
                     <li class="meta-reading-time">{readingTime(prose, lang)}</li>
                 </ul>
+
+                {
+                    // The figures a reader wants before deciding to read at all.
+                    // They are all stated in the body too; this is about not
+                    // making someone scroll to find out how long the trip is.
+                    trip && (
+                        <dl class="trip-facts">
+                            <div>
+                                <dt>{translate('post.tripDuration')}</dt>
+                                <dd>{trip.duration}</dd>
+                            </div>
+                            {trip.bestSeason && (
+                                <div>
+                                    <dt>{translate('post.tripSeason')}</dt>
+                                    <dd>{trip.bestSeason}</dd>
+                                </div>
+                            )}
+                            {trip.budget && (
+                                <div>
+                                    <dt>{translate('post.tripBudget')}</dt>
+                                    <dd>{trip.budget}</dd>
+                                </div>
+                            )}
+                            {trip.stops && (
+                                <div class="trip-facts__route">
+                                    <dt>{translate('post.tripRoute')}</dt>
+                                    <dd>{trip.stops.map((stop) => stop.place).join(' → ')}</dd>
+                                </div>
+                            )}
+                        </dl>
+                    )
+                }
             </div>
         </header>
 
