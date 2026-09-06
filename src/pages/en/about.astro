@@ -1,7 +1,9 @@
 ---
 import Page from '@layouts/Page.astro';
 import Figure from '@components/Figure.astro';
-import { allPeople } from '@lib/schema';
+import { allPeople, breadcrumbSchema } from '@lib/schema';
+import { absoluteUrl } from '@lib/i18n';
+import { settings } from '@data/settings.js';
 
 export const meta = {
     lastModified: '2026-09-06',
@@ -9,6 +11,14 @@ export const meta = {
     "lang": "en",
     "excludeFromSitemap": false
 };
+
+const jsonLd = [
+    ...allPeople(),
+    breadcrumbSchema([
+        { name: 'Home', url: absoluteUrl('/', settings.url) },
+        { name: 'About Us', url: absoluteUrl('/en/about/', settings.url) }
+    ])
+];
 ---
 
 <Page
@@ -18,7 +28,7 @@ export const meta = {
     byline="Two Vancouverites who kept saying yes to one more country. This is where we write it all down."
     description="Meet Daniela and Will, two Canadians who spent nine months in Europe and four in Southeast Asia, and find out why we write these guides."
     bodyClass="about"
-    jsonLd={allPeople()}
+    jsonLd={jsonLd}
 >
 <p class="lede">
   Welcome to our travel blog! In 2022&ndash;23 we embarked on a nine month trip through Europe, and in 2025 we traveled through Southeast Asia. We share those trips along with the tips, guides, and recommendations we picked up along the way &mdash; so you don't make the same mistakes we did.

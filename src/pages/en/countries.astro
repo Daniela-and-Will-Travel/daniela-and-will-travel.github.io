@@ -1,7 +1,7 @@
 ---
 import Page from '@layouts/Page.astro';
 import Figure from '@components/Figure.astro';
-import { collectionPageSchema } from '@lib/schema';
+import { breadcrumbSchema, collectionPageSchema } from '@lib/schema';
 import { settings } from '@data/settings.js';
 import { absoluteUrl } from '@lib/i18n';
 
@@ -84,17 +84,23 @@ const guides = {
     ]
 };
 
-const jsonLd = collectionPageSchema({
+const jsonLd = [
+    collectionPageSchema({
     name: 'Countries',
     description:
         'Browse our travel guides by country across Europe and Southeast Asia, from Iceland and Norway to Vietnam, Indonesia, Japan and everywhere between.',
     url: absoluteUrl('/en/countries/', settings.url),
     lang: 'en',
     items: [...guides.asia, ...guides.europe].map((guide) => ({
-        url: absoluteUrl(guide.url, settings.url),
-        name: guide.title
-    }))
-});
+            url: absoluteUrl(guide.url, settings.url),
+            name: guide.title
+        }))
+    }),
+    breadcrumbSchema([
+        { name: 'Home', url: absoluteUrl('/', settings.url) },
+        { name: 'Countries', url: absoluteUrl('/en/countries/', settings.url) }
+    ])
+];
 ---
 
 <Page

@@ -22,12 +22,27 @@
     font-display: swap;
 }
 
+/* Subset to Latin: Basic Latin, Latin-1, Latin Extended-A and the punctuation
+   we actually set. The shipped face carried Cyrillic and a long tail besides —
+   758 codepoints for a decorative font that renders two strings, the hero
+   kicker and the footer wordmark. Dropping what neither locale can use takes
+   it from 78 KB to 32 KB. Regenerate with:
+
+   pyftsubset BadScript-Regular.woff2 \
+     --unicodes="U+0020-007E,U+00A0-00FF,U+0100-017F,U+2010-2015,U+2018-201D,U+2026,U+2039-203A,U+20AC" \
+     --layout-features="kern,liga,clig,calt,ccmp,locl,mark,mkmk" \
+     --flavor=woff2 --output-file=BadScript-Regular.woff2
+
+   The unicode-range below tells the browser not to download it at all for text
+   outside those blocks. */
 @font-face {
     font-family: 'Bad Script';
     src: url('/assets/fonts/Bad_Script/BadScript-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+    unicode-range: U+0020-007E, U+00A0-00FF, U+0100-017F, U+2010-2015, U+2018-201D, U+2026,
+        U+2039-203A, U+20AC;
 }
 
 :root {

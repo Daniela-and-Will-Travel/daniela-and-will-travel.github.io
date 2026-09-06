@@ -133,6 +133,9 @@
     justify-content: center;
     gap: 0.5em;
     margin-inline-start: auto;
+    /* 0.6em of padding on a --step--2 label lands at 36px tall, under the 44px
+       minimum for a control this important on a phone. */
+    min-height: 44px;
     padding: 0.6em 1em;
     background: transparent;
     border: 1px solid var(--border);

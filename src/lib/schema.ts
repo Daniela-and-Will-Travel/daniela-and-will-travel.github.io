@@ -106,6 +106,32 @@ export function authorHref(author?: string): string | undefined {
     return matched.length === 1 ? matched[0].path : '/en/about/';
 }
 
+export interface BreadcrumbSegment {
+    name: string;
+    url: string;
+}
+
+/**
+ * A breadcrumb trail, as its own node.
+ *
+ * Posts have carried one since the entity-graph work; the collection pages and
+ * the About page had none, so the only thing describing their place in the site
+ * was the URL. The hierarchy here is two or three levels deep at most, which is
+ * exactly why this is worth emitting rather than leaving to inference.
+ */
+export function breadcrumbSchema(segments: BreadcrumbSegment[]) {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: segments.map((segment, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: segment.name,
+            item: segment.url
+        }))
+    };
+}
+
 export interface CollectionItem {
     url: string;
     name: string;

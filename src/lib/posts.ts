@@ -141,10 +141,17 @@ export async function getRelatedIndex(lang: Lang, count = 3): Promise<Map<string
     const timesRecommended = new Map(posts.map((post) => [post.id, 0]));
     const index = new Map<string, Post[]>();
 
+    const overviews = posts.filter((post) => post.data.overview);
+
     for (const post of posts) {
         const mine = tagsOf.get(post.id)!;
+        // Overviews are reached by pinning below and by nothing else. They
+        // share a tag with every destination post on their continent, so
+        // leaving them in the general pool let one of them take both a pinned
+        // slot and organic slots elsewhere — seven of the site's inbound
+        // related links, against a budget of six.
         const candidates = posts
-            .filter((candidate) => candidate.id !== post.id)
+            .filter((candidate) => candidate.id !== post.id && !candidate.data.overview)
             .map((candidate) => ({
                 post: candidate,
                 shared: [...tagsOf.get(candidate.id)!].filter((tag) => mine.has(tag)).length
@@ -152,6 +159,39 @@ export async function getRelatedIndex(lang: Lang, count = 3): Promise<Map<string
 
         const picks: Post[] = [];
         const taken = new Set<string>();
+
+        // "What if I have longer than a week?" is the question a single
+        // destination guide leaves behind, and only the whole-trip overviews
+        // answer it. Tag overlap alone never reliably surfaced them, so a
+        // destination post pins the overview covering the same part of the
+        // world before the ranking below fills the rest. Overviews themselves
+        // are exempt — they are already the answer.
+        if (!post.data.overview) {
+            const [nearest] = overviews
+                .filter((overview) => overview.id !== post.id)
+                .map((overview) => ({
+                    post: overview,
+                    shared: [...tagsOf.get(overview.id)!].filter((tag) => mine.has(tag)).length
+                }))
+                .filter((candidate) => candidate.shared > 0)
+                .sort(
+                    (a, b) =>
+                        b.shared - a.shared ||
+                        timesRecommended.get(a.post.id)! - timesRecommended.get(b.post.id)!
+                );
+
+            if (nearest) {
+                picks.push(nearest.post);
+                taken.add(nearest.post.id);
+                // Counted like any other pick, so the coverage tie-break below
+                // stops choosing it organically elsewhere and it doesn't run
+                // away with the site's internal links.
+                timesRecommended.set(
+                    nearest.post.id,
+                    timesRecommended.get(nearest.post.id)! + 1
+                );
+            }
+        }
 
         while (picks.length < count && taken.size < candidates.length) {
             const [best] = candidates
