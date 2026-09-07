@@ -339,6 +339,12 @@
     gap: var(--space-l);
 }
 
+/* Match the breathing room below the related-post section before the site
+   footer when the affiliate panel sits directly above that section. */
+.post-footer + .section {
+    margin-top: var(--space-xl-2xl);
+}
+
 .post-tags {
     display: flex;
     flex-wrap: wrap;
